@@ -553,7 +553,6 @@
             resources.ApplyResources(this.Sensor_Label_02, "Sensor_Label_02");
             this.Sensor_Label_02.BackColor = System.Drawing.Color.Transparent;
             this.Sensor_Label_02.Name = "Sensor_Label_02";
-            this.Sensor_Label_02.Click += new System.EventHandler(this.Sensor_02_Click);
             // 
             // Sensor_Label_01
             // 
@@ -568,6 +567,7 @@
             resources.ApplyResources(this.Sensor_19, "Sensor_19");
             this.Sensor_19.Name = "Sensor_19";
             this.Sensor_19.TabStop = false;
+            this.Sensor_19.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_19_MouseDown);
             // 
             // Sensor_18
             // 
@@ -576,6 +576,7 @@
             resources.ApplyResources(this.Sensor_18, "Sensor_18");
             this.Sensor_18.Name = "Sensor_18";
             this.Sensor_18.TabStop = false;
+            this.Sensor_18.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_18_MouseDown);
             // 
             // Sensor_17
             // 
@@ -584,6 +585,7 @@
             resources.ApplyResources(this.Sensor_17, "Sensor_17");
             this.Sensor_17.Name = "Sensor_17";
             this.Sensor_17.TabStop = false;
+            this.Sensor_17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_17_MouseDown);
             // 
             // Sensor_16
             // 
@@ -592,6 +594,7 @@
             resources.ApplyResources(this.Sensor_16, "Sensor_16");
             this.Sensor_16.Name = "Sensor_16";
             this.Sensor_16.TabStop = false;
+            this.Sensor_16.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_16_MouseDown);
             // 
             // Sensor_15
             // 
@@ -600,6 +603,7 @@
             resources.ApplyResources(this.Sensor_15, "Sensor_15");
             this.Sensor_15.Name = "Sensor_15";
             this.Sensor_15.TabStop = false;
+            this.Sensor_15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_15_MouseDown);
             // 
             // Sensor_14
             // 
@@ -608,6 +612,7 @@
             resources.ApplyResources(this.Sensor_14, "Sensor_14");
             this.Sensor_14.Name = "Sensor_14";
             this.Sensor_14.TabStop = false;
+            this.Sensor_14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_14_MouseDown);
             // 
             // Sensor_13
             // 
@@ -616,7 +621,7 @@
             resources.ApplyResources(this.Sensor_13, "Sensor_13");
             this.Sensor_13.Name = "Sensor_13";
             this.Sensor_13.TabStop = false;
-            this.Sensor_13.Click += new System.EventHandler(this.Sensor_13_Click);
+            this.Sensor_13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_13_MouseDown);
             // 
             // Sensor_12
             // 
@@ -625,7 +630,7 @@
             resources.ApplyResources(this.Sensor_12, "Sensor_12");
             this.Sensor_12.Name = "Sensor_12";
             this.Sensor_12.TabStop = false;
-            this.Sensor_12.Click += new System.EventHandler(this.Sensor_12_Click);
+            this.Sensor_12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_12_MouseDown);
             // 
             // Sensor_11
             // 
@@ -634,7 +639,7 @@
             resources.ApplyResources(this.Sensor_11, "Sensor_11");
             this.Sensor_11.Name = "Sensor_11";
             this.Sensor_11.TabStop = false;
-            this.Sensor_11.Click += new System.EventHandler(this.Sensor_11_Click);
+            this.Sensor_11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_11_MouseDown);
             // 
             // Sensor_10
             // 
@@ -643,7 +648,7 @@
             resources.ApplyResources(this.Sensor_10, "Sensor_10");
             this.Sensor_10.Name = "Sensor_10";
             this.Sensor_10.TabStop = false;
-            this.Sensor_10.Click += new System.EventHandler(this.Sensor_10_Click);
+            this.Sensor_10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_10_MouseDown);
             // 
             // Sensor_09
             // 
@@ -652,7 +657,7 @@
             resources.ApplyResources(this.Sensor_09, "Sensor_09");
             this.Sensor_09.Name = "Sensor_09";
             this.Sensor_09.TabStop = false;
-            this.Sensor_09.Click += new System.EventHandler(this.Sensor_09_Click);
+            this.Sensor_09.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_09_MouseDown);
             // 
             // Sensor_08
             // 
@@ -661,7 +666,7 @@
             resources.ApplyResources(this.Sensor_08, "Sensor_08");
             this.Sensor_08.Name = "Sensor_08";
             this.Sensor_08.TabStop = false;
-            this.Sensor_08.Click += new System.EventHandler(this.Sensor_08_Click);
+            this.Sensor_08.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_08_MouseDown);
             // 
             // Sensor_07
             // 
@@ -670,7 +675,7 @@
             resources.ApplyResources(this.Sensor_07, "Sensor_07");
             this.Sensor_07.Name = "Sensor_07";
             this.Sensor_07.TabStop = false;
-            this.Sensor_07.Click += new System.EventHandler(this.Sensor_07_Click);
+            this.Sensor_07.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_07_MouseDown);
             // 
             // Sensor_06
             // 
@@ -679,7 +684,7 @@
             resources.ApplyResources(this.Sensor_06, "Sensor_06");
             this.Sensor_06.Name = "Sensor_06";
             this.Sensor_06.TabStop = false;
-            this.Sensor_06.Click += new System.EventHandler(this.Sensor_06_Click);
+            this.Sensor_06.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_06_MouseDown);
             // 
             // Sensor_05
             // 
@@ -688,7 +693,7 @@
             resources.ApplyResources(this.Sensor_05, "Sensor_05");
             this.Sensor_05.Name = "Sensor_05";
             this.Sensor_05.TabStop = false;
-            this.Sensor_05.Click += new System.EventHandler(this.Sensor_05_Click);
+            this.Sensor_05.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_05_MouseDown);
             // 
             // Sensor_04
             // 
@@ -697,7 +702,7 @@
             resources.ApplyResources(this.Sensor_04, "Sensor_04");
             this.Sensor_04.Name = "Sensor_04";
             this.Sensor_04.TabStop = false;
-            this.Sensor_04.Click += new System.EventHandler(this.Sensor_04_Click);
+            this.Sensor_04.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_04_MouseDown);
             // 
             // Sensor_03
             // 
@@ -706,7 +711,7 @@
             resources.ApplyResources(this.Sensor_03, "Sensor_03");
             this.Sensor_03.Name = "Sensor_03";
             this.Sensor_03.TabStop = false;
-            this.Sensor_03.Click += new System.EventHandler(this.Sensor_03_Click);
+            this.Sensor_03.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_03_MouseDown);
             // 
             // Sensor_02
             // 
@@ -715,7 +720,7 @@
             resources.ApplyResources(this.Sensor_02, "Sensor_02");
             this.Sensor_02.Name = "Sensor_02";
             this.Sensor_02.TabStop = false;
-            this.Sensor_02.Click += new System.EventHandler(this.Sensor_02_Click);
+            this.Sensor_02.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_02_MouseDown);
             // 
             // Sensor_01
             // 
@@ -724,7 +729,7 @@
             resources.ApplyResources(this.Sensor_01, "Sensor_01");
             this.Sensor_01.Name = "Sensor_01";
             this.Sensor_01.TabStop = false;
-            this.Sensor_01.Click += new System.EventHandler(this.Sensor_01_Click);
+            this.Sensor_01.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_01_MouseDown);
             // 
             // label6
             // 

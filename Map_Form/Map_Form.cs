@@ -103,6 +103,7 @@ namespace Map_Form {
                 Properties.Resources.Sensor_EnvironLock_19);
         }
 
+        //カメラに移動（仮）
         private void button7_Click(object sender, EventArgs e) {
             Form1 form1 = new Form1();
             form1.Camera_Show();
@@ -122,7 +123,7 @@ namespace Map_Form {
         //センサークリック時の処理
         //タグ状態に応じてセンサーの状態（設定ファイル、色）を変える
         //送りファイルに情報を送る
-        private void SensorClick(PictureBox pic,int line,string str) {
+        private void SensorClick_Left(PictureBox pic,int line,string str) {
             if ((string)pic.Tag == "Normal") {
                 //通常からロックにする処理
                 //自分の設定ファイルを変更
@@ -181,122 +182,207 @@ namespace Map_Form {
             }
         }
 
-        //センサークリック
-        private void Sensor_01_Click(object sender, EventArgs e) {
-            SensorClick(Sensor_01, 0,"01");
-            //センサー読み込み
-            snObj.GetSensorInfo();
-            snObj.ChangeSensor(snObj.sensor01, Sensor_01, Properties.Resources.Sensor_Normal_01, Properties.Resources.Sensor_Lock_01,
-                Properties.Resources.Sensor_Action_01, Properties.Resources.Sensor_Environ_01, Properties.Resources.Sensor_Failed_01,
-                Properties.Resources.Sensor_EnvironLock_01);
+
+        //右クリックで環境ロック/解除する処理
+        private void SensorClick_Right(PictureBox pic,int line,string str){
+            //タグがNormalの場合のみ環境をロックできる
+            if((string)pic.Tag == "Normal"){
+                //設定ファイルを読み込む
+                string[] setPath = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
+                string[] changeLine = setPath[line].Split(',');
+                changeLine[2] = "1";
+                setPath[line] = string.Join(",",changeLine);
+                //設定ファイル書き換え
+                using(StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SettingPath"],false)){
+                    for(int i = 0; i < setPath.Length; i++){
+                        sw.WriteLine(setPath[i]);
+                    }
+                }
+                //送りファイル書き換え
+                using(StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"],false)){
+                    sw.WriteLine(str + "0,1,0");
+                }
+            }else if((string)pic.Tag == "EnvironLock"){
+                //タグがEnvironLockの場合のみノーマルに戻る
+                //設定ファイルを読み込む
+                string[] setPath = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
+                string[] changeLine = setPath[line].Split(',');
+                changeLine[2] = "0";
+                setPath[line] = string.Join(",",changeLine);
+                //設定ファイル書き換え
+                using(StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SettingPath"],false)){
+                    for(int i = 0; i < setPath.Length; i++){
+                        sw.WriteLine(setPath[i]);
+                    }
+                }
+                //送りファイル書き換え
+                using(StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"],false)){
+                    sw.WriteLine(str + "0,0,0");
+                }
+            }else{
+                MessageBox.Show("センサーが通常状態か確認してください");
+            }
         }
 
-        private void Sensor_02_Click(object sender, EventArgs e) {
-            SensorClick(Sensor_02, 1, "02");
-            //センサー読み込み
-            snObj.GetSensorInfo();
-            snObj.ChangeSensor(snObj.sensor02, Sensor_02, Properties.Resources.Sensor_Normal_02, Properties.Resources.Sensor_Lock_02,
-                Properties.Resources.Sensor_Action_02, Properties.Resources.Sensor_Environ_02, Properties.Resources.Sensor_Failed_02,
-                Properties.Resources.Sensor_EnvironLock_02);
+        //マウスクリックイベント
+        private void Sensor_01_MouseDown(object sender, MouseEventArgs e) {
+            if(e.Button == MouseButtons.Left) {
+                SensorClick_Left(Sensor_01, 0, "01");
+                //センサー読み込み
+                snObj.GetSensorInfo();
+                snObj.ChangeSensor(snObj.sensor01, Sensor_01, Properties.Resources.Sensor_Normal_01, Properties.Resources.Sensor_Lock_01,
+                    Properties.Resources.Sensor_Action_01, Properties.Resources.Sensor_Environ_01, Properties.Resources.Sensor_Failed_01,
+                    Properties.Resources.Sensor_EnvironLock_01);
+            } else if(e.Button == MouseButtons.Right) {
+                SensorClick_Right(Sensor_01, 0, "01");
+                //センサー読み込み
+                snObj.GetSensorInfo();
+                snObj.ChangeSensor(snObj.sensor01, Sensor_01, Properties.Resources.Sensor_Normal_01, Properties.Resources.Sensor_Lock_01,
+                    Properties.Resources.Sensor_Action_01, Properties.Resources.Sensor_Environ_01, Properties.Resources.Sensor_Failed_01,
+                    Properties.Resources.Sensor_EnvironLock_01);
+            }
         }
 
-        private void Sensor_03_Click(object sender, EventArgs e) {
-            SensorClick(Sensor_03, 2, "03");
-            //センサー読み込み
-            snObj.GetSensorInfo();
-            snObj.ChangeSensor(snObj.sensor03, Sensor_03, Properties.Resources.Sensor_Normal_03, Properties.Resources.Sensor_Lock_03,
-                Properties.Resources.Sensor_Action_03, Properties.Resources.Sensor_Environ_03, Properties.Resources.Sensor_Failed_03,
-                Properties.Resources.Sensor_EnvironLock_03);
+        private void Sensor_02_MouseDown(object sender, MouseEventArgs e) {
+            if (e.Button == MouseButtons.Left) {
+                SensorClick_Left(Sensor_02, 1, "02");
+                //センサー読み込み
+                snObj.GetSensorInfo();
+                snObj.ChangeSensor(snObj.sensor02, Sensor_02, Properties.Resources.Sensor_Normal_02, Properties.Resources.Sensor_Lock_02,
+                    Properties.Resources.Sensor_Action_02, Properties.Resources.Sensor_Environ_02, Properties.Resources.Sensor_Failed_02,
+                    Properties.Resources.Sensor_EnvironLock_02);
+            } else if (e.Button == MouseButtons.Right) {
+                SensorClick_Right(Sensor_02, 1, "02");
+                //センサー読み込み
+                snObj.GetSensorInfo();
+                snObj.ChangeSensor(snObj.sensor02, Sensor_02, Properties.Resources.Sensor_Normal_02, Properties.Resources.Sensor_Lock_02,
+                    Properties.Resources.Sensor_Action_02, Properties.Resources.Sensor_Environ_02, Properties.Resources.Sensor_Failed_02,
+                    Properties.Resources.Sensor_EnvironLock_02);
+            }
         }
 
-        private void Sensor_04_Click(object sender, EventArgs e) {
-            SensorClick(Sensor_04, 3, "04");
-            //センサー読み込み
-            snObj.GetSensorInfo();
-            snObj.ChangeSensor(snObj.sensor04, Sensor_04, Properties.Resources.Sensor_Normal_04, Properties.Resources.Sensor_Lock_04,
-                Properties.Resources.Sensor_Action_04, Properties.Resources.Sensor_Environ_04, Properties.Resources.Sensor_Failed_04,
-                Properties.Resources.Sensor_EnvironLock_04);
+        private void Sensor_03_MouseDown(object sender, MouseEventArgs e) {
+            if (e.Button == MouseButtons.Left) {
+                SensorClick_Left(Sensor_03, 2, "03");
+                //センサー読み込み
+                snObj.GetSensorInfo();
+                snObj.ChangeSensor(snObj.sensor03, Sensor_03, Properties.Resources.Sensor_Normal_03, Properties.Resources.Sensor_Lock_03,
+                    Properties.Resources.Sensor_Action_03, Properties.Resources.Sensor_Environ_03, Properties.Resources.Sensor_Failed_03,
+                    Properties.Resources.Sensor_EnvironLock_03);
+            } else if (e.Button == MouseButtons.Right) {
+                SensorClick_Right(Sensor_03, 2, "03");
+                //センサー読み込み
+                snObj.GetSensorInfo();
+                snObj.ChangeSensor(snObj.sensor03, Sensor_03, Properties.Resources.Sensor_Normal_03, Properties.Resources.Sensor_Lock_03,
+                    Properties.Resources.Sensor_Action_03, Properties.Resources.Sensor_Environ_03, Properties.Resources.Sensor_Failed_03,
+                    Properties.Resources.Sensor_EnvironLock_03);
+            }
         }
 
-        private void Sensor_05_Click(object sender, EventArgs e) {
-            SensorClick(Sensor_05, 4, "05");
-            //センサー読み込み
-            snObj.GetSensorInfo();
-            snObj.ChangeSensor(snObj.sensor05, Sensor_05, Properties.Resources.Sensor_Normal_05, Properties.Resources.Sensor_Lock_05,
-                Properties.Resources.Sensor_Action_05, Properties.Resources.Sensor_Environ_05, Properties.Resources.Sensor_Failed_05,
-                Properties.Resources.Sensor_Environ_05);
+        private void Sensor_04_MouseDown(object sender, MouseEventArgs e) {
+            if (e.Button == MouseButtons.Left) {
+                SensorClick_Left(Sensor_04, 3, "04");
+                //センサー読み込み
+                snObj.GetSensorInfo();
+                snObj.ChangeSensor(snObj.sensor04, Sensor_04, Properties.Resources.Sensor_Normal_04, Properties.Resources.Sensor_Lock_04,
+                    Properties.Resources.Sensor_Action_04, Properties.Resources.Sensor_Environ_04, Properties.Resources.Sensor_Failed_04,
+                    Properties.Resources.Sensor_EnvironLock_04);
+            } else if (e.Button == MouseButtons.Right) {
+                SensorClick_Right(Sensor_04, 3, "04");
+                //センサー読み込み
+                snObj.GetSensorInfo();
+                snObj.ChangeSensor(snObj.sensor04, Sensor_04, Properties.Resources.Sensor_Normal_04, Properties.Resources.Sensor_Lock_04,
+                    Properties.Resources.Sensor_Action_04, Properties.Resources.Sensor_Environ_04, Properties.Resources.Sensor_Failed_04,
+                    Properties.Resources.Sensor_EnvironLock_04);
+            }
         }
 
-        private void Sensor_06_Click(object sender, EventArgs e) {
-            SensorClick(Sensor_06, 5, "06");
-            //センサー読み込み
-            snObj.GetSensorInfo();
-            snObj.ChangeSensor(snObj.sensor06, Sensor_06, Properties.Resources.Sensor_Normal_06, Properties.Resources.Sensor_Lock_06,
-                Properties.Resources.Sensor_Action_06, Properties.Resources.Sensor_Environ_06, Properties.Resources.Sensor_Failed_06,
-                Properties.Resources.Sensor_EnvironLock_06);
+        private void Sensor_05_MouseDown(object sender, MouseEventArgs e) {
+            if (e.Button == MouseButtons.Left) {
+                SensorClick_Left(Sensor_05, 4, "05");
+                //センサー読み込み
+                snObj.GetSensorInfo();
+                snObj.ChangeSensor(snObj.sensor05, Sensor_05, Properties.Resources.Sensor_Normal_05, Properties.Resources.Sensor_Lock_05,
+                    Properties.Resources.Sensor_Action_05, Properties.Resources.Sensor_Environ_05, Properties.Resources.Sensor_Failed_05,
+                    Properties.Resources.Sensor_EnvironLock_05);
+            } else if (e.Button == MouseButtons.Right) {
+                SensorClick_Right(Sensor_05, 4, "05");
+                //センサー読み込み
+                snObj.GetSensorInfo();
+                snObj.ChangeSensor(snObj.sensor05, Sensor_05, Properties.Resources.Sensor_Normal_05, Properties.Resources.Sensor_Lock_05,
+                    Properties.Resources.Sensor_Action_05, Properties.Resources.Sensor_Environ_05, Properties.Resources.Sensor_Failed_05,
+                    Properties.Resources.Sensor_EnvironLock_05);
+            }
         }
 
-        private void Sensor_07_Click(object sender, EventArgs e) {
-            SensorClick(Sensor_07, 6, "07");
-            //センサー読み込み
-            snObj.GetSensorInfo();
-            snObj.ChangeSensor(snObj.sensor07, Sensor_07, Properties.Resources.Sensor_Normal_07, Properties.Resources.Sensor_Lock_07,
-                Properties.Resources.Sensor_Action_07, Properties.Resources.Sensor_Environ_07, Properties.Resources.Sensor_Failed_07,
-                Properties.Resources.Sensor_EnvironLock_07);
+        private void Sensor_06_MouseDown(object sender, MouseEventArgs e) {
+            if (e.Button == MouseButtons.Left) {
+                SensorClick_Left(Sensor_06, 5, "06");
+                //センサー読み込み
+                snObj.GetSensorInfo();
+                snObj.ChangeSensor(snObj.sensor06, Sensor_06, Properties.Resources.Sensor_Normal_06, Properties.Resources.Sensor_Lock_06,
+                    Properties.Resources.Sensor_Action_06, Properties.Resources.Sensor_Environ_06, Properties.Resources.Sensor_Failed_06,
+                    Properties.Resources.Sensor_EnvironLock_06);
+            } else if (e.Button == MouseButtons.Right) {
+                SensorClick_Right(Sensor_06, 5, "06");
+                //センサー読み込み
+                snObj.GetSensorInfo();
+                snObj.ChangeSensor(snObj.sensor06, Sensor_06, Properties.Resources.Sensor_Normal_06, Properties.Resources.Sensor_Lock_06,
+                    Properties.Resources.Sensor_Action_06, Properties.Resources.Sensor_Environ_06, Properties.Resources.Sensor_Failed_06,
+                    Properties.Resources.Sensor_EnvironLock_06);
+            }
         }
 
-        private void Sensor_08_Click(object sender, EventArgs e) {
-            SensorClick(Sensor_08, 7, "08");
-            //センサー読み込み
-            snObj.GetSensorInfo();
-            snObj.ChangeSensor(snObj.sensor08, Sensor_08, Properties.Resources.Sensor_Normal_08, Properties.Resources.Sensor_Lock_08,
-                Properties.Resources.Sensor_Action_08, Properties.Resources.Sensor_Environ_08, Properties.Resources.Sensor_Failed_08,
-                Properties.Resources.Sensor_EnvironLock_08);
+        private void Sensor_07_MouseDown(object sender, MouseEventArgs e) {
+
         }
 
-        private void Sensor_09_Click(object sender, EventArgs e) {
-            SensorClick(Sensor_09, 8, "09");
-            //センサー読み込み
-            snObj.GetSensorInfo();
-            snObj.ChangeSensor(snObj.sensor09, Sensor_09, Properties.Resources.Sensor_Normal_09, Properties.Resources.Sensor_Lock_09,
-                Properties.Resources.Sensor_Action_09, Properties.Resources.Sensor_Environ_09, Properties.Resources.Sensor_Failed_09,
-                Properties.Resources.Sensor_EnvironLock_09);
+        private void Sensor_08_MouseDown(object sender, MouseEventArgs e) {
+
         }
 
-        private void Sensor_10_Click(object sender, EventArgs e) {
-            SensorClick(Sensor_10, 9, "10");
-            //センサー読み込み
-            snObj.GetSensorInfo();
-            snObj.ChangeSensor(snObj.sensor10, Sensor_10, Properties.Resources.Sensor_Normal_10, Properties.Resources.Sensor_Lock_10,
-                Properties.Resources.Sensor_Action_10, Properties.Resources.Sensor_Environ_10, Properties.Resources.Sensor_Failed_10,
-                Properties.Resources.Sensor_EnvironLock_10);
+        private void Sensor_09_MouseDown(object sender, MouseEventArgs e) {
+
         }
 
-        private void Sensor_11_Click(object sender, EventArgs e) {
-            SensorClick(Sensor_11, 10, "11");
-            //センサー読み込み
-            snObj.GetSensorInfo();
-            snObj.ChangeSensor(snObj.sensor11, Sensor_11, Properties.Resources.Sensor_Normal_11, Properties.Resources.Sensor_Lock_11,
-                Properties.Resources.Sensor_Action_11, Properties.Resources.Sensor_Environ_11, Properties.Resources.Sensor_Failed_11,
-                Properties.Resources.Sensor_EnvironLock_11);
+        private void Sensor_10_MouseDown(object sender, MouseEventArgs e) {
+
         }
 
-        private void Sensor_12_Click(object sender, EventArgs e) {
-            SensorClick(Sensor_12, 11, "12");
-            //センサー読み込み
-            snObj.GetSensorInfo();
-            snObj.ChangeSensor(snObj.sensor12, Sensor_12, Properties.Resources.Sensor_Normal_12, Properties.Resources.Sensor_Lock_12,
-                Properties.Resources.Sensor_Action_12, Properties.Resources.Sensor_Environ_12, Properties.Resources.Sensor_Failed_12,
-                Properties.Resources.Sensor_EnvironLock_12);
+        private void Sensor_11_MouseDown(object sender, MouseEventArgs e) {
+
         }
 
-        private void Sensor_13_Click(object sender, EventArgs e) {
-            SensorClick(Sensor_13, 12, "13");
-            //センサー読み込み
-            snObj.GetSensorInfo();
-            snObj.ChangeSensor(snObj.sensor13, Sensor_13, Properties.Resources.Sensor_Normal_13, Properties.Resources.Sensor_Lock_13,
-                Properties.Resources.Sensor_Lock_13, Properties.Resources.Sensor_Environ_13, Properties.Resources.Sensor_Failed_13,
-                Properties.Resources.Sensor_EnvironLock_13);
+        private void Sensor_12_MouseDown(object sender, MouseEventArgs e) {
+
+        }
+
+        private void Sensor_13_MouseDown(object sender, MouseEventArgs e) {
+
+        }
+
+        private void Sensor_14_MouseDown(object sender, MouseEventArgs e) {
+
+        }
+
+        private void Sensor_15_MouseDown(object sender, MouseEventArgs e) {
+
+        }
+
+        private void Sensor_16_MouseDown(object sender, MouseEventArgs e) {
+
+        }
+
+        private void Sensor_17_MouseDown(object sender, MouseEventArgs e) {
+
+        }
+
+        private void Sensor_18_MouseDown(object sender, MouseEventArgs e) {
+
+        }
+
+        private void Sensor_19_MouseDown(object sender, MouseEventArgs e) {
+
         }
     }
 }
