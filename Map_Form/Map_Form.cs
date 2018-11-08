@@ -105,7 +105,7 @@ namespace Map_Form {
 
         //カメラに移動（仮）
         private void button7_Click(object sender, EventArgs e) {
-            Form1 form1 = new Form1();
+            Control_Form form1 = new Control_Form();
             form1.Camera_Show();
         }
 
