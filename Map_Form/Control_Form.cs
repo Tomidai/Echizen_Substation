@@ -10,13 +10,13 @@ using System.Windows.Forms;
 using System.IO;
 
 namespace Map_Form {
-    public partial class Form1:Form {
+    public partial class Control_Form:Form {
 
         //インスタンス固定
         public static Map_Form map_form = new Map_Form();
         public static Camera_Form camera_form = new Camera_Form();
 
-        public Form1() {
+        public Control_Form() {
             InitializeComponent();
         }
 

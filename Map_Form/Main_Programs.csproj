@@ -67,17 +67,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="File_Watcher.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Control_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Control_Form.Designer.cs">
+      <DependentUpon>Control_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Camera_Form.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Camera_Form.Designer.cs">
       <DependentUpon>Camera_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
     <Compile Include="Map_Form.cs">
       <SubType>Form</SubType>
@@ -97,8 +103,8 @@
     <EmbeddedResource Include="Camera_Form.resx">
       <DependentUpon>Camera_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Control_Form.resx">
+      <DependentUpon>Control_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Map_Form.resx">
       <DependentUpon>Map_Form.cs</DependentUpon>
@@ -493,6 +499,114 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sensor_EnvironLock_19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg0011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg0021.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b001X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0021.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b002X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0031.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b003X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0041.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b004X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0051.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b005X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0061.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b006X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0071.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b007X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0081.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b008X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0091.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b009X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0101.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0121.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b012X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0131.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b013X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b014X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b015X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b016X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b0171.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b017X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_pre0011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_pre001X1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
