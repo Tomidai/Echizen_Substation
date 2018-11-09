@@ -109,21 +109,5 @@ namespace Map_Form {
                 }
             });
         }
-
-        //センサークリック時のセンサーONメソッド
-        public async Task SensorOnAsync(int i) {
-            await Task.Run(() => {
-
-            });
-        }
-
-        //センサークリック時のセンサーOFFメソッド
-        public async Task SensorOffAsync(int i) {
-            await Task.Run(() => {
-
-            });
-        }
-
-
     }
 }

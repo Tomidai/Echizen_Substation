@@ -78,7 +78,7 @@ namespace Map_Form {
         }
 
         //Receiveファイルが変更されたら発生するイベント
-        public void Changed(object source, FileSystemEventArgs e) {
+        public async void Changed(object source, FileSystemEventArgs e) {
             //センサーからの情報受信
             if(e.FullPath == ConfigurationManager.AppSettings["ReceivePath"]) {
                 using (StreamReader sr = new StreamReader(ConfigurationManager.AppSettings["ReceivePath"])) {
@@ -90,142 +90,144 @@ namespace Map_Form {
                             case 1:
                                 //Receiveファイルを読込反映させるメソッドを呼び出す
                                 Receive(receiveInfo, 0);
-                                //セッティングファイルを読み込み、センサーの色、タグを変更する
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor01, mfObj.Sensor_01, Properties.Resources.Sensor_Normal_01, Properties.Resources.Sensor_Lock_01,
-                                    Properties.Resources.Sensor_Action_01, Properties.Resources.Sensor_Environ_01, Properties.Resources.Sensor_Failed_01,
-                                    Properties.Resources.Sensor_EnvironLock_01);
                                 break;
                             case 2:
                                 Receive(receiveInfo, 1);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor02, mfObj.Sensor_02, Properties.Resources.Sensor_Normal_02, Properties.Resources.Sensor_Lock_02,
-                                    Properties.Resources.Sensor_Action_02, Properties.Resources.Sensor_Environ_02, Properties.Resources.Sensor_Failed_02,
-                                    Properties.Resources.Sensor_EnvironLock_02);
                                 break;
                             case 3:
                                 Receive(receiveInfo, 2);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor03, mfObj.Sensor_03, Properties.Resources.Sensor_Normal_03, Properties.Resources.Sensor_Lock_03,
-                                    Properties.Resources.Sensor_Action_03, Properties.Resources.Sensor_Environ_03, Properties.Resources.Sensor_Failed_03,
-                                    Properties.Resources.Sensor_EnvironLock_03);
                                 break;
                             case 4:
                                 Receive(receiveInfo, 3);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor04, mfObj.Sensor_04, Properties.Resources.Sensor_Normal_04, Properties.Resources.Sensor_Lock_04,
-                                    Properties.Resources.Sensor_Action_04, Properties.Resources.Sensor_Environ_04, Properties.Resources.Sensor_Failed_04,
-                                    Properties.Resources.Sensor_EnvironLock_04);
                                 break;
                             case 5:
                                 Receive(receiveInfo, 4);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor05, mfObj.Sensor_05, Properties.Resources.Sensor_Normal_05, Properties.Resources.Sensor_Lock_05,
-                                    Properties.Resources.Sensor_Action_05, Properties.Resources.Sensor_Environ_05, Properties.Resources.Sensor_Failed_05,
-                                    Properties.Resources.Sensor_EnvironLock_05);
                                 break;
                             case 6:
                                 Receive(receiveInfo, 5);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor06, mfObj.Sensor_06, Properties.Resources.Sensor_Normal_06, Properties.Resources.Sensor_Lock_06,
-                                    Properties.Resources.Sensor_Action_06, Properties.Resources.Sensor_Environ_06, Properties.Resources.Sensor_Failed_06,
-                                    Properties.Resources.Sensor_EnvironLock_06);
                                 break;
                             case 7:
                                 Receive(receiveInfo, 6);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor07, mfObj.Sensor_07, Properties.Resources.Sensor_Normal_07, Properties.Resources.Sensor_Lock_07,
-                                    Properties.Resources.Sensor_Action_07, Properties.Resources.Sensor_Environ_07, Properties.Resources.Sensor_Failed_07,
-                                    Properties.Resources.Sensor_EnvironLock_07);
                                 break;
                             case 8:
                                 Receive(receiveInfo, 7);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor08, mfObj.Sensor_08, Properties.Resources.Sensor_Normal_08, Properties.Resources.Sensor_Lock_08,
-                                    Properties.Resources.Sensor_Action_08, Properties.Resources.Sensor_Environ_08, Properties.Resources.Sensor_Failed_08,
-                                    Properties.Resources.Sensor_EnvironLock_08);
                                 break;
                             case 9:
                                 Receive(receiveInfo, 8);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor09, mfObj.Sensor_09, Properties.Resources.Sensor_Normal_09, Properties.Resources.Sensor_Lock_09,
-                                    Properties.Resources.Sensor_Action_09, Properties.Resources.Sensor_Environ_09, Properties.Resources.Sensor_Failed_09,
-                                    Properties.Resources.Sensor_EnvironLock_09);
                                 break;
                             case 10:
                                 Receive(receiveInfo, 9);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor10, mfObj.Sensor_10, Properties.Resources.Sensor_Normal_10, Properties.Resources.Sensor_Lock_10,
-                                    Properties.Resources.Sensor_Action_10, Properties.Resources.Sensor_Environ_10, Properties.Resources.Sensor_Failed_10,
-                                    Properties.Resources.Sensor_EnvironLock_10);
                                 break;
                             case 11:
                                 Receive(receiveInfo, 10);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor11, mfObj.Sensor_11, Properties.Resources.Sensor_Normal_11, Properties.Resources.Sensor_Lock_11,
-                                    Properties.Resources.Sensor_Action_11, Properties.Resources.Sensor_Environ_11, Properties.Resources.Sensor_Failed_11,
-                                    Properties.Resources.Sensor_EnvironLock_11);
                                 break;
                             case 12:
                                 Receive(receiveInfo, 11);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor12, mfObj.Sensor_12, Properties.Resources.Sensor_Normal_12, Properties.Resources.Sensor_Lock_12,
-                                    Properties.Resources.Sensor_Action_12, Properties.Resources.Sensor_Environ_12, Properties.Resources.Sensor_Failed_12,
-                                    Properties.Resources.Sensor_EnvironLock_12);
                                 break;
                             case 13:
                                 Receive(receiveInfo, 12);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor13, mfObj.Sensor_13, Properties.Resources.Sensor_Normal_13, Properties.Resources.Sensor_Lock_13,
-                                    Properties.Resources.Sensor_Action_13, Properties.Resources.Sensor_Environ_13, Properties.Resources.Sensor_Failed_13,
-                                    Properties.Resources.Sensor_EnvironLock_13);
                                 break;
                             case 14:
                                 Receive(receiveInfo, 13);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor14, mfObj.Sensor_14, Properties.Resources.Sensor_Normal_14, Properties.Resources.Sensor_Lock_14,
-                                    Properties.Resources.Sensor_Action_14, Properties.Resources.Sensor_Environ_14, Properties.Resources.Sensor_Failed_14,
-                                    Properties.Resources.Sensor_EnvironLock_14);
                                 break;
                             case 15:
                                 Receive(receiveInfo, 14);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor15, mfObj.Sensor_15, Properties.Resources.Sensor_Normal_15, Properties.Resources.Sensor_Lock_15,
-                                    Properties.Resources.Sensor_Action_15, Properties.Resources.Sensor_Environ_15, Properties.Resources.Sensor_Failed_15,
-                                    Properties.Resources.Sensor_EnvironLock_15);
-
                                 break;
                             case 16:
                                 Receive(receiveInfo, 15);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor16, mfObj.Sensor_16, Properties.Resources.Sensor_Normal_16, Properties.Resources.Sensor_Lock_16,
-                                    Properties.Resources.Sensor_Action_16, Properties.Resources.Sensor_Environ_16, Properties.Resources.Sensor_Failed_16,
-                                    Properties.Resources.Sensor_EnvironLock_16);
                                 break;
                             case 17:
-                                Receive(receiveInfo, 16); snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor17, mfObj.Sensor_17, Properties.Resources.Sensor_Normal_17, Properties.Resources.Sensor_Lock_17,
-                                    Properties.Resources.Sensor_Action_17, Properties.Resources.Sensor_Environ_17, Properties.Resources.Sensor_Failed_17,
-                                    Properties.Resources.Sensor_EnvironLock_17);
+                                Receive(receiveInfo, 16);
                                 break;
                             case 18:
                                 Receive(receiveInfo, 17);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor18, mfObj.Sensor_18, Properties.Resources.Sensor_Normal_18, Properties.Resources.Sensor_Lock_18,
-                                    Properties.Resources.Sensor_Action_18, Properties.Resources.Sensor_Environ_18, Properties.Resources.Sensor_Failed_18,
-                                    Properties.Resources.Sensor_EnvironLock_18);
                                 break;
                             case 19:
                                 Receive(receiveInfo, 18);
-                                snObj.GetSensorInfo();
-                                snObj.ChangeSensor(snObj.sensor19, mfObj.Sensor_19, Properties.Resources.Sensor_Normal_19, Properties.Resources.Sensor_Lock_19,
-                                    Properties.Resources.Sensor_Action_19, Properties.Resources.Sensor_Environ_19, Properties.Resources.Sensor_Failed_19,
-                                    Properties.Resources.Sensor_EnvironLock_19);
                                 break;
                         }
                     }
                 }
-            } 
+            } else if(e.FullPath == ConfigurationManager.AppSettings["SettingPath"]){
+                //設定ファイルが変更されたときに色、タグを変更する
+                snObj.GetSensorInfo();
+
+                snObj.ChangeSensor(snObj.sensor01, mfObj.Sensor_01, Properties.Resources.Sensor_Normal_01, Properties.Resources.Sensor_Lock_01,
+                Properties.Resources.Sensor_Action_01, Properties.Resources.Sensor_Environ_01, Properties.Resources.Sensor_Failed_01,
+                Properties.Resources.Sensor_EnvironLock_01);
+
+                snObj.ChangeSensor(snObj.sensor02, mfObj.Sensor_02, Properties.Resources.Sensor_Normal_02, Properties.Resources.Sensor_Lock_02,
+                    Properties.Resources.Sensor_Action_02, Properties.Resources.Sensor_Environ_02, Properties.Resources.Sensor_Failed_02,
+                    Properties.Resources.Sensor_EnvironLock_02);
+
+                snObj.ChangeSensor(snObj.sensor03, mfObj.Sensor_03, Properties.Resources.Sensor_Normal_03, Properties.Resources.Sensor_Lock_03,
+                    Properties.Resources.Sensor_Action_03, Properties.Resources.Sensor_Environ_03, Properties.Resources.Sensor_Failed_03,
+                    Properties.Resources.Sensor_EnvironLock_03);
+
+                snObj.ChangeSensor(snObj.sensor04, mfObj.Sensor_04, Properties.Resources.Sensor_Normal_04, Properties.Resources.Sensor_Lock_04,
+                    Properties.Resources.Sensor_Action_04, Properties.Resources.Sensor_Environ_04, Properties.Resources.Sensor_Failed_04,
+                    Properties.Resources.Sensor_EnvironLock_04);
+
+                snObj.ChangeSensor(snObj.sensor05, mfObj.Sensor_05, Properties.Resources.Sensor_Normal_05, Properties.Resources.Sensor_Lock_05,
+                    Properties.Resources.Sensor_Action_05, Properties.Resources.Sensor_Environ_05, Properties.Resources.Sensor_Failed_05,
+                    Properties.Resources.Sensor_EnvironLock_05);
+
+                snObj.ChangeSensor(snObj.sensor06, mfObj.Sensor_06, Properties.Resources.Sensor_Normal_06, Properties.Resources.Sensor_Lock_06,
+                    Properties.Resources.Sensor_Action_06, Properties.Resources.Sensor_Environ_06, Properties.Resources.Sensor_Failed_06,
+                    Properties.Resources.Sensor_EnvironLock_06);
+
+                snObj.ChangeSensor(snObj.sensor07, mfObj.Sensor_07, Properties.Resources.Sensor_Normal_07, Properties.Resources.Sensor_Lock_07,
+                    Properties.Resources.Sensor_Action_07, Properties.Resources.Sensor_Environ_07, Properties.Resources.Sensor_Failed_07,
+                    Properties.Resources.Sensor_EnvironLock_07);
+
+                snObj.ChangeSensor(snObj.sensor08, mfObj.Sensor_08, Properties.Resources.Sensor_Normal_08, Properties.Resources.Sensor_Lock_08,
+                    Properties.Resources.Sensor_Action_08, Properties.Resources.Sensor_Environ_08, Properties.Resources.Sensor_Failed_08,
+                    Properties.Resources.Sensor_EnvironLock_08);
+
+                snObj.ChangeSensor(snObj.sensor09, mfObj.Sensor_09, Properties.Resources.Sensor_Normal_09, Properties.Resources.Sensor_Lock_09,
+                    Properties.Resources.Sensor_Action_09, Properties.Resources.Sensor_Environ_09, Properties.Resources.Sensor_Failed_09,
+                    Properties.Resources.Sensor_EnvironLock_09);
+
+                snObj.ChangeSensor(snObj.sensor10, mfObj.Sensor_10, Properties.Resources.Sensor_Normal_10, Properties.Resources.Sensor_Lock_10,
+                    Properties.Resources.Sensor_Action_10, Properties.Resources.Sensor_Environ_10, Properties.Resources.Sensor_Failed_10,
+                    Properties.Resources.Sensor_EnvironLock_10);
+
+                snObj.ChangeSensor(snObj.sensor11, mfObj.Sensor_11, Properties.Resources.Sensor_Normal_11, Properties.Resources.Sensor_Lock_11,
+                    Properties.Resources.Sensor_Action_11, Properties.Resources.Sensor_Environ_11, Properties.Resources.Sensor_Failed_11,
+                    Properties.Resources.Sensor_EnvironLock_11);
+
+                snObj.ChangeSensor(snObj.sensor12, mfObj.Sensor_12, Properties.Resources.Sensor_Normal_12, Properties.Resources.Sensor_Lock_12,
+                    Properties.Resources.Sensor_Action_12, Properties.Resources.Sensor_Environ_12, Properties.Resources.Sensor_Failed_12,
+                    Properties.Resources.Sensor_EnvironLock_12);
+
+                snObj.ChangeSensor(snObj.sensor13, mfObj.Sensor_13, Properties.Resources.Sensor_Normal_13, Properties.Resources.Sensor_Lock_13,
+                    Properties.Resources.Sensor_Action_13, Properties.Resources.Sensor_Environ_13, Properties.Resources.Sensor_Failed_13,
+                    Properties.Resources.Sensor_EnvironLock_13);
+
+                snObj.ChangeSensor(snObj.sensor14, mfObj.Sensor_14, Properties.Resources.Sensor_Normal_14, Properties.Resources.Sensor_Lock_14,
+                    Properties.Resources.Sensor_Action_14, Properties.Resources.Sensor_Environ_14, Properties.Resources.Sensor_Failed_14,
+                    Properties.Resources.Sensor_EnvironLock_14);
+
+                snObj.ChangeSensor(snObj.sensor15, mfObj.Sensor_15, Properties.Resources.Sensor_Normal_15, Properties.Resources.Sensor_Lock_15,
+                    Properties.Resources.Sensor_Action_15, Properties.Resources.Sensor_Environ_15, Properties.Resources.Sensor_Failed_15,
+                    Properties.Resources.Sensor_EnvironLock_15);
+
+                snObj.ChangeSensor(snObj.sensor16, mfObj.Sensor_16, Properties.Resources.Sensor_Normal_16, Properties.Resources.Sensor_Lock_16,
+                    Properties.Resources.Sensor_Action_16, Properties.Resources.Sensor_Environ_16, Properties.Resources.Sensor_Failed_16,
+                    Properties.Resources.Sensor_EnvironLock_16);
+
+                snObj.ChangeSensor(snObj.sensor17, mfObj.Sensor_17, Properties.Resources.Sensor_Normal_17, Properties.Resources.Sensor_Lock_17,
+                    Properties.Resources.Sensor_Action_17, Properties.Resources.Sensor_Environ_17, Properties.Resources.Sensor_Failed_17,
+                    Properties.Resources.Sensor_EnvironLock_17);
+
+                snObj.ChangeSensor(snObj.sensor18, mfObj.Sensor_18, Properties.Resources.Sensor_Normal_18, Properties.Resources.Sensor_Lock_18,
+                    Properties.Resources.Sensor_Action_18, Properties.Resources.Sensor_Environ_18, Properties.Resources.Sensor_Failed_18,
+                    Properties.Resources.Sensor_EnvironLock_18);
+
+                snObj.ChangeSensor(snObj.sensor19, mfObj.Sensor_19, Properties.Resources.Sensor_Normal_19, Properties.Resources.Sensor_Lock_19,
+                    Properties.Resources.Sensor_Action_19, Properties.Resources.Sensor_Environ_19, Properties.Resources.Sensor_Failed_19,
+                    Properties.Resources.Sensor_EnvironLock_19);
+            }
         }
     }
 }
