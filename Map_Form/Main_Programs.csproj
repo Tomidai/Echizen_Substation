@@ -608,5 +608,20 @@
   <ItemGroup>
     <None Include="Resources\cont_pre001X1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_menu_bar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera_button_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camera_button_push.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electrical_button_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\electrical_button_push.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -93,6 +93,26 @@ namespace Map_Form.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap camera_button_normal {
+            get {
+                object obj = ResourceManager.GetObject("camera_button_normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap camera_button_push {
+            get {
+                object obj = ResourceManager.GetObject("camera_button_push", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap Camera_Normal {
             get {
                 object obj = ResourceManager.GetObject("Camera_Normal", resourceCulture);
@@ -436,6 +456,36 @@ namespace Map_Form.Properties {
         internal static System.Drawing.Bitmap cont_pre001X {
             get {
                 object obj = ResourceManager.GetObject("cont_pre001X", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap control_menu_bar {
+            get {
+                object obj = ResourceManager.GetObject("control_menu_bar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap electrical_button_normal {
+            get {
+                object obj = ResourceManager.GetObject("electrical_button_normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap electrical_button_push {
+            get {
+                object obj = ResourceManager.GetObject("electrical_button_push", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

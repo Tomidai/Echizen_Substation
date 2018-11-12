@@ -103,12 +103,6 @@ namespace Map_Form {
                 Properties.Resources.Sensor_EnvironLock_19);
         }
 
-        //カメラに移動（仮）
-        private void button7_Click(object sender, EventArgs e) {
-            Control_Form form1 = new Control_Form();
-            form1.Camera_Show();
-        }
-
         //アプリケーション終了
         private void button15_Click(object sender, EventArgs e) {
             Application.Exit();
@@ -374,5 +368,17 @@ namespace Map_Form {
                 SensorClick_Right(Sensor_19, 18, "19");
             }
         }
+
+        //カメラ切り替えボタン処理
+        private void label10_MouseDown(object sender, MouseEventArgs e) {
+            label10.Image = Properties.Resources.camera_button_push;
+        }
+        private void label10_MouseUp(object sender, MouseEventArgs e) {
+            label10.Image = Properties.Resources.camera_button_normal;
+            Control_Form form1 = new Control_Form();
+            form1.Camera_Show();
+        }
+        //ここまでで1セット
+
     }
 }
