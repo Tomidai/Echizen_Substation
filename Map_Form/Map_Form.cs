@@ -16,14 +16,16 @@ namespace Map_Form {
 
         //インスタンス固定
         Sensor snObj;
+        Control_Form cfObj;
 
         //コンストラクタ
         public Map_Form() {
             InitializeComponent();
+            snObj = new Sensor(this);
+            cfObj = new Control_Form();
         }
 
         private void Map_Form_Load(object sender, EventArgs e) {
-            snObj = new Sensor(this);
             snObj.GetSensorInfo();
             //ロード時は設定ファイルを読み込む
             snObj.ChangeSensor(snObj.sensor01, Sensor_01, Properties.Resources.Sensor_Normal_01, Properties.Resources.Sensor_Lock_01,
@@ -370,15 +372,161 @@ namespace Map_Form {
         }
 
         //カメラ切り替えボタン処理
-        private void label10_MouseDown(object sender, MouseEventArgs e) {
-            label10.Image = Properties.Resources.camera_button_push;
+        //ここは後に処理を変更する必要あり
+        private void GotoCamera_Button1_MouseDown(object sender, MouseEventArgs e) {
+            GotoCamera_Button1.Image = Properties.Resources.camera_button_push;
         }
-        private void label10_MouseUp(object sender, MouseEventArgs e) {
-            label10.Image = Properties.Resources.camera_button_normal;
-            Control_Form form1 = new Control_Form();
-            form1.Camera_Show();
+        private void GotoCamera_Button1_MouseUp(object sender, MouseEventArgs e) {
+            GotoCamera_Button1.Image = Properties.Resources.camera_button_normal;
+            cfObj.Camera_Show();
         }
-        //ここまでで1セット
 
+        private void GotoCamera_Button2_MouseDown(object sender, MouseEventArgs e) {
+            GotoCamera_Button2.Image = Properties.Resources.camera_button_push;
+        }
+        private void GotoCamera_Button2_MouseUp(object sender, MouseEventArgs e) {
+            GotoCamera_Button2.Image = Properties.Resources.camera_button_normal;
+            cfObj.Camera_Show();
+        }
+
+        private void GotoCamera_Button3_MouseDown(object sender, MouseEventArgs e) {
+            GotoCamera_Button3.Image = Properties.Resources.camera_button_push;
+        }
+        private void GotoCamera_Button3_MouseUp(object sender, MouseEventArgs e) {
+            GotoCamera_Button3.Image = Properties.Resources.camera_button_normal;
+            cfObj.Camera_Show();
+        }
+
+        private void GotoCamera_Button4_MouseDown(object sender, MouseEventArgs e) {
+            GotoCamera_Button4.Image = Properties.Resources.camera_button_push;
+        }
+        private void GotoCamera_Button4_MouseUp(object sender, MouseEventArgs e) {
+            GotoCamera_Button4.Image = Properties.Resources.camera_button_normal;
+            cfObj.Camera_Show();
+        }
+
+        private void GotoCamera_Button5_MouseDown(object sender, MouseEventArgs e) {
+            GotoCamera_Button5.Image = Properties.Resources.camera_button_push;
+        }
+        private void GotoCamera_Button5_MouseUp(object sender, MouseEventArgs e) {
+            GotoCamera_Button5.Image = Properties.Resources.camera_button_normal;
+            cfObj.Camera_Show();
+        }
+
+        private void GotoCamera_Button6_MouseDown(object sender, MouseEventArgs e) {
+            GotoCamera_Button6.Image = Properties.Resources.camera_button_push;
+        }
+        private void GotoCamera_Button6_MouseUp(object sender, MouseEventArgs e) {
+            GotoCamera_Button6.Image = Properties.Resources.camera_button_normal;
+            cfObj.Camera_Show();
+        }
+
+        private void GotoCamera_Button7_MouseDown(object sender, MouseEventArgs e) {
+            GotoCamera_Button7.Image = Properties.Resources.camera_button_push;
+        }
+        private void GotoCamera_Button7_MouseUp(object sender, MouseEventArgs e) {
+            GotoCamera_Button7.Image = Properties.Resources.camera_button_normal;
+            cfObj.Camera_Show();
+        }
+
+        private void GotoCamera_Button8_MouseDown(object sender, MouseEventArgs e) {
+            GotoCamera_Button8.Image = Properties.Resources.camera_button_push;
+        }
+        private void GotoCamera_Button8_MouseUp(object sender, MouseEventArgs e) {
+            GotoCamera_Button8.Image = Properties.Resources.camera_button_normal;
+            cfObj.Camera_Show();
+        }
+
+        //カメラアイコンクリックの処理
+        private void Camera_01_Click(object sender, EventArgs e) {
+            cfObj.Camera_Show();
+        }
+
+        private void Camera_02_Click(object sender, EventArgs e) {
+            cfObj.Camera_Show();
+        }
+
+        private void Camera_03_Click(object sender, EventArgs e) {
+            cfObj.Camera_Show();
+        }
+
+        private void Camera_04_Click(object sender, EventArgs e) {
+            cfObj.Camera_Show();
+        }
+
+        private void Camera_05_Click(object sender, EventArgs e) {
+            cfObj.Camera_Show();
+        }
+
+        private void Camera_06_Click(object sender, EventArgs e) {
+            cfObj.Camera_Show();
+        }
+
+        private void Camera_07_Click(object sender, EventArgs e) {
+            cfObj.Camera_Show();
+        }
+
+        private void Camera_08_Click(object sender, EventArgs e) {
+            cfObj.Camera_Show();
+        }
+
+        //センサー一括ロック/解除の処理
+        private void SensorLock500_on_MouseDown(object sender, MouseEventArgs e) {
+            SensorLock500_on.Image = Properties.Resources.electrical_button_push;
+        }
+        private void SensorLock500_on_MouseUp(object sender, MouseEventArgs e) {
+            SensorLock500_on.Image = Properties.Resources.electrical_button_normal;
+            //ここに処理を描く
+            string[] setPath = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
+            for(int line = 0; line < 13; line++) {
+                string[] changeLine = setPath[line].Split(',');
+                changeLine[1] = "1";
+                setPath[line] = string.Join(",", changeLine);
+            }
+            using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SettingPath"], false)) {
+                for (int i = 0; i < setPath.Length; i++) {
+                    sw.WriteLine(setPath[i]);
+                }
+            }
+            //一気にファイルを変更しないとエラーが発生してしまう。
+            //ファイル書き換えの部分をどうするか
+        }
+
+        private void SensorLock500_off_MouseDown(object sender, MouseEventArgs e) {
+            SensorLock500_off.Image = Properties.Resources.electrical_button_push;
+        }
+        private void SensorLock500_off_MouseUp(object sender, MouseEventArgs e) {
+            SensorLock500_off.Image = Properties.Resources.electrical_button_normal;
+            //ここに処理を書く
+            SensorLock500_on.Image = Properties.Resources.electrical_button_normal;
+            //ここに処理を描く
+            string[] setPath = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
+            for (int line = 0; line < 13; line++) {
+                string[] changeLine = setPath[line].Split(',');
+                changeLine[1] = "0";
+                setPath[line] = string.Join(",", changeLine);
+            }
+            using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SettingPath"], false)) {
+                for (int i = 0; i < setPath.Length; i++) {
+                    sw.WriteLine(setPath[i]);
+                }
+            }
+        }
+
+        private void SensorLock77_on_MouseDown(object sender, MouseEventArgs e) {
+            SensorLock77_on.Image = Properties.Resources.electrical_button_push;
+        }
+        private void SensorLock77_on_MouseUp(object sender, MouseEventArgs e) {
+            SensorLock77_on.Image = Properties.Resources.electrical_button_normal;           
+            //ここに処理を書く
+        }
+
+        private void SensorLock77_off_MouseDown(object sender, MouseEventArgs e) {
+            SensorLock77_off.Image = Properties.Resources.electrical_button_push;
+        }
+        private void SensorLock77_off_MouseUp(object sender, MouseEventArgs e) {
+            SensorLock77_off.Image = Properties.Resources.electrical_button_normal;
+            //ここに処理を書く
+        }
     }
 }

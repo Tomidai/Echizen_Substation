@@ -78,7 +78,7 @@ namespace Map_Form {
         }
 
         //Receiveファイルが変更されたら発生するイベント
-        public async void Changed(object source, FileSystemEventArgs e) {
+        public void Changed(object source, FileSystemEventArgs e) {
             //センサーからの情報受信
             if(e.FullPath == ConfigurationManager.AppSettings["ReceivePath"]) {
                 using (StreamReader sr = new StreamReader(ConfigurationManager.AppSettings["ReceivePath"])) {
