@@ -586,4 +586,55 @@
   <data name="cont_b0171" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cont_b0171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="camera_button_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\camera_button_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="camera_button_push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\camera_button_push.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="control_menu_bar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\control_menu_bar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electrical_button_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electrical_button_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="electrical_button_push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\electrical_button_push.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit_button_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit_button_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exit_button_push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit_button_push.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fault_button_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fault_button_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fault_button_push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fault_button_push.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logs_button_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logs_button_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logs_button_push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logs_button_push.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mute_button_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mute_button_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mute_button_push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mute_button_push.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restoration_button_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restoration_button_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="restoration_button_push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\restoration_button_push.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="setting_button_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setting_button_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="setting_button_push" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setting_button_push.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
