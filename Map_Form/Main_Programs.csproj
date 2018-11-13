@@ -100,6 +100,7 @@
     <Compile Include="SensorSettings_Form.Designer.cs">
       <DependentUpon>SensorSettings_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="test.cs" />
     <EmbeddedResource Include="Camera_Form.resx">
       <DependentUpon>Camera_Form.cs</DependentUpon>
     </EmbeddedResource>
