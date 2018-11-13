@@ -13,9 +13,7 @@ namespace Map_Form {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Camera_Form());
-            //Application.Run(new Map_Form());
-           // Application.Run(new Control_Form());
+            Application.Run(new Control_Form());
         }
     }
 }
