@@ -16,116 +16,127 @@ namespace Map_Form {
 
         int camEnableNum = 0;
         public int F2State = 0;
-        private int[] camX = new int[8];
-        private int[] camY = new int[8];
-        private int VrOn = 0;
+        public int[] camX = new int[8];
+        public int[] camY = new int[8];
+        public int VrOn = 0;
 
-        private string[] camName = new string[8];          //camlistファイルからカメラ名称
-        private int[] camEnable = new int[8];              //camlistファイルからカメラ有効無効
-        private int[] camMapNo = new int[8];
-        private int[] camPosiX = new int[8];
-        private int[] camPosiY = new int[8];
-        private int[] camLabLong = new int[8];
-        private static string[] camIP = new string[8];
-        private int[] camEnc = new int[8];
-        private int[] blackLevel = new int[8];
-        private int[] camType = new int[8];
+        public string[] camName = new string[8];          //camlistファイルからカメラ名称
+        public int[] camEnable = new int[8];              //camlistファイルからカメラ有効無効
+        public int[] camMapNo = new int[8];
+        public int[] camPosiX = new int[8];
+        public int[] camPosiY = new int[8];
+        public int[] camLabLong = new int[8];
+        public static string[] camIP = new string[8];
+        public int[] camEnc = new int[8];
+        public int[] blackLevel = new int[8];
+        public int[] camType = new int[8];
 
-        private int NameChange = 0;
-        private int PreReg = 0;
+        public int NameChange = 0;
+        public int PreReg = 0;
 
-        private int Mode = 0;
+        public int Mode = 0;
 
-        private int camNo_01 = 0;
-        private int camNo_02 = 1;
-        private int camNo_03 = 2;
-        private int camNo_04 = 4;
+        public int camNo_01 = 0;
+        public int camNo_02 = 1;
+        public int camNo_03 = 2;
+        public int camNo_04 = 4;
 
-        private int moniMode = 0;
+        public int moniMode = 0;
+        public int settingMode = 0;
+
+        public string sensorCamFileName;
+
+        public int[,] sensorList = new int[19, 3];
+
+        public ComboBox[,] sensorListCombo = new ComboBox[19, 3];
 
 
 
-        private string prefile = @"C:\Users\oh\Desktop\preset\";
+
+        public string prefile = @"C:\Users\oh\Desktop\preset\";
         public static string path = "";
-        private int REC = 0;
-        private int[] encResetEnable = new int[8];         // 各拠点のファイルからカメラENCRESETの取得
-        private int[] camContEnable = new int[8];          // 各拠点のファイルからカメラ制御権の取得
-        private int[] camSetEnable = new int[8];　　　　   // 各拠点のファイルからカメラ可視権の取得
-        private int[] camSpEnable = new int[8];            // 各拠点のファイルからカメラスピーカーの取得
-        private Label[] camBtnLab = new Label[8];
-        private Label[] camIconLab = new Label[8];
-        private Label[] camNameLab = new Label[8];
-        private Label[] preNameLab = new Label[8];
-        private TextBox[] preNameTxt = new TextBox[8];
-        private Label[] hoseiLabel = new Label[8];
+        public int REC = 0;
+        public int[] encResetEnable = new int[8];         // 各拠点のファイルからカメラENCRESETの取得
+        public int[] camContEnable = new int[8];          // 各拠点のファイルからカメラ制御権の取得
+        public int[] camSetEnable = new int[8];　　　　   // 各拠点のファイルからカメラ可視権の取得
+        public int[] camSpEnable = new int[8];            // 各拠点のファイルからカメラスピーカーの取得
+        public Label[] camBtnLab = new Label[8];
+        public Label[] camIconLab = new Label[8];
+        public Label[] camNameLab = new Label[8];
+        public Label[] preNameLab = new Label[8];
+        public TextBox[] preNameTxt = new TextBox[8];
+        public Label[] hoseiLabel = new Label[8];
         public int basho = 0;
         public String[,] kyoten = new String[10, 5];
 
-        private char[] separator = { ' ', ',' };
-        private static char[] separator2 = { ' ', ':' };
-        private int Speed = 2;
+        public char[] separator = { ' ', ',' };
+        public static char[] separator2 = { ' ', ':' };
+        public int Speed = 2;
 
         static System.Timers.Timer myTimer = new System.Timers.Timer(9000);
 
         static bool exitFlag = false;
 
-        //   private FileSystemWatcher watcher = new FileSystemWatcher();
+        //   public FileSystemWatcher watcher = new FileSystemWatcher();
 
-        private int preTourokuState = 0;
+        public int preTourokuState = 0;
         public static int CamNo = 100;
-        private static string IP = "";
-        private static string URL = "";
-        private static string CUID = "";
-        private string Str01 = "cam_user_id=";
-        private string Str02 = "";
-        private string Str03 = "&camera_id=1&port_id=1&";
-        private string Str04 = "";
+        public static string IP = "";
+        public static string URL = "";
+        public static string CUID = "";
+        public string Str01 = "cam_user_id=";
+        public string Str02 = "";
+        public string Str03 = "&camera_id=1&port_id=1&";
+        public string Str04 = "";
 
 
-        private static int FlagEncLogIn = 0;
-        private static int FlagCamCont = 0;
+        public static int FlagEncLogIn = 0;
+        public static int FlagCamCont = 0;
 
-        private int Hosei = 1;
+        public int Hosei = 1;
 
         public static int RecOn = 0;
-        private String RecIP = "192.168.1.111";
-        private int timerTime = 10000;
+        public String RecIP = "192.168.1.111";
+        public int timerTime = 10000;
 
-        private int[] mapEnable = new int[5];
-        private string[] mapName = new string[5];
-        private string[] mapFile = new string[5];
-        private float[] mapNameFS = new float[5];
+        public int[] mapEnable = new int[5];
+        public string[] mapName = new string[5];
+        public string[] mapFile = new string[5];
+        public float[] mapNameFS = new float[5];
 
-        private Label[] mapBtnLab = new Label[5];
+        public Label[] mapBtnLab = new Label[5];
 
-        private int EncRST_ON = 0;
-        private String Pass = "";
+        public int EncRST_ON = 0;
+        public String Pass = "";
+
+        public string[] ComboName = new string[9];
 
 
-        private int s41X;
-        private int s41Y;
-        private int s41W;
-        private int s41H;
+        public int s41X;
+        public int s41Y;
+        public int s41W;
+        public int s41H;
 
-        private int s4LW;
+        public int s4LW;
 
-        private int s42X;
-        private int s42Y;
-        private int s42W;
-        private int s42H;
+        public int s42X;
+        public int s42Y;
+        public int s42W;
+        public int s42H;
 
-        private int s43X;
-        private int s43Y;
-        private int s43W;
-        private int s43H;
+        public int s43X;
+        public int s43Y;
+        public int s43W;
+        public int s43H;
 
-        private int s44X;
-        private int s44Y;
-        private int s44W;
-        private int s44H;
+        public int s44X;
+        public int s44Y;
+        public int s44W;
+        public int s44H;
 
-        private string[] patternName = new string[6];
-        private int[,] patternNo = new int[6, 4];
+        public string[] patternName = new string[6];
+        public int[,] patternNo = new int[6, 4];
+        public static Label recButton;
 
 
 
@@ -164,7 +175,9 @@ namespace Map_Form {
 
 
             setUP();
-
+            groupBox3.Visible = false;
+            groupBox4.Visible = false;
+            comboBoxSet();
 
 
             ImageList imageList01 = new ImageList();
@@ -208,7 +221,7 @@ namespace Map_Form {
 
 
 
-        private void treeView1_AfterSelect(object sender, TreeViewEventArgs e) {
+        public void treeView1_AfterSelect(object sender, TreeViewEventArgs e) {
             int a = 0;
             int b = 0;
 
@@ -232,9 +245,15 @@ namespace Map_Form {
 
             if (Mode == 0) {
                 if (a == 1) {
-                    setLocation_1();
+                    if (settingMode == 0)
+                    {
+                        setLocation_1();
+                    }
                 } else if (a == 2) {
-                    setLocation_4();
+                    if (settingMode == 0)
+                    {
+                        setLocation_4();
+                    }
                 }
 
             } else {
@@ -242,259 +261,863 @@ namespace Map_Form {
 
 
             }
+            if (settingMode == 0)
+            {
+                camSelect(0);     //選択されてるときのカメラの枠を非選択に戻す。
+                setBrowser(a, b);
+            }
+            else
+            {
 
-            camSelect(0);
-            setBrowser(a, b);
+                if(a == 1)
+                {
+                    camSelect(0);     //選択されてるときのカメラの枠を非選択に戻す。
+                    setBrowser(2, b);
+                }
+                else
+                {
+
+                }
+            }
 
 
         }
 
-        private void Form1_Load(object sender, EventArgs e) {
+        public void Form1_Load(object sender, EventArgs e) {
 
         }
 
-        private void webBrowser4_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e) {
+        public void webBrowser4_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e) {
 
         }
 
 
-        private void trackBar1_ValueChanged(object sender, EventArgs e) {
+        public void trackBar1_ValueChanged(object sender, EventArgs e) {
 
             Speed = trackBar1.Value + 1;
-
-
         }
-        private void label1_Click(object sender, EventArgs e) {
+        public void label1_Click(object sender, EventArgs e) {
             camSelect(1);
         }
-        private void label2_Click(object sender, EventArgs e) {
+        public void label2_Click(object sender, EventArgs e) {
             camSelect(2);
         }
-        private void label3_Click(object sender, EventArgs e) {
+        public void label3_Click(object sender, EventArgs e) {
             camSelect(3);
         }
-        private void label4_Click(object sender, EventArgs e) {
+        public void label4_Click(object sender, EventArgs e) {
             camSelect(4);
         }
 
 
-
-
         /// /// //  ↑  上
-        private void btn_cnt_UP_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_cnt_UP_MouseDown(object sender, MouseEventArgs e) {
             this.btn_cnt_UP.Image = Properties.Resources.cont_b002X;
             ComTX(1);
         }
 
-        private void btn_cnt_UP_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_cnt_UP_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_UP.Image = Properties.Resources.cont_b002;
             ComTX(0);
 
         }
 
         /// /// //  ↑→  右上
-        private void btn_cnt_RU_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_cnt_RU_MouseDown(object sender, MouseEventArgs e) {
             this.btn_cnt_RU.Image = Properties.Resources.cont_b003X;
             ComTX(2);
         }
 
-        private void btn_cnt_RU_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_cnt_RU_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_RU.Image = Properties.Resources.cont_b003;
             ComTX(0);
         }
 
         /// /// //  →　右
-        private void btn_cnt_RI_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_cnt_RI_MouseDown(object sender, MouseEventArgs e) {
             this.btn_cnt_RI.Image = Properties.Resources.cont_b006X;
             ComTX(3);
         }
 
-        private void btn_cnt_RI_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_cnt_RI_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_RI.Image = Properties.Resources.cont_b006;
             ComTX(0);
         }
 
-
         /// /// //  →　右下
-        private void btn_cnt_RD_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_cnt_RD_MouseDown(object sender, MouseEventArgs e) {
             this.btn_cnt_RD.Image = Properties.Resources.cont_b009X;
             ComTX(4);
         }
 
-        private void btn_cnt_RD_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_cnt_RD_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_RD.Image = Properties.Resources.cont_b009;
             ComTX(0);
         }
 
-
         /// /// //  →　下
-        private void btn_cnt_DW_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_cnt_DW_MouseDown(object sender, MouseEventArgs e) {
             this.btn_cnt_DW.Image = Properties.Resources.cont_b008X;
             ComTX(5);
         }
 
-        private void btn_cnt_DW_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_cnt_DW_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_DW.Image = Properties.Resources.cont_b008;
             ComTX(0);
         }
 
-
         /// /// //  ←↓　　左下
-        private void btn_cnt_LD_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_cnt_LD_MouseDown(object sender, MouseEventArgs e) {
             this.btn_cnt_LD.Image = Properties.Resources.cont_b007X;
             ComTX(6);
         }
 
-        private void btn_cnt_LD_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_cnt_LD_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_LD.Image = Properties.Resources.cont_b007;
             ComTX(0);
         }
 
         /// /// //  ←  左
-        private void btn_cnt_LF_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_cnt_LF_MouseDown(object sender, MouseEventArgs e) {
             this.btn_cnt_LF.Image = Properties.Resources.cont_b004X;
             ComTX(7);
         }
 
-        private void btn_cnt_LF_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_cnt_LF_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_LF.Image = Properties.Resources.cont_b004;
             ComTX(0);
         }
 
         /// /// //  ↑←  左上
-        private void btn_cnt_LU_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_cnt_LU_MouseDown(object sender, MouseEventArgs e) {
             this.btn_cnt_LU.Image = Properties.Resources.cont_b001X;
             ComTX(8);
         }
 
-        private void btn_cnt_LU_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_cnt_LU_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_LU.Image = Properties.Resources.cont_b001;
             ComTX(0);
         }
 
         /// /// //  オートフォーカス
-        private void btn_cnt_AF_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_cnt_AF_MouseDown(object sender, MouseEventArgs e) {
             this.btn_cnt_AF.Image = Properties.Resources.cont_b005X;
             ComTX(12);
         }
 
-        private void btn_cnt_AF_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_cnt_AF_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_AF.Image = Properties.Resources.cont_b005;
             ComTX(0);
         }
 
         /// /// //  ズームUP
-        private void btn_cnt_ZU_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_cnt_ZU_MouseDown(object sender, MouseEventArgs e) {
             this.btn_cnt_ZU.Image = Properties.Resources.cont_b012X;
             ComTX(10);
         }
 
-        private void btn_cnt_ZU_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_cnt_ZU_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_ZU.Image = Properties.Resources.cont_b012;
             ComTX(0);
         }
 
         /// /// //  ズームOUT
-        private void btn_cnt_ZO_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_cnt_ZO_MouseDown(object sender, MouseEventArgs e) {
             this.btn_cnt_ZO.Image = Properties.Resources.cont_b013X;
             ComTX(11);
         }
 
-        private void btn_cnt_ZO_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_cnt_ZO_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_ZO.Image = Properties.Resources.cont_b013;
             ComTX(0);
         }
 
         /// /// //  フォーカスUP
-        private void btn_cnt_FU_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_cnt_FU_MouseDown(object sender, MouseEventArgs e) {
             this.btn_cnt_FU.Image = Properties.Resources.cont_b012X;
             ComTX(13);
         }
 
-        private void btn_cnt_FU_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_cnt_FU_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_FU.Image = Properties.Resources.cont_b012;
             ComTX(0);
         }
 
         /// /// //  フォーカスDW
-        private void btn_cnt_FD_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_cnt_FD_MouseDown(object sender, MouseEventArgs e) {
             this.btn_cnt_FD.Image = Properties.Resources.cont_b013X;
             ComTX(14);
         }
 
-        private void btn_cnt_FD_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_cnt_FD_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_FD.Image = Properties.Resources.cont_b013;
             ComTX(0);
         }
 
-
-
-        private void btn_pre001_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_pre001_MouseDown(object sender, MouseEventArgs e) {
 
             presetMove(1);
         }
 
-        private void btn_pre001_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_pre001_MouseUp(object sender, MouseEventArgs e) {
             presetMove(11);
         }
 
-        private void btn_pre002_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_pre002_MouseDown(object sender, MouseEventArgs e) {
             presetMove(2);
         }
 
-        private void btn_pre002_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_pre002_MouseUp(object sender, MouseEventArgs e) {
             presetMove(12);
         }
 
-        private void btn_pre003_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_pre003_MouseDown(object sender, MouseEventArgs e) {
             presetMove(3);
         }
 
-        private void btn_pre003_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_pre003_MouseUp(object sender, MouseEventArgs e) {
             presetMove(13);
         }
 
-        private void btn_pre004_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_pre004_MouseDown(object sender, MouseEventArgs e) {
             presetMove(4);
         }
 
-        private void btn_pre004_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_pre004_MouseUp(object sender, MouseEventArgs e) {
             presetMove(14);
         }
 
-        private void btn_pre005_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_pre005_MouseDown(object sender, MouseEventArgs e) {
             presetMove(5);
         }
 
-        private void btn_pre005_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_pre005_MouseUp(object sender, MouseEventArgs e) {
             presetMove(15);
         }
 
-        private void btn_pre006_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_pre006_MouseDown(object sender, MouseEventArgs e) {
             presetMove(6);
         }
 
-        private void btn_pre006_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_pre006_MouseUp(object sender, MouseEventArgs e) {
             presetMove(16);
         }
 
-        private void btn_pre007_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_pre007_MouseDown(object sender, MouseEventArgs e) {
             presetMove(7);
         }
 
-        private void btn_pre007_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_pre007_MouseUp(object sender, MouseEventArgs e) {
             presetMove(17);
         }
 
-        private void btn_pre008_MouseDown(object sender, MouseEventArgs e) {
+        public void btn_pre008_MouseDown(object sender, MouseEventArgs e) {
             presetMove(8);
         }
 
-        private void btn_pre008_MouseUp(object sender, MouseEventArgs e) {
+        public void btn_pre008_MouseUp(object sender, MouseEventArgs e) {
             presetMove(18);
         }
 
-        private void presetMove(int a) {
+        public void label1_DoubleClick(object sender, EventArgs e)
+        {
+            if (moniMode == 4)
+            {
+                camSelect(11);
+                Mode = 1;
+            }
+        }
+
+        public void label2_DoubleClick(object sender, EventArgs e)
+        {
+            if (moniMode == 4)
+            {
+                camSelect(22);
+                Mode = 2;
+            }
+        }
+
+        public void label3_DoubleClick(object sender, EventArgs e)
+        {
+            if (moniMode == 4)
+            {
+                camSelect(33);
+                Mode = 3;
+            }
+        }
+
+        public void label4_DoubleClick(object sender, EventArgs e)
+        {
+            if (moniMode == 4)
+            {
+                camSelect(44);
+                Mode = 4;
+            }
+
+        }
+
+        public void btn_map_Click(object sender, EventArgs e)
+        {
+            Control_Form cfObj = new Control_Form();
+            cfObj.Map_Show();
+        }
+
+        public void btn_rec_Click(object sender, EventArgs e)
+        {
+
+            //    setLocation_1();
+            //    setBrowser(3, 0);
+            if (RecOn == 0)
+            {
+                RecView recView = new RecView(this, RecIP);
+                recView.StartPosition = FormStartPosition.CenterScreen;
+                recView.Show();
+                RecOn = 1;
+                this.btn_rec.Image = Properties.Resources.cont_b017X;
+                recButton = btn_rec;
+            }
+        }
+
+        private void btn_presetMoveReg_Click(object sender, EventArgs e)
+        {
+            if (settingMode == 0)
+            {
+                this.btn_presetMoveReg.Image = global::Map_Form.Properties.Resources.cont_b018X;
+                settingMode = 1;
+                settingModeOnOff();
+                sensorCamSetFileRead();
+            }
+            else
+            {
+                this.btn_presetMoveReg.Image = global::Map_Form.Properties.Resources.cont_b018;
+                settingMode = 0;
+                settingModeOnOff();
+            }
+        }
+
+        public void btn_preNameChange_Click(object sender, EventArgs e)
+        {
+            if (NameChange == 0)
+            {
+                NameChange = 1;
+                this.btn_preNameChange.Image = Properties.Resources.cont_b014X;
+                preNameChange();
+            }
+            else
+            {
+                NameChange = 0;
+                this.btn_preNameChange.Image = Properties.Resources.cont_b014;
+                preNameChange();
+            }
+        }
+
+        public void btn_preReg_Click(object sender, EventArgs e)
+        {
+            if (PreReg == 0)
+            {
+                PreReg = 1;
+                this.btn_preReg.Image = Properties.Resources.cont_b015X;
+
+            }
+            else
+            {
+                PreReg = 0;
+                this.btn_preReg.Image = Properties.Resources.cont_b015;
+
+            }
+
+        }
+
+
+        //1
+        private void btn_s01Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s01Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(1);
+        }
+
+        private void btn_s01Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s01Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //2
+        private void btn_s02Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s02Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(2);
+        }
+
+        private void btn_s02Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s02Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //3
+        private void btn_s03Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s03Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(3);
+        }
+
+        private void btn_s03Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s03Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //4
+        private void btn_s04Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s04Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(4);
+        }
+
+        private void btn_s04Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s04Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //5
+        private void btn_s05Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s05Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(5);
+
+        }
+
+        private void btn_s05Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s05Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //6
+        private void btn_s06Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s06Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(6);
+        }
+
+        private void btn_s06Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s06Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //7
+        private void btn_s07Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s07Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(7);
+        }
+
+        private void btn_s07Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s07Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //8
+        private void btn_s08Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s08Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(8);
+        }
+
+        private void btn_s08Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s08Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //9
+        private void btn_s09Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s09Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(9);
+        }
+
+        private void btn_s09Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s09Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //10
+        private void btn_s10Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s10Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(10);
+        }
+
+        private void btn_s10Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s10Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //11
+        private void btn_s11Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s11Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(11);
+        }
+
+        private void btn_s11Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s11Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //12
+        private void btn_s12Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s12Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(12);
+        }
+
+        private void btn_s12Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s12Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //13
+        private void btn_s13Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s13Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(13);
+        }
+
+        private void btn_s13Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s13Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //14
+        private void btn_s14Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s14Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(14);
+        }
+
+        private void btn_s14Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s14Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //15
+        private void btn_s15Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s15Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(15);
+        }
+
+        private void btn_s15Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s15Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //16
+        private void btn_s16Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s16Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(16);
+        }
+
+        private void btn_s16Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s16Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //17
+        private void btn_s17Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s17Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(17);
+        }
+
+        private void btn_s17Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s17Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+        //18
+        private void btn_s18Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s18Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(18);
+        }
+
+        private void btn_s18Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s18Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+
+        //19
+        private void btn_s19Reg_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s19Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetReg(19);
+        }
+
+        private void btn_s19Reg_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s19Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+
+
+        //MOVE
+        //1
+        private void btn_s01Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s01Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(1);
+        }
+
+        private void btn_s01Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s01Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //2
+        private void btn_s02Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s02Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(2);
+        }
+
+        private void btn_s02Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s02Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //3
+        private void btn_s03Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s03Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(3);
+        }
+
+        private void btn_s03Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s03Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //4
+        private void btn_s04Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s04Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(4);
+        }
+
+        private void btn_s04Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s04Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //5
+        private void btn_s05Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s05Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(5);
+        }
+
+        private void btn_s05Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s05Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //6
+        private void btn_s06Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s06Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(6);
+        }
+
+        private void btn_s06Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s06Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //7
+        private void btn_s07Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s07Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(7);
+        }
+
+        private void btn_s07Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s07Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //8
+        private void btn_s08Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s08Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(8);
+        }
+
+        private void btn_s08Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s08Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //9
+        private void btn_s09Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s09Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(9);
+        }
+
+        private void btn_s09Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s09Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //10
+        private void btn_s10Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s10Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(10);
+        }
+
+        private void btn_s10Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s10Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //11
+        private void btn_s11Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s11Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(11);
+        }
+
+        private void btn_s11Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s11Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //12
+        private void btn_s12Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s12Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(12);
+        }
+
+        private void btn_s12Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s12Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //13
+        private void btn_s13Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s13Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(13);
+        }
+
+        private void btn_s13Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s13Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //14
+        private void btn_s14Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s14Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(14);
+        }
+
+        private void btn_s14Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s14Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //15
+        private void btn_s15Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s15Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(15);
+        }
+
+        private void btn_s15Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s15Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //16
+        private void btn_s16Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s16Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(16);
+        }
+
+        private void btn_s16Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s16Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //17
+        private void btn_s17Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s17Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(17);
+        }
+
+        private void btn_s17Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s17Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+        
+        //18
+        private void btn_s18Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s18Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(18);
+        }
+
+        private void btn_s18Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s18Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+        //19
+        private void btn_s19Move_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.btn_s19Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorPrisetMove(19);
+        }
+
+        private void btn_s19Move_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.btn_s19Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+
+        /// ///////   こっから自作メソッド
+
+
+
+
+
+        public void presetMove(int a) {
             if (PreReg == 0) {
                 if (a == 1) {
                     this.btn_pre001.Image = Properties.Resources.cont_pre001X;
@@ -592,33 +1215,6 @@ namespace Map_Form {
 
 
         }
-
-        private void btn_preNameChange_Click(object sender, EventArgs e) {
-            if (NameChange == 0) {
-                NameChange = 1;
-                this.btn_preNameChange.Image = Properties.Resources.cont_b014X;
-                preNameChange();
-            } else {
-                NameChange = 0;
-                this.btn_preNameChange.Image = Properties.Resources.cont_b014;
-                preNameChange();
-            }
-        }
-
-        private void btn_preReg_Click(object sender, EventArgs e) {
-            if (PreReg == 0) {
-                PreReg = 1;
-                this.btn_preReg.Image = Properties.Resources.cont_b015X;
-
-            } else {
-                PreReg = 0;
-                this.btn_preReg.Image = Properties.Resources.cont_b015;
-
-            }
-
-        }
-
-
 
         public void preNameChange() {
             if (NameChange == 1) {
@@ -963,8 +1559,205 @@ namespace Map_Form {
                         Dir = "aux_para1_out_value=2";
                     }
                     Str04 = "";
+                } else if(X == 60)
+                {
+                    Dir = "preset_move=10";
+                    Str04 = "";
                 }
-
+                else if (X == 61)
+                {
+                    Dir = "preset_move=11";
+                    Str04 = "";
+                }
+                else if (X == 62)
+                {
+                    Dir = "preset_move=12";
+                    Str04 = "";
+                }
+                else if (X == 63)
+                {
+                    Dir = "preset_move=13";
+                    Str04 = "";
+                }
+                else if (X == 64)
+                {
+                    Dir = "preset_move=14";
+                    Str04 = "";
+                }
+                else if (X == 65)
+                {
+                    Dir = "preset_move=15";
+                    Str04 = "";
+                }
+                else if (X == 66)
+                {
+                    Dir = "preset_move=16";
+                    Str04 = "";
+                }
+                else if (X == 67)
+                {
+                    Dir = "preset_move=17";
+                    Str04 = "";
+                }
+                else if (X == 68)
+                {
+                    Dir = "preset_move=18";
+                    Str04 = "";
+                }
+                else if (X == 69)
+                {
+                    Dir = "preset_move=19";
+                    Str04 = "";
+                }
+                else if (X == 70)
+                {
+                    Dir = "preset_move=20";
+                    Str04 = "";
+                }
+                else if (X == 71)
+                {
+                    Dir = "preset_move=21";
+                    Str04 = "";
+                }
+                else if (X == 72)
+                {
+                    Dir = "preset_move=22";
+                    Str04 = "";
+                }
+                else if (X == 73)
+                {
+                    Dir = "preset_move=23";
+                    Str04 = "";
+                }
+                else if (X == 74)
+                {
+                    Dir = "preset_move=24";
+                    Str04 = "";
+                }
+                else if (X == 75)
+                {
+                    Dir = "preset_move=25";
+                    Str04 = "";
+                }
+                else if (X == 76)
+                {
+                    Dir = "preset_move=26";
+                    Str04 = "";
+                }
+                else if (X == 77)
+                {
+                    Dir = "preset_move=27";
+                    Str04 = "";
+                }
+                else if (X == 78)
+                {
+                    Dir = "preset_move=28";
+                    Str04 = "";
+                }
+                else if (X == 79)
+                {
+                    Dir = "preset_move=29";
+                    Str04 = "";
+                }else if (X == 80)
+                {
+                    Dir = "preset_memory=10";
+                    Str04 = "";
+                }
+                else if (X == 81)
+                {
+                    Dir = "preset_memory=11";
+                    Str04 = "";
+                }
+                else if (X == 82)
+                {
+                    Dir = "preset_memory=12";
+                    Str04 = "";
+                }
+                else if (X == 83)
+                {
+                    Dir = "preset_memory=13";
+                    Str04 = "";
+                }
+                else if (X == 84)
+                {
+                    Dir = "preset_memory=14";
+                    Str04 = "";
+                }
+                else if (X == 85)
+                {
+                    Dir = "preset_memory=15";
+                    Str04 = "";
+                }
+                else if (X == 86)
+                {
+                    Dir = "preset_memory=16";
+                    Str04 = "";
+                }
+                else if (X == 87)
+                {
+                    Dir = "preset_memory=17";
+                    Str04 = "";
+                }
+                else if (X == 88)
+                {
+                    Dir = "preset_memory=18";
+                    Str04 = "";
+                }
+                else if (X == 89)
+                {
+                    Dir = "preset_memory=19";
+                    Str04 = "";
+                }
+                else if (X == 90)
+                {
+                    Dir = "preset_memory=20";
+                    Str04 = "";
+                }
+                else if (X == 91)
+                {
+                    Dir = "preset_memory=21";
+                    Str04 = "";
+                }
+                else if (X == 92)
+                {
+                    Dir = "preset_memory=22";
+                    Str04 = "";
+                }
+                else if (X == 93)
+                {
+                    Dir = "preset_memory=23";
+                    Str04 = "";
+                }
+                else if (X == 94)
+                {
+                    Dir = "preset_memory=24";
+                    Str04 = "";
+                }
+                else if (X == 95)
+                {
+                    Dir = "preset_memory=25";
+                    Str04 = "";
+                }
+                else if (X == 96)
+                {
+                    Dir = "preset_memory=26";
+                    Str04 = "";
+                }
+                else if (X == 97)
+                {
+                    Dir = "preset_memory=27";
+                    Str04 = "";
+                }
+                else if (X == 98)
+                {
+                    Dir = "preset_memory=28";
+                    Str04 = "";
+                }
+                else if (X == 99)
+                {
+                    Dir = "preset_memory=29";
+                    Str04 = "";
+                }
 
                 //Str01 = "cam_user_id=";
                 //Str02 = "";
@@ -1103,7 +1896,7 @@ namespace Map_Form {
             }
         }
 
-        private void setUP() {
+        public void setUP() {
             iniFileRead();
 
             camListFileRead();
@@ -1133,7 +1926,7 @@ namespace Map_Form {
 
         }
 
-        private void preFileRead() {
+        public void preFileRead() {
             string line = "";
 
             if (CamNo < 100) {
@@ -1177,7 +1970,7 @@ namespace Map_Form {
             }
         }
 
-        private void iniFileRead() {
+        public void iniFileRead() {
             string line = "";
             try {
                 FileStream fs = new FileStream("set.ini", FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
@@ -1207,7 +2000,7 @@ namespace Map_Form {
                     } else if (index == 4) {
                         RecIP = words[1];
                     } else if (index == 5) {
-                        timerTime = int.Parse(words[1]);
+                        sensorCamFileName = words[1];
                     } else if (index == 6) {
                         Pass = words[1];
                     }
@@ -1220,197 +2013,8 @@ namespace Map_Form {
             }
 
         }
-        /*
-                private void kyotenFileRead()
-                {
-                    string line = "";
 
-                    try
-                    {
-                        FileStream fs = new FileStream(path + "kyoten.csv", FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
-                        StreamReader sr = new StreamReader(fs, Encoding.GetEncoding("shift_jis"));
-
-                        int index = 0;
-
-                        while ((line = sr.ReadLine()) != null)
-                        {
-
-                            if (line.IndexOf("[") == 0)
-                            {
-                                index = 0;
-                            }
-
-                            if (index >= 1)
-                            {
-                                string[] words = line.Split(separator);
-                                kyoten[index - 1, 0] = words[1];
-                                kyoten[index - 1, 1] = words[2];
-                                kyoten[index - 1, 2] = words[3];
-                                kyoten[index - 1, 3] = words[4];
-                                kyoten[index - 1, 4] = words[5];
-                            }
-
-
-                            index++;
-
-
-                        }
-
-
-
-
-
-                    }
-                    catch
-                    {
-
-                    }
-
-
-                    //      ↓各拠点ファイルを読み込む
-
-
-                    this.Text = kyoten[basho - 1, 0];
-
-
-                    try
-                    {
-                        FileStream fs = new FileStream(path + kyoten[basho - 1, 1] + ".csv", FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
-                        StreamReader sr = new StreamReader(fs, Encoding.GetEncoding("shift_jis"));
-
-                        int index = 0;
-
-                        while ((line = sr.ReadLine()) != null)
-                        {
-
-                            if (line.IndexOf("[RecCont]") == 0)
-                            {
-                                string[] words = line.Split(separator);
-                                REC = int.Parse(words[1]);
-                            }
-
-                            if (line.IndexOf("[") == 0)
-                            {
-                                index = 0;
-                            }
-
-                            if (index >= 1)
-                            {
-                                string[] words = line.Split(separator);
-
-
-                                camContEnable[index - 1] = int.Parse(words[1]);
-                                camSetEnable[index - 1] = int.Parse(words[2]);
-                                encResetEnable[index - 1] = int.Parse(words[3]);
-                                camSpEnable[index - 1] = int.Parse(words[4]);
-
-
-                            }
-
-
-                            index++;
-
-
-                        }
-
-
-
-
-
-                    }
-                    catch
-                    {
-
-                    }
-
-
-                    //////  map.csvの読み込み部分   ///////
-
-                    try
-                    {
-                        FileStream fs = new FileStream(path + "map.csv", FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
-                        StreamReader sr = new StreamReader(fs, Encoding.GetEncoding("shift_jis"));
-
-                        int index = 0;
-
-                        while ((line = sr.ReadLine()) != null)
-                        {
-                            string[] words = line.Split(separator);
-
-                            if (index >= 1)
-                            {
-                                mapName[index - 1] = words[1];
-                                mapFile[index - 1] = words[2];
-                                mapEnable[index - 1] = int.Parse(words[3]);
-                                mapNameFS[index - 1] = float.Parse(words[4]);
-                            }
-
-
-                            ++index;
-                        }
-                    }
-                    catch
-                    {
-
-                    }
-
-
-
-        ///*
-                    if (REC == 0)
-                    {
-                        this.btnRec.Size = new System.Drawing.Size(0, 0);
-                    }
-                    else if (REC == 1)
-                    {
-                        this.btnRec.Size = new System.Drawing.Size(190, 50);
-                    }
-
-        //*/
-        /*
-
-                    for (int i = 0; i < camEnableNum; ++i)
-                    {
-                        if (camSetEnable[i] == 0)
-                        {
-                       //     camBtnLab[i].Visible = false;
-                       //     camIconLab[i].Visible = false;
-                       //     camNameLab[i].Visible = false;
-                        }
-                        else
-                        {
-                       //     camBtnLab[i].Visible = true;
-                       //     camIconLab[i].Visible = true;
-                       //     camNameLab[i].Visible = true;
-                        }
-                    }
-
-
-                    for (int i = 0; i < 5; ++i)
-                    {
-                        if (mapEnable[i] == 1)
-                        {
-                            // mapBtnLab[i].Text = mapName[i];
-                          ////  mapBtnLab[i].Font = new System.Drawing.Font("HGPｺﾞｼｯｸE", mapNameFS[i], System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-
-
-                        }
-                        else
-                        {
-                         //   mapBtnLab[i].Text = "";
-                         //   mapBtnLab[i].Enabled = false;
-                        }
-
-
-                    }
-
-
-
-                }
-
-        */
-
-        private void camListFileRead() {
+        public void camListFileRead() {
             string line = "";
 
             try {
@@ -1455,7 +2059,7 @@ namespace Map_Form {
 
         }
 
-        private void paternFileRead() {
+        public void paternFileRead() {
             string line = "";
 
             try {
@@ -1485,7 +2089,7 @@ namespace Map_Form {
 
         }
 
-        private void setLocation_4() {
+        public void setLocation_4() {
 
             moniMode = 4;
 
@@ -1596,7 +2200,7 @@ namespace Map_Form {
 
         }
 
-        private void setLocation_1() {
+        public void setLocation_1() {
             moniMode = 1;
 
             s41X = 216;
@@ -1660,7 +2264,7 @@ namespace Map_Form {
 
         }
 
-        private void camSelect(int a) {
+        public void camSelect(int a) {
 
 
             this.label1.BackColor = Color.DeepSkyBlue;
@@ -1744,7 +2348,7 @@ namespace Map_Form {
 
         }
 
-        private void setBrowser(int a, int b) {
+        public void setBrowser(int a, int b) {
 
             if (a == 1) {
                 if (Mode == 0) {
@@ -1758,7 +2362,7 @@ namespace Map_Form {
 
                     this.webBrowser1.Url = new Uri(path + @"camViewer\cam00" + (b + 1) + "X.html", UriKind.Absolute);
 
-
+                    
 
                     CamNo = b;
                     preFileRead();
@@ -1844,49 +2448,192 @@ namespace Map_Form {
             }
         }
 
-        private void label1_DoubleClick(object sender, EventArgs e) {
-            if (moniMode == 4) {
-                camSelect(11);
-                Mode = 1;
+        public void settingModeOnOff()
+        {
+            if (settingMode == 1)
+            {
+                setLocation_4();
+
+                this.label2.Visible = false;
+                this.webBrowser2.Visible = false;
+                this.cam002_left.Visible = false;
+                this.cam002_right.Visible = false;
+                this.cam002_down.Visible = false;
+
+                this.label3.Visible = false;
+                this.webBrowser3.Visible = false;
+                this.cam003_left.Visible = false;
+                this.cam003_right.Visible = false;
+                this.cam003_down.Visible = false;
+
+                this.label4.Visible = false;
+                this.webBrowser4.Visible = false;
+                this.cam004_left.Visible = false;
+                this.cam004_right.Visible = false;
+                this.cam004_down.Visible = false;
+
+                groupBox3.Visible = true;
+                groupBox4.Visible = true;
+            }
+            else
+            {
+                setLocation_1();
+                setBrowser(1, 0);
+                groupBox3.Visible = false;
+                groupBox4.Visible = false;
+
+            }
+
+
+
+        }
+
+        public void sensorPrisetReg(int i)
+        {
+            ComTX(i + 79);
+        }
+
+        public void sensorPrisetMove(int i)
+        {
+            ComTX(i + 59);
+        }
+
+        public void sensorCamSetFileRead()
+        {
+            try
+            {
+                FileStream fs = new FileStream(path + @"\" + sensorCamFileName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+                StreamReader sr = new StreamReader(fs, Encoding.GetEncoding("SHIFT_JIS"));
+                while(sr.Peek() > -1)
+                {
+                    string[] strD = sr.ReadLine().Split(',');
+
+
+                    sensorList[Int32.Parse(strD[0])-1, 0] = Int32.Parse(strD[1]);
+                    sensorList[Int32.Parse(strD[0])-1, 1] = Int32.Parse(strD[2]);
+                    sensorList[Int32.Parse(strD[0])-1, 2] = Int32.Parse(strD[3]);
+
+
+                }
+
+
+
+            }
+            catch
+            {
+
+            }
+
+
+            ComboName[0] = "なし";
+            for(int i = 0; i < 8; ++i)
+            {
+                ComboName[i + 1] = camName[i];
+            }
+
+
+
+            for (int i = 0; i < 19; ++i)
+            {
+                for (int j = 0; j < 3; ++j)
+                {
+                    for (int k = 0; k < 9; ++k)
+                    {
+                        sensorListCombo[i, j].Items.Add(ComboName[k]);
+                    }
+
+                    sensorListCombo[i, j].SelectedIndex = sensorList[i, j];
+
+                }
             }
         }
 
-        private void label2_DoubleClick(object sender, EventArgs e) {
-            if (moniMode == 4) {
-                camSelect(22);
-                Mode = 2;
-            }
+
+        public void comboBoxSet()
+        {
+
+            sensorListCombo[0, 0] = comboBox1;
+            sensorListCombo[0, 1] = comboBox2;
+            sensorListCombo[0, 2] = comboBox3;
+
+            sensorListCombo[1, 0] = comboBox4;
+            sensorListCombo[1, 1] = comboBox5;
+            sensorListCombo[1, 2] = comboBox6;
+
+            sensorListCombo[2, 0] = comboBox7;
+            sensorListCombo[2, 1] = comboBox8;
+            sensorListCombo[2, 2] = comboBox9;
+
+            sensorListCombo[3, 0] = comboBox10;
+            sensorListCombo[3, 1] = comboBox11;
+            sensorListCombo[3, 2] = comboBox12;
+
+            sensorListCombo[4, 0] = comboBox13;
+            sensorListCombo[4, 1] = comboBox14;
+            sensorListCombo[4, 2] = comboBox15;
+
+            sensorListCombo[5, 0] = comboBox16;
+            sensorListCombo[5, 1] = comboBox17;
+            sensorListCombo[5, 2] = comboBox18;
+
+            sensorListCombo[6, 0] = comboBox19;
+            sensorListCombo[6, 1] = comboBox20;
+            sensorListCombo[6, 2] = comboBox21;
+
+            sensorListCombo[7, 0] = comboBox22;
+            sensorListCombo[7, 1] = comboBox23;
+            sensorListCombo[7, 2] = comboBox24;
+
+            sensorListCombo[8, 0] = comboBox25;
+            sensorListCombo[8, 1] = comboBox26;
+            sensorListCombo[8, 2] = comboBox27;
+
+            sensorListCombo[9, 0] = comboBox28;
+            sensorListCombo[9, 1] = comboBox29;
+            sensorListCombo[9, 2] = comboBox30;
+
+            sensorListCombo[10, 0] = comboBox31;
+            sensorListCombo[10, 1] = comboBox32;
+            sensorListCombo[10, 2] = comboBox33;
+
+            sensorListCombo[11, 0] = comboBox34;
+            sensorListCombo[11, 1] = comboBox35;
+            sensorListCombo[11, 2] = comboBox36;
+
+            sensorListCombo[12, 0] = comboBox37;
+            sensorListCombo[12, 1] = comboBox38;
+            sensorListCombo[12, 2] = comboBox39;
+
+            sensorListCombo[13, 0] = comboBox40;
+            sensorListCombo[13, 1] = comboBox41;
+            sensorListCombo[13, 2] = comboBox42;
+
+            sensorListCombo[14, 0] = comboBox43;
+            sensorListCombo[14, 1] = comboBox44;
+            sensorListCombo[14, 2] = comboBox45;
+
+            sensorListCombo[15, 0] = comboBox46;
+            sensorListCombo[15, 1] = comboBox47;
+            sensorListCombo[15, 2] = comboBox48;
+
+            sensorListCombo[16, 0] = comboBox49;
+            sensorListCombo[16, 1] = comboBox50;
+            sensorListCombo[16, 2] = comboBox51;
+
+            sensorListCombo[17, 0] = comboBox52;
+            sensorListCombo[17, 1] = comboBox53;
+            sensorListCombo[17, 2] = comboBox54;
+
+            sensorListCombo[18, 0] = comboBox55;
+            sensorListCombo[18, 1] = comboBox56;
+            sensorListCombo[18, 2] = comboBox57;
+
+
+
         }
 
-        private void label3_DoubleClick(object sender, EventArgs e) {
-            if (moniMode == 4) {
-                camSelect(33);
-                Mode = 3;
-            }
-        }
 
-        private void label4_DoubleClick(object sender, EventArgs e) {
-            if (moniMode == 4) {
-                camSelect(44);
-                Mode = 4;
-            }
-
-        }
-
-        private void btn_map_Click(object sender, EventArgs e) {
-            Control_Form cfObj = new Control_Form();
-            cfObj.Map_Show();
-        }
-
-        private void btn_rec_Click(object sender, EventArgs e) {
-
-            //    setLocation_1();
-            //    setBrowser(3, 0);
-
-            Form2 form2 = new Form2(this, RecIP);
-            form2.StartPosition = FormStartPosition.CenterScreen;
-            form2.Show();
-            RecOn = 1;
-        }
     }
+
+
 }

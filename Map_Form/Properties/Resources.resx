@@ -118,464 +118,473 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bg001" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg0011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="bg002" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg0021.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Camera_Action" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Camera_Action.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Camera_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Camera_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b001" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b001X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b001X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b002" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0021.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b002X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b002X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b003" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0031.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b003X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b003X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b004" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0041.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b004X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b004X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b005" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b005X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b005X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b006" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0061.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b006X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b006X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b007" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0071.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b007X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b007X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b008" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0081.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b008X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b008X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b009" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0091.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b009X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b009X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b010" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0101.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b011" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b012" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b012X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b012X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b013" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0131.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b013X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b013X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b014" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0141.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b014X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b014X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b015" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0151.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b015X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b015X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b016" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b016X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b016X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b017" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b0171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_b017X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_b017X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_pre001" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_pre0011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cont_pre001X" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cont_pre001X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sensor_Action_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sensor_Action_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sensor_Action_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sensor_Environ_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sensor_Action_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Action_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Action_19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cont_b002X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b002X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sensor_EnvironLock_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sensor_EnvironLock_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sensor_EnvironLock_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_EnvironLock_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_EnvironLock_19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Environ_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Environ_19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Failed_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Failed_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Sensor_Failed_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sensor_Failed_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sensor_Failed_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\センサー19Y-min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Lock_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Lock_19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sensor_Normal_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cont_b013X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b013X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sensor_Normal_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sensor_Normal_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sensor_Normal_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sensor_Normal_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cont_b007X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b007X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b009" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0091.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b012" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0121.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b009X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b009X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_pre001X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_pre001X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg0021.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b006" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0061.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b003X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b003X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b018" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b018.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b001X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b001X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b015" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0151.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b017" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b016X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b016X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="背景画像" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\背景画像.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b016" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b012X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b012X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b004" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0041.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b014" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0141.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b005" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0051.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b017X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b017X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sensor_Normal_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sensor_Normal_19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="背景画像" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\背景画像.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sensor_Action_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b014X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b014X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b002" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0021.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b018X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b018X.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_pre001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_pre0011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b010" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0101.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b008X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b008X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b003" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0031.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b008" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0081.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b015X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b015X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b004X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b004X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Failed_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b006X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b006X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Failed_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\センサー19Y-min.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b013" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0131.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b005X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b005X1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Camera_Normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Camera_Normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b007" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0071.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Environ_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Environ_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Action_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Action_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Lock_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Lock_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_EnvironLock_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_EnvironLock_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sensor_Normal_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sensor_Normal_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg0011.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cont_b0171" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cont_b0171.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="camera_button_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\camera_button_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

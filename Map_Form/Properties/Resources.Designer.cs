@@ -433,9 +433,39 @@ namespace Map_Form.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap cont_b0171 {
+            get {
+                object obj = ResourceManager.GetObject("cont_b0171", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap cont_b017X {
             get {
                 object obj = ResourceManager.GetObject("cont_b017X", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap cont_b018 {
+            get {
+                object obj = ResourceManager.GetObject("cont_b018", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap cont_b018X {
+            get {
+                object obj = ResourceManager.GetObject("cont_b018X", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
