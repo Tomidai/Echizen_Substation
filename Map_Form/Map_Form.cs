@@ -105,17 +105,6 @@ namespace Map_Form {
                 Properties.Resources.Sensor_EnvironLock_19);
         }
 
-        //アプリケーション終了
-        private void button15_Click(object sender, EventArgs e) {
-            Application.Exit();
-        }
-
-        //センサー設定ボタン
-        private void button5_Click(object sender, EventArgs e) {
-            SensorSettings_Form ssf = new SensorSettings_Form(this);
-            ssf.ShowDialog();
-        }
-
         //左クリックでセンサーロック/解除
         //またはアラーム復旧
         private void SensorClick_Left(PictureBox pic,int line,string str) {
@@ -194,7 +183,7 @@ namespace Map_Form {
                 }
                 //送りファイル書き換え
                 using(StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"],false)){
-                    sw.WriteLine(str + "0,1,0");
+                    sw.WriteLine(str + ",0,1,0");
                 }
             }else if((string)pic.Tag == "EnvironLock"){
                 //タグがEnvironLockの場合のみノーマルに戻る
@@ -211,10 +200,42 @@ namespace Map_Form {
                 }
                 //送りファイル書き換え
                 using(StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"],false)){
-                    sw.WriteLine(str + "0,0,0");
+                    sw.WriteLine(str + ",0,0,0");
                 }
             }else{
                 MessageBox.Show("センサーが通常状態か確認してください");
+            }
+        }
+
+        //一括処理のメソッド
+        private void BulkChange(int bigin, int end, string change,int set) {
+            string[] setPath = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
+            for (int line = bigin; line < end; line++) {
+                string[] changeLine = setPath[line].Split(',');
+                changeLine[set] = change;
+                setPath[line] = string.Join(",", changeLine);
+            }
+            using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SettingPath"], false)) {
+                //設定ファイル書き換え
+                for (int i = 0; i < setPath.Length; i++) {
+                    sw.WriteLine(setPath[i]);
+                }
+            }
+            using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false)) {
+                for (int line = bigin; line < end; line++) {
+                    //送りテキスト
+                    switch (set) {
+                        case 1:
+                            sw.WriteLine((line + 1).ToString("00") + "," + change + ",0,0");
+                            break;
+                        case 2:
+                            
+                            break;
+                        case 3:
+                            sw.WriteLine((line + 1).ToString("00") + ",0,0,1");
+                            break;
+                    }
+                }
             }
         }
 
@@ -476,20 +497,7 @@ namespace Map_Form {
         }
         private void SensorLock500_on_MouseUp(object sender, MouseEventArgs e) {
             SensorLock500_on.Image = Properties.Resources.electrical_button_normal;
-            //ここに処理を描く
-            string[] setPath = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
-            for(int line = 0; line < 13; line++) {
-                string[] changeLine = setPath[line].Split(',');
-                changeLine[1] = "1";
-                setPath[line] = string.Join(",", changeLine);
-            }
-            using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SettingPath"], false)) {
-                for (int i = 0; i < setPath.Length; i++) {
-                    sw.WriteLine(setPath[i]);
-                }
-            }
-            //一気にファイルを変更しないとエラーが発生してしまう。
-            //ファイル書き換えの部分をどうするか
+            BulkChange(0, 13, "1", 1);
         }
 
         private void SensorLock500_off_MouseDown(object sender, MouseEventArgs e) {
@@ -497,28 +505,15 @@ namespace Map_Form {
         }
         private void SensorLock500_off_MouseUp(object sender, MouseEventArgs e) {
             SensorLock500_off.Image = Properties.Resources.electrical_button_normal;
-            //ここに処理を書く
-            SensorLock500_on.Image = Properties.Resources.electrical_button_normal;
-            //ここに処理を描く
-            string[] setPath = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
-            for (int line = 0; line < 13; line++) {
-                string[] changeLine = setPath[line].Split(',');
-                changeLine[1] = "0";
-                setPath[line] = string.Join(",", changeLine);
-            }
-            using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SettingPath"], false)) {
-                for (int i = 0; i < setPath.Length; i++) {
-                    sw.WriteLine(setPath[i]);
-                }
-            }
+            BulkChange(0, 13, "0", 1);
         }
 
         private void SensorLock77_on_MouseDown(object sender, MouseEventArgs e) {
             SensorLock77_on.Image = Properties.Resources.electrical_button_push;
         }
         private void SensorLock77_on_MouseUp(object sender, MouseEventArgs e) {
-            SensorLock77_on.Image = Properties.Resources.electrical_button_normal;           
-            //ここに処理を書く
+            SensorLock77_on.Image = Properties.Resources.electrical_button_normal;
+            BulkChange(13, 19, "1", 1);
         }
 
         private void SensorLock77_off_MouseDown(object sender, MouseEventArgs e) {
@@ -526,7 +521,35 @@ namespace Map_Form {
         }
         private void SensorLock77_off_MouseUp(object sender, MouseEventArgs e) {
             SensorLock77_off.Image = Properties.Resources.electrical_button_normal;
-            //ここに処理を書く
+            BulkChange(13, 19, "0", 1);
+        }
+
+        //システム終了ボタン
+        private void ExitButton_MouseDown(object sender, MouseEventArgs e) {
+            ExitButton.Image = Properties.Resources.exit_button_push;
+        }
+        private void ExitButton_MouseUp(object sender, MouseEventArgs e) {
+            ExitButton.Image = Properties.Resources.exit_button_normal;
+            Application.Exit();
+        }
+
+        //センサー設定ボタン
+        private void SettingButton_MouseDown(object sender, MouseEventArgs e) {
+            SettingButton.Image = Properties.Resources.setting_button_push;
+        }
+        private void SettingButton_MouseUp(object sender, MouseEventArgs e) {
+            SettingButton.Image = Properties.Resources.setting_button_normal;
+            SensorSettings_Form ssf = new SensorSettings_Form(this);
+            ssf.ShowDialog();
+        }
+
+        //センサー復旧ボタン
+        private void RestrationButton_MouseDown(object sender, MouseEventArgs e) {
+            RestrationButton.Image = Properties.Resources.restoration_button_push;
+        }
+        private void RestrationButton_MouseUp(object sender, MouseEventArgs e) {
+            RestrationButton.Image = Properties.Resources.restoration_button_normal;
+            BulkChange(0, 19, "0", 3);
         }
     }
 }

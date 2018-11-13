@@ -623,5 +623,41 @@
   <ItemGroup>
     <None Include="Resources\electrical_button_push.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_button_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit_button_push.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fault_button_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fault_button_push.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logs_button_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logs_button_push.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mute_button_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mute_button_push.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restoration_button_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restoration_button_push.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_button_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\setting_button_push.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
