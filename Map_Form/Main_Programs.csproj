@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>Map_Form</RootNamespace>
     <AssemblyName>Map_Form</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -27,6 +27,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -79,11 +80,11 @@
     <Compile Include="Camera_Form.Designer.cs">
       <DependentUpon>Camera_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="RecView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="RecView.Designer.cs">
+      <DependentUpon>RecView.cs</DependentUpon>
     </Compile>
     <Compile Include="Map_Form.cs">
       <SubType>Form</SubType>
@@ -105,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Control_Form.resx">
       <DependentUpon>Control_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecView.resx">
+      <DependentUpon>RecView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Map_Form.resx">
       <DependentUpon>Map_Form.cs</DependentUpon>
@@ -607,6 +611,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cont_pre001X1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b018.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cont_b018X.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
