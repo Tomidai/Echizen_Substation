@@ -36,9 +36,13 @@ namespace Map_Form {
         }
 
         //マップからカメラへ画面遷移する
-        public void Camera_Show() {
+        public void Camera_Show(int i) {
             map_form.Hide();
             camera_form.Show();
+
+            camera_form.setLocation_1();
+            camera_form.camSelect(0);
+            camera_form.setBrowser(1, i-1);
         }
 
         //カメラからマップへ画面遷移する

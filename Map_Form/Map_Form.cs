@@ -399,7 +399,7 @@ namespace Map_Form {
         }
         private void GotoCamera_Button1_MouseUp(object sender, MouseEventArgs e) {
             GotoCamera_Button1.Image = Properties.Resources.camera_button_normal;
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(1);
         }
 
         private void GotoCamera_Button2_MouseDown(object sender, MouseEventArgs e) {
@@ -407,7 +407,7 @@ namespace Map_Form {
         }
         private void GotoCamera_Button2_MouseUp(object sender, MouseEventArgs e) {
             GotoCamera_Button2.Image = Properties.Resources.camera_button_normal;
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(2);
         }
 
         private void GotoCamera_Button3_MouseDown(object sender, MouseEventArgs e) {
@@ -415,7 +415,7 @@ namespace Map_Form {
         }
         private void GotoCamera_Button3_MouseUp(object sender, MouseEventArgs e) {
             GotoCamera_Button3.Image = Properties.Resources.camera_button_normal;
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(3);
         }
 
         private void GotoCamera_Button4_MouseDown(object sender, MouseEventArgs e) {
@@ -423,7 +423,7 @@ namespace Map_Form {
         }
         private void GotoCamera_Button4_MouseUp(object sender, MouseEventArgs e) {
             GotoCamera_Button4.Image = Properties.Resources.camera_button_normal;
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(4);
         }
 
         private void GotoCamera_Button5_MouseDown(object sender, MouseEventArgs e) {
@@ -431,7 +431,7 @@ namespace Map_Form {
         }
         private void GotoCamera_Button5_MouseUp(object sender, MouseEventArgs e) {
             GotoCamera_Button5.Image = Properties.Resources.camera_button_normal;
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(5);
         }
 
         private void GotoCamera_Button6_MouseDown(object sender, MouseEventArgs e) {
@@ -439,7 +439,7 @@ namespace Map_Form {
         }
         private void GotoCamera_Button6_MouseUp(object sender, MouseEventArgs e) {
             GotoCamera_Button6.Image = Properties.Resources.camera_button_normal;
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(6);
         }
 
         private void GotoCamera_Button7_MouseDown(object sender, MouseEventArgs e) {
@@ -447,7 +447,7 @@ namespace Map_Form {
         }
         private void GotoCamera_Button7_MouseUp(object sender, MouseEventArgs e) {
             GotoCamera_Button7.Image = Properties.Resources.camera_button_normal;
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(7);
         }
 
         private void GotoCamera_Button8_MouseDown(object sender, MouseEventArgs e) {
@@ -455,40 +455,40 @@ namespace Map_Form {
         }
         private void GotoCamera_Button8_MouseUp(object sender, MouseEventArgs e) {
             GotoCamera_Button8.Image = Properties.Resources.camera_button_normal;
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(8);
         }
 
         //カメラアイコンクリックの処理
         private void Camera_01_Click(object sender, EventArgs e) {
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(1);
         }
 
         private void Camera_02_Click(object sender, EventArgs e) {
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(2);
         }
 
         private void Camera_03_Click(object sender, EventArgs e) {
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(3);
         }
 
         private void Camera_04_Click(object sender, EventArgs e) {
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(4);
         }
 
         private void Camera_05_Click(object sender, EventArgs e) {
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(5);
         }
 
         private void Camera_06_Click(object sender, EventArgs e) {
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(6);
         }
 
         private void Camera_07_Click(object sender, EventArgs e) {
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(7);
         }
 
         private void Camera_08_Click(object sender, EventArgs e) {
-            cfObj.Camera_Show();
+            cfObj.Camera_Show(8);
         }
 
         //センサー一括ロック/解除の処理

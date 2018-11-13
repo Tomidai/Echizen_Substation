@@ -261,24 +261,11 @@ namespace Map_Form {
 
 
             }
-            if (settingMode == 0)
-            {
+
                 camSelect(0);     //選択されてるときのカメラの枠を非選択に戻す。
                 setBrowser(a, b);
-            }
-            else
-            {
 
-                if(a == 1)
-                {
-                    camSelect(0);     //選択されてるときのカメラの枠を非選択に戻す。
-                    setBrowser(2, b);
-                }
-                else
-                {
 
-                }
-            }
 
 
         }
@@ -2349,102 +2336,125 @@ namespace Map_Form {
         }
 
         public void setBrowser(int a, int b) {
+            if (settingMode == 0)
+            {
 
-            if (a == 1) {
-                if (Mode == 0) {
-                    this.webBrowser1.Url = new Uri(path + @"camViewer\000.html", UriKind.Absolute);
-                    this.webBrowser2.Url = new Uri(path + @"camViewer\000.html", UriKind.Absolute);
-                    this.webBrowser3.Url = new Uri(path + @"camViewer\000.html", UriKind.Absolute);
-                    this.webBrowser4.Url = new Uri(path + @"camViewer\000.html", UriKind.Absolute);
-
-
-
-
-                    this.webBrowser1.Url = new Uri(path + @"camViewer\cam00" + (b + 1) + "X.html", UriKind.Absolute);
-
-                    
-
-                    CamNo = b;
-                    preFileRead();
-                    this.label1.Text = camName[b];
-
-
-                } else if (Mode == 1) {
-                    this.webBrowser1.Url = new Uri(path + @"camViewer\cam00" + (b + 1) + ".html", UriKind.Absolute);
+                if (a == 1)
+                {
+                    if (Mode == 0)
+                    {
+                        this.webBrowser1.Url = new Uri(path + @"camViewer\000.html", UriKind.Absolute);
+                        this.webBrowser2.Url = new Uri(path + @"camViewer\000.html", UriKind.Absolute);
+                        this.webBrowser3.Url = new Uri(path + @"camViewer\000.html", UriKind.Absolute);
+                        this.webBrowser4.Url = new Uri(path + @"camViewer\000.html", UriKind.Absolute);
 
 
 
-                    CamNo = b;
 
-                    this.label1.Text = camName[b];
-
-                    Mode = 0;
-
-
-                } else if (Mode == 2) {
-                    this.webBrowser2.Url = new Uri(path + @"camViewer\cam00" + (b + 1) + ".html", UriKind.Absolute);
+                        this.webBrowser1.Url = new Uri(path + @"camViewer\cam00" + (b + 1) + "X.html", UriKind.Absolute);
 
 
 
-                    CamNo = b;
-
-                    this.label2.Text = camName[b];
-
-                    Mode = 0;
+                        CamNo = b;
+                        preFileRead();
+                        this.label1.Text = camName[b];
 
 
-                } else if (Mode == 3) {
-                    this.webBrowser3.Url = new Uri(path + @"camViewer\cam00" + (b + 1) + ".html", UriKind.Absolute);
-
-
-
-                    CamNo = b;
-
-                    this.label3.Text = camName[b];
-
-                    Mode = 0;
-
-
-                } else if (Mode == 4) {
-                    this.webBrowser4.Url = new Uri(path + @"camViewer\cam00" + (b + 1) + ".html", UriKind.Absolute);
+                    }
+                    else if (Mode == 1)
+                    {
+                        this.webBrowser1.Url = new Uri(path + @"camViewer\cam00" + (b + 1) + ".html", UriKind.Absolute);
 
 
 
-                    CamNo = b;
+                        CamNo = b;
 
-                    this.label4.Text = camName[b];
+                        this.label1.Text = camName[b];
 
-                    Mode = 0;
+                        Mode = 0;
+
+
+                    }
+                    else if (Mode == 2)
+                    {
+                        this.webBrowser2.Url = new Uri(path + @"camViewer\cam00" + (b + 1) + ".html", UriKind.Absolute);
+
+
+
+                        CamNo = b;
+
+                        this.label2.Text = camName[b];
+
+                        Mode = 0;
+
+
+                    }
+                    else if (Mode == 3)
+                    {
+                        this.webBrowser3.Url = new Uri(path + @"camViewer\cam00" + (b + 1) + ".html", UriKind.Absolute);
+
+
+
+                        CamNo = b;
+
+                        this.label3.Text = camName[b];
+
+                        Mode = 0;
+
+
+                    }
+                    else if (Mode == 4)
+                    {
+                        this.webBrowser4.Url = new Uri(path + @"camViewer\cam00" + (b + 1) + ".html", UriKind.Absolute);
+
+
+
+                        CamNo = b;
+
+                        this.label4.Text = camName[b];
+
+                        Mode = 0;
+
+
+                    }
 
 
                 }
+                else if (a == 2)
+                {
+                    this.webBrowser1.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 0] + 1) + ".html", UriKind.Absolute);
+                    this.webBrowser2.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 1] + 1) + ".html", UriKind.Absolute);
+                    this.webBrowser3.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 2] + 1) + ".html", UriKind.Absolute);
+                    this.webBrowser4.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 3] + 1) + ".html", UriKind.Absolute);
+
+                    this.label1.Text = camName[patternNo[b, 0]];
+                    this.label2.Text = camName[patternNo[b, 1]];
+                    this.label3.Text = camName[patternNo[b, 2]];
+                    this.label4.Text = camName[patternNo[b, 3]];
+
+                    camNo_01 = patternNo[b, 0];
+                    camNo_02 = patternNo[b, 1];
+                    camNo_03 = patternNo[b, 2];
+                    camNo_04 = patternNo[b, 3];
 
 
-            } else if (a == 2) {
-                this.webBrowser1.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 0] + 1) + ".html", UriKind.Absolute);
-                this.webBrowser2.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 1] + 1) + ".html", UriKind.Absolute);
-                this.webBrowser3.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 2] + 1) + ".html", UriKind.Absolute);
-                this.webBrowser4.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 3] + 1) + ".html", UriKind.Absolute);
+                    CamNo = 100;
+                    preFileRead();
 
-                this.label1.Text = camName[patternNo[b, 0]];
-                this.label2.Text = camName[patternNo[b, 1]];
-                this.label3.Text = camName[patternNo[b, 2]];
-                this.label4.Text = camName[patternNo[b, 3]];
+                }
+                else
+                {
+                    this.webBrowser1.Url = new Uri(path + @"camViewer\cam000.html", UriKind.Absolute);
+                    this.webBrowser2.Url = new Uri(path + @"camViewer\cam000.html", UriKind.Absolute);
+                    this.webBrowser3.Url = new Uri(path + @"camViewer\cam000.html", UriKind.Absolute);
+                    this.webBrowser4.Url = new Uri(path + @"camViewer\cam000.html", UriKind.Absolute);
+                }
+            }
+            else
+            {
+                this.webBrowser1.Url = new Uri(path + @"camViewer\cam00" + (b + 1) + ".html", UriKind.Absolute);
+                this.label1.Text = camName[b];
 
-                camNo_01 = patternNo[b, 0];
-                camNo_02 = patternNo[b, 1];
-                camNo_03 = patternNo[b, 2];
-                camNo_04 = patternNo[b, 3];
-
-
-                CamNo = 100;
-                preFileRead();
-
-            } else {
-                this.webBrowser1.Url = new Uri(path + @"camViewer\cam000.html", UriKind.Absolute);
-                this.webBrowser2.Url = new Uri(path + @"camViewer\cam000.html", UriKind.Absolute);
-                this.webBrowser3.Url = new Uri(path + @"camViewer\cam000.html", UriKind.Absolute);
-                this.webBrowser4.Url = new Uri(path + @"camViewer\cam000.html", UriKind.Absolute);
             }
         }
 
@@ -2474,6 +2484,9 @@ namespace Map_Form {
 
                 groupBox3.Visible = true;
                 groupBox4.Visible = true;
+
+                setBrowser(1, 0);
+                treeView1.Focus();
             }
             else
             {
