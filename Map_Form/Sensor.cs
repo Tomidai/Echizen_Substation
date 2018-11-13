@@ -43,6 +43,9 @@ namespace Map_Form {
         //セッティングファイルからセンサーの設定情報を読み込み、
         //センサー情報変数に格納するメソッド
         public void GetSensorInfo() {
+            using(var reader = new StreamReader(ConfigurationManager.AppSettings["SettingPath"])) {
+                //より安全な読込方法を探す
+            }
             string[] str = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
             sensor01 = str[0].Split(',');
             sensor02 = str[1].Split(',');
