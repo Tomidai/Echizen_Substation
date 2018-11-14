@@ -13,10 +13,12 @@ namespace Map_Form {
 
         //Map_Formのインスタンス
         public Map_Form mfObj;
+        public SensorAction snacObj;
 
         //コンストラクタ
         public Sensor(Map_Form mf_obj) {
             mfObj = mf_obj;
+            snacObj = new SensorAction(mfObj);
         }
 
         //センサーの状態を表す変数
@@ -46,11 +48,11 @@ namespace Map_Form {
             string[] str = new string[19];
             using(FileStream fs = new FileStream(ConfigurationManager.AppSettings["SettingPath"],
                 FileMode.Open,FileAccess.Read,FileShare.ReadWrite)) {
-                StreamReader sr = new StreamReader(fs);
-                for(int i=0; i<19; i++) {
-                    str[i] = sr.ReadLine();
-                }
-                sr.Close();
+                using (StreamReader sr = new StreamReader(fs)) {
+                    for (int i = 0; i < 19; i++) {
+                        str[i] = sr.ReadLine();
+                    }
+                } ;
             }
             sensor01 = str[0].Split(',');
             sensor02 = str[1].Split(',');
@@ -97,6 +99,7 @@ namespace Map_Form {
                             //侵入
                             pic.Image = a;
                             pic.Tag = "Alarm";
+                            //アラーム音再生
                             break;
                         case 2:
                             //環境判断へ
@@ -106,12 +109,14 @@ namespace Map_Form {
                             } else {
                                 pic.Image = e;
                                 pic.Tag = "Environ";
+                                //環境発砲時もアラームするか
                             }
                             break;
                         case 3:
                             //故障
                             pic.Image = f;
                             pic.Tag = "Failed";
+                            //アラーム再生
                             break;
                     }
                 }

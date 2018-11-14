@@ -56,7 +56,16 @@ namespace Map_Form {
 
         //Receiveファイルを読み込み、反映させる
         public void Receive(string[] receiveInfo,int n) {
-            string[] settingsInfo = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
+            string[] settingsInfo = new string[19];
+            using (FileStream fs = new FileStream(ConfigurationManager.AppSettings["SettingPath"],
+                FileMode.Open, FileAccess.Read, FileShare.ReadWrite)) {
+                using (StreamReader sr = new StreamReader(fs)) {
+                    for (int i = 0; i < 19; i++) {
+                        settingsInfo[i] = sr.ReadLine();
+                    }
+                };
+            }
+            //string[] settingsInfo = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
             string[] changeline = settingsInfo[n].Split(',');
             if (receiveInfo[3] == "1") {
                 //故障
@@ -82,93 +91,97 @@ namespace Map_Form {
         //Receiveファイルが変更されたら発生するイベント
         public void Changed(object source, FileSystemEventArgs e) {
             //センサーからの情報受信
-            if(e.FullPath == ConfigurationManager.AppSettings["ReceivePath"]) {
-                using (StreamReader sr = new StreamReader(ConfigurationManager.AppSettings["ReceivePath"])) {
-                    while (!sr.EndOfStream) {
-                        //読み込んだ1行をcsvで分けて配列に入れる
-                        string[] receiveInfo = sr.ReadLine().Split(',');
-                        //センサーを判断する条件分岐1~19
-                        switch (int.Parse(receiveInfo[0])) {
-                            case 1:
-                                //Receiveファイルを読込反映させるメソッドを呼び出す
-                                Receive(receiveInfo, 0);
-                                snacObj.Action("1");
-                                break;
-                            case 2:
-                                Receive(receiveInfo, 1);
-                                snacObj.Action("2");
-                                break;
-                            case 3:
-                                Receive(receiveInfo, 2);
-                                snacObj.Action("3");
-                                break;
-                            case 4:
-                                Receive(receiveInfo, 3);
-                                snacObj.Action("4");
-                                break;
-                            case 5:
-                                Receive(receiveInfo, 4);
-                                snacObj.Action("5");
-                                break;
-                            case 6:
-                                Receive(receiveInfo, 5);
-                                snacObj.Action("6");
-                                break;
-                            case 7:
-                                Receive(receiveInfo, 6);
-                                snacObj.Action("7");
-                                break;
-                            case 8:
-                                Receive(receiveInfo, 7);
-                                snacObj.Action("8");
-                                break;
-                            case 9:
-                                Receive(receiveInfo, 8);
-                                snacObj.Action("9");
-                                break;
-                            case 10:
-                                Receive(receiveInfo, 9);
-                                snacObj.Action("10");
-                                break;
-                            case 11:
-                                Receive(receiveInfo, 10);
-                                snacObj.Action("11");
-                                break;
-                            case 12:
-                                Receive(receiveInfo, 11);
-                                snacObj.Action("12");
-                                break;
-                            case 13:
-                                Receive(receiveInfo, 12);
-                                snacObj.Action("13");
-                                break;
-                            case 14:
-                                Receive(receiveInfo, 13);
-                                snacObj.Action("14");
-                                break;
-                            case 15:
-                                Receive(receiveInfo, 14);
-                                snacObj.Action("15");
-                                break;
-                            case 16:
-                                Receive(receiveInfo, 15);
-                                snacObj.Action("16");
-                                break;
-                            case 17:
-                                Receive(receiveInfo, 16);
-                                snacObj.Action("17");
-                                break;
-                            case 18:
-                                Receive(receiveInfo, 17);
-                                snacObj.Action("18");
-                                break;
-                            case 19:
-                                Receive(receiveInfo, 18);
-                                snacObj.Action("19");
-                                break;
+            if (e.FullPath == ConfigurationManager.AppSettings["ReceivePath"]) {
+                using (FileStream fs = new FileStream(ConfigurationManager.AppSettings["ReceivePath"],
+                    FileMode.Open, FileAccess.Read, FileShare.ReadWrite)) {
+                    using (StreamReader sr = new StreamReader(fs)) {
+                        while (!sr.EndOfStream) {
+                            //読み込んだ1行をcsvで分けて配列に入れる
+                            string[] receiveInfo = sr.ReadLine().Split(',');
+                            //センサーを判断する条件分岐1~19
+                            switch (int.Parse(receiveInfo[0])) {
+                                case 1:
+                                    //Receiveファイルを読込反映させるメソッドを呼び出す
+                                    Receive(receiveInfo, 0);
+                                    snacObj.Action("1");
+                                    break;
+                                case 2:
+                                    Receive(receiveInfo, 1);
+                                    snacObj.Action("2");
+                                    break;
+                                case 3:
+                                    Receive(receiveInfo, 2);
+                                    snacObj.Action("3");
+                                    break;
+                                case 4:
+                                    Receive(receiveInfo, 3);
+                                    snacObj.Action("4");
+                                    break;
+                                case 5:
+                                    Receive(receiveInfo, 4);
+                                    snacObj.Action("5");
+                                    break;
+                                case 6:
+                                    Receive(receiveInfo, 5);
+                                    snacObj.Action("6");
+                                    break;
+                                case 7:
+                                    Receive(receiveInfo, 6);
+                                    snacObj.Action("7");
+                                    break;
+                                case 8:
+                                    Receive(receiveInfo, 7);
+                                    snacObj.Action("8");
+                                    break;
+                                case 9:
+                                    Receive(receiveInfo, 8);
+                                    snacObj.Action("9");
+                                    break;
+                                case 10:
+                                    Receive(receiveInfo, 9);
+                                    snacObj.Action("10");
+                                    break;
+                                case 11:
+                                    Receive(receiveInfo, 10);
+                                    snacObj.Action("11");
+                                    break;
+                                case 12:
+                                    Receive(receiveInfo, 11);
+                                    snacObj.Action("12");
+                                    break;
+                                case 13:
+                                    Receive(receiveInfo, 12);
+                                    snacObj.Action("13");
+                                    break;
+                                case 14:
+                                    Receive(receiveInfo, 13);
+                                    snacObj.Action("14");
+                                    break;
+                                case 15:
+                                    Receive(receiveInfo, 14);
+                                    snacObj.Action("15");
+                                    break;
+                                case 16:
+                                    Receive(receiveInfo, 15);
+                                    snacObj.Action("16");
+                                    break;
+                                case 17:
+                                    Receive(receiveInfo, 16);
+                                    snacObj.Action("17");
+                                    break;
+                                case 18:
+                                    Receive(receiveInfo, 17);
+                                    snacObj.Action("18");
+                                    break;
+                                case 19:
+                                    Receive(receiveInfo, 18);
+                                    snacObj.Action("19");
+                                    break;
+                            }
                         }
                     }
                 }
+
             } else if(e.FullPath == ConfigurationManager.AppSettings["SettingPath"]){
                 //設定ファイルが変更されたときに色、タグを変更する
                 snObj.GetSensorInfo();

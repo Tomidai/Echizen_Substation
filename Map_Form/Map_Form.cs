@@ -556,5 +556,14 @@ namespace Map_Form {
             RestrationButton.Image = Properties.Resources.restoration_button_normal;
             BulkChange(0, 19, "0", 3);
         }
+
+        //ブザー停止ボタン
+        private void MuteButton_MouseDown(object sender, MouseEventArgs e) {
+            MuteButton.Image = Properties.Resources.mute_button_push;
+        }
+        private void MuteButton_MouseUp(object sender, MouseEventArgs e) {
+            MuteButton.Image = Properties.Resources.mute_button_normal;
+            //ブザー停止処理
+        }
     }
 }

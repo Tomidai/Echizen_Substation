@@ -13,12 +13,10 @@ namespace Map_Form {
     class SensorAction {
         //インスタンスの固定
         public Map_Form mfObj;
-        public Sensor snObj;
 
         //コンストラクタ
         public SensorAction(Map_Form mf_obj) {
             mfObj = mf_obj;
-            snObj = new Sensor(mfObj);
         }
 
         //カメラプリセット情報を読み込み、マップ上のどのカメラアイコンを
@@ -74,5 +72,11 @@ namespace Map_Form {
         }
 
         //ブザー音を再生する処理
+        public async void AlarmSound() {
+            while((string)mfObj.MuteButton.Tag == "on") {
+                Console.Beep(10000, 800);
+                Thread.Sleep(1000);
+            }
+        }
     }
 }
