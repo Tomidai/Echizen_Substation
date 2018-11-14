@@ -19,7 +19,6 @@ namespace Map_Form {
         public int[] camX = new int[8];
         public int[] camY = new int[8];
         public int VrOn = 0;
-
         public string[] camName = new string[8];          //camlistファイルからカメラ名称
         public int[] camEnable = new int[8];              //camlistファイルからカメラ有効無効
         public int[] camMapNo = new int[8];
@@ -30,28 +29,18 @@ namespace Map_Form {
         public int[] camEnc = new int[8];
         public int[] blackLevel = new int[8];
         public int[] camType = new int[8];
-
         public int NameChange = 0;
         public int PreReg = 0;
-
         public int Mode = 0;
-
         public int camNo_01 = 0;
         public int camNo_02 = 1;
         public int camNo_03 = 2;
         public int camNo_04 = 4;
-
         public int moniMode = 0;
         public int settingMode = 0;
-
         public string sensorCamFileName;
-
         public int[,] sensorList = new int[19, 3];
-
         public ComboBox[,] sensorListCombo = new ComboBox[19, 3];
-
-
-
 
         public string prefile = @"C:\Users\oh\Desktop\preset\";
         public static string path = "";
@@ -68,17 +57,10 @@ namespace Map_Form {
         public Label[] hoseiLabel = new Label[8];
         public int basho = 0;
         public String[,] kyoten = new String[10, 5];
-
         public char[] separator = { ' ', ',' };
         public static char[] separator2 = { ' ', ':' };
         public int Speed = 2;
-
         static System.Timers.Timer myTimer = new System.Timers.Timer(9000);
-
-        static bool exitFlag = false;
-
-        //   public FileSystemWatcher watcher = new FileSystemWatcher();
-
         public int preTourokuState = 0;
         public static int CamNo = 100;
         public static string IP = "";
@@ -88,66 +70,49 @@ namespace Map_Form {
         public string Str02 = "";
         public string Str03 = "&camera_id=1&port_id=1&";
         public string Str04 = "";
-
-
         public static int FlagEncLogIn = 0;
         public static int FlagCamCont = 0;
-
         public int Hosei = 1;
-
         public static int RecOn = 0;
         public String RecIP = "192.168.1.111";
         public int timerTime = 10000;
-
         public int[] mapEnable = new int[5];
         public string[] mapName = new string[5];
         public string[] mapFile = new string[5];
         public float[] mapNameFS = new float[5];
-
         public Label[] mapBtnLab = new Label[5];
-
         public int EncRST_ON = 0;
         public String Pass = "";
-
         public string[] ComboName = new string[9];
-
 
         public int s41X;
         public int s41Y;
         public int s41W;
         public int s41H;
-
         public int s4LW;
-
         public int s42X;
         public int s42Y;
         public int s42W;
         public int s42H;
-
         public int s43X;
         public int s43Y;
         public int s43W;
         public int s43H;
-
         public int s44X;
         public int s44Y;
         public int s44W;
         public int s44H;
-
         public string[] patternName = new string[6];
         public int[,] patternNo = new int[6, 4];
         public static Label recButton;
-
-
-
-
-
+        public TreeNode tn001;
+        public TreeNode tn002;
+        public ImageList imageList01;
+        public int camNameChangeMode = 0;
 
 
         public Camera_Form() {
             InitializeComponent();
-
-
             preNameLab[0] = btn_pre001;
             preNameLab[1] = btn_pre002;
             preNameLab[2] = btn_pre003;
@@ -156,7 +121,6 @@ namespace Map_Form {
             preNameLab[5] = btn_pre006;
             preNameLab[6] = btn_pre007;
             preNameLab[7] = btn_pre008;
-
 
             preNameTxt[0] = textBox1;
             preNameTxt[1] = textBox2;
@@ -167,12 +131,9 @@ namespace Map_Form {
             preNameTxt[6] = textBox7;
             preNameTxt[7] = textBox8;
 
-
             for (int i = 0; i < 8; ++i) {
                 preNameTxt[i].Visible = false;
             }
-
-
 
             setUP();
             groupBox3.Visible = false;
@@ -180,12 +141,9 @@ namespace Map_Form {
             comboBoxSet();
 
 
-            ImageList imageList01 = new ImageList();
+            imageList01 = new ImageList();
 
             imageList01.ImageSize = new Size(16, 16);
-            //   imageList01.Images.Add(Image.FromFile(path + @"test_View001\m001.png"));
-            //   imageList01.Images.Add(Image.FromFile(path + @"test_View001\m002.png"));
-            //   imageList01.Images.Add(Image.FromFile(path + @"test_View001\m003.png"));
             imageList01.Images.Add(Image.FromFile(path + @"test_View001\moni_ico.png"));
             imageList01.Images.Add(Image.FromFile(path + @"test_View001\moni4_ico.png"));
             imageList01.Images.Add(Image.FromFile(path + @"test_View001\cam_ico.png"));
@@ -196,15 +154,11 @@ namespace Map_Form {
 
             treeView1.ImageList = imageList01;
 
-            TreeNode tn001 = treeView1.Nodes.Add("001", "1画面", 0);
-            TreeNode tn002 = treeView1.Nodes.Add("002", "4画面", 1);
-
-
-
+            tn001 = treeView1.Nodes.Add("001", "1画面", 0);
+            tn002 = treeView1.Nodes.Add("002", "4画面", 1);
 
             for (int i = 0; i < 8; ++i) {
                 tn001.Nodes.Add("", camName[i], 2, 3);
-
             }
 
             for (int j = 0; j < 6; ++j) {
@@ -212,8 +166,7 @@ namespace Map_Form {
             }
 
             treeView1.ExpandAll();
-
-
+            treeView1.SelectedNode = tn001.FirstNode;
 
         }
 
@@ -225,7 +178,7 @@ namespace Map_Form {
             int a = 0;
             int b = 0;
 
-
+            
 
 
             for (int i = 0; i < 8; ++i) {
@@ -244,16 +197,23 @@ namespace Map_Form {
 
 
             if (Mode == 0) {
-                if (a == 1) {
+                if (a == 1)
+                {
                     if (settingMode == 0)
                     {
                         setLocation_1();
                     }
-                } else if (a == 2) {
+                }
+                else if (a == 2)
+                {
                     if (settingMode == 0)
                     {
                         setLocation_4();
                     }
+                }
+                else
+                {
+
                 }
 
             } else {
@@ -302,7 +262,6 @@ namespace Map_Form {
             this.btn_cnt_UP.Image = Properties.Resources.cont_b002X;
             ComTX(1);
         }
-
         public void btn_cnt_UP_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_UP.Image = Properties.Resources.cont_b002;
             ComTX(0);
@@ -314,7 +273,6 @@ namespace Map_Form {
             this.btn_cnt_RU.Image = Properties.Resources.cont_b003X;
             ComTX(2);
         }
-
         public void btn_cnt_RU_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_RU.Image = Properties.Resources.cont_b003;
             ComTX(0);
@@ -325,7 +283,6 @@ namespace Map_Form {
             this.btn_cnt_RI.Image = Properties.Resources.cont_b006X;
             ComTX(3);
         }
-
         public void btn_cnt_RI_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_RI.Image = Properties.Resources.cont_b006;
             ComTX(0);
@@ -336,7 +293,6 @@ namespace Map_Form {
             this.btn_cnt_RD.Image = Properties.Resources.cont_b009X;
             ComTX(4);
         }
-
         public void btn_cnt_RD_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_RD.Image = Properties.Resources.cont_b009;
             ComTX(0);
@@ -347,7 +303,6 @@ namespace Map_Form {
             this.btn_cnt_DW.Image = Properties.Resources.cont_b008X;
             ComTX(5);
         }
-
         public void btn_cnt_DW_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_DW.Image = Properties.Resources.cont_b008;
             ComTX(0);
@@ -358,7 +313,6 @@ namespace Map_Form {
             this.btn_cnt_LD.Image = Properties.Resources.cont_b007X;
             ComTX(6);
         }
-
         public void btn_cnt_LD_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_LD.Image = Properties.Resources.cont_b007;
             ComTX(0);
@@ -369,7 +323,6 @@ namespace Map_Form {
             this.btn_cnt_LF.Image = Properties.Resources.cont_b004X;
             ComTX(7);
         }
-
         public void btn_cnt_LF_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_LF.Image = Properties.Resources.cont_b004;
             ComTX(0);
@@ -380,7 +333,6 @@ namespace Map_Form {
             this.btn_cnt_LU.Image = Properties.Resources.cont_b001X;
             ComTX(8);
         }
-
         public void btn_cnt_LU_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_LU.Image = Properties.Resources.cont_b001;
             ComTX(0);
@@ -391,7 +343,6 @@ namespace Map_Form {
             this.btn_cnt_AF.Image = Properties.Resources.cont_b005X;
             ComTX(12);
         }
-
         public void btn_cnt_AF_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_AF.Image = Properties.Resources.cont_b005;
             ComTX(0);
@@ -402,7 +353,6 @@ namespace Map_Form {
             this.btn_cnt_ZU.Image = Properties.Resources.cont_b012X;
             ComTX(10);
         }
-
         public void btn_cnt_ZU_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_ZU.Image = Properties.Resources.cont_b012;
             ComTX(0);
@@ -413,7 +363,6 @@ namespace Map_Form {
             this.btn_cnt_ZO.Image = Properties.Resources.cont_b013X;
             ComTX(11);
         }
-
         public void btn_cnt_ZO_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_ZO.Image = Properties.Resources.cont_b013;
             ComTX(0);
@@ -424,7 +373,6 @@ namespace Map_Form {
             this.btn_cnt_FU.Image = Properties.Resources.cont_b012X;
             ComTX(13);
         }
-
         public void btn_cnt_FU_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_FU.Image = Properties.Resources.cont_b012;
             ComTX(0);
@@ -435,7 +383,6 @@ namespace Map_Form {
             this.btn_cnt_FD.Image = Properties.Resources.cont_b013X;
             ComTX(14);
         }
-
         public void btn_cnt_FD_MouseUp(object sender, MouseEventArgs e) {
             this.btn_cnt_FD.Image = Properties.Resources.cont_b013;
             ComTX(0);
@@ -445,7 +392,6 @@ namespace Map_Form {
 
             presetMove(1);
         }
-
         public void btn_pre001_MouseUp(object sender, MouseEventArgs e) {
             presetMove(11);
         }
@@ -453,7 +399,6 @@ namespace Map_Form {
         public void btn_pre002_MouseDown(object sender, MouseEventArgs e) {
             presetMove(2);
         }
-
         public void btn_pre002_MouseUp(object sender, MouseEventArgs e) {
             presetMove(12);
         }
@@ -461,7 +406,6 @@ namespace Map_Form {
         public void btn_pre003_MouseDown(object sender, MouseEventArgs e) {
             presetMove(3);
         }
-
         public void btn_pre003_MouseUp(object sender, MouseEventArgs e) {
             presetMove(13);
         }
@@ -469,7 +413,6 @@ namespace Map_Form {
         public void btn_pre004_MouseDown(object sender, MouseEventArgs e) {
             presetMove(4);
         }
-
         public void btn_pre004_MouseUp(object sender, MouseEventArgs e) {
             presetMove(14);
         }
@@ -477,7 +420,6 @@ namespace Map_Form {
         public void btn_pre005_MouseDown(object sender, MouseEventArgs e) {
             presetMove(5);
         }
-
         public void btn_pre005_MouseUp(object sender, MouseEventArgs e) {
             presetMove(15);
         }
@@ -485,7 +427,6 @@ namespace Map_Form {
         public void btn_pre006_MouseDown(object sender, MouseEventArgs e) {
             presetMove(6);
         }
-
         public void btn_pre006_MouseUp(object sender, MouseEventArgs e) {
             presetMove(16);
         }
@@ -493,7 +434,6 @@ namespace Map_Form {
         public void btn_pre007_MouseDown(object sender, MouseEventArgs e) {
             presetMove(7);
         }
-
         public void btn_pre007_MouseUp(object sender, MouseEventArgs e) {
             presetMove(17);
         }
@@ -501,7 +441,6 @@ namespace Map_Form {
         public void btn_pre008_MouseDown(object sender, MouseEventArgs e) {
             presetMove(8);
         }
-
         public void btn_pre008_MouseUp(object sender, MouseEventArgs e) {
             presetMove(18);
         }
@@ -579,6 +518,7 @@ namespace Map_Form {
                 this.btn_presetMoveReg.Image = global::Map_Form.Properties.Resources.cont_b018;
                 settingMode = 0;
                 settingModeOnOff();
+                
             }
         }
 
@@ -622,12 +562,10 @@ namespace Map_Form {
             this.btn_s01Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(1);
         }
-
         private void btn_s01Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s01Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //2
         private void btn_s02Reg_MouseDown(object sender, MouseEventArgs e)
@@ -635,12 +573,10 @@ namespace Map_Form {
             this.btn_s02Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(2);
         }
-
         private void btn_s02Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s02Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //3
         private void btn_s03Reg_MouseDown(object sender, MouseEventArgs e)
@@ -648,12 +584,10 @@ namespace Map_Form {
             this.btn_s03Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(3);
         }
-
         private void btn_s03Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s03Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //4
         private void btn_s04Reg_MouseDown(object sender, MouseEventArgs e)
@@ -661,12 +595,10 @@ namespace Map_Form {
             this.btn_s04Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(4);
         }
-
         private void btn_s04Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s04Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //5
         private void btn_s05Reg_MouseDown(object sender, MouseEventArgs e)
@@ -675,12 +607,10 @@ namespace Map_Form {
             sensorPrisetReg(5);
 
         }
-
         private void btn_s05Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s05Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //6
         private void btn_s06Reg_MouseDown(object sender, MouseEventArgs e)
@@ -688,12 +618,10 @@ namespace Map_Form {
             this.btn_s06Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(6);
         }
-
         private void btn_s06Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s06Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //7
         private void btn_s07Reg_MouseDown(object sender, MouseEventArgs e)
@@ -701,12 +629,10 @@ namespace Map_Form {
             this.btn_s07Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(7);
         }
-
         private void btn_s07Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s07Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //8
         private void btn_s08Reg_MouseDown(object sender, MouseEventArgs e)
@@ -714,12 +640,10 @@ namespace Map_Form {
             this.btn_s08Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(8);
         }
-
         private void btn_s08Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s08Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //9
         private void btn_s09Reg_MouseDown(object sender, MouseEventArgs e)
@@ -727,12 +651,10 @@ namespace Map_Form {
             this.btn_s09Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(9);
         }
-
         private void btn_s09Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s09Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //10
         private void btn_s10Reg_MouseDown(object sender, MouseEventArgs e)
@@ -740,12 +662,10 @@ namespace Map_Form {
             this.btn_s10Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(10);
         }
-
         private void btn_s10Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s10Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //11
         private void btn_s11Reg_MouseDown(object sender, MouseEventArgs e)
@@ -753,12 +673,10 @@ namespace Map_Form {
             this.btn_s11Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(11);
         }
-
         private void btn_s11Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s11Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //12
         private void btn_s12Reg_MouseDown(object sender, MouseEventArgs e)
@@ -766,12 +684,10 @@ namespace Map_Form {
             this.btn_s12Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(12);
         }
-
         private void btn_s12Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s12Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //13
         private void btn_s13Reg_MouseDown(object sender, MouseEventArgs e)
@@ -779,12 +695,10 @@ namespace Map_Form {
             this.btn_s13Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(13);
         }
-
         private void btn_s13Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s13Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //14
         private void btn_s14Reg_MouseDown(object sender, MouseEventArgs e)
@@ -792,12 +706,10 @@ namespace Map_Form {
             this.btn_s14Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(14);
         }
-
         private void btn_s14Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s14Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //15
         private void btn_s15Reg_MouseDown(object sender, MouseEventArgs e)
@@ -805,12 +717,10 @@ namespace Map_Form {
             this.btn_s15Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(15);
         }
-
         private void btn_s15Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s15Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //16
         private void btn_s16Reg_MouseDown(object sender, MouseEventArgs e)
@@ -818,12 +728,10 @@ namespace Map_Form {
             this.btn_s16Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(16);
         }
-
         private void btn_s16Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s16Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //17
         private void btn_s17Reg_MouseDown(object sender, MouseEventArgs e)
@@ -831,12 +739,10 @@ namespace Map_Form {
             this.btn_s17Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(17);
         }
-
         private void btn_s17Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s17Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
 
         //18
         private void btn_s18Reg_MouseDown(object sender, MouseEventArgs e)
@@ -844,13 +750,10 @@ namespace Map_Form {
             this.btn_s18Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(18);
         }
-
         private void btn_s18Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s18Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
-
 
         //19
         private void btn_s19Reg_MouseDown(object sender, MouseEventArgs e)
@@ -858,13 +761,10 @@ namespace Map_Form {
             this.btn_s19Reg.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetReg(19);
         }
-
         private void btn_s19Reg_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s19Reg.Image = global::Map_Form.Properties.Resources.cont_pre001;
         }
-
-
 
 
         //MOVE
@@ -874,7 +774,6 @@ namespace Map_Form {
             this.btn_s01Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(1);
         }
-
         private void btn_s01Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s01Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -886,7 +785,6 @@ namespace Map_Form {
             this.btn_s02Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(2);
         }
-
         private void btn_s02Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s02Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -898,7 +796,6 @@ namespace Map_Form {
             this.btn_s03Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(3);
         }
-
         private void btn_s03Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s03Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -910,7 +807,6 @@ namespace Map_Form {
             this.btn_s04Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(4);
         }
-
         private void btn_s04Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s04Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -922,7 +818,6 @@ namespace Map_Form {
             this.btn_s05Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(5);
         }
-
         private void btn_s05Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s05Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -934,7 +829,6 @@ namespace Map_Form {
             this.btn_s06Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(6);
         }
-
         private void btn_s06Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s06Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -946,7 +840,6 @@ namespace Map_Form {
             this.btn_s07Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(7);
         }
-
         private void btn_s07Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s07Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -958,7 +851,6 @@ namespace Map_Form {
             this.btn_s08Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(8);
         }
-
         private void btn_s08Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s08Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -970,7 +862,6 @@ namespace Map_Form {
             this.btn_s09Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(9);
         }
-
         private void btn_s09Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s09Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -982,7 +873,6 @@ namespace Map_Form {
             this.btn_s10Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(10);
         }
-
         private void btn_s10Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s10Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -994,7 +884,6 @@ namespace Map_Form {
             this.btn_s11Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(11);
         }
-
         private void btn_s11Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s11Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -1006,7 +895,6 @@ namespace Map_Form {
             this.btn_s12Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(12);
         }
-
         private void btn_s12Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s12Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -1018,7 +906,6 @@ namespace Map_Form {
             this.btn_s13Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(13);
         }
-
         private void btn_s13Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s13Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -1030,7 +917,6 @@ namespace Map_Form {
             this.btn_s14Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(14);
         }
-
         private void btn_s14Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s14Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -1042,7 +928,6 @@ namespace Map_Form {
             this.btn_s15Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(15);
         }
-
         private void btn_s15Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s15Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -1054,7 +939,6 @@ namespace Map_Form {
             this.btn_s16Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(16);
         }
-
         private void btn_s16Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s16Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -1066,7 +950,6 @@ namespace Map_Form {
             this.btn_s17Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(17);
         }
-
         private void btn_s17Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s17Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -1078,7 +961,6 @@ namespace Map_Form {
             this.btn_s18Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(18);
         }
-
         private void btn_s18Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s18Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -1090,7 +972,6 @@ namespace Map_Form {
             this.btn_s19Move.Image = global::Map_Form.Properties.Resources.cont_pre001X;
             sensorPrisetMove(19);
         }
-
         private void btn_s19Move_MouseUp(object sender, MouseEventArgs e)
         {
             this.btn_s19Move.Image = global::Map_Form.Properties.Resources.cont_pre001;
@@ -2486,14 +2367,14 @@ namespace Map_Form {
                 groupBox4.Visible = true;
 
                 setBrowser(1, 0);
-                treeView1.Focus();
+                treeView1.SelectedNode = tn001;
             }
             else
             {
-                setLocation_1();
-                setBrowser(1, 0);
+
                 groupBox3.Visible = false;
                 groupBox4.Visible = false;
+                treeView1.SelectedNode = tn001.FirstNode;
 
             }
 
@@ -2544,12 +2425,15 @@ namespace Map_Form {
                 ComboName[i + 1] = camName[i];
             }
 
+            
+
 
 
             for (int i = 0; i < 19; ++i)
             {
                 for (int j = 0; j < 3; ++j)
                 {
+                    sensorListCombo[i, j].Items.Clear();
                     for (int k = 0; k < 9; ++k)
                     {
                         sensorListCombo[i, j].Items.Add(ComboName[k]);
@@ -2560,7 +2444,6 @@ namespace Map_Form {
                 }
             }
         }
-
 
         public void comboBoxSet()
         {
@@ -2645,7 +2528,111 @@ namespace Map_Form {
 
         }
 
+        public void sensorCamSetFileWright()
+        {
 
+            String Str = "";
+            int a;
+
+            for (int i = 0; i < 19; ++i)
+            {
+                Str = Str + (i + 1) + ",";
+                for (int j = 0; j < 3; ++j)
+                {
+                    if (j != 2)
+                    {
+                        Str = Str + sensorListCombo[i, j].SelectedIndex + ",";
+                    }
+                    else
+                    {
+                        Str = Str + sensorListCombo[i, j].SelectedIndex + "\r\n";
+                    }
+
+                }
+            }
+
+
+            try
+            {
+
+                StreamWriter sw = new StreamWriter(path + @"\" + sensorCamFileName, false, Encoding.GetEncoding("shift_jis"));
+
+                sw.Write(Str);
+                sw.Close();
+                //   MessageBox.Show("登録完了");
+
+            }
+            catch
+            {
+                MessageBox.Show("登録に失敗しました");
+            }
+        }
+
+        public void treeNameChange()
+        {
+            treeView1.ImageList = imageList01;
+
+            tn001 = treeView1.Nodes.Add("001", "1画面", 0);
+            tn002 = treeView1.Nodes.Add("002", "4画面", 1);
+
+            for (int i = 0; i < 8; ++i)
+            {
+                tn001.Nodes.Add("", camName[i], 2, 3);
+            }
+
+            for (int j = 0; j < 6; ++j)
+            {
+                tn002.Nodes.Add("", patternName[j], 5, 6);
+            }
+
+            treeView1.ExpandAll();
+            treeView1.SelectedNode = tn001.FirstNode;
+
+        }
+
+
+        //登録ボタン
+        private void label8_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.label8.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorCamSetFileWright();
+
+
+        }
+        private void label8_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.label8.Image = global::Map_Form.Properties.Resources.cont_pre001;
+            sensorCamSetFileRead();
+
+        }
+
+        //キャンセルボタン
+        private void label10_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.label10.Image = global::Map_Form.Properties.Resources.cont_pre001X;
+            sensorCamSetFileRead();
+        }
+        private void label10_MouseUp(object sender, MouseEventArgs e)
+        {
+            this.label10.Image = global::Map_Form.Properties.Resources.cont_pre001;
+        }
+
+
+
+
+        private void btn_camNameReg_Click(object sender, EventArgs e)
+        {
+            if (camNameChangeMode == 0)
+            {
+                this.btn_camNameReg.Image = global::Map_Form.Properties.Resources.cont_b018X;
+                camNameChangeMode = 1;
+            }
+            else
+            {
+                this.btn_camNameReg.Image = global::Map_Form.Properties.Resources.cont_b018;
+                camNameChangeMode = 0;
+            }
+        }
     }
 
 

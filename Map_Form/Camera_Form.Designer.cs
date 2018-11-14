@@ -158,6 +158,26 @@
             this.comboBox26 = new System.Windows.Forms.ComboBox();
             this.comboBox27 = new System.Windows.Forms.ComboBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.comboBox28 = new System.Windows.Forms.ComboBox();
@@ -187,6 +207,7 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btn_camNameReg = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -1428,306 +1449,326 @@
             // 
             // comboBox55
             // 
-            this.comboBox55.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox55.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox55.FormattingEnabled = true;
-            this.comboBox55.ItemHeight = 21;
-            this.comboBox55.Location = new System.Drawing.Point(1173, 286);
+            this.comboBox55.ItemHeight = 13;
+            this.comboBox55.Location = new System.Drawing.Point(1155, 220);
             this.comboBox55.Name = "comboBox55";
-            this.comboBox55.Size = new System.Drawing.Size(130, 29);
+            this.comboBox55.Size = new System.Drawing.Size(130, 21);
             this.comboBox55.TabIndex = 145;
             // 
             // comboBox56
             // 
-            this.comboBox56.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox56.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox56.FormattingEnabled = true;
-            this.comboBox56.ItemHeight = 21;
-            this.comboBox56.Location = new System.Drawing.Point(1309, 284);
+            this.comboBox56.ItemHeight = 13;
+            this.comboBox56.Location = new System.Drawing.Point(1295, 220);
             this.comboBox56.Name = "comboBox56";
-            this.comboBox56.Size = new System.Drawing.Size(130, 29);
+            this.comboBox56.Size = new System.Drawing.Size(130, 21);
             this.comboBox56.TabIndex = 144;
             // 
             // comboBox57
             // 
-            this.comboBox57.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox57.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox57.FormattingEnabled = true;
-            this.comboBox57.ItemHeight = 21;
-            this.comboBox57.Location = new System.Drawing.Point(1445, 284);
+            this.comboBox57.ItemHeight = 13;
+            this.comboBox57.Location = new System.Drawing.Point(1435, 220);
             this.comboBox57.Name = "comboBox57";
-            this.comboBox57.Size = new System.Drawing.Size(130, 29);
+            this.comboBox57.Size = new System.Drawing.Size(130, 21);
             this.comboBox57.TabIndex = 143;
             // 
             // comboBox37
             // 
-            this.comboBox37.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox37.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox37.FormattingEnabled = true;
-            this.comboBox37.ItemHeight = 21;
-            this.comboBox37.Location = new System.Drawing.Point(1173, 220);
+            this.comboBox37.ItemHeight = 13;
+            this.comboBox37.Location = new System.Drawing.Point(1155, 180);
             this.comboBox37.Name = "comboBox37";
-            this.comboBox37.Size = new System.Drawing.Size(130, 29);
+            this.comboBox37.Size = new System.Drawing.Size(130, 21);
             this.comboBox37.TabIndex = 142;
             // 
             // comboBox38
             // 
-            this.comboBox38.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox38.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox38.FormattingEnabled = true;
-            this.comboBox38.ItemHeight = 21;
-            this.comboBox38.Location = new System.Drawing.Point(1309, 220);
+            this.comboBox38.ItemHeight = 13;
+            this.comboBox38.Location = new System.Drawing.Point(1295, 180);
             this.comboBox38.Name = "comboBox38";
-            this.comboBox38.Size = new System.Drawing.Size(130, 29);
+            this.comboBox38.Size = new System.Drawing.Size(130, 21);
             this.comboBox38.TabIndex = 141;
             // 
             // comboBox39
             // 
-            this.comboBox39.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox39.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox39.FormattingEnabled = true;
-            this.comboBox39.ItemHeight = 21;
-            this.comboBox39.Location = new System.Drawing.Point(1445, 220);
+            this.comboBox39.ItemHeight = 13;
+            this.comboBox39.Location = new System.Drawing.Point(1435, 180);
             this.comboBox39.Name = "comboBox39";
-            this.comboBox39.Size = new System.Drawing.Size(130, 29);
+            this.comboBox39.Size = new System.Drawing.Size(130, 21);
             this.comboBox39.TabIndex = 140;
             // 
             // comboBox40
             // 
-            this.comboBox40.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox40.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox40.FormattingEnabled = true;
-            this.comboBox40.ItemHeight = 21;
-            this.comboBox40.Location = new System.Drawing.Point(1173, 154);
+            this.comboBox40.ItemHeight = 13;
+            this.comboBox40.Location = new System.Drawing.Point(1155, 140);
             this.comboBox40.Name = "comboBox40";
-            this.comboBox40.Size = new System.Drawing.Size(130, 29);
+            this.comboBox40.Size = new System.Drawing.Size(130, 21);
             this.comboBox40.TabIndex = 139;
             // 
             // comboBox41
             // 
-            this.comboBox41.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox41.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox41.FormattingEnabled = true;
-            this.comboBox41.ItemHeight = 21;
-            this.comboBox41.Location = new System.Drawing.Point(1309, 154);
+            this.comboBox41.ItemHeight = 13;
+            this.comboBox41.Location = new System.Drawing.Point(1295, 140);
             this.comboBox41.Name = "comboBox41";
-            this.comboBox41.Size = new System.Drawing.Size(130, 29);
+            this.comboBox41.Size = new System.Drawing.Size(130, 21);
             this.comboBox41.TabIndex = 138;
             // 
             // comboBox42
             // 
-            this.comboBox42.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox42.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox42.FormattingEnabled = true;
-            this.comboBox42.ItemHeight = 21;
-            this.comboBox42.Location = new System.Drawing.Point(1445, 154);
+            this.comboBox42.ItemHeight = 13;
+            this.comboBox42.Location = new System.Drawing.Point(1435, 140);
             this.comboBox42.Name = "comboBox42";
-            this.comboBox42.Size = new System.Drawing.Size(130, 29);
+            this.comboBox42.Size = new System.Drawing.Size(130, 21);
             this.comboBox42.TabIndex = 137;
             // 
             // comboBox43
             // 
-            this.comboBox43.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox43.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox43.FormattingEnabled = true;
-            this.comboBox43.ItemHeight = 21;
-            this.comboBox43.Location = new System.Drawing.Point(1173, 97);
+            this.comboBox43.ItemHeight = 13;
+            this.comboBox43.Location = new System.Drawing.Point(1155, 100);
             this.comboBox43.Name = "comboBox43";
-            this.comboBox43.Size = new System.Drawing.Size(130, 29);
+            this.comboBox43.Size = new System.Drawing.Size(130, 21);
             this.comboBox43.TabIndex = 136;
             // 
             // comboBox44
             // 
-            this.comboBox44.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox44.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox44.FormattingEnabled = true;
-            this.comboBox44.ItemHeight = 21;
-            this.comboBox44.Location = new System.Drawing.Point(1309, 97);
+            this.comboBox44.ItemHeight = 13;
+            this.comboBox44.Location = new System.Drawing.Point(1295, 100);
             this.comboBox44.Name = "comboBox44";
-            this.comboBox44.Size = new System.Drawing.Size(130, 29);
+            this.comboBox44.Size = new System.Drawing.Size(130, 21);
             this.comboBox44.TabIndex = 135;
             // 
             // comboBox45
             // 
-            this.comboBox45.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox45.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox45.FormattingEnabled = true;
-            this.comboBox45.ItemHeight = 21;
-            this.comboBox45.Location = new System.Drawing.Point(1445, 97);
+            this.comboBox45.ItemHeight = 13;
+            this.comboBox45.Location = new System.Drawing.Point(1435, 100);
             this.comboBox45.Name = "comboBox45";
-            this.comboBox45.Size = new System.Drawing.Size(130, 29);
+            this.comboBox45.Size = new System.Drawing.Size(130, 21);
             this.comboBox45.TabIndex = 134;
             // 
             // comboBox46
             // 
-            this.comboBox46.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox46.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox46.FormattingEnabled = true;
-            this.comboBox46.ItemHeight = 21;
-            this.comboBox46.Location = new System.Drawing.Point(1173, 36);
+            this.comboBox46.ItemHeight = 13;
+            this.comboBox46.Location = new System.Drawing.Point(1155, 60);
             this.comboBox46.Name = "comboBox46";
-            this.comboBox46.Size = new System.Drawing.Size(130, 29);
+            this.comboBox46.Size = new System.Drawing.Size(130, 21);
             this.comboBox46.TabIndex = 133;
             // 
             // comboBox47
             // 
-            this.comboBox47.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox47.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox47.FormattingEnabled = true;
-            this.comboBox47.ItemHeight = 21;
-            this.comboBox47.Location = new System.Drawing.Point(1309, 36);
+            this.comboBox47.ItemHeight = 13;
+            this.comboBox47.Location = new System.Drawing.Point(1295, 60);
             this.comboBox47.Name = "comboBox47";
-            this.comboBox47.Size = new System.Drawing.Size(130, 29);
+            this.comboBox47.Size = new System.Drawing.Size(130, 21);
             this.comboBox47.TabIndex = 132;
             // 
             // comboBox48
             // 
-            this.comboBox48.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox48.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox48.FormattingEnabled = true;
-            this.comboBox48.ItemHeight = 21;
-            this.comboBox48.Location = new System.Drawing.Point(1445, 36);
+            this.comboBox48.ItemHeight = 13;
+            this.comboBox48.Location = new System.Drawing.Point(1435, 60);
             this.comboBox48.Name = "comboBox48";
-            this.comboBox48.Size = new System.Drawing.Size(130, 29);
+            this.comboBox48.Size = new System.Drawing.Size(130, 21);
             this.comboBox48.TabIndex = 131;
             // 
             // comboBox49
             // 
-            this.comboBox49.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox49.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox49.FormattingEnabled = true;
-            this.comboBox49.ItemHeight = 21;
-            this.comboBox49.Location = new System.Drawing.Point(640, 415);
+            this.comboBox49.ItemHeight = 13;
+            this.comboBox49.Location = new System.Drawing.Point(640, 300);
             this.comboBox49.Name = "comboBox49";
-            this.comboBox49.Size = new System.Drawing.Size(130, 29);
+            this.comboBox49.Size = new System.Drawing.Size(130, 21);
             this.comboBox49.TabIndex = 130;
             // 
             // comboBox50
             // 
-            this.comboBox50.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox50.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox50.FormattingEnabled = true;
-            this.comboBox50.ItemHeight = 21;
-            this.comboBox50.Location = new System.Drawing.Point(776, 414);
+            this.comboBox50.ItemHeight = 13;
+            this.comboBox50.Location = new System.Drawing.Point(780, 300);
             this.comboBox50.Name = "comboBox50";
-            this.comboBox50.Size = new System.Drawing.Size(130, 29);
+            this.comboBox50.Size = new System.Drawing.Size(130, 21);
             this.comboBox50.TabIndex = 129;
             // 
             // comboBox51
             // 
-            this.comboBox51.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox51.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox51.FormattingEnabled = true;
-            this.comboBox51.ItemHeight = 21;
-            this.comboBox51.Location = new System.Drawing.Point(912, 415);
+            this.comboBox51.ItemHeight = 13;
+            this.comboBox51.Location = new System.Drawing.Point(920, 300);
             this.comboBox51.Name = "comboBox51";
-            this.comboBox51.Size = new System.Drawing.Size(130, 29);
+            this.comboBox51.Size = new System.Drawing.Size(130, 21);
             this.comboBox51.TabIndex = 128;
             // 
             // comboBox52
             // 
-            this.comboBox52.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox52.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox52.FormattingEnabled = true;
-            this.comboBox52.ItemHeight = 21;
-            this.comboBox52.Location = new System.Drawing.Point(640, 348);
+            this.comboBox52.ItemHeight = 13;
+            this.comboBox52.Location = new System.Drawing.Point(640, 260);
             this.comboBox52.Name = "comboBox52";
-            this.comboBox52.Size = new System.Drawing.Size(130, 29);
+            this.comboBox52.Size = new System.Drawing.Size(130, 21);
             this.comboBox52.TabIndex = 127;
             // 
             // comboBox53
             // 
-            this.comboBox53.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox53.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox53.FormattingEnabled = true;
-            this.comboBox53.ItemHeight = 21;
-            this.comboBox53.Location = new System.Drawing.Point(776, 348);
+            this.comboBox53.ItemHeight = 13;
+            this.comboBox53.Location = new System.Drawing.Point(780, 260);
             this.comboBox53.Name = "comboBox53";
-            this.comboBox53.Size = new System.Drawing.Size(130, 29);
+            this.comboBox53.Size = new System.Drawing.Size(130, 21);
             this.comboBox53.TabIndex = 126;
             // 
             // comboBox54
             // 
-            this.comboBox54.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox54.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox54.FormattingEnabled = true;
-            this.comboBox54.ItemHeight = 21;
-            this.comboBox54.Location = new System.Drawing.Point(912, 348);
+            this.comboBox54.ItemHeight = 13;
+            this.comboBox54.Location = new System.Drawing.Point(920, 260);
             this.comboBox54.Name = "comboBox54";
-            this.comboBox54.Size = new System.Drawing.Size(130, 29);
+            this.comboBox54.Size = new System.Drawing.Size(130, 21);
             this.comboBox54.TabIndex = 125;
             // 
             // comboBox19
             // 
-            this.comboBox19.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox19.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.ItemHeight = 21;
-            this.comboBox19.Location = new System.Drawing.Point(640, 284);
+            this.comboBox19.ItemHeight = 13;
+            this.comboBox19.Location = new System.Drawing.Point(640, 220);
             this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(130, 29);
+            this.comboBox19.Size = new System.Drawing.Size(130, 21);
             this.comboBox19.TabIndex = 124;
             // 
             // comboBox20
             // 
-            this.comboBox20.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox20.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.ItemHeight = 21;
-            this.comboBox20.Location = new System.Drawing.Point(776, 284);
+            this.comboBox20.ItemHeight = 13;
+            this.comboBox20.Location = new System.Drawing.Point(780, 220);
             this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(130, 29);
+            this.comboBox20.Size = new System.Drawing.Size(130, 21);
             this.comboBox20.TabIndex = 123;
             // 
             // comboBox21
             // 
-            this.comboBox21.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox21.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.ItemHeight = 21;
-            this.comboBox21.Location = new System.Drawing.Point(912, 285);
+            this.comboBox21.ItemHeight = 13;
+            this.comboBox21.Location = new System.Drawing.Point(920, 220);
             this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(130, 29);
+            this.comboBox21.Size = new System.Drawing.Size(130, 21);
             this.comboBox21.TabIndex = 122;
             // 
             // comboBox22
             // 
-            this.comboBox22.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox22.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.ItemHeight = 21;
-            this.comboBox22.Location = new System.Drawing.Point(640, 220);
+            this.comboBox22.ItemHeight = 13;
+            this.comboBox22.Location = new System.Drawing.Point(640, 180);
             this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(130, 29);
+            this.comboBox22.Size = new System.Drawing.Size(130, 21);
             this.comboBox22.TabIndex = 121;
             // 
             // comboBox23
             // 
-            this.comboBox23.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox23.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.ItemHeight = 21;
-            this.comboBox23.Location = new System.Drawing.Point(776, 220);
+            this.comboBox23.ItemHeight = 13;
+            this.comboBox23.Location = new System.Drawing.Point(780, 180);
             this.comboBox23.Name = "comboBox23";
-            this.comboBox23.Size = new System.Drawing.Size(130, 29);
+            this.comboBox23.Size = new System.Drawing.Size(130, 21);
             this.comboBox23.TabIndex = 120;
             // 
             // comboBox24
             // 
-            this.comboBox24.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox24.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.ItemHeight = 21;
-            this.comboBox24.Location = new System.Drawing.Point(912, 220);
+            this.comboBox24.ItemHeight = 13;
+            this.comboBox24.Location = new System.Drawing.Point(920, 180);
             this.comboBox24.Name = "comboBox24";
-            this.comboBox24.Size = new System.Drawing.Size(130, 29);
+            this.comboBox24.Size = new System.Drawing.Size(130, 21);
             this.comboBox24.TabIndex = 119;
             // 
             // comboBox25
             // 
-            this.comboBox25.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox25.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox25.FormattingEnabled = true;
-            this.comboBox25.ItemHeight = 21;
-            this.comboBox25.Location = new System.Drawing.Point(640, 154);
+            this.comboBox25.ItemHeight = 13;
+            this.comboBox25.Location = new System.Drawing.Point(640, 140);
             this.comboBox25.Name = "comboBox25";
-            this.comboBox25.Size = new System.Drawing.Size(130, 29);
+            this.comboBox25.Size = new System.Drawing.Size(130, 21);
             this.comboBox25.TabIndex = 118;
             // 
             // comboBox26
             // 
-            this.comboBox26.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox26.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox26.FormattingEnabled = true;
-            this.comboBox26.ItemHeight = 21;
-            this.comboBox26.Location = new System.Drawing.Point(776, 154);
+            this.comboBox26.ItemHeight = 13;
+            this.comboBox26.Location = new System.Drawing.Point(780, 140);
             this.comboBox26.Name = "comboBox26";
-            this.comboBox26.Size = new System.Drawing.Size(130, 29);
+            this.comboBox26.Size = new System.Drawing.Size(130, 21);
             this.comboBox26.TabIndex = 117;
             // 
             // comboBox27
             // 
-            this.comboBox27.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox27.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox27.FormattingEnabled = true;
-            this.comboBox27.ItemHeight = 21;
-            this.comboBox27.Location = new System.Drawing.Point(912, 154);
+            this.comboBox27.ItemHeight = 13;
+            this.comboBox27.Location = new System.Drawing.Point(920, 140);
             this.comboBox27.Name = "comboBox27";
-            this.comboBox27.Size = new System.Drawing.Size(130, 29);
+            this.comboBox27.Size = new System.Drawing.Size(130, 21);
             this.comboBox27.TabIndex = 116;
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.label31);
+            this.groupBox4.Controls.Add(this.label30);
+            this.groupBox4.Controls.Add(this.label29);
+            this.groupBox4.Controls.Add(this.label28);
+            this.groupBox4.Controls.Add(this.label27);
+            this.groupBox4.Controls.Add(this.label26);
+            this.groupBox4.Controls.Add(this.label25);
+            this.groupBox4.Controls.Add(this.label24);
+            this.groupBox4.Controls.Add(this.label23);
+            this.groupBox4.Controls.Add(this.label22);
+            this.groupBox4.Controls.Add(this.label21);
+            this.groupBox4.Controls.Add(this.label20);
+            this.groupBox4.Controls.Add(this.label19);
+            this.groupBox4.Controls.Add(this.label18);
+            this.groupBox4.Controls.Add(this.label17);
+            this.groupBox4.Controls.Add(this.label16);
+            this.groupBox4.Controls.Add(this.label15);
+            this.groupBox4.Controls.Add(this.label14);
+            this.groupBox4.Controls.Add(this.label13);
+            this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Controls.Add(this.comboBox55);
@@ -1787,305 +1828,542 @@
             this.groupBox4.Controls.Add(this.comboBox25);
             this.groupBox4.Controls.Add(this.comboBox27);
             this.groupBox4.Controls.Add(this.comboBox26);
-            this.groupBox4.Location = new System.Drawing.Point(213, 535);
+            this.groupBox4.Location = new System.Drawing.Point(218, 593);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1692, 505);
+            this.groupBox4.Size = new System.Drawing.Size(1692, 365);
             this.groupBox4.TabIndex = 49;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "groupBox4";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label31.ForeColor = System.Drawing.Color.White;
+            this.label31.Location = new System.Drawing.Point(1077, 224);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(72, 13);
+            this.label31.TabIndex = 172;
+            this.label31.Text = "センサー19";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(1077, 184);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(72, 13);
+            this.label30.TabIndex = 171;
+            this.label30.Text = "センサー18";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label29.ForeColor = System.Drawing.Color.White;
+            this.label29.Location = new System.Drawing.Point(1077, 144);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(72, 13);
+            this.label29.TabIndex = 170;
+            this.label29.Text = "センサー17";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label28.ForeColor = System.Drawing.Color.White;
+            this.label28.Location = new System.Drawing.Point(1077, 104);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(72, 13);
+            this.label28.TabIndex = 169;
+            this.label28.Text = "センサー16";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(1077, 64);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(72, 13);
+            this.label27.TabIndex = 168;
+            this.label27.Text = "センサー15";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label26.ForeColor = System.Drawing.Color.White;
+            this.label26.Location = new System.Drawing.Point(565, 304);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(72, 13);
+            this.label26.TabIndex = 167;
+            this.label26.Text = "センサー14";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label25.ForeColor = System.Drawing.Color.White;
+            this.label25.Location = new System.Drawing.Point(565, 263);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(72, 13);
+            this.label25.TabIndex = 166;
+            this.label25.Text = "センサー13";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label24.ForeColor = System.Drawing.Color.White;
+            this.label24.Location = new System.Drawing.Point(565, 224);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(72, 13);
+            this.label24.TabIndex = 165;
+            this.label24.Text = "センサー12";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label23.ForeColor = System.Drawing.Color.White;
+            this.label23.Location = new System.Drawing.Point(565, 183);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(71, 13);
+            this.label23.TabIndex = 164;
+            this.label23.Text = "センサー11";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(565, 144);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(72, 13);
+            this.label22.TabIndex = 163;
+            this.label22.Text = "センサー10";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label21.ForeColor = System.Drawing.Color.White;
+            this.label21.Location = new System.Drawing.Point(565, 104);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(65, 13);
+            this.label21.TabIndex = 162;
+            this.label21.Text = "センサー9";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label20.ForeColor = System.Drawing.Color.White;
+            this.label20.Location = new System.Drawing.Point(565, 64);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(65, 13);
+            this.label20.TabIndex = 161;
+            this.label20.Text = "センサー8";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(60, 304);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(65, 13);
+            this.label19.TabIndex = 160;
+            this.label19.Text = "センサー7";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label18.ForeColor = System.Drawing.Color.White;
+            this.label18.Location = new System.Drawing.Point(60, 264);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(65, 13);
+            this.label18.TabIndex = 159;
+            this.label18.Text = "センサー6";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(60, 224);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(65, 13);
+            this.label17.TabIndex = 158;
+            this.label17.Text = "センサー5";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(60, 184);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(65, 13);
+            this.label16.TabIndex = 157;
+            this.label16.Text = "センサー4";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(60, 144);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(65, 13);
+            this.label15.TabIndex = 156;
+            this.label15.Text = "センサー3";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(60, 104);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(65, 13);
+            this.label14.TabIndex = 155;
+            this.label14.Text = "センサー2";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Location = new System.Drawing.Point(6, 5);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(275, 13);
+            this.label13.TabIndex = 154;
+            this.label13.Text = "センサー感知でプリセット移動するカメラの登録";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9.75F);
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(60, 64);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(64, 13);
+            this.label11.TabIndex = 153;
+            this.label11.Text = "センサー1";
             // 
             // label10
             // 
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label10.Image = global::Map_Form.Properties.Resources.cont_pre001;
-            this.label10.Location = new System.Drawing.Point(1189, 464);
+            this.label10.Location = new System.Drawing.Point(1179, 293);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(190, 30);
             this.label10.TabIndex = 152;
             this.label10.Text = "キャンセル";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label10_MouseDown);
+            this.label10.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label10_MouseUp);
             // 
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.label8.Image = global::Map_Form.Properties.Resources.cont_pre001;
-            this.label8.Location = new System.Drawing.Point(1385, 464);
+            this.label8.Location = new System.Drawing.Point(1375, 293);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(190, 30);
             this.label8.TabIndex = 89;
             this.label8.Text = "登録";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label8_MouseDown);
+            this.label8.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label8_MouseUp);
             // 
             // comboBox28
             // 
-            this.comboBox28.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox28.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox28.FormattingEnabled = true;
-            this.comboBox28.ItemHeight = 21;
-            this.comboBox28.Location = new System.Drawing.Point(640, 97);
+            this.comboBox28.ItemHeight = 13;
+            this.comboBox28.Location = new System.Drawing.Point(640, 100);
             this.comboBox28.Name = "comboBox28";
-            this.comboBox28.Size = new System.Drawing.Size(130, 29);
+            this.comboBox28.Size = new System.Drawing.Size(130, 21);
             this.comboBox28.TabIndex = 151;
             // 
             // comboBox34
             // 
-            this.comboBox34.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox34.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox34.FormattingEnabled = true;
-            this.comboBox34.ItemHeight = 21;
-            this.comboBox34.Location = new System.Drawing.Point(127, 415);
+            this.comboBox34.ItemHeight = 13;
+            this.comboBox34.Location = new System.Drawing.Point(125, 300);
             this.comboBox34.Name = "comboBox34";
-            this.comboBox34.Size = new System.Drawing.Size(130, 29);
+            this.comboBox34.Size = new System.Drawing.Size(130, 21);
             this.comboBox34.TabIndex = 127;
             // 
             // comboBox29
             // 
-            this.comboBox29.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox29.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox29.FormattingEnabled = true;
-            this.comboBox29.ItemHeight = 21;
-            this.comboBox29.Location = new System.Drawing.Point(776, 97);
+            this.comboBox29.ItemHeight = 13;
+            this.comboBox29.Location = new System.Drawing.Point(780, 100);
             this.comboBox29.Name = "comboBox29";
-            this.comboBox29.Size = new System.Drawing.Size(130, 29);
+            this.comboBox29.Size = new System.Drawing.Size(130, 21);
             this.comboBox29.TabIndex = 150;
             // 
             // comboBox35
             // 
-            this.comboBox35.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox35.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox35.FormattingEnabled = true;
-            this.comboBox35.ItemHeight = 21;
-            this.comboBox35.Location = new System.Drawing.Point(263, 414);
+            this.comboBox35.ItemHeight = 13;
+            this.comboBox35.Location = new System.Drawing.Point(265, 300);
             this.comboBox35.Name = "comboBox35";
-            this.comboBox35.Size = new System.Drawing.Size(130, 29);
+            this.comboBox35.Size = new System.Drawing.Size(130, 21);
             this.comboBox35.TabIndex = 126;
             // 
             // comboBox30
             // 
-            this.comboBox30.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox30.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox30.FormattingEnabled = true;
-            this.comboBox30.ItemHeight = 21;
-            this.comboBox30.Location = new System.Drawing.Point(912, 97);
+            this.comboBox30.ItemHeight = 13;
+            this.comboBox30.Location = new System.Drawing.Point(920, 100);
             this.comboBox30.Name = "comboBox30";
-            this.comboBox30.Size = new System.Drawing.Size(130, 29);
+            this.comboBox30.Size = new System.Drawing.Size(130, 21);
             this.comboBox30.TabIndex = 149;
             // 
             // comboBox36
             // 
-            this.comboBox36.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox36.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox36.FormattingEnabled = true;
-            this.comboBox36.ItemHeight = 21;
-            this.comboBox36.Location = new System.Drawing.Point(399, 415);
+            this.comboBox36.ItemHeight = 13;
+            this.comboBox36.Location = new System.Drawing.Point(405, 300);
             this.comboBox36.Name = "comboBox36";
-            this.comboBox36.Size = new System.Drawing.Size(130, 29);
+            this.comboBox36.Size = new System.Drawing.Size(130, 21);
             this.comboBox36.TabIndex = 125;
             // 
             // comboBox31
             // 
-            this.comboBox31.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox31.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox31.FormattingEnabled = true;
-            this.comboBox31.ItemHeight = 21;
-            this.comboBox31.Location = new System.Drawing.Point(640, 36);
+            this.comboBox31.ItemHeight = 13;
+            this.comboBox31.Location = new System.Drawing.Point(640, 60);
             this.comboBox31.MaxDropDownItems = 20;
             this.comboBox31.Name = "comboBox31";
-            this.comboBox31.Size = new System.Drawing.Size(130, 29);
+            this.comboBox31.Size = new System.Drawing.Size(130, 21);
             this.comboBox31.TabIndex = 148;
             // 
             // comboBox32
             // 
-            this.comboBox32.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox32.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox32.FormattingEnabled = true;
-            this.comboBox32.ItemHeight = 21;
-            this.comboBox32.Location = new System.Drawing.Point(776, 36);
+            this.comboBox32.ItemHeight = 13;
+            this.comboBox32.Location = new System.Drawing.Point(780, 60);
             this.comboBox32.Name = "comboBox32";
-            this.comboBox32.Size = new System.Drawing.Size(130, 29);
+            this.comboBox32.Size = new System.Drawing.Size(130, 21);
             this.comboBox32.TabIndex = 147;
             // 
             // comboBox16
             // 
-            this.comboBox16.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox16.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.ItemHeight = 21;
-            this.comboBox16.Location = new System.Drawing.Point(127, 351);
+            this.comboBox16.ItemHeight = 13;
+            this.comboBox16.Location = new System.Drawing.Point(125, 260);
             this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(130, 29);
+            this.comboBox16.Size = new System.Drawing.Size(130, 21);
             this.comboBox16.TabIndex = 124;
             // 
             // comboBox33
             // 
-            this.comboBox33.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox33.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox33.FormattingEnabled = true;
-            this.comboBox33.ItemHeight = 21;
-            this.comboBox33.Location = new System.Drawing.Point(912, 36);
+            this.comboBox33.ItemHeight = 13;
+            this.comboBox33.Location = new System.Drawing.Point(920, 60);
             this.comboBox33.Name = "comboBox33";
-            this.comboBox33.Size = new System.Drawing.Size(130, 29);
+            this.comboBox33.Size = new System.Drawing.Size(130, 21);
             this.comboBox33.TabIndex = 146;
             // 
             // comboBox17
             // 
-            this.comboBox17.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox17.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.ItemHeight = 21;
-            this.comboBox17.Location = new System.Drawing.Point(263, 351);
+            this.comboBox17.ItemHeight = 13;
+            this.comboBox17.Location = new System.Drawing.Point(265, 260);
             this.comboBox17.Name = "comboBox17";
-            this.comboBox17.Size = new System.Drawing.Size(130, 29);
+            this.comboBox17.Size = new System.Drawing.Size(130, 21);
             this.comboBox17.TabIndex = 123;
             // 
             // comboBox18
             // 
-            this.comboBox18.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox18.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.ItemHeight = 21;
-            this.comboBox18.Location = new System.Drawing.Point(399, 351);
+            this.comboBox18.ItemHeight = 13;
+            this.comboBox18.Location = new System.Drawing.Point(405, 260);
             this.comboBox18.Name = "comboBox18";
-            this.comboBox18.Size = new System.Drawing.Size(130, 29);
+            this.comboBox18.Size = new System.Drawing.Size(130, 21);
             this.comboBox18.TabIndex = 122;
             // 
             // comboBox13
             // 
-            this.comboBox13.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox13.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.ItemHeight = 21;
-            this.comboBox13.Location = new System.Drawing.Point(127, 287);
+            this.comboBox13.ItemHeight = 13;
+            this.comboBox13.Location = new System.Drawing.Point(125, 220);
             this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(130, 29);
+            this.comboBox13.Size = new System.Drawing.Size(130, 21);
             this.comboBox13.TabIndex = 121;
             // 
             // comboBox14
             // 
-            this.comboBox14.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox14.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.ItemHeight = 21;
-            this.comboBox14.Location = new System.Drawing.Point(263, 287);
+            this.comboBox14.ItemHeight = 13;
+            this.comboBox14.Location = new System.Drawing.Point(265, 220);
             this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(130, 29);
+            this.comboBox14.Size = new System.Drawing.Size(130, 21);
             this.comboBox14.TabIndex = 120;
             // 
             // comboBox15
             // 
-            this.comboBox15.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox15.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.ItemHeight = 21;
-            this.comboBox15.Location = new System.Drawing.Point(399, 287);
+            this.comboBox15.ItemHeight = 13;
+            this.comboBox15.Location = new System.Drawing.Point(405, 220);
             this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(130, 29);
+            this.comboBox15.Size = new System.Drawing.Size(130, 21);
             this.comboBox15.TabIndex = 119;
             // 
             // comboBox10
             // 
-            this.comboBox10.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox10.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.ItemHeight = 21;
-            this.comboBox10.Location = new System.Drawing.Point(127, 221);
+            this.comboBox10.ItemHeight = 13;
+            this.comboBox10.Location = new System.Drawing.Point(125, 180);
             this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(130, 29);
+            this.comboBox10.Size = new System.Drawing.Size(130, 21);
             this.comboBox10.TabIndex = 118;
             // 
             // comboBox11
             // 
-            this.comboBox11.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox11.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.ItemHeight = 21;
-            this.comboBox11.Location = new System.Drawing.Point(263, 221);
+            this.comboBox11.ItemHeight = 13;
+            this.comboBox11.Location = new System.Drawing.Point(265, 180);
             this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(130, 29);
+            this.comboBox11.Size = new System.Drawing.Size(130, 21);
             this.comboBox11.TabIndex = 117;
             // 
             // comboBox12
             // 
-            this.comboBox12.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox12.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.ItemHeight = 21;
-            this.comboBox12.Location = new System.Drawing.Point(399, 220);
+            this.comboBox12.ItemHeight = 13;
+            this.comboBox12.Location = new System.Drawing.Point(405, 180);
             this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(130, 29);
+            this.comboBox12.Size = new System.Drawing.Size(130, 21);
             this.comboBox12.TabIndex = 116;
             // 
             // comboBox7
             // 
-            this.comboBox7.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox7.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.ItemHeight = 21;
-            this.comboBox7.Location = new System.Drawing.Point(127, 154);
+            this.comboBox7.ItemHeight = 13;
+            this.comboBox7.Location = new System.Drawing.Point(125, 140);
             this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(130, 29);
+            this.comboBox7.Size = new System.Drawing.Size(130, 21);
             this.comboBox7.TabIndex = 115;
             // 
             // comboBox8
             // 
-            this.comboBox8.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox8.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.ItemHeight = 21;
-            this.comboBox8.Location = new System.Drawing.Point(263, 154);
+            this.comboBox8.ItemHeight = 13;
+            this.comboBox8.Location = new System.Drawing.Point(265, 140);
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(130, 29);
+            this.comboBox8.Size = new System.Drawing.Size(130, 21);
             this.comboBox8.TabIndex = 114;
             // 
             // comboBox9
             // 
-            this.comboBox9.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox9.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.ItemHeight = 21;
-            this.comboBox9.Location = new System.Drawing.Point(399, 154);
+            this.comboBox9.ItemHeight = 13;
+            this.comboBox9.Location = new System.Drawing.Point(405, 140);
             this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(130, 29);
+            this.comboBox9.Size = new System.Drawing.Size(130, 21);
             this.comboBox9.TabIndex = 113;
             // 
             // comboBox4
             // 
-            this.comboBox4.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox4.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.ItemHeight = 21;
-            this.comboBox4.Location = new System.Drawing.Point(127, 97);
+            this.comboBox4.ItemHeight = 13;
+            this.comboBox4.Location = new System.Drawing.Point(125, 100);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(130, 29);
+            this.comboBox4.Size = new System.Drawing.Size(130, 21);
             this.comboBox4.TabIndex = 112;
             // 
             // comboBox5
             // 
-            this.comboBox5.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox5.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.ItemHeight = 21;
-            this.comboBox5.Location = new System.Drawing.Point(263, 97);
+            this.comboBox5.ItemHeight = 13;
+            this.comboBox5.Location = new System.Drawing.Point(265, 100);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(130, 29);
+            this.comboBox5.Size = new System.Drawing.Size(130, 21);
             this.comboBox5.TabIndex = 111;
             // 
             // comboBox6
             // 
-            this.comboBox6.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox6.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.ItemHeight = 21;
-            this.comboBox6.Location = new System.Drawing.Point(399, 97);
+            this.comboBox6.ItemHeight = 13;
+            this.comboBox6.Location = new System.Drawing.Point(405, 100);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(130, 29);
+            this.comboBox6.Size = new System.Drawing.Size(130, 21);
             this.comboBox6.TabIndex = 110;
             // 
             // comboBox3
             // 
-            this.comboBox3.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox3.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.ItemHeight = 21;
-            this.comboBox3.Location = new System.Drawing.Point(399, 36);
+            this.comboBox3.ItemHeight = 13;
+            this.comboBox3.Location = new System.Drawing.Point(405, 60);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(130, 29);
+            this.comboBox3.Size = new System.Drawing.Size(130, 21);
             this.comboBox3.TabIndex = 94;
             // 
             // comboBox2
             // 
-            this.comboBox2.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox2.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.ItemHeight = 21;
-            this.comboBox2.Location = new System.Drawing.Point(263, 36);
+            this.comboBox2.ItemHeight = 13;
+            this.comboBox2.Location = new System.Drawing.Point(265, 60);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(130, 29);
+            this.comboBox2.Size = new System.Drawing.Size(130, 21);
             this.comboBox2.TabIndex = 93;
             // 
             // comboBox1
             // 
-            this.comboBox1.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.comboBox1.Font = new System.Drawing.Font("AR丸ゴシック体E", 9.75F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 21;
-            this.comboBox1.Location = new System.Drawing.Point(127, 36);
+            this.comboBox1.ItemHeight = 13;
+            this.comboBox1.Location = new System.Drawing.Point(125, 60);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(130, 29);
+            this.comboBox1.Size = new System.Drawing.Size(130, 21);
             this.comboBox1.TabIndex = 92;
+            // 
+            // btn_camNameReg
+            // 
+            this.btn_camNameReg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_camNameReg.ForeColor = System.Drawing.Color.White;
+            this.btn_camNameReg.Image = global::Map_Form.Properties.Resources.cont_b018;
+            this.btn_camNameReg.Location = new System.Drawing.Point(608, -2);
+            this.btn_camNameReg.Name = "btn_camNameReg";
+            this.btn_camNameReg.Size = new System.Drawing.Size(200, 50);
+            this.btn_camNameReg.TabIndex = 50;
+            this.btn_camNameReg.Text = "パターン登録";
+            this.btn_camNameReg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btn_camNameReg.Click += new System.EventHandler(this.btn_camNameReg_Click);
             // 
             // Camera_Form
             // 
@@ -2093,6 +2371,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1911, 1041);
+            this.Controls.Add(this.btn_camNameReg);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btn_presetMoveReg);
@@ -2133,6 +2412,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2302,5 +2582,26 @@
         private System.Windows.Forms.ComboBox comboBox31;
         private System.Windows.Forms.ComboBox comboBox32;
         private System.Windows.Forms.ComboBox comboBox33;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label btn_camNameReg;
     }
 }
