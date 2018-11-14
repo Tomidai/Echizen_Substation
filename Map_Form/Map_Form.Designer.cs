@@ -898,6 +898,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Map_Form";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Map_Form_FormClosed);
             this.Load += new System.EventHandler(this.Map_Form_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -937,15 +938,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox Camera_08;
-        private System.Windows.Forms.PictureBox Camera_07;
-        private System.Windows.Forms.PictureBox Camera_05;
-        private System.Windows.Forms.PictureBox Camera_04;
-        private System.Windows.Forms.PictureBox Camera_03;
-        private System.Windows.Forms.PictureBox Camera_02;
-        private System.Windows.Forms.PictureBox Camera_01;
         private System.Windows.Forms.Label Sensor_Label_01;
-        private System.Windows.Forms.PictureBox Camera_06;
         private System.Windows.Forms.Label Camera_Label_8;
         private System.Windows.Forms.Label Camera_Label_7;
         private System.Windows.Forms.Label Camera_Label_06;
@@ -1022,6 +1015,14 @@
         private System.Windows.Forms.Label MuteButton;
         private System.Windows.Forms.Label FaultButton;
         private System.Windows.Forms.Label SettingButton;
+        public System.Windows.Forms.PictureBox Camera_08;
+        public System.Windows.Forms.PictureBox Camera_07;
+        public System.Windows.Forms.PictureBox Camera_05;
+        public System.Windows.Forms.PictureBox Camera_04;
+        public System.Windows.Forms.PictureBox Camera_03;
+        public System.Windows.Forms.PictureBox Camera_02;
+        public System.Windows.Forms.PictureBox Camera_01;
+        public System.Windows.Forms.PictureBox Camera_06;
     }
 }
 

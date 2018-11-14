@@ -318,6 +318,27 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="SensorLock77_off.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="SensorLock77_off.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SensorLock77_off.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 98</value>
+  </data>
+  <data name="SensorLock77_off.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 38</value>
+  </data>
+  <data name="SensorLock77_off.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="SensorLock77_off.Text" xml:space="preserve">
+    <value>　　77KV OFF</value>
+  </data>
+  <data name="SensorLock77_off.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;SensorLock77_off.Name" xml:space="preserve">
     <value>SensorLock77_off</value>
   </data>
@@ -329,6 +350,27 @@
   </data>
   <data name="&gt;&gt;SensorLock77_off.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="SensorLock77_on.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="SensorLock77_on.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SensorLock77_on.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 98</value>
+  </data>
+  <data name="SensorLock77_on.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 38</value>
+  </data>
+  <data name="SensorLock77_on.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="SensorLock77_on.Text" xml:space="preserve">
+    <value>　　77KV ON</value>
+  </data>
+  <data name="SensorLock77_on.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;SensorLock77_on.Name" xml:space="preserve">
     <value>SensorLock77_on</value>
@@ -342,6 +384,27 @@
   <data name="&gt;&gt;SensorLock77_on.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="SensorLock500_off.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="SensorLock500_off.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SensorLock500_off.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 52</value>
+  </data>
+  <data name="SensorLock500_off.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 38</value>
+  </data>
+  <data name="SensorLock500_off.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="SensorLock500_off.Text" xml:space="preserve">
+    <value>　　　500KV OFF</value>
+  </data>
+  <data name="SensorLock500_off.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;SensorLock500_off.Name" xml:space="preserve">
     <value>SensorLock500_off</value>
   </data>
@@ -354,6 +417,27 @@
   <data name="&gt;&gt;SensorLock500_off.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="SensorLock500_on.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="SensorLock500_on.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SensorLock500_on.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 52</value>
+  </data>
+  <data name="SensorLock500_on.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 38</value>
+  </data>
+  <data name="SensorLock500_on.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="SensorLock500_on.Text" xml:space="preserve">
+    <value>　　　500KV ON</value>
+  </data>
+  <data name="SensorLock500_on.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;SensorLock500_on.Name" xml:space="preserve">
     <value>SensorLock500_on</value>
   </data>
@@ -365,6 +449,27 @@
   </data>
   <data name="&gt;&gt;SensorLock500_on.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>ＭＳ ゴシック, 12pt</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-2, 0</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>484, 34</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>　センサーロック</value>
+  </data>
+  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
@@ -402,6 +507,27 @@
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
+  <data name="SettingButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="SettingButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SettingButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 52</value>
+  </data>
+  <data name="SettingButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 38</value>
+  </data>
+  <data name="SettingButton.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="SettingButton.Text" xml:space="preserve">
+    <value>　　　センサー設定</value>
+  </data>
+  <data name="SettingButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;SettingButton.Name" xml:space="preserve">
     <value>SettingButton</value>
   </data>
@@ -413,6 +539,27 @@
   </data>
   <data name="&gt;&gt;SettingButton.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="FaultButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="FaultButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="FaultButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 98</value>
+  </data>
+  <data name="FaultButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 38</value>
+  </data>
+  <data name="FaultButton.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="FaultButton.Text" xml:space="preserve">
+    <value>　　　センサー異常</value>
+  </data>
+  <data name="FaultButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;FaultButton.Name" xml:space="preserve">
     <value>FaultButton</value>
@@ -426,6 +573,27 @@
   <data name="&gt;&gt;FaultButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="ExitButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="ExitButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ExitButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>456, 98</value>
+  </data>
+  <data name="ExitButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 38</value>
+  </data>
+  <data name="ExitButton.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="ExitButton.Text" xml:space="preserve">
+    <value>　　　システム終了</value>
+  </data>
+  <data name="ExitButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;ExitButton.Name" xml:space="preserve">
     <value>ExitButton</value>
   </data>
@@ -437,6 +605,27 @@
   </data>
   <data name="&gt;&gt;ExitButton.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="LogsButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="LogsButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LogsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 98</value>
+  </data>
+  <data name="LogsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 38</value>
+  </data>
+  <data name="LogsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="LogsButton.Text" xml:space="preserve">
+    <value>　　　センサーログ</value>
+  </data>
+  <data name="LogsButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;LogsButton.Name" xml:space="preserve">
     <value>LogsButton</value>
@@ -450,6 +639,27 @@
   <data name="&gt;&gt;LogsButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="MuteButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="MuteButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="MuteButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 52</value>
+  </data>
+  <data name="MuteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 38</value>
+  </data>
+  <data name="MuteButton.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="MuteButton.Text" xml:space="preserve">
+    <value>　　　ブザー停止</value>
+  </data>
+  <data name="MuteButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;MuteButton.Name" xml:space="preserve">
     <value>MuteButton</value>
   </data>
@@ -462,6 +672,27 @@
   <data name="&gt;&gt;MuteButton.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="RestrationButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="RestrationButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RestrationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>456, 52</value>
+  </data>
+  <data name="RestrationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 38</value>
+  </data>
+  <data name="RestrationButton.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="RestrationButton.Text" xml:space="preserve">
+    <value>　　　センサー復旧</value>
+  </data>
+  <data name="RestrationButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;RestrationButton.Name" xml:space="preserve">
     <value>RestrationButton</value>
   </data>
@@ -473,6 +704,27 @@
   </data>
   <data name="&gt;&gt;RestrationButton.ZOrder" xml:space="preserve">
     <value>5</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>ＭＳ ゴシック, 12pt</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-6, 1</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>693, 34</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>　コントロールメニュー</value>
+  </data>
+  <data name="label8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -510,6 +762,27 @@
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 1</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>654, 34</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>　センサーログ</value>
+  </data>
+  <data name="label9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
   </data>
@@ -544,39 +817,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 12pt</value>
-  </data>
-  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 1</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>654, 34</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>　センサーログ</value>
-  </data>
-  <data name="label9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="GotoCamera_Button8.Font" type="System.Drawing.Font, System.Drawing">
@@ -843,402 +1083,6 @@
   <data name="&gt;&gt;GotoCamera_Button1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="SettingButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 11.25pt, style=Bold</value>
-  </data>
-  <data name="SettingButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="SettingButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 52</value>
-  </data>
-  <data name="SettingButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 38</value>
-  </data>
-  <data name="SettingButton.TabIndex" type="System.Int32, mscorlib">
-    <value>45</value>
-  </data>
-  <data name="SettingButton.Text" xml:space="preserve">
-    <value>　　　センサー設定</value>
-  </data>
-  <data name="SettingButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;SettingButton.Name" xml:space="preserve">
-    <value>SettingButton</value>
-  </data>
-  <data name="&gt;&gt;SettingButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SettingButton.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;SettingButton.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="FaultButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 11.25pt, style=Bold</value>
-  </data>
-  <data name="FaultButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="FaultButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 98</value>
-  </data>
-  <data name="FaultButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 38</value>
-  </data>
-  <data name="FaultButton.TabIndex" type="System.Int32, mscorlib">
-    <value>44</value>
-  </data>
-  <data name="FaultButton.Text" xml:space="preserve">
-    <value>　　　センサー異常</value>
-  </data>
-  <data name="FaultButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;FaultButton.Name" xml:space="preserve">
-    <value>FaultButton</value>
-  </data>
-  <data name="&gt;&gt;FaultButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;FaultButton.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;FaultButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="ExitButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 11.25pt, style=Bold</value>
-  </data>
-  <data name="ExitButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ExitButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>456, 98</value>
-  </data>
-  <data name="ExitButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 38</value>
-  </data>
-  <data name="ExitButton.TabIndex" type="System.Int32, mscorlib">
-    <value>43</value>
-  </data>
-  <data name="ExitButton.Text" xml:space="preserve">
-    <value>　　　システム終了</value>
-  </data>
-  <data name="ExitButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;ExitButton.Name" xml:space="preserve">
-    <value>ExitButton</value>
-  </data>
-  <data name="&gt;&gt;ExitButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ExitButton.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;ExitButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="LogsButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 11.25pt, style=Bold</value>
-  </data>
-  <data name="LogsButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="LogsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>237, 98</value>
-  </data>
-  <data name="LogsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 38</value>
-  </data>
-  <data name="LogsButton.TabIndex" type="System.Int32, mscorlib">
-    <value>42</value>
-  </data>
-  <data name="LogsButton.Text" xml:space="preserve">
-    <value>　　　センサーログ</value>
-  </data>
-  <data name="LogsButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;LogsButton.Name" xml:space="preserve">
-    <value>LogsButton</value>
-  </data>
-  <data name="&gt;&gt;LogsButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LogsButton.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;LogsButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="MuteButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 11.25pt, style=Bold</value>
-  </data>
-  <data name="MuteButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="MuteButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>237, 52</value>
-  </data>
-  <data name="MuteButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 38</value>
-  </data>
-  <data name="MuteButton.TabIndex" type="System.Int32, mscorlib">
-    <value>41</value>
-  </data>
-  <data name="MuteButton.Text" xml:space="preserve">
-    <value>　　　ブザー停止</value>
-  </data>
-  <data name="MuteButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;MuteButton.Name" xml:space="preserve">
-    <value>MuteButton</value>
-  </data>
-  <data name="&gt;&gt;MuteButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MuteButton.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;MuteButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="RestrationButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 11.25pt, style=Bold</value>
-  </data>
-  <data name="RestrationButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="RestrationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>456, 52</value>
-  </data>
-  <data name="RestrationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 38</value>
-  </data>
-  <data name="RestrationButton.TabIndex" type="System.Int32, mscorlib">
-    <value>40</value>
-  </data>
-  <data name="RestrationButton.Text" xml:space="preserve">
-    <value>　　　センサー復旧</value>
-  </data>
-  <data name="RestrationButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;RestrationButton.Name" xml:space="preserve">
-    <value>RestrationButton</value>
-  </data>
-  <data name="&gt;&gt;RestrationButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RestrationButton.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;RestrationButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>ＭＳ ゴシック, 12pt</value>
-  </data>
-  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-6, 1</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>693, 34</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>　コントロールメニュー</value>
-  </data>
-  <data name="label8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="SensorLock77_off.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 11.25pt, style=Bold</value>
-  </data>
-  <data name="SensorLock77_off.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="SensorLock77_off.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 98</value>
-  </data>
-  <data name="SensorLock77_off.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 38</value>
-  </data>
-  <data name="SensorLock77_off.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="SensorLock77_off.Text" xml:space="preserve">
-    <value>　　77KV OFF</value>
-  </data>
-  <data name="SensorLock77_off.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;SensorLock77_off.Name" xml:space="preserve">
-    <value>SensorLock77_off</value>
-  </data>
-  <data name="&gt;&gt;SensorLock77_off.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SensorLock77_off.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;SensorLock77_off.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="SensorLock77_on.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 11.25pt, style=Bold</value>
-  </data>
-  <data name="SensorLock77_on.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="SensorLock77_on.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 98</value>
-  </data>
-  <data name="SensorLock77_on.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 38</value>
-  </data>
-  <data name="SensorLock77_on.TabIndex" type="System.Int32, mscorlib">
-    <value>38</value>
-  </data>
-  <data name="SensorLock77_on.Text" xml:space="preserve">
-    <value>　　77KV ON</value>
-  </data>
-  <data name="SensorLock77_on.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;SensorLock77_on.Name" xml:space="preserve">
-    <value>SensorLock77_on</value>
-  </data>
-  <data name="&gt;&gt;SensorLock77_on.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SensorLock77_on.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;SensorLock77_on.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="SensorLock500_off.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 11.25pt, style=Bold</value>
-  </data>
-  <data name="SensorLock500_off.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="SensorLock500_off.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 52</value>
-  </data>
-  <data name="SensorLock500_off.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 38</value>
-  </data>
-  <data name="SensorLock500_off.TabIndex" type="System.Int32, mscorlib">
-    <value>37</value>
-  </data>
-  <data name="SensorLock500_off.Text" xml:space="preserve">
-    <value>　　　500KV OFF</value>
-  </data>
-  <data name="SensorLock500_off.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;SensorLock500_off.Name" xml:space="preserve">
-    <value>SensorLock500_off</value>
-  </data>
-  <data name="&gt;&gt;SensorLock500_off.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SensorLock500_off.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;SensorLock500_off.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="SensorLock500_on.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 11.25pt, style=Bold</value>
-  </data>
-  <data name="SensorLock500_on.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="SensorLock500_on.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 52</value>
-  </data>
-  <data name="SensorLock500_on.Size" type="System.Drawing.Size, System.Drawing">
-    <value>219, 38</value>
-  </data>
-  <data name="SensorLock500_on.TabIndex" type="System.Int32, mscorlib">
-    <value>36</value>
-  </data>
-  <data name="SensorLock500_on.Text" xml:space="preserve">
-    <value>　　　500KV ON</value>
-  </data>
-  <data name="SensorLock500_on.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;SensorLock500_on.Name" xml:space="preserve">
-    <value>SensorLock500_on</value>
-  </data>
-  <data name="&gt;&gt;SensorLock500_on.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SensorLock500_on.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;SensorLock500_on.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>ＭＳ ゴシック, 12pt</value>
-  </data>
-  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-2, 0</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>484, 34</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>　センサーロック</value>
-  </data>
-  <data name="label7.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="Camera_08.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -1246,7 +1090,7 @@
     <value>1528, 570</value>
   </data>
   <data name="Camera_08.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 48</value>
+    <value>49, 49</value>
   </data>
   <data name="Camera_08.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
@@ -1273,7 +1117,7 @@
     <value>1759, 397</value>
   </data>
   <data name="Camera_07.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 48</value>
+    <value>49, 49</value>
   </data>
   <data name="Camera_07.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
@@ -1300,7 +1144,7 @@
     <value>1509, 274</value>
   </data>
   <data name="Camera_06.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 48</value>
+    <value>49, 49</value>
   </data>
   <data name="Camera_06.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
@@ -1327,7 +1171,7 @@
     <value>1270, 166</value>
   </data>
   <data name="Camera_05.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 48</value>
+    <value>49, 49</value>
   </data>
   <data name="Camera_05.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
@@ -1354,7 +1198,7 @@
     <value>598, 329</value>
   </data>
   <data name="Camera_04.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 48</value>
+    <value>49, 49</value>
   </data>
   <data name="Camera_04.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
@@ -1381,7 +1225,7 @@
     <value>32, 565</value>
   </data>
   <data name="Camera_03.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 48</value>
+    <value>49, 49</value>
   </data>
   <data name="Camera_03.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
@@ -1408,7 +1252,7 @@
     <value>617, 613</value>
   </data>
   <data name="Camera_02.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 48</value>
+    <value>49, 49</value>
   </data>
   <data name="Camera_02.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
@@ -1468,7 +1312,7 @@
     <value>943, 477</value>
   </data>
   <data name="Camera_01.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 48</value>
+    <value>49, 49</value>
   </data>
   <data name="Camera_01.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
@@ -2888,9 +2732,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1904, 1041</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Map_Form</value>

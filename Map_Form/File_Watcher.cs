@@ -14,10 +14,12 @@ namespace Map_Form {
         //Map_Formのインスタンス
         public Map_Form mfObj;
         public Sensor snObj;
+        public SensorAction snacObj;
         //コンストラクタ
         public File_Watcher(Map_Form mf_obj) {
             mfObj = mf_obj;
             snObj = new Sensor(mfObj);
+            snacObj = new SensorAction(mfObj);
         }
 
         private  FileSystemWatcher Watcher;
@@ -90,60 +92,79 @@ namespace Map_Form {
                             case 1:
                                 //Receiveファイルを読込反映させるメソッドを呼び出す
                                 Receive(receiveInfo, 0);
+                                snacObj.Action("1");
                                 break;
                             case 2:
                                 Receive(receiveInfo, 1);
+                                snacObj.Action("2");
                                 break;
                             case 3:
                                 Receive(receiveInfo, 2);
+                                snacObj.Action("3");
                                 break;
                             case 4:
                                 Receive(receiveInfo, 3);
+                                snacObj.Action("4");
                                 break;
                             case 5:
                                 Receive(receiveInfo, 4);
+                                snacObj.Action("5");
                                 break;
                             case 6:
                                 Receive(receiveInfo, 5);
+                                snacObj.Action("6");
                                 break;
                             case 7:
                                 Receive(receiveInfo, 6);
+                                snacObj.Action("7");
                                 break;
                             case 8:
                                 Receive(receiveInfo, 7);
+                                snacObj.Action("8");
                                 break;
                             case 9:
                                 Receive(receiveInfo, 8);
+                                snacObj.Action("9");
                                 break;
                             case 10:
                                 Receive(receiveInfo, 9);
+                                snacObj.Action("10");
                                 break;
                             case 11:
                                 Receive(receiveInfo, 10);
+                                snacObj.Action("11");
                                 break;
                             case 12:
                                 Receive(receiveInfo, 11);
+                                snacObj.Action("12");
                                 break;
                             case 13:
                                 Receive(receiveInfo, 12);
+                                snacObj.Action("13");
                                 break;
                             case 14:
                                 Receive(receiveInfo, 13);
+                                snacObj.Action("14");
                                 break;
                             case 15:
                                 Receive(receiveInfo, 14);
+                                snacObj.Action("15");
                                 break;
                             case 16:
                                 Receive(receiveInfo, 15);
+                                snacObj.Action("16");
                                 break;
                             case 17:
                                 Receive(receiveInfo, 16);
+                                snacObj.Action("17");
                                 break;
                             case 18:
                                 Receive(receiveInfo, 17);
+                                snacObj.Action("18");
                                 break;
                             case 19:
                                 Receive(receiveInfo, 18);
+                                snacObj.Action("19");
                                 break;
                         }
                     }

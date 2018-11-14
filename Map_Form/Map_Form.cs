@@ -239,6 +239,11 @@ namespace Map_Form {
             }
         }
 
+        //閉じるときは全て閉じる
+        private void Map_Form_FormClosed(object sender, FormClosedEventArgs e) {
+            Application.Exit();
+        }
+
         //マウスクリックイベント
         private void Sensor_01_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {

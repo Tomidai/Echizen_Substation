@@ -52,7 +52,6 @@ namespace Map_Form {
                 }
                 sr.Close();
             }
-            //string[] str = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
             sensor01 = str[0].Split(',');
             sensor02 = str[1].Split(',');
             sensor03 = str[2].Split(',');
