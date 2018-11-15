@@ -14,11 +14,13 @@ namespace Map_Form {
         //Map_Formのインスタンス
         public Map_Form mfObj;
         public SensorAction snacObj;
+        public Log logObj;
 
         //コンストラクタ
         public Sensor(Map_Form mf_obj) {
             mfObj = mf_obj;
             snacObj = new SensorAction(mfObj);
+            logObj = new Log(mfObj);
         }
 
         //センサーの状態を表す変数
@@ -100,6 +102,10 @@ namespace Map_Form {
                             pic.Image = a;
                             pic.Tag = "Alarm";
                             //アラーム音再生
+                            if((string)mfObj.MuteButton.Tag == "off") {
+                                mfObj.MuteButton.Tag = "on";
+                                snacObj.AlarmSound();
+                            }
                             break;
                         case 2:
                             //環境判断へ
@@ -117,6 +123,10 @@ namespace Map_Form {
                             pic.Image = f;
                             pic.Tag = "Failed";
                             //アラーム再生
+                            if ((string)mfObj.MuteButton.Tag == "off") {
+                                mfObj.MuteButton.Tag = "on";
+                                snacObj.AlarmSound();
+                            }
                             break;
                     }
                 }

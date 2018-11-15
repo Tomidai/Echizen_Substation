@@ -71,12 +71,28 @@ namespace Map_Form {
             });
         }
 
+        //カメラアイコンの色をもとに戻す処理
+        public void CameraReturn() {
+            mfObj.Invoke((MethodInvoker)delegate {
+                mfObj.Camera_01.Image = Properties.Resources.Camera_Normal;
+                mfObj.Camera_02.Image = Properties.Resources.Camera_Normal;
+                mfObj.Camera_03.Image = Properties.Resources.Camera_Normal;
+                mfObj.Camera_04.Image = Properties.Resources.Camera_Normal;
+                mfObj.Camera_05.Image = Properties.Resources.Camera_Normal;
+                mfObj.Camera_06.Image = Properties.Resources.Camera_Normal;
+                mfObj.Camera_07.Image = Properties.Resources.Camera_Normal;
+                mfObj.Camera_08.Image = Properties.Resources.Camera_Normal;
+            });
+        }
+
         //ブザー音を再生する処理
         public async void AlarmSound() {
-            while((string)mfObj.MuteButton.Tag == "on") {
-                Console.Beep(10000, 800);
-                Thread.Sleep(1000);
-            }
+            await Task.Run(() => {
+                while ((string)mfObj.MuteButton.Tag == "on") {
+                    Console.Beep(10000, 800);
+                    Thread.Sleep(1000);
+                }
+            });
         }
     }
 }

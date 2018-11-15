@@ -114,6 +114,7 @@
             this.Sensor_03 = new System.Windows.Forms.PictureBox();
             this.Sensor_02 = new System.Windows.Forms.PictureBox();
             this.Sensor_01 = new System.Windows.Forms.PictureBox();
+            this.LogList = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -300,6 +301,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.LogList);
             this.groupBox3.Controls.Add(this.label9);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
@@ -876,6 +878,13 @@
             this.Sensor_01.Tag = "Normal";
             this.Sensor_01.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_01_MouseDown);
             // 
+            // LogList
+            // 
+            resources.ApplyResources(this.LogList, "LogList");
+            this.LogList.FormattingEnabled = true;
+            this.LogList.Name = "LogList";
+            this.LogList.UseWaitCursor = true;
+            // 
             // Map_Form
             // 
             resources.ApplyResources(this, "$this");
@@ -1026,6 +1035,7 @@
         public System.Windows.Forms.PictureBox Camera_01;
         public System.Windows.Forms.PictureBox Camera_06;
         public System.Windows.Forms.Label MuteButton;
+        public System.Windows.Forms.ListBox LogList;
     }
 }
 

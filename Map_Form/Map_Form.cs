@@ -564,6 +564,7 @@ namespace Map_Form {
         private void MuteButton_MouseUp(object sender, MouseEventArgs e) {
             MuteButton.Image = Properties.Resources.mute_button_normal;
             //ブザー停止処理
+            MuteButton.Tag = "off";
         }
     }
 }
