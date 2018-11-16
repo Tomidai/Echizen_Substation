@@ -67,6 +67,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PaternReg_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaternReg_Form.Designer.cs">
+      <DependentUpon>PaternReg_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="File_Watcher.cs" />
     <Compile Include="Control_Form.cs">
       <SubType>Form</SubType>
@@ -104,6 +110,9 @@
     </Compile>
     <EmbeddedResource Include="Camera_Form.resx">
       <DependentUpon>Camera_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaternReg_Form.resx">
+      <DependentUpon>PaternReg_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Control_Form.resx">
       <DependentUpon>Control_Form.cs</DependentUpon>
