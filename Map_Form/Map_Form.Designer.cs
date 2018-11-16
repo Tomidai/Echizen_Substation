@@ -114,6 +114,7 @@
             this.Sensor_03 = new System.Windows.Forms.PictureBox();
             this.Sensor_02 = new System.Windows.Forms.PictureBox();
             this.Sensor_01 = new System.Windows.Forms.PictureBox();
+            this.LogList = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -279,6 +280,9 @@
             resources.ApplyResources(this.MuteButton, "MuteButton");
             this.MuteButton.Image = global::Map_Form.Properties.Resources.mute_button_normal;
             this.MuteButton.Name = "MuteButton";
+            this.MuteButton.Tag = "off";
+            this.MuteButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MuteButton_MouseDown);
+            this.MuteButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MuteButton_MouseUp);
             // 
             // RestrationButton
             // 
@@ -297,6 +301,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.LogList);
             this.groupBox3.Controls.Add(this.label9);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
@@ -873,6 +878,13 @@
             this.Sensor_01.Tag = "Normal";
             this.Sensor_01.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_01_MouseDown);
             // 
+            // LogList
+            // 
+            resources.ApplyResources(this.LogList, "LogList");
+            this.LogList.FormattingEnabled = true;
+            this.LogList.Name = "LogList";
+            this.LogList.UseWaitCursor = true;
+            // 
             // Map_Form
             // 
             resources.ApplyResources(this, "$this");
@@ -898,6 +910,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Map_Form";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Map_Form_FormClosed);
             this.Load += new System.EventHandler(this.Map_Form_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
@@ -937,15 +950,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox Camera_08;
-        private System.Windows.Forms.PictureBox Camera_07;
-        private System.Windows.Forms.PictureBox Camera_05;
-        private System.Windows.Forms.PictureBox Camera_04;
-        private System.Windows.Forms.PictureBox Camera_03;
-        private System.Windows.Forms.PictureBox Camera_02;
-        private System.Windows.Forms.PictureBox Camera_01;
         private System.Windows.Forms.Label Sensor_Label_01;
-        private System.Windows.Forms.PictureBox Camera_06;
         private System.Windows.Forms.Label Camera_Label_8;
         private System.Windows.Forms.Label Camera_Label_7;
         private System.Windows.Forms.Label Camera_Label_06;
@@ -1019,9 +1024,18 @@
         private System.Windows.Forms.Label RestrationButton;
         private System.Windows.Forms.Label ExitButton;
         private System.Windows.Forms.Label LogsButton;
-        private System.Windows.Forms.Label MuteButton;
         private System.Windows.Forms.Label FaultButton;
         private System.Windows.Forms.Label SettingButton;
+        public System.Windows.Forms.PictureBox Camera_08;
+        public System.Windows.Forms.PictureBox Camera_07;
+        public System.Windows.Forms.PictureBox Camera_05;
+        public System.Windows.Forms.PictureBox Camera_04;
+        public System.Windows.Forms.PictureBox Camera_03;
+        public System.Windows.Forms.PictureBox Camera_02;
+        public System.Windows.Forms.PictureBox Camera_01;
+        public System.Windows.Forms.PictureBox Camera_06;
+        public System.Windows.Forms.Label MuteButton;
+        public System.Windows.Forms.ListBox LogList;
     }
 }
 

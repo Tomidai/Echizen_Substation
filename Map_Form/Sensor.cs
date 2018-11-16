@@ -13,10 +13,14 @@ namespace Map_Form {
 
         //Map_Formのインスタンス
         public Map_Form mfObj;
+        public SensorAction snacObj;
+        public Log logObj;
 
         //コンストラクタ
         public Sensor(Map_Form mf_obj) {
             mfObj = mf_obj;
+            snacObj = new SensorAction(mfObj);
+            logObj = new Log(mfObj);
         }
 
         //センサーの状態を表す変数
@@ -43,7 +47,15 @@ namespace Map_Form {
         //セッティングファイルからセンサーの設定情報を読み込み、
         //センサー情報変数に格納するメソッド
         public void GetSensorInfo() {
-            string[] str = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
+            string[] str = new string[19];
+            using(FileStream fs = new FileStream(ConfigurationManager.AppSettings["SettingPath"],
+                FileMode.Open,FileAccess.Read,FileShare.ReadWrite)) {
+                using (StreamReader sr = new StreamReader(fs)) {
+                    for (int i = 0; i < 19; i++) {
+                        str[i] = sr.ReadLine();
+                    }
+                } ;
+            }
             sensor01 = str[0].Split(',');
             sensor02 = str[1].Split(',');
             sensor03 = str[2].Split(',');
@@ -89,6 +101,11 @@ namespace Map_Form {
                             //侵入
                             pic.Image = a;
                             pic.Tag = "Alarm";
+                            //アラーム音再生
+                            if((string)mfObj.MuteButton.Tag == "off") {
+                                mfObj.MuteButton.Tag = "on";
+                                snacObj.AlarmSound();
+                            }
                             break;
                         case 2:
                             //環境判断へ
@@ -98,12 +115,18 @@ namespace Map_Form {
                             } else {
                                 pic.Image = e;
                                 pic.Tag = "Environ";
+                                //環境発砲時もアラームするか
                             }
                             break;
                         case 3:
                             //故障
                             pic.Image = f;
                             pic.Tag = "Failed";
+                            //アラーム再生
+                            if ((string)mfObj.MuteButton.Tag == "off") {
+                                mfObj.MuteButton.Tag = "on";
+                                snacObj.AlarmSound();
+                            }
                             break;
                     }
                 }

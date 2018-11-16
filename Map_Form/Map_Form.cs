@@ -239,6 +239,11 @@ namespace Map_Form {
             }
         }
 
+        //閉じるときは全て閉じる
+        private void Map_Form_FormClosed(object sender, FormClosedEventArgs e) {
+            Application.Exit();
+        }
+
         //マウスクリックイベント
         private void Sensor_01_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
@@ -550,6 +555,16 @@ namespace Map_Form {
         private void RestrationButton_MouseUp(object sender, MouseEventArgs e) {
             RestrationButton.Image = Properties.Resources.restoration_button_normal;
             BulkChange(0, 19, "0", 3);
+        }
+
+        //ブザー停止ボタン
+        private void MuteButton_MouseDown(object sender, MouseEventArgs e) {
+            MuteButton.Image = Properties.Resources.mute_button_push;
+        }
+        private void MuteButton_MouseUp(object sender, MouseEventArgs e) {
+            MuteButton.Image = Properties.Resources.mute_button_normal;
+            //ブザー停止処理
+            MuteButton.Tag = "off";
         }
     }
 }

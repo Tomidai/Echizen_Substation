@@ -101,6 +101,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sensor.cs" />
+    <Compile Include="SensorAction.cs" />
     <Compile Include="SensorSettings_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -209,12 +210,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\背景画像.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Camera_Action.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Camera_Normal.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -677,6 +672,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\setting_button_push.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camera_Action.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Camera_Normal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
