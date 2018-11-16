@@ -14,67 +14,40 @@ namespace Map_Form {
         //Map_Formのインスタンス
         public Map_Form mfObj;
         public SensorAction snacObj;
-        public Log logObj;
 
         //コンストラクタ
         public Sensor(Map_Form mf_obj) {
             mfObj = mf_obj;
             snacObj = new SensorAction(mfObj);
-            logObj = new Log(mfObj);
         }
 
-        //センサーの状態を表す変数
-        public string[] sensor01;
-        public string[] sensor02;
-        public string[] sensor03;
-        public string[] sensor04;
-        public string[] sensor05;
-        public string[] sensor06;
-        public string[] sensor07;
-        public string[] sensor08;
-        public string[] sensor09;
-        public string[] sensor10;
-        public string[] sensor11;
-        public string[] sensor12;
-        public string[] sensor13;
-        public string[] sensor14;
-        public string[] sensor15;
-        public string[] sensor16;
-        public string[] sensor17;
-        public string[] sensor18;
-        public string[] sensor19;
-
-        //セッティングファイルからセンサーの設定情報を読み込み、
-        //センサー情報変数に格納するメソッド
-        public void GetSensorInfo() {
-            string[] str = new string[19];
-            using(FileStream fs = new FileStream(ConfigurationManager.AppSettings["SettingPath"],
-                FileMode.Open,FileAccess.Read,FileShare.ReadWrite)) {
-                using (StreamReader sr = new StreamReader(fs)) {
-                    for (int i = 0; i < 19; i++) {
-                        str[i] = sr.ReadLine();
-                    }
-                } ;
+        //sensor.csvファイルを指定された値に変更するメソッド
+        public void SensorSettingChange(string path,int to,string value) {
+            string filePath = ConfigurationManager.AppSettings["SensorPath"] + path;
+            string[] snInfo;
+            //csvファイル読込
+            using (FileStream fsr = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            using (StreamReader sr = new StreamReader(fsr)) {
+                snInfo = sr.ReadLine().Split(',');
             }
-            sensor01 = str[0].Split(',');
-            sensor02 = str[1].Split(',');
-            sensor03 = str[2].Split(',');
-            sensor04 = str[3].Split(',');
-            sensor05 = str[4].Split(',');
-            sensor06 = str[5].Split(',');
-            sensor07 = str[6].Split(',');
-            sensor08 = str[7].Split(',');
-            sensor09 = str[8].Split(',');
-            sensor10 = str[9].Split(',');
-            sensor11 = str[10].Split(',');
-            sensor12 = str[11].Split(',');
-            sensor13 = str[12].Split(',');
-            sensor14 = str[13].Split(',');
-            sensor15 = str[14].Split(',');
-            sensor16 = str[15].Split(',');
-            sensor17 = str[16].Split(',');
-            sensor18 = str[17].Split(',');
-            sensor19 = str[18].Split(',');
+            snInfo[to] = value;
+            //変更した値をcsvファイルに書込
+            using (FileStream fsw = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.ReadWrite))
+            using(StreamWriter sw = new StreamWriter(fsw)) {
+                sw.WriteLine(string.Join(",", snInfo));
+            }
+        }
+
+        //センサー設定ファイルの情報を返すメソッドstirng[]型
+        public string[] ReturnSetting(string path) {
+            string filePath = ConfigurationManager.AppSettings["SensorPath"] + path;
+            using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite)) {
+                //指定されたcsvファイルを配列に格納して返す
+                using (StreamReader sr = new StreamReader(fs)) {
+                    string[] cols = sr.ReadLine().Split(',');
+                    return cols;
+                }
+            }
         }
 
         //センサー情報変数をもとにセンサーの色、タグを変更するメソッド

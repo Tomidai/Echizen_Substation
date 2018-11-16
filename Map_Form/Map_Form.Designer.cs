@@ -50,6 +50,7 @@
             this.RestrationButton = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.LogList = new System.Windows.Forms.ListBox();
             this.label9 = new System.Windows.Forms.Label();
             this.GotoCamera_Button8 = new System.Windows.Forms.Label();
             this.GotoCamera_Button7 = new System.Windows.Forms.Label();
@@ -114,7 +115,6 @@
             this.Sensor_03 = new System.Windows.Forms.PictureBox();
             this.Sensor_02 = new System.Windows.Forms.PictureBox();
             this.Sensor_01 = new System.Windows.Forms.PictureBox();
-            this.LogList = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -260,6 +260,7 @@
             resources.ApplyResources(this.FaultButton, "FaultButton");
             this.FaultButton.Image = global::Map_Form.Properties.Resources.fault_button_normal;
             this.FaultButton.Name = "FaultButton";
+            this.FaultButton.Click += new System.EventHandler(this.FaultButton_Click);
             // 
             // ExitButton
             // 
@@ -306,6 +307,13 @@
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
+            // 
+            // LogList
+            // 
+            resources.ApplyResources(this.LogList, "LogList");
+            this.LogList.FormattingEnabled = true;
+            this.LogList.Name = "LogList";
+            this.LogList.UseWaitCursor = true;
             // 
             // label9
             // 
@@ -877,13 +885,6 @@
             this.Sensor_01.TabStop = false;
             this.Sensor_01.Tag = "Normal";
             this.Sensor_01.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_01_MouseDown);
-            // 
-            // LogList
-            // 
-            resources.ApplyResources(this.LogList, "LogList");
-            this.LogList.FormattingEnabled = true;
-            this.LogList.Name = "LogList";
-            this.LogList.UseWaitCursor = true;
             // 
             // Map_Form
             // 
