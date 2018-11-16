@@ -43,7 +43,7 @@ namespace Map_Form {
         public ComboBox[,] sensorListCombo = new ComboBox[19, 3];
 
         public string prefile = @"C:\Users\oh\Desktop\preset\";
-        public static string path = "";
+        public string path = "";
         public int REC = 0;
         public int[] encResetEnable = new int[8];         // 各拠点のファイルからカメラENCRESETの取得
         public int[] camContEnable = new int[8];          // 各拠点のファイルからカメラ制御権の取得
@@ -105,10 +105,12 @@ namespace Map_Form {
         public string[] patternName = new string[6];
         public int[,] patternNo = new int[6, 4];
         public static Label recButton;
+        public static Label camNameChangeBtn;
         public TreeNode tn001;
         public TreeNode tn002;
         public ImageList imageList01;
-        public int camNameChangeMode = 0;
+        public TreeView treeView;
+        public static int camNameChangeMode = 0;
 
 
         public Camera_Form() {
@@ -131,7 +133,8 @@ namespace Map_Form {
             preNameTxt[6] = textBox7;
             preNameTxt[7] = textBox8;
 
-            for (int i = 0; i < 8; ++i) {
+            for (int i = 0; i < 8; ++i)
+            {
                 preNameTxt[i].Visible = false;
             }
 
@@ -2308,10 +2311,10 @@ namespace Map_Form {
                     this.webBrowser3.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 2] + 1) + ".html", UriKind.Absolute);
                     this.webBrowser4.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 3] + 1) + ".html", UriKind.Absolute);
 
-                    this.label1.Text = camName[patternNo[b, 0]];
-                    this.label2.Text = camName[patternNo[b, 1]];
-                    this.label3.Text = camName[patternNo[b, 2]];
-                    this.label4.Text = camName[patternNo[b, 3]];
+                    this.label1.Text = camName[patternNo[b, 0]-1];
+                    this.label2.Text = camName[patternNo[b, 1]-1];
+                    this.label3.Text = camName[patternNo[b, 2]-1];
+                    this.label4.Text = camName[patternNo[b, 3]-1];
 
                     camNo_01 = patternNo[b, 0];
                     camNo_02 = patternNo[b, 1];
@@ -2624,8 +2627,21 @@ namespace Map_Form {
         {
             if (camNameChangeMode == 0)
             {
+                camNameChangeBtn = btn_camNameReg;
+                treeView = treeView1;
+                
+
+
                 this.btn_camNameReg.Image = global::Map_Form.Properties.Resources.cont_b018X;
                 camNameChangeMode = 1;
+                PaternReg_Form paternReg_Form = new PaternReg_Form(this);
+                paternReg_Form.StartPosition = FormStartPosition.CenterScreen;
+                paternReg_Form.Show();
+
+
+
+
+
             }
             else
             {
