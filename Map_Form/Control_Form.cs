@@ -39,6 +39,9 @@ namespace Map_Form {
         public void Camera_Show(int i) {
             map_form.Hide();
             camera_form.Show();
+            //カメラの色を戻す
+            SensorAction snac = new SensorAction(map_form);
+            snac.CameraReturn();
 
             camera_form.setLocation_1();
             camera_form.camSelect(0);

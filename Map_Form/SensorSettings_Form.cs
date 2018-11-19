@@ -13,181 +13,197 @@ using System.Configuration;
 namespace Map_Form {
     public partial class SensorSettings_Form:Form {
         //インスタンス
-        public Map_Form mfObj;
+        Map_Form mfObj;
+        Sensor snObj;
+
+        //送りファイルに送信するテキスト情報
+        string sn1, sn2, sn3, sn4, sn5, sn6, sn7, sn8, sn9, sn10, 
+            sn11, sn12, sn13, sn14, sn15, sn16, sn17, sn18, sn19;
 
         //コンストラクタ
         public SensorSettings_Form(Map_Form mf_obj) {
             InitializeComponent();
             mfObj = mf_obj;
+            snObj = new Sensor(mfObj);
+
         }
 
+        //起動時センサーの状態に合わせる
         private void SensorSettings_Form_Load(object sender, EventArgs e) {
-            //設定ファイルを読み込み配列に入れる
-            string[] settingInfo = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
-            //１行づつ処理する
-            for(int i =0; i<settingInfo.Length; i++) {
-                //１行をCSVで配列に入れる
-                string[] readLine = settingInfo[i].Split(',');
-                //センサーロックかどうか
-                if(readLine[1] == "1"){
-                    //センサーロック状態を表示する
-                    TextSet(i + 1,"ロックON");
-                }else if(readLine[2] == "1"){
-                    //環境ロック状態にする
-                    TextSet(i + 1,"環境");
-                }else{
-                    //センサーロックOFFにする
-                    TextSet(i + 1,"ロックOFF");
-                }
+            SetRadioButton(snObj.ReturnSetting("sensor1.csv"), normal1, lock1, environ1);
+            SetRadioButton(snObj.ReturnSetting("sensor2.csv"), normal2, lock2, environ2);
+            SetRadioButton(snObj.ReturnSetting("sensor3.csv"), normal3, lock3, environ3);
+            SetRadioButton(snObj.ReturnSetting("sensor4.csv"), normal4, lock4, environ4);
+            SetRadioButton(snObj.ReturnSetting("sensor5.csv"), normal5, lock5, environ5);
+            SetRadioButton(snObj.ReturnSetting("sensor6.csv"), normal6, lock6, environ6);
+            SetRadioButton(snObj.ReturnSetting("sensor7.csv"), normal7, lock7, environ7);
+            SetRadioButton(snObj.ReturnSetting("sensor8.csv"), normal8, lock8, environ8);
+            SetRadioButton(snObj.ReturnSetting("sensor9.csv"), normal9, lock9, environ9);
+            SetRadioButton(snObj.ReturnSetting("sensor10.csv"), normal10, lock10, environ10);
+            SetRadioButton(snObj.ReturnSetting("sensor11.csv"), normal11, lock11, environ11);
+            SetRadioButton(snObj.ReturnSetting("sensor12.csv"), normal12, lock12, environ12);
+            SetRadioButton(snObj.ReturnSetting("sensor13.csv"), normal13, lock13, environ13);
+            SetRadioButton(snObj.ReturnSetting("sensor14.csv"), normal14, lock14, environ14);
+            SetRadioButton(snObj.ReturnSetting("sensor15.csv"), normal15, lock15, environ15);
+            SetRadioButton(snObj.ReturnSetting("sensor16.csv"), normal16, lock16, environ16);
+            SetRadioButton(snObj.ReturnSetting("sensor17.csv"), normal17, lock17, environ17);
+            SetRadioButton(snObj.ReturnSetting("sensor18.csv"), normal18, lock18, environ18);
+            SetRadioButton(snObj.ReturnSetting("sensor19.csv"), normal19, lock19, environ19);
+        }
+
+        //配列を参照し、ラジオボタンの状態を決めるメソッド
+        public void SetRadioButton(string[] snSetting, RadioButton normal, RadioButton locked, RadioButton environ) {
+            if(snSetting[1] == "1") {
+                locked.Checked = true;
+            }else if(snSetting[2] == "1") {
+                environ.Checked = true;
+            }else if(snSetting[1] == "0") {
+                normal.Checked = true;
+            } 
+        }
+
+
+        //決定を反映させるメソッド
+        public string Change(RadioButton locked, RadioButton environ, RadioButton normal, string path, string tage) {
+            if (locked.Checked == true) {
+                snObj.SensorSettingChange(path, 1, "1");
+                string str = snObj.SendSensorInfo(path, 1, "1");
+                return str;
+            } else if (environ.Checked == true) {
+                snObj.SensorSettingChange(path, 1, "0");
+                snObj.SensorSettingChange(path, 2, "1");
+                string str = snObj.SendSensorInfo(path, 2, "1");
+                return str;
+            } else {
+                snObj.SensorSettingChange(path, 2, "0");
+                snObj.SensorSettingChange(path, 1, "0");
+                string str = snObj.SendSensorInfo(path, 1, "0");
+                return str;
             }
         }
 
-        private void TextSet(int i, string str){
-            switch(i){
-                case 1:
-                    comboBox1.Text = str;
-                    break;
-                case 2:
-                    comboBox2.Text = str;
-                    break;
-                case 3:
-                    comboBox3.Text = str;
-                    break;
-                case 4:
-                    comboBox4.Text = str;
-                    break;
-                case 5:
-                    comboBox5.Text = str;
-                    break;
-                case 6:
-                    comboBox6.Text = str;
-                    break;
-                case 7:
-                    comboBox7.Text = str;
-                    break;
-                case 8:
-                    comboBox8.Text = str;
-                    break;
-                case 9:
-                    comboBox9.Text = str;
-                    break;
-                case 10:
-                    comboBox10.Text = str;
-                    break;
-                case 11:
-                    comboBox11.Text = str;
-                    break;
-                case 12:
-                    comboBox12.Text = str;
-                    break;
-                case 13:
-                    comboBox13.Text = str;
-                    break;
-                case 14:
-                    comboBox14.Text = str;
-                    break;
-                case 15:
-                    comboBox15.Text = str;
-                    break;
-                case 16:
-                    comboBox16.Text = str;
-                    break;
-                case 17:
-                    comboBox17.Text = str;
-                    break;
-                case 18:
-                    comboBox18.Text = str;
-                    break;
-                case 19:
-                    comboBox19.Text = str;
-                    break;
-            }
+        //一括通常
+        private void buttonAllNormal_Click(object sender, EventArgs e) {
+            normal1.Checked = true;
+            normal2.Checked = true;
+            normal3.Checked = true;
+            normal4.Checked = true;
+            normal5.Checked = true;
+            normal6.Checked = true;
+            normal7.Checked = true;
+            normal8.Checked = true;
+            normal9.Checked = true;
+            normal10.Checked = true;
+            normal11.Checked = true;
+            normal12.Checked = true;
+            normal13.Checked = true;
+            normal14.Checked = true;
+            normal15.Checked = true;
+            normal16.Checked = true;
+            normal17.Checked = true;
+            normal18.Checked = true;
+            normal19.Checked = true;
         }
 
-        //決定ボタン処理のメソッド
-        private void AplySettings(ComboBox cb,int line){
-            string str = cb.Text;
-            if(str == "ロックON"){
-                string[] setPath = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
-                string[] changeLine = setPath[line].Split(',');
-                changeLine[1] = "1";
-                changeLine[2] = "0";
-                setPath[line] = string.Join(",",changeLine);
-                //設定ファイル書き換え
-                using(StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SettingPath"],false)){
-                    for(int i = 0; i < setPath.Length; i++){
-                        sw.WriteLine(setPath[i]);
-                    }
-                }
-                //送りファイル書き換え
-                using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false)) {
-                    //送りテキストは引数が必要かな
-                    sw.WriteLine("01,1,0,0");
-                }
-            }else if(str == "ロックOFF"){
-                string[] setPath = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
-                string[] changeLine = setPath[line].Split(',');
-                changeLine[1] = "0";
-                changeLine[2] = "0";
-                setPath[line] = string.Join(",",changeLine);
-                //設定ファイル書き換え
-                using(StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SettingPath"],false)){
-                    for(int i = 0; i < setPath.Length; i++){
-                        sw.WriteLine(setPath[i]);
-                    }
-                }
-                //送りファイル書き換え
-                using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false)) {
-                    //送りテキストは引数が必要かな
-                    sw.WriteLine("01,0,0,0");
-                }
-            }else if(str == "環境"){
-                string[] setPath = File.ReadAllLines(ConfigurationManager.AppSettings["SettingPath"]);
-                string[] changeLine = setPath[line].Split(',');
-                changeLine[1] = "0";
-                changeLine[2] = "1";
-                setPath[line] = string.Join(",",changeLine);
-                //設定ファイル書き換え
-                using(StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SettingPath"],false)){
-                    for(int i = 0; i < setPath.Length; i++){
-                        sw.WriteLine(setPath[i]);
-                    }
-                }
-                //送りファイル書き換え
-                using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false)) {
-                    //送りテキストは引数が必要かな
-                    sw.WriteLine("01,0,1,0");
-                }
-            }
+        //一括ロック
+        private void buttonAllLock_Click(object sender, EventArgs e) {
+            lock1.Checked = true;
+            lock2.Checked = true;
+            lock3.Checked = true;
+            lock4.Checked = true;
+            lock5.Checked = true;
+            lock6.Checked = true;
+            lock7.Checked = true;
+            lock8.Checked = true;
+            lock9.Checked = true;
+            lock10.Checked = true;
+            lock11.Checked = true;
+            lock12.Checked = true;
+            lock13.Checked = true;
+            lock14.Checked = true;
+            lock15.Checked = true;
+            lock16.Checked = true;
+            lock17.Checked = true;
+            lock18.Checked = true;
+            lock19.Checked = true;
         }
 
-        //決定ボタンの処理
-        private void button1_Click(object sender, EventArgs e) {
-            Sensor snObj = new Sensor(mfObj);
-            AplySettings(comboBox1,0);
-            AplySettings(comboBox2,1);
-            AplySettings(comboBox3,2);
-            AplySettings(comboBox4,3);
-            AplySettings(comboBox5,4);
-            AplySettings(comboBox6,5);
-            AplySettings(comboBox7,6);
-            AplySettings(comboBox8,7);
-            AplySettings(comboBox9,8);
-            AplySettings(comboBox10,9);
-            AplySettings(comboBox11,10);
-            AplySettings(comboBox12,11);
-            AplySettings(comboBox13,12);
-            AplySettings(comboBox14,13);
-            AplySettings(comboBox15,14);
-            AplySettings(comboBox16,15);
-            AplySettings(comboBox17,16);
-            AplySettings(comboBox18,17);
-            AplySettings(comboBox19,18);
+        //一括環境
+        private void buttonAllEnviron_Click(object sender, EventArgs e) {
+            environ1.Checked = true;
+            environ2.Checked = true;
+            environ3.Checked = true;
+            environ4.Checked = true;
+            environ5.Checked = true;
+            environ6.Checked = true;
+            environ7.Checked = true;
+            environ8.Checked = true;
+            environ9.Checked = true;
+            environ10.Checked = true;
+            environ11.Checked = true;
+            environ12.Checked = true;
+            environ13.Checked = true;
+            environ14.Checked = true;
+            environ15.Checked = true;
+            environ16.Checked = true;
+            environ17.Checked = true;
+            environ18.Checked = true;
+            environ19.Checked = true;
+        }
+
+        //決定ボタン
+        private void buttonOK_Click(object sender, EventArgs e) {
+            sn1 = Change(lock1, environ1, normal1, "sensor1.csv", "01");
+            sn2 = Change(lock2, environ2, normal2, "sensor2.csv", "02");
+            sn3 = Change(lock3, environ3, normal3, "sensor3.csv", "03");
+            sn4 = Change(lock4, environ4, normal4, "sensor4.csv", "04");
+            sn5 = Change(lock5, environ5, normal5, "sensor5.csv", "05");
+            sn6 = Change(lock6, environ6, normal6, "sensor6.csv", "06");
+            sn7 = Change(lock7, environ7, normal7, "sensor7.csv", "07");
+            sn8 = Change(lock8, environ8, normal8, "sensor8.csv", "08");
+            sn9 = Change(lock9, environ9, normal9, "sensor9.csv", "09");
+            sn10 = Change(lock10, environ10, normal10, "sensor10.csv", "10");
+            sn11 = Change(lock11, environ11, normal11, "sensor11.csv", "11");
+            sn12 = Change(lock12, environ12, normal12, "sensor12.csv", "12");
+            sn13 = Change(lock13, environ13, normal13, "sensor13.csv", "13");
+            sn14 = Change(lock14, environ14, normal14, "sensor14.csv", "14");
+            sn15 = Change(lock15, environ15, normal15, "sensor15.csv", "15");
+            sn16 = Change(lock16, environ16, normal16, "sensor16.csv", "16");
+            sn17 = Change(lock17, environ17, normal17, "sensor17.csv", "17");
+            sn18 = Change(lock18, environ18, normal18, "sensor18.csv", "18");
+            sn19 = Change(lock19, environ19, normal19, "sensor19.csv", "19");
+
+            StreamWriter sr = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false);
+            try {
+                sr.WriteLine(sn1);
+                sr.WriteLine(sn2);
+                sr.WriteLine(sn3);
+                sr.WriteLine(sn4);
+                sr.WriteLine(sn5);
+                sr.WriteLine(sn6);
+                sr.WriteLine(sn7);
+                sr.WriteLine(sn8);
+                sr.WriteLine(sn9);
+                sr.WriteLine(sn10);
+                sr.WriteLine(sn11);
+                sr.WriteLine(sn12);
+                sr.WriteLine(sn13);
+                sr.WriteLine(sn14);
+                sr.WriteLine(sn15);
+                sr.WriteLine(sn16);
+                sr.WriteLine(sn17);
+                sr.WriteLine(sn18);
+                sr.WriteLine(sn19);
+            } catch {
+                MessageBox.Show("エラーが発生しました。もう一度実行してください。");
+            } finally {
+                sr.Close();
+            }
         }
 
         //キャンセルボタン
-        private void button2_Click(object sender, EventArgs e) {
-
+        private void buttonCancel_Click(object sender, EventArgs e) {
+            Close();
         }
     }
 }

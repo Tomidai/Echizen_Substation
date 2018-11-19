@@ -26,28 +26,50 @@ namespace Map_Form {
             string filePath = ConfigurationManager.AppSettings["SensorPath"] + path;
             string[] snInfo;
             //csvファイル読込
-            using (FileStream fsr = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
-            using (StreamReader sr = new StreamReader(fsr)) {
-                snInfo = sr.ReadLine().Split(',');
-            }
-            snInfo[to] = value;
-            //変更した値をcsvファイルに書込
-            using (FileStream fsw = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.ReadWrite))
-            using(StreamWriter sw = new StreamWriter(fsw)) {
-                sw.WriteLine(string.Join(",", snInfo));
+            try {
+                using (FileStream fsr = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+                using (StreamReader sr = new StreamReader(fsr)) {
+                    snInfo = sr.ReadLine().Split(',');
+                }
+                snInfo[to] = value;
+                //変更した値をcsvファイルに書込
+                using (FileStream fsw = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.Write))
+                using (StreamWriter sw = new StreamWriter(fsw)) {
+                    sw.WriteLine(string.Join(",", snInfo));
+                }
+            } catch {
+                SensorSettingChange(path, to, value);
             }
         }
 
         //センサー設定ファイルの情報を返すメソッドstirng[]型
         public string[] ReturnSetting(string path) {
             string filePath = ConfigurationManager.AppSettings["SensorPath"] + path;
-            using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite)) {
-                //指定されたcsvファイルを配列に格納して返す
+            try {
+                using (FileStream fs = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
                 using (StreamReader sr = new StreamReader(fs)) {
+                    //指定されたcsvファイルを配列に格納して返す
                     string[] cols = sr.ReadLine().Split(',');
                     return cols;
                 }
+            } catch {
+                string[] clos = ReturnSetting(path);
+                return clos;
             }
+        }
+
+        //送りファイルに送る情報を返すメソッド
+        public string SendSensorInfo(string path,int to,string value) {
+            string sensorPath = ConfigurationManager.AppSettings["SensorPath"] + path;
+            string sendPath = ConfigurationManager.AppSettings["SendPath"];
+            string[] info;
+            using (FileStream fsr = new FileStream(sensorPath, FileMode.Open, FileAccess.Read, FileShare.Read))
+            using(StreamReader sr = new StreamReader(fsr)) {
+                info = sr.ReadLine().Split(',');
+            }
+            info[to] = value;
+            string str = string.Join(",", info);
+            return str;
         }
 
         //センサー情報変数をもとにセンサーの色、タグを変更するメソッド
@@ -88,7 +110,6 @@ namespace Map_Form {
                             } else {
                                 pic.Image = e;
                                 pic.Tag = "Environ";
-                                //環境発砲時もアラームするか
                             }
                             break;
                         case 3:
