@@ -206,12 +206,20 @@ namespace Map_Form {
                     {
                         setLocation_1();
                     }
+                    else
+                    {
+                        CamNo = b;
+                    }
                 }
                 else if (a == 2)
                 {
                     if (settingMode == 0)
                     {
                         setLocation_4();
+                    }
+                    else
+                    {
+                        CamNo = b;
                     }
                 }
                 else
@@ -2311,10 +2319,10 @@ namespace Map_Form {
                     this.webBrowser3.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 2] + 1) + ".html", UriKind.Absolute);
                     this.webBrowser4.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 3] + 1) + ".html", UriKind.Absolute);
 
-                    this.label1.Text = camName[patternNo[b, 0]-1];
-                    this.label2.Text = camName[patternNo[b, 1]-1];
-                    this.label3.Text = camName[patternNo[b, 2]-1];
-                    this.label4.Text = camName[patternNo[b, 3]-1];
+                    this.label1.Text = camName[patternNo[b, 0]];
+                    this.label2.Text = camName[patternNo[b, 1]];
+                    this.label3.Text = camName[patternNo[b, 2]];
+                    this.label4.Text = camName[patternNo[b, 3]];
 
                     camNo_01 = patternNo[b, 0];
                     camNo_02 = patternNo[b, 1];
