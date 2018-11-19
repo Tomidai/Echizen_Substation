@@ -29,7 +29,7 @@ namespace Map_Form {
             //PLCから送られてくるファイルを監視するWatcherの定義
             Watcher = new FileSystemWatcher {
                 Path = ConfigurationManager.AppSettings["WatchDir"],
-                NotifyFilter = NotifyFilters.LastWrite,
+                NotifyFilter = NotifyFilters.LastAccess,
                 Filter = "*.txt",
                 IncludeSubdirectories = false
             };
@@ -52,12 +52,18 @@ namespace Map_Form {
             if (receiveInfo[3] == "1") {
                 //故障の判断
                 snObj.SensorSettingChange(snPath, 3, "3");
+                snacObj.Action(int.Parse(receiveInfo[0]));
             } else if (receiveInfo[1] == "1") {
                 //侵入の判断
                 snObj.SensorSettingChange(snPath, 3, "1");
+                snacObj.Action(int.Parse(receiveInfo[0]));
             } else if (receiveInfo[2] == "1") {
                 //環境の判断
                 snObj.SensorSettingChange(snPath, 3, "2");
+                snacObj.Action(int.Parse(receiveInfo[0]));
+            } else if (receiveInfo[1] == "0" && receiveInfo[2] == "0" && receiveInfo[3] == "0") {
+                //復旧
+                snObj.SensorSettingChange(snPath, 3, "0");
             }
         }
 
@@ -175,79 +181,60 @@ namespace Map_Form {
                         case 1:
                             //Receiveファイルを読込反映させるメソッドを呼び出す
                             Receive(receiveInfo, "sensor1.csv");
-                            snacObj.Action("1");
                             break;
                         case 2:
                             Receive(receiveInfo, "sensor2.csv");
-                            snacObj.Action("2");
                             break;
                         case 3:
                             Receive(receiveInfo, "sensor3.csv");
-                            snacObj.Action("3");
                             break;
                         case 4:
                             Receive(receiveInfo, "sensor4.csv");
-                            snacObj.Action("4");
                             break;
                         case 5:
                             Receive(receiveInfo, "sensor5.csv");
-                            snacObj.Action("5");
                             break;
                         case 6:
                             Receive(receiveInfo, "sensor6.csv");
-                            snacObj.Action("6");
                             break;
                         case 7:
                             Receive(receiveInfo, "sensor7.csv");
-                            snacObj.Action("7");
                             break;
                         case 8:
                             Receive(receiveInfo, "sensor8.csv");
-                            snacObj.Action("8");
                             break;
                         case 9:
                             Receive(receiveInfo, "sensor9.csv");
-                            snacObj.Action("9");
                             break;
                         case 10:
                             Receive(receiveInfo, "sensor10.csv");
-                            snacObj.Action("10");
                             break;
                         case 11:
                             Receive(receiveInfo, "sensor11.csv");
-                            snacObj.Action("11");
                             break;
                         case 12:
                             Receive(receiveInfo, "sensor12.csv");
-                            snacObj.Action("12");
                             break;
                         case 13:
                             Receive(receiveInfo, "sensor13.csv");
-                            snacObj.Action("13");
                             break;
                         case 14:
                             Receive(receiveInfo, "sensor14.csv");
-                            snacObj.Action("14");
                             break;
                         case 15:
                             Receive(receiveInfo, "sensor15.csv");
-                            snacObj.Action("15");
                             break;
                         case 16:
                             Receive(receiveInfo, "sensor16.csv");
-                            snacObj.Action("16");
                             break;
                         case 17:
                             Receive(receiveInfo, "sensor17.csv");
-                            snacObj.Action("17");
                             break;
                         case 18:
                             Receive(receiveInfo, "sensor18.csv");
-                            snacObj.Action("18");
                             break;
                         case 19:
                             Receive(receiveInfo, "sensor19.csv");
-                            snacObj.Action("19");
                             break;
                     }
                 }

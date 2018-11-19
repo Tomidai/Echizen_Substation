@@ -1963,7 +1963,7 @@
     <value>NoControl</value>
   </data>
   <data name="Sensor_Label_08.Location" type="System.Drawing.Point, System.Drawing">
-    <value>561, 279</value>
+    <value>558, 277</value>
   </data>
   <data name="Sensor_Label_08.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 31</value>

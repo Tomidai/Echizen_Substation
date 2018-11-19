@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Reflection;
 using System.IO;
 using System.Configuration;
+using System.Threading;
 
 namespace Map_Form {
     public partial class Map_Form:Form {
@@ -30,23 +31,23 @@ namespace Map_Form {
             snObj.ChangeSensor(snObj.ReturnSetting("sensor1.csv"), Sensor_01, Properties.Resources.Sensor_Normal_01, Properties.Resources.Sensor_Lock_01,
                 Properties.Resources.Sensor_Action_01, Properties.Resources.Sensor_Environ_01, Properties.Resources.Sensor_Failed_01, 
                 Properties.Resources.Sensor_EnvironLock_01);
-
+            
             snObj.ChangeSensor(snObj.ReturnSetting("sensor2.csv"), Sensor_02, Properties.Resources.Sensor_Normal_02, Properties.Resources.Sensor_Lock_02,
                 Properties.Resources.Sensor_Action_02, Properties.Resources.Sensor_Environ_02, Properties.Resources.Sensor_Failed_02,
                 Properties.Resources.Sensor_EnvironLock_02);
-
+            
             snObj.ChangeSensor(snObj.ReturnSetting("sensor3.csv"), Sensor_03, Properties.Resources.Sensor_Normal_03, Properties.Resources.Sensor_Lock_03,
                 Properties.Resources.Sensor_Action_03, Properties.Resources.Sensor_Environ_03, Properties.Resources.Sensor_Failed_03,
                 Properties.Resources.Sensor_EnvironLock_03);
-
+           
             snObj.ChangeSensor(snObj.ReturnSetting("sensor4.csv"), Sensor_04, Properties.Resources.Sensor_Normal_04, Properties.Resources.Sensor_Lock_04,
                 Properties.Resources.Sensor_Action_04, Properties.Resources.Sensor_Environ_04, Properties.Resources.Sensor_Failed_04,
                 Properties.Resources.Sensor_EnvironLock_04);
-
+            
             snObj.ChangeSensor(snObj.ReturnSetting("sensor5.csv"), Sensor_05, Properties.Resources.Sensor_Normal_05, Properties.Resources.Sensor_Lock_05,
                 Properties.Resources.Sensor_Action_05, Properties.Resources.Sensor_Environ_05, Properties.Resources.Sensor_Failed_05,
                 Properties.Resources.Sensor_EnvironLock_05);
-
+            
             snObj.ChangeSensor(snObj.ReturnSetting("sensor6.csv"), Sensor_06, Properties.Resources.Sensor_Normal_06, Properties.Resources.Sensor_Lock_06,
                 Properties.Resources.Sensor_Action_06, Properties.Resources.Sensor_Environ_06, Properties.Resources.Sensor_Failed_06,
                 Properties.Resources.Sensor_EnvironLock_06);
@@ -106,29 +107,49 @@ namespace Map_Form {
 
         //左クリックでセンサーロック/解除
         //またはアラーム復旧
-        private void SensorClick_Left(PictureBox pic,string snPath) {
+        private void SensorClick_Left(PictureBox pic,string snPath,string sendInfo) {
             if ((string)pic.Tag == "Normal" || (string)pic.Tag == "EnvironLock") {
                 //通常からロック
                 snObj.SensorSettingChange(snPath, 1, "1");
+                //テキスト送信
+                using(StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"],false)) {
+                    sw.WriteLine(snObj.SendSensorInfo(snPath, 1, "1"));
+                }
             } else if ((string)pic.Tag == "Alarm" || (string)pic.Tag == "Environ" || (string)pic.Tag == "Failed") {
                 //アラームから通常に戻す処理
                 snObj.SensorSettingChange(snPath, 3, "0");
+                //テキスト送信
+                using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"],false)) {
+                    sw.WriteLine(snObj.SendSensorInfo(snPath, 3, "1"));
+                }
             } else if ((string)pic.Tag == "Lock") {
                 //ロックから通常に戻す処理
                 snObj.SensorSettingChange(snPath, 1, "0");
+                //テキスト送信
+                using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"],false)) {
+                    sw.WriteLine(snObj.SendSensorInfo(snPath, 1, "0"));
+                }
             }
         }
 
         //右クリックで環境ロック/解除する処理
-        private void SensorClick_Right(PictureBox pic,string snPath){
+        private void SensorClick_Right(PictureBox pic,string snPath,string sendInfo){
             //タグがNormalの場合のみ環境をロックできる
             if((string)pic.Tag == "Normal"){
                 //設定ファイルを読み込む
                 snObj.SensorSettingChange(snPath, 2, "1");
-            }else if((string)pic.Tag == "EnvironLock"){
+                //テキスト送信
+                using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"],false)) {
+                    sw.WriteLine(snObj.SendSensorInfo(snPath, 2, "1"));
+                }
+            } else if((string)pic.Tag == "EnvironLock"){
                 //タグがEnvironLockの場合のみノーマルに戻る
                 snObj.SensorSettingChange(snPath, 2, "0");
-            }else{
+                //テキスト送信
+                using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"],false)) {
+                    sw.WriteLine(snObj.SendSensorInfo(snPath, 2, "0"));
+                }
+            } else{
                 MessageBox.Show("センサーが通常状態か確認してください");
             }
         }
@@ -141,158 +162,157 @@ namespace Map_Form {
         //マウスクリックイベント
         private void Sensor_01_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_01, "sensor1.csv");
+                SensorClick_Left(Sensor_01, "sensor1.csv", "01");
             } else if(e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_01, "sensor1.csv");
+                SensorClick_Right(Sensor_01, "sensor1.csv", "01");
             }
         }
 
         private void Sensor_02_MouseDown(object sender, MouseEventArgs e) {
             if (e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_02, "sensor2.csv");
+                SensorClick_Left(Sensor_02, "sensor2.csv", "02");
             } else if (e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_02, "sensor2.csv");
+                SensorClick_Right(Sensor_02, "sensor2.csv", "02");
             }
         }
 
         private void Sensor_03_MouseDown(object sender, MouseEventArgs e) {
             if (e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_03, "sensor3.csv");
+                SensorClick_Left(Sensor_03, "sensor3.csv", "03");
             } else if (e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_03, "sensor3.csv");
+                SensorClick_Right(Sensor_03, "sensor3.csv", "03");
             }
         }
 
         private void Sensor_04_MouseDown(object sender, MouseEventArgs e) {
             if (e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_04, "sensor4.csv");
+                SensorClick_Left(Sensor_04, "sensor4.csv", "04");
             } else if (e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_04, "sensor4.csv");
+                SensorClick_Right(Sensor_04, "sensor4.csv", "04");
             }
         }
 
         private void Sensor_05_MouseDown(object sender, MouseEventArgs e) {
             if (e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_05, "sensor5.csv");
+                SensorClick_Left(Sensor_05, "sensor5.csv", "05");
             } else if (e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_05, "sensor5.csv");
+                SensorClick_Right(Sensor_05, "sensor5.csv", "05");
             }
         }
 
         private void Sensor_06_MouseDown(object sender, MouseEventArgs e) {
             if (e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_06, "sensor6.csv");
+                SensorClick_Left(Sensor_06, "sensor6.csv", "06");
             } else if (e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_06, "sensor6.csv");
+                SensorClick_Right(Sensor_06, "sensor6.csv", "06");
             }
         }
 
         private void Sensor_07_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_07, "sensor7.csv");
+                SensorClick_Left(Sensor_07, "sensor7.csv", "07");
             } else if (e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_07, "sensor7.csv");
+                SensorClick_Right(Sensor_07, "sensor7.csv", "07");
             }
         }
 
         private void Sensor_08_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_08, "sensor8.csv");
+                SensorClick_Left(Sensor_08, "sensor8.csv", "08");
             } else if(e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_08, "sensor8.csv");
+                SensorClick_Right(Sensor_08, "sensor8.csv", "08");
             }
         }
 
         private void Sensor_09_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_09, "sensor9.csv");
+                SensorClick_Left(Sensor_09, "sensor9.csv", "09");
             } else if(e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_09, "sensor9.csv");
+                SensorClick_Right(Sensor_09, "sensor9.csv", "09");
             }
         }
 
         private void Sensor_10_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_10, "sensor10.csv");
+                SensorClick_Left(Sensor_10, "sensor10.csv", "10");
             } else if(e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_10, "sensor10.csv");
+                SensorClick_Right(Sensor_10, "sensor10.csv", "10");
             }
         }
 
         private void Sensor_11_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_11, "sensor11.csv");
+                SensorClick_Left(Sensor_11, "sensor11.csv", "11");
             } else if(e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_11, "sensor11.csv");
+                SensorClick_Right(Sensor_11, "sensor11.csv", "11");
             }
         }
 
         private void Sensor_12_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_12, "sensor12.csv");
+                SensorClick_Left(Sensor_12, "sensor12.csv", "12");
             } else if(e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_12, "sensor12.csv");
+                SensorClick_Right(Sensor_12, "sensor12.csv", "12");
             }
         }
 
         private void Sensor_13_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_13, "sensor13.csv");
+                SensorClick_Left(Sensor_13, "sensor13.csv", "13");
             } else if(e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_13, "sensor13.csv");
+                SensorClick_Right(Sensor_13, "sensor13.csv", "13");
             }
         }
 
         private void Sensor_14_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_14, "sensor14.csv");
+                SensorClick_Left(Sensor_14, "sensor14.csv", "14");
             } else if(e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_14, "sensor14.csv");
+                SensorClick_Right(Sensor_14, "sensor14.csv", "14");
             }
         }
 
         private void Sensor_15_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_15, "sensor15.csv");
+                SensorClick_Left(Sensor_15, "sensor15.csv", "15");
             } else if(e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_15, "sensor15.csv");
+                SensorClick_Right(Sensor_15, "sensor15.csv", "15");
             }
         }
 
         private void Sensor_16_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_16, "sensor16.csv");
+                SensorClick_Left(Sensor_16, "sensor16.csv", "16");
             } else if(e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_16, "sensor16.csv");
+                SensorClick_Right(Sensor_16, "sensor16.csv", "16");
             }
         }
 
         private void Sensor_17_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_17, "sensor17.csv");
+                SensorClick_Left(Sensor_17, "sensor17.csv", "17");
             } else if(e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_17, "sensor17.csv");
+                SensorClick_Right(Sensor_17, "sensor17.csv", "17");
             }
         }
 
         private void Sensor_18_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_18, "sensor18.csv");
+                SensorClick_Left(Sensor_18, "sensor18.csv", "18");
             } else if(e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_18, "sensor18.csv");
+                SensorClick_Right(Sensor_18, "sensor18.csv", "18");
             }
         }
 
         private void Sensor_19_MouseDown(object sender, MouseEventArgs e) {
             if(e.Button == MouseButtons.Left) {
-                SensorClick_Left(Sensor_19, "sensor19.csv");
+                SensorClick_Left(Sensor_19, "sensor19.csv", "19");
             } else if(e.Button == MouseButtons.Right) {
-                SensorClick_Right(Sensor_19, "sensor19.csv");
+                SensorClick_Right(Sensor_19, "sensor19.csv", "19");
             }
         }
 
         //カメラ切り替えボタン処理
-        //ここは後に処理を変更する必要あり
         private void GotoCamera_Button1_MouseDown(object sender, MouseEventArgs e) {
             GotoCamera_Button1.Image = Properties.Resources.camera_button_push;
         }
@@ -390,7 +410,7 @@ namespace Map_Form {
             cfObj.Camera_Show(8);
         }
 
-        //センサー一括ロック/解除の処理
+        //センサー500ロック
         private void SensorLock500_on_MouseDown(object sender, MouseEventArgs e) {
             SensorLock500_on.Image = Properties.Resources.electrical_button_push;
         }
@@ -409,8 +429,30 @@ namespace Map_Form {
             snObj.SensorSettingChange("sensor11.csv", 1, "1");
             snObj.SensorSettingChange("sensor12.csv", 1, "1");
             snObj.SensorSettingChange("sensor13.csv", 1, "1");
+
+            StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false);
+            try {
+                sw.WriteLine(snObj.SendSensorInfo("sensor1.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor2.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor3.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor4.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor5.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor6.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor7.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor8.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor9.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor10.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor11.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor12.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor13.csv", 1, "1"));
+            } catch {
+                MessageBox.Show("エラーが発生しました。もう一度実行してください。");
+            } finally {
+                sw.Close();
+            }
         }
 
+        //センサー500ロック解除
         private void SensorLock500_off_MouseDown(object sender, MouseEventArgs e) {
             SensorLock500_off.Image = Properties.Resources.electrical_button_push;
         }
@@ -429,8 +471,31 @@ namespace Map_Form {
             snObj.SensorSettingChange("sensor11.csv", 1, "0");
             snObj.SensorSettingChange("sensor12.csv", 1, "0");
             snObj.SensorSettingChange("sensor13.csv", 1, "0");
+
+            StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false);
+            try {
+                sw.WriteLine(snObj.SendSensorInfo("sensor1.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor2.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor3.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor4.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor5.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor6.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor7.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor8.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor9.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor10.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor11.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor12.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor13.csv", 1, "0"));
+                
+            } catch {
+                MessageBox.Show("エラーが発生しました。もう一度実行してください。");
+            } finally {
+                sw.Close();
+            }
         }
 
+        //センサー77ロック
         private void SensorLock77_on_MouseDown(object sender, MouseEventArgs e) {
             SensorLock77_on.Image = Properties.Resources.electrical_button_push;
         }
@@ -442,8 +507,23 @@ namespace Map_Form {
             snObj.SensorSettingChange("sensor17.csv", 1, "1");
             snObj.SensorSettingChange("sensor18.csv", 1, "1");
             snObj.SensorSettingChange("sensor19.csv", 1, "1");
+
+            StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false);
+            try {
+                sw.WriteLine(snObj.SendSensorInfo("sensor14.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor15.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor16.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor17.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor18.csv", 1, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor19.csv", 1, "1"));
+            } catch {
+                MessageBox.Show("エラーが発生しました。もう一度実行してください。");
+            } finally {
+                sw.Close();
+            }
         }
 
+        //センサー77ロック解除
         private void SensorLock77_off_MouseDown(object sender, MouseEventArgs e) {
             SensorLock77_off.Image = Properties.Resources.electrical_button_push;
         }
@@ -455,6 +535,20 @@ namespace Map_Form {
             snObj.SensorSettingChange("sensor17.csv", 1, "0");
             snObj.SensorSettingChange("sensor18.csv", 1, "0");
             snObj.SensorSettingChange("sensor19.csv", 1, "0");
+
+            StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false);
+            try {
+                sw.WriteLine(snObj.SendSensorInfo("sensor14.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor15.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor16.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor17.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor18.csv", 1, "0"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor19.csv", 1, "0"));
+            } catch {
+                MessageBox.Show("エラーが発生しました。もう一度実行してください。");
+            } finally {
+                sw.Close();
+            }
         }
 
         //システム終了ボタン
@@ -501,6 +595,33 @@ namespace Map_Form {
             snObj.SensorSettingChange("sensor17.csv", 3, "0");
             snObj.SensorSettingChange("sensor18.csv", 3, "0");
             snObj.SensorSettingChange("sensor19.csv", 3, "0");
+
+            StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false);
+            try {
+                sw.WriteLine(snObj.SendSensorInfo("sensor1.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor2.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor3.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor4.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor5.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor6.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor7.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor8.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor9.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor10.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor11.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor12.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor13.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor14.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor15.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor16.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor17.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor18.csv", 3, "1"));
+                sw.WriteLine(snObj.SendSensorInfo("sensor19.csv", 3, "1"));
+            } catch {
+                MessageBox.Show("エラーが発生しました。もう一度実行してください。");
+            } finally {
+                sw.Close();
+            }
         }
 
         //ブザー停止ボタン
