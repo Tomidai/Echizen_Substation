@@ -50,8 +50,9 @@
             this.RestrationButton = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.LogList = new System.Windows.Forms.ListBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.RightButton = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.GotoCamera_Button8 = new System.Windows.Forms.Label();
             this.GotoCamera_Button7 = new System.Windows.Forms.Label();
             this.GotoCamera_Button6 = new System.Windows.Forms.Label();
@@ -260,7 +261,6 @@
             resources.ApplyResources(this.FaultButton, "FaultButton");
             this.FaultButton.Image = global::Map_Form.Properties.Resources.fault_button_normal;
             this.FaultButton.Name = "FaultButton";
-            this.FaultButton.Click += new System.EventHandler(this.FaultButton_Click);
             // 
             // ExitButton
             // 
@@ -275,6 +275,8 @@
             resources.ApplyResources(this.LogsButton, "LogsButton");
             this.LogsButton.Image = global::Map_Form.Properties.Resources.logs_button_normal;
             this.LogsButton.Name = "LogsButton";
+            this.LogsButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LogsButton_MouseDown);
+            this.LogsButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.LogsButton_MouseUp);
             // 
             // MuteButton
             // 
@@ -302,25 +304,34 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.LogList);
-            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.RightButton);
+            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.label13);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
-            // LogList
+            // RightButton
             // 
-            resources.ApplyResources(this.LogList, "LogList");
-            this.LogList.FormattingEnabled = true;
-            this.LogList.Name = "LogList";
-            this.LogList.UseWaitCursor = true;
+            resources.ApplyResources(this.RightButton, "RightButton");
+            this.RightButton.Image = global::Map_Form.Properties.Resources.operation_button_normal;
+            this.RightButton.Name = "RightButton";
+            this.RightButton.Click += new System.EventHandler(this.RightButton_Click);
             // 
-            // label9
+            // label12
             // 
-            this.label9.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Image = global::Map_Form.Properties.Resources.control_menu_bar;
-            this.label9.Name = "label9";
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.Image = global::Map_Form.Properties.Resources.in_operation_normal;
+            this.label12.Name = "label12";
+            this.label12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label12_MouseDown);
+            this.label12.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label12_MouseUp);
+            // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.Image = global::Map_Form.Properties.Resources.control_menu_bar;
+            this.label13.Name = "label13";
             // 
             // GotoCamera_Button8
             // 
@@ -1008,7 +1019,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label GotoCamera_Button1;
         private System.Windows.Forms.Label GotoCamera_Button2;
         private System.Windows.Forms.Label GotoCamera_Button3;
@@ -1017,16 +1027,8 @@
         private System.Windows.Forms.Label GotoCamera_Button6;
         private System.Windows.Forms.Label GotoCamera_Button7;
         private System.Windows.Forms.Label GotoCamera_Button8;
-        private System.Windows.Forms.Label SensorLock77_off;
-        private System.Windows.Forms.Label SensorLock77_on;
-        private System.Windows.Forms.Label SensorLock500_off;
-        private System.Windows.Forms.Label SensorLock500_on;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label RestrationButton;
         private System.Windows.Forms.Label ExitButton;
         private System.Windows.Forms.Label LogsButton;
-        private System.Windows.Forms.Label FaultButton;
-        private System.Windows.Forms.Label SettingButton;
         public System.Windows.Forms.PictureBox Camera_08;
         public System.Windows.Forms.PictureBox Camera_07;
         public System.Windows.Forms.PictureBox Camera_05;
@@ -1036,7 +1038,17 @@
         public System.Windows.Forms.PictureBox Camera_01;
         public System.Windows.Forms.PictureBox Camera_06;
         public System.Windows.Forms.Label MuteButton;
-        public System.Windows.Forms.ListBox LogList;
+        public System.Windows.Forms.Label FaultButton;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label13;
+        public System.Windows.Forms.Label SensorLock77_off;
+        public System.Windows.Forms.Label SensorLock77_on;
+        public System.Windows.Forms.Label SensorLock500_off;
+        public System.Windows.Forms.Label SensorLock500_on;
+        public System.Windows.Forms.Label RestrationButton;
+        public System.Windows.Forms.Label SettingButton;
+        public System.Windows.Forms.Label RightButton;
+        public System.Windows.Forms.Label label12;
     }
 }
 

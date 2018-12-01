@@ -103,6 +103,9 @@ namespace Map_Form {
             snObj.ChangeSensor(snObj.ReturnSetting("sensor19.csv"), Sensor_19, Properties.Resources.Sensor_Normal_19, Properties.Resources.Sensor_Lock_19,
                 Properties.Resources.Sensor_Action_19, Properties.Resources.Sensor_Environ_19, Properties.Resources.Sensor_Failed_19,
                 Properties.Resources.Sensor_EnvironLock_19);
+
+            snObj.RightBool(snObj.ReturnSetting("right.csv"));
+            snObj.FaultBool(snObj.ReturnSetting("fault.csv"));
         }
 
         //左クリックでセンサーロック/解除
@@ -111,44 +114,33 @@ namespace Map_Form {
             if ((string)pic.Tag == "Normal" || (string)pic.Tag == "EnvironLock") {
                 //通常からロック
                 snObj.SensorSettingChange(snPath, 1, "1");
-                //テキスト送信
-                using(StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"],false)) {
-                    sw.WriteLine(snObj.SendSensorInfo(snPath, 1, "1"));
-                }
+                string[] send = { snObj.GetSendText(snPath, 1, "1") };
+                snObj.SetSendText(send);
             } else if ((string)pic.Tag == "Alarm" || (string)pic.Tag == "Environ" || (string)pic.Tag == "Failed") {
                 //アラームから通常に戻す処理
                 snObj.SensorSettingChange(snPath, 3, "0");
-                //テキスト送信
-                using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"],false)) {
-                    sw.WriteLine(snObj.SendSensorInfo(snPath, 3, "1"));
-                }
+                string[] send = { snObj.GetSendText(snPath, 3, "1") };
+                snObj.SetSendText(send);
             } else if ((string)pic.Tag == "Lock") {
                 //ロックから通常に戻す処理
                 snObj.SensorSettingChange(snPath, 1, "0");
-                //テキスト送信
-                using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"],false)) {
-                    sw.WriteLine(snObj.SendSensorInfo(snPath, 1, "0"));
-                }
+                string[] send = { snObj.GetSendText(snPath, 1, "0") };
+                snObj.SetSendText(send);
             }
         }
 
         //右クリックで環境ロック/解除する処理
         private void SensorClick_Right(PictureBox pic,string snPath,string sendInfo){
-            //タグがNormalの場合のみ環境をロックできる
             if((string)pic.Tag == "Normal"){
-                //設定ファイルを読み込む
+                //タグがNormalの場合のみ環境をロックできる
                 snObj.SensorSettingChange(snPath, 2, "1");
-                //テキスト送信
-                using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"],false)) {
-                    sw.WriteLine(snObj.SendSensorInfo(snPath, 2, "1"));
-                }
+                string[] send = { snObj.GetSendText(snPath, 2, "1") };
+                snObj.SetSendText(send);
             } else if((string)pic.Tag == "EnvironLock"){
                 //タグがEnvironLockの場合のみノーマルに戻る
                 snObj.SensorSettingChange(snPath, 2, "0");
-                //テキスト送信
-                using (StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"],false)) {
-                    sw.WriteLine(snObj.SendSensorInfo(snPath, 2, "0"));
-                }
+                string[] send = { snObj.GetSendText(snPath, 2, "0") };
+                snObj.SetSendText(send);
             } else{
                 MessageBox.Show("センサーが通常状態か確認してください");
             }
@@ -429,27 +421,23 @@ namespace Map_Form {
             snObj.SensorSettingChange("sensor11.csv", 1, "1");
             snObj.SensorSettingChange("sensor12.csv", 1, "1");
             snObj.SensorSettingChange("sensor13.csv", 1, "1");
-
-            StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false);
-            try {
-                sw.WriteLine(snObj.SendSensorInfo("sensor1.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor2.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor3.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor4.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor5.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor6.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor7.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor8.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor9.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor10.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor11.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor12.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor13.csv", 1, "1"));
-            } catch {
-                MessageBox.Show("エラーが発生しました。もう一度実行してください。");
-            } finally {
-                sw.Close();
-            }
+            //テキスト送信
+            string[] send = {
+                snObj.GetSendText("sensor1.csv", 1, "1"),
+                snObj.GetSendText("sensor2.csv", 1, "1"),
+                snObj.GetSendText("sensor3.csv", 1, "1"),
+                snObj.GetSendText("sensor4.csv", 1, "1"),
+                snObj.GetSendText("sensor5.csv", 1, "1"),
+                snObj.GetSendText("sensor6.csv", 1, "1"),
+                snObj.GetSendText("sensor7.csv", 1, "1"),
+                snObj.GetSendText("sensor8.csv", 1, "1"),
+                snObj.GetSendText("sensor9.csv", 1, "1"),
+                snObj.GetSendText("sensor10.csv", 1, "1"),
+                snObj.GetSendText("sensor11.csv", 1, "1"),
+                snObj.GetSendText("sensor12.csv", 1, "1"),
+                snObj.GetSendText("sensor13.csv", 1, "1")
+            };
+            snObj.SetSendText(send);
         }
 
         //センサー500ロック解除
@@ -471,28 +459,23 @@ namespace Map_Form {
             snObj.SensorSettingChange("sensor11.csv", 1, "0");
             snObj.SensorSettingChange("sensor12.csv", 1, "0");
             snObj.SensorSettingChange("sensor13.csv", 1, "0");
-
-            StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false);
-            try {
-                sw.WriteLine(snObj.SendSensorInfo("sensor1.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor2.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor3.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor4.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor5.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor6.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor7.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor8.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor9.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor10.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor11.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor12.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor13.csv", 1, "0"));
-                
-            } catch {
-                MessageBox.Show("エラーが発生しました。もう一度実行してください。");
-            } finally {
-                sw.Close();
-            }
+            //テキスト送信
+            string[] send = {
+                snObj.GetSendText("sensor1.csv", 1, "0"),
+                snObj.GetSendText("sensor2.csv", 1, "0"),
+                snObj.GetSendText("sensor3.csv", 1, "0"),
+                snObj.GetSendText("sensor4.csv", 1, "0"),
+                snObj.GetSendText("sensor5.csv", 1, "0"),
+                snObj.GetSendText("sensor6.csv", 1, "0"),
+                snObj.GetSendText("sensor7.csv", 1, "0"),
+                snObj.GetSendText("sensor8.csv", 1, "0"),
+                snObj.GetSendText("sensor9.csv", 1, "0"),
+                snObj.GetSendText("sensor10.csv", 1, "0"),
+                snObj.GetSendText("sensor11.csv", 1, "0"),
+                snObj.GetSendText("sensor12.csv", 1, "0"),
+                snObj.GetSendText("sensor13.csv", 1, "0")
+            };
+            snObj.SetSendText(send);
         }
 
         //センサー77ロック
@@ -507,20 +490,16 @@ namespace Map_Form {
             snObj.SensorSettingChange("sensor17.csv", 1, "1");
             snObj.SensorSettingChange("sensor18.csv", 1, "1");
             snObj.SensorSettingChange("sensor19.csv", 1, "1");
-
-            StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false);
-            try {
-                sw.WriteLine(snObj.SendSensorInfo("sensor14.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor15.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor16.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor17.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor18.csv", 1, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor19.csv", 1, "1"));
-            } catch {
-                MessageBox.Show("エラーが発生しました。もう一度実行してください。");
-            } finally {
-                sw.Close();
-            }
+            //テキスト送信
+            string[] send = {
+                snObj.GetSendText("sensor14.csv", 1, "1"),
+                snObj.GetSendText("sensor15.csv", 1, "1"),
+                snObj.GetSendText("sensor16.csv", 1, "1"),
+                snObj.GetSendText("sensor17.csv", 1, "1"),
+                snObj.GetSendText("sensor18.csv", 1, "1"),
+                snObj.GetSendText("sensor19.csv", 1, "1")
+            };
+            snObj.SetSendText(send);
         }
 
         //センサー77ロック解除
@@ -535,20 +514,16 @@ namespace Map_Form {
             snObj.SensorSettingChange("sensor17.csv", 1, "0");
             snObj.SensorSettingChange("sensor18.csv", 1, "0");
             snObj.SensorSettingChange("sensor19.csv", 1, "0");
-
-            StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false);
-            try {
-                sw.WriteLine(snObj.SendSensorInfo("sensor14.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor15.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor16.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor17.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor18.csv", 1, "0"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor19.csv", 1, "0"));
-            } catch {
-                MessageBox.Show("エラーが発生しました。もう一度実行してください。");
-            } finally {
-                sw.Close();
-            }
+            //テキスト送信
+            string[] send = {
+                snObj.GetSendText("sensor14.csv", 1, "0"),
+                snObj.GetSendText("sensor15.csv", 1, "0"),
+                snObj.GetSendText("sensor16.csv", 1, "0"),
+                snObj.GetSendText("sensor17.csv", 1, "0"),
+                snObj.GetSendText("sensor18.csv", 1, "0"),
+                snObj.GetSendText("sensor19.csv", 1, "0")
+            };
+            snObj.SetSendText(send);
         }
 
         //システム終了ボタン
@@ -595,33 +570,29 @@ namespace Map_Form {
             snObj.SensorSettingChange("sensor17.csv", 3, "0");
             snObj.SensorSettingChange("sensor18.csv", 3, "0");
             snObj.SensorSettingChange("sensor19.csv", 3, "0");
-
-            StreamWriter sw = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false);
-            try {
-                sw.WriteLine(snObj.SendSensorInfo("sensor1.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor2.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor3.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor4.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor5.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor6.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor7.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor8.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor9.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor10.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor11.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor12.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor13.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor14.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor15.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor16.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor17.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor18.csv", 3, "1"));
-                sw.WriteLine(snObj.SendSensorInfo("sensor19.csv", 3, "1"));
-            } catch {
-                MessageBox.Show("エラーが発生しました。もう一度実行してください。");
-            } finally {
-                sw.Close();
-            }
+            //テキスト送信
+            string[] send = {
+                snObj.GetSendText("sensor1.csv", 3, "0"),
+                snObj.GetSendText("sensor2.csv", 3, "0"),
+                snObj.GetSendText("sensor3.csv", 3, "0"),
+                snObj.GetSendText("sensor4.csv", 3, "0"),
+                snObj.GetSendText("sensor5.csv", 3, "0"),
+                snObj.GetSendText("sensor6.csv", 3, "0"),
+                snObj.GetSendText("sensor7.csv", 3, "0"),
+                snObj.GetSendText("sensor8.csv", 3, "0"),
+                snObj.GetSendText("sensor9.csv", 3, "0"),
+                snObj.GetSendText("sensor10.csv", 3, "0"),
+                snObj.GetSendText("sensor11.csv", 3, "0"),
+                snObj.GetSendText("sensor12.csv", 3, "0"),
+                snObj.GetSendText("sensor13.csv", 3, "0"),
+                snObj.GetSendText("sensor14.csv", 3, "0"),
+                snObj.GetSendText("sensor15.csv", 3, "0"),
+                snObj.GetSendText("sensor16.csv", 3, "0"),
+                snObj.GetSendText("sensor17.csv", 3, "0"),
+                snObj.GetSendText("sensor18.csv", 3, "0"),
+                snObj.GetSendText("sensor19.csv", 3, "0")
+            };
+            snObj.SetSendText(send);
         }
 
         //ブザー停止ボタン
@@ -634,9 +605,62 @@ namespace Map_Form {
             MuteButton.Tag = "off";
         }
 
-        //試験的なイベント後で削除異常ボタンから発生
-        private void FaultButton_Click(object sender, EventArgs e) {
-            snObj.SensorSettingChange("sensor1.csv", 1, "1");
+        //センサーログ
+        private void LogsButton_MouseDown(object sender, MouseEventArgs e) {
+            LogsButton.Image = Properties.Resources.logs_button_push;
         }
+        private void LogsButton_MouseUp(object sender, MouseEventArgs e) {
+            LogsButton.Image = Properties.Resources.logs_button_normal;
+            Log_Form log_Form = new Log_Form();
+            log_Form.ShowDialog();
+        }
+
+        //操作権利取得
+        private void RightButton_Click(object sender, EventArgs e) {
+            string filePath = ConfigurationManager.AppSettings["SensorPath"] + "right.csv";
+            int num = int.Parse(ConfigurationManager.AppSettings["MyNum"]);
+            using (FileStream fsr = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            using (StreamReader sr = new StreamReader(fsr)) {
+                string[] right = sr.ReadLine().Split(',');
+                //権限チェック
+                if (right[0] == "0" && right[1] == "0" && right[2] == "0") {
+                    right[num] = "1";
+                } else if (right[num] == "1") {
+                    right[num] = "0";
+                }
+                string str = string.Join(",", right);
+                using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.Read))
+                using (StreamWriter sw = new StreamWriter(fs)) {
+                    sw.WriteLine(str);
+                }
+            }
+        }
+
+        //権限の強制解除
+        private void label12_MouseDown(object sender, MouseEventArgs e) {
+            label12.Image = Properties.Resources.in_operation_push;
+        }
+        private void label12_MouseUp(object sender, MouseEventArgs e) {
+            DialogResult result = MessageBox.Show("操作権を強制的に解除しますか？", "注意メッセージ", 
+                MessageBoxButtons.YesNo,MessageBoxIcon.Exclamation,MessageBoxDefaultButton.Button2);
+            if (result == DialogResult.Yes) {
+                //「はい」が選択された時
+                string filePath = ConfigurationManager.AppSettings["SensorPath"] + "right.csv";
+                using (FileStream fsr = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+                using (StreamReader sr = new StreamReader(fsr)) {
+                    string[] right = sr.ReadLine().Split(',');
+                    right[0] = "0";
+                    right[1] = "0";
+                    right[2] = "0";
+                    string str = string.Join(",", right);
+                    using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.Read))
+                    using (StreamWriter sw = new StreamWriter(fs)) {
+                        sw.WriteLine(str);
+                    }
+                }
+            }
+            label12.Image = Properties.Resources.in_operation_normal;
+        }
+        //
     }
 }
