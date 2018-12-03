@@ -139,7 +139,7 @@
     <value>15</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>通常・・・青</value>
+    <value>使用・・・青</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -196,16 +196,16 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 831</value>
+    <value>689, 831</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 24</value>
+    <value>260, 24</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>ロック・・・透明</value>
+    <value>監視ロック・・・透明</value>
   </data>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
@@ -229,7 +229,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>660, 831</value>
+    <value>980, 831</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 24</value>
@@ -262,7 +262,7 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>860, 831</value>
+    <value>1180, 831</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 24</value>
@@ -295,7 +295,7 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1056, 831</value>
+    <value>422, 831</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>235, 24</value>
@@ -318,6 +318,90 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
+  <data name="&gt;&gt;SensorLock77_off.Name" xml:space="preserve">
+    <value>SensorLock77_off</value>
+  </data>
+  <data name="&gt;&gt;SensorLock77_off.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SensorLock77_off.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;SensorLock77_off.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SensorLock77_on.Name" xml:space="preserve">
+    <value>SensorLock77_on</value>
+  </data>
+  <data name="&gt;&gt;SensorLock77_on.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SensorLock77_on.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;SensorLock77_on.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;SensorLock500_off.Name" xml:space="preserve">
+    <value>SensorLock500_off</value>
+  </data>
+  <data name="&gt;&gt;SensorLock500_off.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SensorLock500_off.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;SensorLock500_off.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;SensorLock500_on.Name" xml:space="preserve">
+    <value>SensorLock500_on</value>
+  </data>
+  <data name="&gt;&gt;SensorLock500_on.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SensorLock500_on.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;SensorLock500_on.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>496, 880</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>482, 150</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
   <data name="SensorLock77_off.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt, style=Bold</value>
   </data>
@@ -325,7 +409,7 @@
     <value>NoControl</value>
   </data>
   <data name="SensorLock77_off.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 98</value>
+    <value>17, 98</value>
   </data>
   <data name="SensorLock77_off.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 38</value>
@@ -334,7 +418,7 @@
     <value>39</value>
   </data>
   <data name="SensorLock77_off.Text" xml:space="preserve">
-    <value>　　77KV OFF</value>
+    <value>　　77KV 使用</value>
   </data>
   <data name="SensorLock77_off.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -358,7 +442,7 @@
     <value>NoControl</value>
   </data>
   <data name="SensorLock77_on.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 98</value>
+    <value>245, 98</value>
   </data>
   <data name="SensorLock77_on.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 38</value>
@@ -367,7 +451,7 @@
     <value>38</value>
   </data>
   <data name="SensorLock77_on.Text" xml:space="preserve">
-    <value>　　77KV ON</value>
+    <value>　　77KV ロック</value>
   </data>
   <data name="SensorLock77_on.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -391,7 +475,7 @@
     <value>NoControl</value>
   </data>
   <data name="SensorLock500_off.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 52</value>
+    <value>17, 52</value>
   </data>
   <data name="SensorLock500_off.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 38</value>
@@ -400,7 +484,7 @@
     <value>37</value>
   </data>
   <data name="SensorLock500_off.Text" xml:space="preserve">
-    <value>　　　500KV OFF</value>
+    <value>　　　500KV 使用</value>
   </data>
   <data name="SensorLock500_off.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -424,7 +508,7 @@
     <value>NoControl</value>
   </data>
   <data name="SensorLock500_on.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 52</value>
+    <value>245, 52</value>
   </data>
   <data name="SensorLock500_on.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 38</value>
@@ -433,7 +517,7 @@
     <value>36</value>
   </data>
   <data name="SensorLock500_on.Text" xml:space="preserve">
-    <value>　　　500KV ON</value>
+    <value>　　　500KV ロック</value>
   </data>
   <data name="SensorLock500_on.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -483,29 +567,113 @@
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>696, 879</value>
+  <data name="&gt;&gt;SettingButton.Name" xml:space="preserve">
+    <value>SettingButton</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>482, 150</value>
+  <data name="&gt;&gt;SettingButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="&gt;&gt;SettingButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;SettingButton.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;FaultButton.Name" xml:space="preserve">
+    <value>FaultButton</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;FaultButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FaultButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;FaultButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ExitButton.Name" xml:space="preserve">
+    <value>ExitButton</value>
+  </data>
+  <data name="&gt;&gt;ExitButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ExitButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;ExitButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;LogsButton.Name" xml:space="preserve">
+    <value>LogsButton</value>
+  </data>
+  <data name="&gt;&gt;LogsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LogsButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;LogsButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;MuteButton.Name" xml:space="preserve">
+    <value>MuteButton</value>
+  </data>
+  <data name="&gt;&gt;MuteButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MuteButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;MuteButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;RestrationButton.Name" xml:space="preserve">
+    <value>RestrationButton</value>
+  </data>
+  <data name="&gt;&gt;RestrationButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RestrationButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;RestrationButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1014, 880</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>685, 150</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="SettingButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt, style=Bold</value>
@@ -523,7 +691,7 @@
     <value>45</value>
   </data>
   <data name="SettingButton.Text" xml:space="preserve">
-    <value>　　　センサー設定</value>
+    <value>　　　ロック設定</value>
   </data>
   <data name="SettingButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -688,7 +856,7 @@
     <value>40</value>
   </data>
   <data name="RestrationButton.Text" xml:space="preserve">
-    <value>　　　センサー復旧</value>
+    <value>　　　センサー全復旧</value>
   </data>
   <data name="RestrationButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -738,95 +906,47 @@
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1205, 879</value>
+  <data name="&gt;&gt;RightButton.Name" xml:space="preserve">
+    <value>RightButton</value>
   </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>685, 150</value>
-  </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="LogList.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 12pt</value>
-  </data>
-  <data name="LogList.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="LogList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 44</value>
-  </data>
-  <data name="LogList.Size" type="System.Drawing.Size, System.Drawing">
-    <value>625, 100</value>
-  </data>
-  <data name="LogList.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;LogList.Name" xml:space="preserve">
-    <value>LogList</value>
-  </data>
-  <data name="&gt;&gt;LogList.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LogList.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;LogList.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 12pt</value>
-  </data>
-  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 1</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>654, 34</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>　センサーログ</value>
-  </data>
-  <data name="label9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+  <data name="&gt;&gt;RightButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RightButton.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;RightButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ReleaseButton.Name" xml:space="preserve">
+    <value>ReleaseButton</value>
+  </data>
+  <data name="&gt;&gt;ReleaseButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReleaseButton.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;ReleaseButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 879</value>
+    <value>207, 881</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>637, 150</value>
+    <value>251, 150</value>
   </data>
   <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
     <value>36</value>
@@ -845,6 +965,105 @@
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="RightButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="RightButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RightButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 51</value>
+  </data>
+  <data name="RightButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 38</value>
+  </data>
+  <data name="RightButton.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="RightButton.Text" xml:space="preserve">
+    <value>　　操作</value>
+  </data>
+  <data name="RightButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;RightButton.Name" xml:space="preserve">
+    <value>RightButton</value>
+  </data>
+  <data name="&gt;&gt;RightButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RightButton.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;RightButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ReleaseButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 11.25pt, style=Bold</value>
+  </data>
+  <data name="ReleaseButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ReleaseButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 97</value>
+  </data>
+  <data name="ReleaseButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>219, 38</value>
+  </data>
+  <data name="ReleaseButton.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="ReleaseButton.Text" xml:space="preserve">
+    <value>　　　強制解除</value>
+  </data>
+  <data name="ReleaseButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;ReleaseButton.Name" xml:space="preserve">
+    <value>ReleaseButton</value>
+  </data>
+  <data name="&gt;&gt;ReleaseButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ReleaseButton.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;ReleaseButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>ＭＳ ゴシック, 12pt</value>
+  </data>
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-2, 0</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 34</value>
+  </data>
+  <data name="label13.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>　操作権利</value>
+  </data>
+  <data name="label13.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label13.Name" xml:space="preserve">
+    <value>label13</value>
+  </data>
+  <data name="&gt;&gt;label13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="GotoCamera_Button8.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt, style=Bold</value>
@@ -1110,6 +1329,36 @@
   <data name="&gt;&gt;GotoCamera_Button1.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="RightLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RightLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 20.25pt</value>
+  </data>
+  <data name="RightLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 11</value>
+  </data>
+  <data name="RightLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 27</value>
+  </data>
+  <data name="RightLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="RightLabel.Text" xml:space="preserve">
+    <value>操作権取得可能</value>
+  </data>
+  <data name="&gt;&gt;RightLabel.Name" xml:space="preserve">
+    <value>RightLabel</value>
+  </data>
+  <data name="&gt;&gt;RightLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RightLabel.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;RightLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="Camera_08.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -1135,7 +1384,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Camera_08.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="Camera_07.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1162,7 +1411,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Camera_07.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Camera_06.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1189,7 +1438,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Camera_06.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="Camera_05.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1216,7 +1465,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Camera_05.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="Camera_04.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1243,7 +1492,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Camera_04.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="Camera_03.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1270,7 +1519,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Camera_03.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="Camera_02.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1297,7 +1546,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Camera_02.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="Camera_Label_02.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1330,7 +1579,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Camera_Label_02.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="Camera_01.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1357,7 +1606,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Camera_01.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="Camera_Label_8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1390,7 +1639,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Camera_Label_8.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="Camera_Label_7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1423,7 +1672,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Camera_Label_7.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="Camera_Label_06.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1456,7 +1705,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Camera_Label_06.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="label24.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1489,7 +1738,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label24.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label23.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1522,7 +1771,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="Camera_Label_03.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1555,7 +1804,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Camera_Label_03.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="Camera_Label_01.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1588,7 +1837,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Camera_Label_01.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="Sensor_Label_19.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1621,7 +1870,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_19.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="Sensor_Label_18.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1654,7 +1903,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_18.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="Sensor_Label_17.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1687,7 +1936,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_17.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="Sensor_Label_16.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1720,7 +1969,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_16.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="Sensor_Label_15.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1753,7 +2002,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_15.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="Sensor_Label_14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1786,7 +2035,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_14.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="Sensor_Label_13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1819,7 +2068,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_13.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="Sensor_Label_12.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1852,7 +2101,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_12.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <data name="Sensor_Label_11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1885,7 +2134,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_11.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <data name="Sensor_Label_10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1918,7 +2167,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_10.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="Sensor_Label_09.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1951,7 +2200,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_09.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="Sensor_Label_08.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1984,7 +2233,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_08.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>28</value>
   </data>
   <data name="Sensor_Label_07.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2017,7 +2266,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_07.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>29</value>
   </data>
   <data name="Sensor_Label_06.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2050,7 +2299,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_06.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>30</value>
   </data>
   <data name="Sensor_Label_05.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2083,7 +2332,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_05.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>31</value>
   </data>
   <data name="Sensor_Label_04.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2116,7 +2365,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_04.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>32</value>
   </data>
   <data name="Sensor_Label_03.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2149,7 +2398,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_03.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>33</value>
   </data>
   <data name="Sensor_Label_02.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2182,7 +2431,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_02.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>34</value>
   </data>
   <data name="Sensor_Label_01.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2215,7 +2464,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_01.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>35</value>
   </data>
   <data name="Sensor_19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2242,7 +2491,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_19.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>36</value>
   </data>
   <data name="Sensor_18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2269,7 +2518,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_18.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>37</value>
   </data>
   <data name="Sensor_17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2296,7 +2545,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_17.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>38</value>
   </data>
   <data name="Sensor_16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2323,7 +2572,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_16.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>39</value>
   </data>
   <data name="Sensor_15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2350,7 +2599,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_15.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>40</value>
   </data>
   <data name="Sensor_14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2377,7 +2626,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_14.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>41</value>
   </data>
   <data name="Sensor_13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2404,7 +2653,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_13.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>42</value>
   </data>
   <data name="Sensor_12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2431,7 +2680,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_12.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>43</value>
   </data>
   <data name="Sensor_11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2458,7 +2707,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_11.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>44</value>
   </data>
   <data name="Sensor_10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2485,7 +2734,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_10.ZOrder" xml:space="preserve">
-    <value>44</value>
+    <value>45</value>
   </data>
   <data name="Sensor_09.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2512,7 +2761,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_09.ZOrder" xml:space="preserve">
-    <value>45</value>
+    <value>46</value>
   </data>
   <data name="Sensor_08.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2539,7 +2788,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_08.ZOrder" xml:space="preserve">
-    <value>46</value>
+    <value>47</value>
   </data>
   <data name="Sensor_07.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2566,7 +2815,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_07.ZOrder" xml:space="preserve">
-    <value>47</value>
+    <value>48</value>
   </data>
   <data name="Sensor_06.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2593,7 +2842,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_06.ZOrder" xml:space="preserve">
-    <value>48</value>
+    <value>49</value>
   </data>
   <data name="Sensor_05.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2620,7 +2869,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_05.ZOrder" xml:space="preserve">
-    <value>49</value>
+    <value>50</value>
   </data>
   <data name="Sensor_04.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2647,7 +2896,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_04.ZOrder" xml:space="preserve">
-    <value>50</value>
+    <value>51</value>
   </data>
   <data name="Sensor_03.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2674,7 +2923,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_03.ZOrder" xml:space="preserve">
-    <value>51</value>
+    <value>52</value>
   </data>
   <data name="Sensor_02.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2701,7 +2950,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_02.ZOrder" xml:space="preserve">
-    <value>52</value>
+    <value>53</value>
   </data>
   <data name="Sensor_01.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2728,7 +2977,7 @@
     <value>panel1</value>
   </data>
   <data name="&gt;&gt;Sensor_01.ZOrder" xml:space="preserve">
-    <value>53</value>
+    <value>54</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 56</value>
@@ -2761,7 +3010,7 @@
     <value>1904, 1041</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Map_Form</value>
+    <value>越前変電所警戒マップ</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Map_Form</value>

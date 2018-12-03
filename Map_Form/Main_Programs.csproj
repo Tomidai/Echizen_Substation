@@ -67,6 +67,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Log_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log_Form.Designer.cs">
+      <DependentUpon>Log_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="PaternReg_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="Camera_Form.resx">
       <DependentUpon>Camera_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log_Form.resx">
+      <DependentUpon>Log_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaternReg_Form.resx">
       <DependentUpon>PaternReg_Form.cs</DependentUpon>
@@ -678,6 +687,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Camera_Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in_operation_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in_operation_push.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\operation_button_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\operation_button_push.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

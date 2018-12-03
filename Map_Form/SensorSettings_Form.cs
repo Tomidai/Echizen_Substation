@@ -66,18 +66,19 @@ namespace Map_Form {
         //決定を反映させるメソッド
         public string Change(RadioButton locked, RadioButton environ, RadioButton normal, string path, string tage) {
             if (locked.Checked == true) {
+                snObj.SensorSettingChange(path, 2, "0");
                 snObj.SensorSettingChange(path, 1, "1");
-                string str = snObj.SendSensorInfo(path, 1, "1");
+                string str = snObj.GetSendText(path, 1, "1");
                 return str;
             } else if (environ.Checked == true) {
                 snObj.SensorSettingChange(path, 1, "0");
                 snObj.SensorSettingChange(path, 2, "1");
-                string str = snObj.SendSensorInfo(path, 2, "1");
+                string str = snObj.GetSendText(path, 2, "1");
                 return str;
             } else {
                 snObj.SensorSettingChange(path, 2, "0");
                 snObj.SensorSettingChange(path, 1, "0");
-                string str = snObj.SendSensorInfo(path, 1, "0");
+                string str = snObj.GetSendText(path, 1, "0");
                 return str;
             }
         }
@@ -172,33 +173,10 @@ namespace Map_Form {
             sn17 = Change(lock17, environ17, normal17, "sensor17.csv", "17");
             sn18 = Change(lock18, environ18, normal18, "sensor18.csv", "18");
             sn19 = Change(lock19, environ19, normal19, "sensor19.csv", "19");
-
-            StreamWriter sr = new StreamWriter(ConfigurationManager.AppSettings["SendPath"], false);
-            try {
-                sr.WriteLine(sn1);
-                sr.WriteLine(sn2);
-                sr.WriteLine(sn3);
-                sr.WriteLine(sn4);
-                sr.WriteLine(sn5);
-                sr.WriteLine(sn6);
-                sr.WriteLine(sn7);
-                sr.WriteLine(sn8);
-                sr.WriteLine(sn9);
-                sr.WriteLine(sn10);
-                sr.WriteLine(sn11);
-                sr.WriteLine(sn12);
-                sr.WriteLine(sn13);
-                sr.WriteLine(sn14);
-                sr.WriteLine(sn15);
-                sr.WriteLine(sn16);
-                sr.WriteLine(sn17);
-                sr.WriteLine(sn18);
-                sr.WriteLine(sn19);
-            } catch {
-                MessageBox.Show("エラーが発生しました。もう一度実行してください。");
-            } finally {
-                sr.Close();
-            }
+            //テキスト送信
+            string[] send = {sn1, sn2, sn3, sn4, sn5, sn6, sn7, sn8, sn9, sn10,
+            sn11, sn12, sn13, sn14, sn15, sn16, sn17, sn18, sn19};
+            snObj.SetSendText(send);
         }
 
         //キャンセルボタン

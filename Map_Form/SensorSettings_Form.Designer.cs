@@ -133,29 +133,29 @@
             this.normal1.Size = new System.Drawing.Size(47, 16);
             this.normal1.TabIndex = 1;
             this.normal1.TabStop = true;
-            this.normal1.Text = "通常";
+            this.normal1.Text = "使用";
             this.normal1.UseVisualStyleBackColor = true;
             // 
             // lock1
             // 
             this.lock1.AutoSize = true;
-            this.lock1.Location = new System.Drawing.Point(83, 18);
+            this.lock1.Location = new System.Drawing.Point(173, 18);
             this.lock1.Name = "lock1";
-            this.lock1.Size = new System.Drawing.Size(47, 16);
+            this.lock1.Size = new System.Drawing.Size(71, 16);
             this.lock1.TabIndex = 2;
             this.lock1.TabStop = true;
-            this.lock1.Text = "ロック";
+            this.lock1.Text = "監視ロック";
             this.lock1.UseVisualStyleBackColor = true;
             // 
             // environ1
             // 
             this.environ1.AutoSize = true;
-            this.environ1.Location = new System.Drawing.Point(147, 18);
+            this.environ1.Location = new System.Drawing.Point(83, 18);
             this.environ1.Name = "environ1";
-            this.environ1.Size = new System.Drawing.Size(47, 16);
+            this.environ1.Size = new System.Drawing.Size(71, 16);
             this.environ1.TabIndex = 3;
             this.environ1.TabStop = true;
-            this.environ1.Text = "環境";
+            this.environ1.Text = "環境ロック";
             this.environ1.UseVisualStyleBackColor = true;
             // 
             // groupSensor1
@@ -167,10 +167,10 @@
             this.groupSensor1.Location = new System.Drawing.Point(12, 12);
             this.groupSensor1.Name = "groupSensor1";
             this.groupSensor1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupSensor1.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor1.Size = new System.Drawing.Size(263, 46);
             this.groupSensor1.TabIndex = 4;
             this.groupSensor1.TabStop = false;
-            this.groupSensor1.Text = "センサー1";
+            this.groupSensor1.Text = "センサー区間1";
             // 
             // groupSensor2
             // 
@@ -179,10 +179,10 @@
             this.groupSensor2.Controls.Add(this.lock2);
             this.groupSensor2.Location = new System.Drawing.Point(12, 64);
             this.groupSensor2.Name = "groupSensor2";
-            this.groupSensor2.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor2.Size = new System.Drawing.Size(263, 46);
             this.groupSensor2.TabIndex = 5;
             this.groupSensor2.TabStop = false;
-            this.groupSensor2.Text = "センサー2";
+            this.groupSensor2.Text = "センサー区間2";
             // 
             // normal2
             // 
@@ -192,29 +192,29 @@
             this.normal2.Size = new System.Drawing.Size(47, 16);
             this.normal2.TabIndex = 1;
             this.normal2.TabStop = true;
-            this.normal2.Text = "通常";
+            this.normal2.Text = "使用";
             this.normal2.UseVisualStyleBackColor = true;
             // 
             // environ2
             // 
             this.environ2.AutoSize = true;
-            this.environ2.Location = new System.Drawing.Point(147, 18);
+            this.environ2.Location = new System.Drawing.Point(83, 18);
             this.environ2.Name = "environ2";
-            this.environ2.Size = new System.Drawing.Size(47, 16);
+            this.environ2.Size = new System.Drawing.Size(71, 16);
             this.environ2.TabIndex = 3;
             this.environ2.TabStop = true;
-            this.environ2.Text = "環境";
+            this.environ2.Text = "環境ロック";
             this.environ2.UseVisualStyleBackColor = true;
             // 
             // lock2
             // 
             this.lock2.AutoSize = true;
-            this.lock2.Location = new System.Drawing.Point(83, 18);
+            this.lock2.Location = new System.Drawing.Point(173, 18);
             this.lock2.Name = "lock2";
-            this.lock2.Size = new System.Drawing.Size(47, 16);
+            this.lock2.Size = new System.Drawing.Size(71, 16);
             this.lock2.TabIndex = 2;
             this.lock2.TabStop = true;
-            this.lock2.Text = "ロック";
+            this.lock2.Text = "監視ロック";
             this.lock2.UseVisualStyleBackColor = true;
             // 
             // groupSensor3
@@ -224,10 +224,10 @@
             this.groupSensor3.Controls.Add(this.lock3);
             this.groupSensor3.Location = new System.Drawing.Point(12, 116);
             this.groupSensor3.Name = "groupSensor3";
-            this.groupSensor3.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor3.Size = new System.Drawing.Size(263, 46);
             this.groupSensor3.TabIndex = 5;
             this.groupSensor3.TabStop = false;
-            this.groupSensor3.Text = "センサー3";
+            this.groupSensor3.Text = "センサー区間3";
             // 
             // normal3
             // 
@@ -237,29 +237,29 @@
             this.normal3.Size = new System.Drawing.Size(47, 16);
             this.normal3.TabIndex = 1;
             this.normal3.TabStop = true;
-            this.normal3.Text = "通常";
+            this.normal3.Text = "使用";
             this.normal3.UseVisualStyleBackColor = true;
             // 
             // environ3
             // 
             this.environ3.AutoSize = true;
-            this.environ3.Location = new System.Drawing.Point(147, 18);
+            this.environ3.Location = new System.Drawing.Point(83, 18);
             this.environ3.Name = "environ3";
-            this.environ3.Size = new System.Drawing.Size(47, 16);
+            this.environ3.Size = new System.Drawing.Size(71, 16);
             this.environ3.TabIndex = 3;
             this.environ3.TabStop = true;
-            this.environ3.Text = "環境";
+            this.environ3.Text = "環境ロック";
             this.environ3.UseVisualStyleBackColor = true;
             // 
             // lock3
             // 
             this.lock3.AutoSize = true;
-            this.lock3.Location = new System.Drawing.Point(83, 18);
+            this.lock3.Location = new System.Drawing.Point(173, 18);
             this.lock3.Name = "lock3";
-            this.lock3.Size = new System.Drawing.Size(47, 16);
+            this.lock3.Size = new System.Drawing.Size(71, 16);
             this.lock3.TabIndex = 2;
             this.lock3.TabStop = true;
-            this.lock3.Text = "ロック";
+            this.lock3.Text = "監視ロック";
             this.lock3.UseVisualStyleBackColor = true;
             // 
             // groupSensor6
@@ -267,12 +267,12 @@
             this.groupSensor6.Controls.Add(this.normal6);
             this.groupSensor6.Controls.Add(this.environ6);
             this.groupSensor6.Controls.Add(this.lock6);
-            this.groupSensor6.Location = new System.Drawing.Point(252, 12);
+            this.groupSensor6.Location = new System.Drawing.Point(306, 12);
             this.groupSensor6.Name = "groupSensor6";
-            this.groupSensor6.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor6.Size = new System.Drawing.Size(263, 46);
             this.groupSensor6.TabIndex = 6;
             this.groupSensor6.TabStop = false;
-            this.groupSensor6.Text = "センサー6";
+            this.groupSensor6.Text = "センサー区間6";
             // 
             // normal6
             // 
@@ -282,29 +282,29 @@
             this.normal6.Size = new System.Drawing.Size(47, 16);
             this.normal6.TabIndex = 1;
             this.normal6.TabStop = true;
-            this.normal6.Text = "通常";
+            this.normal6.Text = "使用";
             this.normal6.UseVisualStyleBackColor = true;
             // 
             // environ6
             // 
             this.environ6.AutoSize = true;
-            this.environ6.Location = new System.Drawing.Point(147, 18);
+            this.environ6.Location = new System.Drawing.Point(83, 18);
             this.environ6.Name = "environ6";
-            this.environ6.Size = new System.Drawing.Size(47, 16);
+            this.environ6.Size = new System.Drawing.Size(71, 16);
             this.environ6.TabIndex = 3;
             this.environ6.TabStop = true;
-            this.environ6.Text = "環境";
+            this.environ6.Text = "環境ロック";
             this.environ6.UseVisualStyleBackColor = true;
             // 
             // lock6
             // 
             this.lock6.AutoSize = true;
-            this.lock6.Location = new System.Drawing.Point(83, 18);
+            this.lock6.Location = new System.Drawing.Point(173, 18);
             this.lock6.Name = "lock6";
-            this.lock6.Size = new System.Drawing.Size(47, 16);
+            this.lock6.Size = new System.Drawing.Size(71, 16);
             this.lock6.TabIndex = 2;
             this.lock6.TabStop = true;
-            this.lock6.Text = "ロック";
+            this.lock6.Text = "監視ロック";
             this.lock6.UseVisualStyleBackColor = true;
             // 
             // groupSensor11
@@ -312,12 +312,12 @@
             this.groupSensor11.Controls.Add(this.normal11);
             this.groupSensor11.Controls.Add(this.environ11);
             this.groupSensor11.Controls.Add(this.lock11);
-            this.groupSensor11.Location = new System.Drawing.Point(492, 12);
+            this.groupSensor11.Location = new System.Drawing.Point(603, 12);
             this.groupSensor11.Name = "groupSensor11";
-            this.groupSensor11.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor11.Size = new System.Drawing.Size(263, 46);
             this.groupSensor11.TabIndex = 7;
             this.groupSensor11.TabStop = false;
-            this.groupSensor11.Text = "センサー11";
+            this.groupSensor11.Text = "センサー区間11";
             // 
             // normal11
             // 
@@ -327,29 +327,29 @@
             this.normal11.Size = new System.Drawing.Size(47, 16);
             this.normal11.TabIndex = 1;
             this.normal11.TabStop = true;
-            this.normal11.Text = "通常";
+            this.normal11.Text = "使用";
             this.normal11.UseVisualStyleBackColor = true;
             // 
             // environ11
             // 
             this.environ11.AutoSize = true;
-            this.environ11.Location = new System.Drawing.Point(147, 18);
+            this.environ11.Location = new System.Drawing.Point(83, 18);
             this.environ11.Name = "environ11";
-            this.environ11.Size = new System.Drawing.Size(47, 16);
+            this.environ11.Size = new System.Drawing.Size(71, 16);
             this.environ11.TabIndex = 3;
             this.environ11.TabStop = true;
-            this.environ11.Text = "環境";
+            this.environ11.Text = "環境ロック";
             this.environ11.UseVisualStyleBackColor = true;
             // 
             // lock11
             // 
             this.lock11.AutoSize = true;
-            this.lock11.Location = new System.Drawing.Point(83, 18);
+            this.lock11.Location = new System.Drawing.Point(173, 18);
             this.lock11.Name = "lock11";
-            this.lock11.Size = new System.Drawing.Size(47, 16);
+            this.lock11.Size = new System.Drawing.Size(71, 16);
             this.lock11.TabIndex = 2;
             this.lock11.TabStop = true;
-            this.lock11.Text = "ロック";
+            this.lock11.Text = "監視ロック";
             this.lock11.UseVisualStyleBackColor = true;
             // 
             // groupSensor7
@@ -357,12 +357,12 @@
             this.groupSensor7.Controls.Add(this.normal7);
             this.groupSensor7.Controls.Add(this.environ7);
             this.groupSensor7.Controls.Add(this.lock7);
-            this.groupSensor7.Location = new System.Drawing.Point(252, 64);
+            this.groupSensor7.Location = new System.Drawing.Point(306, 64);
             this.groupSensor7.Name = "groupSensor7";
-            this.groupSensor7.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor7.Size = new System.Drawing.Size(263, 46);
             this.groupSensor7.TabIndex = 8;
             this.groupSensor7.TabStop = false;
-            this.groupSensor7.Text = "センサー7";
+            this.groupSensor7.Text = "センサー区間7";
             // 
             // normal7
             // 
@@ -372,29 +372,29 @@
             this.normal7.Size = new System.Drawing.Size(47, 16);
             this.normal7.TabIndex = 1;
             this.normal7.TabStop = true;
-            this.normal7.Text = "通常";
+            this.normal7.Text = "使用";
             this.normal7.UseVisualStyleBackColor = true;
             // 
             // environ7
             // 
             this.environ7.AutoSize = true;
-            this.environ7.Location = new System.Drawing.Point(147, 18);
+            this.environ7.Location = new System.Drawing.Point(83, 18);
             this.environ7.Name = "environ7";
-            this.environ7.Size = new System.Drawing.Size(47, 16);
+            this.environ7.Size = new System.Drawing.Size(71, 16);
             this.environ7.TabIndex = 3;
             this.environ7.TabStop = true;
-            this.environ7.Text = "環境";
+            this.environ7.Text = "環境ロック";
             this.environ7.UseVisualStyleBackColor = true;
             // 
             // lock7
             // 
             this.lock7.AutoSize = true;
-            this.lock7.Location = new System.Drawing.Point(83, 18);
+            this.lock7.Location = new System.Drawing.Point(173, 18);
             this.lock7.Name = "lock7";
-            this.lock7.Size = new System.Drawing.Size(47, 16);
+            this.lock7.Size = new System.Drawing.Size(71, 16);
             this.lock7.TabIndex = 2;
             this.lock7.TabStop = true;
-            this.lock7.Text = "ロック";
+            this.lock7.Text = "監視ロック";
             this.lock7.UseVisualStyleBackColor = true;
             // 
             // groupSensor12
@@ -402,12 +402,12 @@
             this.groupSensor12.Controls.Add(this.normal12);
             this.groupSensor12.Controls.Add(this.environ12);
             this.groupSensor12.Controls.Add(this.lock12);
-            this.groupSensor12.Location = new System.Drawing.Point(492, 64);
+            this.groupSensor12.Location = new System.Drawing.Point(603, 64);
             this.groupSensor12.Name = "groupSensor12";
-            this.groupSensor12.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor12.Size = new System.Drawing.Size(263, 46);
             this.groupSensor12.TabIndex = 5;
             this.groupSensor12.TabStop = false;
-            this.groupSensor12.Text = "センサー12";
+            this.groupSensor12.Text = "センサー区間12";
             // 
             // normal12
             // 
@@ -417,29 +417,29 @@
             this.normal12.Size = new System.Drawing.Size(47, 16);
             this.normal12.TabIndex = 1;
             this.normal12.TabStop = true;
-            this.normal12.Text = "通常";
+            this.normal12.Text = "使用";
             this.normal12.UseVisualStyleBackColor = true;
             // 
             // environ12
             // 
             this.environ12.AutoSize = true;
-            this.environ12.Location = new System.Drawing.Point(147, 18);
+            this.environ12.Location = new System.Drawing.Point(83, 18);
             this.environ12.Name = "environ12";
-            this.environ12.Size = new System.Drawing.Size(47, 16);
+            this.environ12.Size = new System.Drawing.Size(71, 16);
             this.environ12.TabIndex = 3;
             this.environ12.TabStop = true;
-            this.environ12.Text = "環境";
+            this.environ12.Text = "環境ロック";
             this.environ12.UseVisualStyleBackColor = true;
             // 
             // lock12
             // 
             this.lock12.AutoSize = true;
-            this.lock12.Location = new System.Drawing.Point(83, 18);
+            this.lock12.Location = new System.Drawing.Point(173, 18);
             this.lock12.Name = "lock12";
-            this.lock12.Size = new System.Drawing.Size(47, 16);
+            this.lock12.Size = new System.Drawing.Size(71, 16);
             this.lock12.TabIndex = 2;
             this.lock12.TabStop = true;
-            this.lock12.Text = "ロック";
+            this.lock12.Text = "監視ロック";
             this.lock12.UseVisualStyleBackColor = true;
             // 
             // groupSensor8
@@ -447,12 +447,12 @@
             this.groupSensor8.Controls.Add(this.normal8);
             this.groupSensor8.Controls.Add(this.environ8);
             this.groupSensor8.Controls.Add(this.lock8);
-            this.groupSensor8.Location = new System.Drawing.Point(252, 116);
+            this.groupSensor8.Location = new System.Drawing.Point(306, 116);
             this.groupSensor8.Name = "groupSensor8";
-            this.groupSensor8.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor8.Size = new System.Drawing.Size(263, 46);
             this.groupSensor8.TabIndex = 5;
             this.groupSensor8.TabStop = false;
-            this.groupSensor8.Text = "センサー8";
+            this.groupSensor8.Text = "センサー区間8";
             // 
             // normal8
             // 
@@ -462,29 +462,29 @@
             this.normal8.Size = new System.Drawing.Size(47, 16);
             this.normal8.TabIndex = 1;
             this.normal8.TabStop = true;
-            this.normal8.Text = "通常";
+            this.normal8.Text = "使用";
             this.normal8.UseVisualStyleBackColor = true;
             // 
             // environ8
             // 
             this.environ8.AutoSize = true;
-            this.environ8.Location = new System.Drawing.Point(147, 18);
+            this.environ8.Location = new System.Drawing.Point(83, 18);
             this.environ8.Name = "environ8";
-            this.environ8.Size = new System.Drawing.Size(47, 16);
+            this.environ8.Size = new System.Drawing.Size(71, 16);
             this.environ8.TabIndex = 3;
             this.environ8.TabStop = true;
-            this.environ8.Text = "環境";
+            this.environ8.Text = "環境ロック";
             this.environ8.UseVisualStyleBackColor = true;
             // 
             // lock8
             // 
             this.lock8.AutoSize = true;
-            this.lock8.Location = new System.Drawing.Point(83, 18);
+            this.lock8.Location = new System.Drawing.Point(173, 18);
             this.lock8.Name = "lock8";
-            this.lock8.Size = new System.Drawing.Size(47, 16);
+            this.lock8.Size = new System.Drawing.Size(71, 16);
             this.lock8.TabIndex = 2;
             this.lock8.TabStop = true;
-            this.lock8.Text = "ロック";
+            this.lock8.Text = "監視ロック";
             this.lock8.UseVisualStyleBackColor = true;
             // 
             // groupSensor13
@@ -492,12 +492,12 @@
             this.groupSensor13.Controls.Add(this.normal13);
             this.groupSensor13.Controls.Add(this.environ13);
             this.groupSensor13.Controls.Add(this.lock13);
-            this.groupSensor13.Location = new System.Drawing.Point(492, 116);
+            this.groupSensor13.Location = new System.Drawing.Point(603, 116);
             this.groupSensor13.Name = "groupSensor13";
-            this.groupSensor13.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor13.Size = new System.Drawing.Size(263, 46);
             this.groupSensor13.TabIndex = 5;
             this.groupSensor13.TabStop = false;
-            this.groupSensor13.Text = "センサー13";
+            this.groupSensor13.Text = "センサー区間13";
             // 
             // normal13
             // 
@@ -507,29 +507,29 @@
             this.normal13.Size = new System.Drawing.Size(47, 16);
             this.normal13.TabIndex = 1;
             this.normal13.TabStop = true;
-            this.normal13.Text = "通常";
+            this.normal13.Text = "使用";
             this.normal13.UseVisualStyleBackColor = true;
             // 
             // environ13
             // 
             this.environ13.AutoSize = true;
-            this.environ13.Location = new System.Drawing.Point(147, 18);
+            this.environ13.Location = new System.Drawing.Point(83, 18);
             this.environ13.Name = "environ13";
-            this.environ13.Size = new System.Drawing.Size(47, 16);
+            this.environ13.Size = new System.Drawing.Size(71, 16);
             this.environ13.TabIndex = 3;
             this.environ13.TabStop = true;
-            this.environ13.Text = "環境";
+            this.environ13.Text = "環境ロック";
             this.environ13.UseVisualStyleBackColor = true;
             // 
             // lock13
             // 
             this.lock13.AutoSize = true;
-            this.lock13.Location = new System.Drawing.Point(83, 18);
+            this.lock13.Location = new System.Drawing.Point(173, 18);
             this.lock13.Name = "lock13";
-            this.lock13.Size = new System.Drawing.Size(47, 16);
+            this.lock13.Size = new System.Drawing.Size(71, 16);
             this.lock13.TabIndex = 2;
             this.lock13.TabStop = true;
-            this.lock13.Text = "ロック";
+            this.lock13.Text = "監視ロック";
             this.lock13.UseVisualStyleBackColor = true;
             // 
             // groupSensor18
@@ -537,12 +537,12 @@
             this.groupSensor18.Controls.Add(this.normal18);
             this.groupSensor18.Controls.Add(this.environ18);
             this.groupSensor18.Controls.Add(this.lock18);
-            this.groupSensor18.Location = new System.Drawing.Point(731, 116);
+            this.groupSensor18.Location = new System.Drawing.Point(895, 116);
             this.groupSensor18.Name = "groupSensor18";
-            this.groupSensor18.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor18.Size = new System.Drawing.Size(263, 46);
             this.groupSensor18.TabIndex = 8;
             this.groupSensor18.TabStop = false;
-            this.groupSensor18.Text = "センサー18";
+            this.groupSensor18.Text = "センサー区間18";
             // 
             // normal18
             // 
@@ -552,29 +552,29 @@
             this.normal18.Size = new System.Drawing.Size(47, 16);
             this.normal18.TabIndex = 1;
             this.normal18.TabStop = true;
-            this.normal18.Text = "通常";
+            this.normal18.Text = "使用";
             this.normal18.UseVisualStyleBackColor = true;
             // 
             // environ18
             // 
             this.environ18.AutoSize = true;
-            this.environ18.Location = new System.Drawing.Point(147, 18);
+            this.environ18.Location = new System.Drawing.Point(83, 18);
             this.environ18.Name = "environ18";
-            this.environ18.Size = new System.Drawing.Size(47, 16);
+            this.environ18.Size = new System.Drawing.Size(71, 16);
             this.environ18.TabIndex = 3;
             this.environ18.TabStop = true;
-            this.environ18.Text = "環境";
+            this.environ18.Text = "環境ロック";
             this.environ18.UseVisualStyleBackColor = true;
             // 
             // lock18
             // 
             this.lock18.AutoSize = true;
-            this.lock18.Location = new System.Drawing.Point(83, 18);
+            this.lock18.Location = new System.Drawing.Point(173, 18);
             this.lock18.Name = "lock18";
-            this.lock18.Size = new System.Drawing.Size(47, 16);
+            this.lock18.Size = new System.Drawing.Size(71, 16);
             this.lock18.TabIndex = 2;
             this.lock18.TabStop = true;
-            this.lock18.Text = "ロック";
+            this.lock18.Text = "監視ロック";
             this.lock18.UseVisualStyleBackColor = true;
             // 
             // groupSensor17
@@ -582,12 +582,12 @@
             this.groupSensor17.Controls.Add(this.normal17);
             this.groupSensor17.Controls.Add(this.environ17);
             this.groupSensor17.Controls.Add(this.lock17);
-            this.groupSensor17.Location = new System.Drawing.Point(731, 64);
+            this.groupSensor17.Location = new System.Drawing.Point(895, 64);
             this.groupSensor17.Name = "groupSensor17";
-            this.groupSensor17.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor17.Size = new System.Drawing.Size(263, 46);
             this.groupSensor17.TabIndex = 9;
             this.groupSensor17.TabStop = false;
-            this.groupSensor17.Text = "センサー17";
+            this.groupSensor17.Text = "センサー区間17";
             // 
             // normal17
             // 
@@ -597,29 +597,29 @@
             this.normal17.Size = new System.Drawing.Size(47, 16);
             this.normal17.TabIndex = 1;
             this.normal17.TabStop = true;
-            this.normal17.Text = "通常";
+            this.normal17.Text = "使用";
             this.normal17.UseVisualStyleBackColor = true;
             // 
             // environ17
             // 
             this.environ17.AutoSize = true;
-            this.environ17.Location = new System.Drawing.Point(147, 18);
+            this.environ17.Location = new System.Drawing.Point(83, 18);
             this.environ17.Name = "environ17";
-            this.environ17.Size = new System.Drawing.Size(47, 16);
+            this.environ17.Size = new System.Drawing.Size(71, 16);
             this.environ17.TabIndex = 3;
             this.environ17.TabStop = true;
-            this.environ17.Text = "環境";
+            this.environ17.Text = "環境ロック";
             this.environ17.UseVisualStyleBackColor = true;
             // 
             // lock17
             // 
             this.lock17.AutoSize = true;
-            this.lock17.Location = new System.Drawing.Point(83, 18);
+            this.lock17.Location = new System.Drawing.Point(173, 18);
             this.lock17.Name = "lock17";
-            this.lock17.Size = new System.Drawing.Size(47, 16);
+            this.lock17.Size = new System.Drawing.Size(71, 16);
             this.lock17.TabIndex = 2;
             this.lock17.TabStop = true;
-            this.lock17.Text = "ロック";
+            this.lock17.Text = "監視ロック";
             this.lock17.UseVisualStyleBackColor = true;
             // 
             // groupSensor16
@@ -627,12 +627,12 @@
             this.groupSensor16.Controls.Add(this.normal16);
             this.groupSensor16.Controls.Add(this.environ16);
             this.groupSensor16.Controls.Add(this.lock16);
-            this.groupSensor16.Location = new System.Drawing.Point(731, 12);
+            this.groupSensor16.Location = new System.Drawing.Point(895, 12);
             this.groupSensor16.Name = "groupSensor16";
-            this.groupSensor16.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor16.Size = new System.Drawing.Size(263, 46);
             this.groupSensor16.TabIndex = 10;
             this.groupSensor16.TabStop = false;
-            this.groupSensor16.Text = "センサー16";
+            this.groupSensor16.Text = "センサー区間16";
             // 
             // normal16
             // 
@@ -642,29 +642,29 @@
             this.normal16.Size = new System.Drawing.Size(47, 16);
             this.normal16.TabIndex = 1;
             this.normal16.TabStop = true;
-            this.normal16.Text = "通常";
+            this.normal16.Text = "使用";
             this.normal16.UseVisualStyleBackColor = true;
             // 
             // environ16
             // 
             this.environ16.AutoSize = true;
-            this.environ16.Location = new System.Drawing.Point(147, 18);
+            this.environ16.Location = new System.Drawing.Point(83, 18);
             this.environ16.Name = "environ16";
-            this.environ16.Size = new System.Drawing.Size(47, 16);
+            this.environ16.Size = new System.Drawing.Size(71, 16);
             this.environ16.TabIndex = 3;
             this.environ16.TabStop = true;
-            this.environ16.Text = "環境";
+            this.environ16.Text = "環境ロック";
             this.environ16.UseVisualStyleBackColor = true;
             // 
             // lock16
             // 
             this.lock16.AutoSize = true;
-            this.lock16.Location = new System.Drawing.Point(83, 18);
+            this.lock16.Location = new System.Drawing.Point(173, 18);
             this.lock16.Name = "lock16";
-            this.lock16.Size = new System.Drawing.Size(47, 16);
+            this.lock16.Size = new System.Drawing.Size(71, 16);
             this.lock16.TabIndex = 2;
             this.lock16.TabStop = true;
-            this.lock16.Text = "ロック";
+            this.lock16.Text = "監視ロック";
             this.lock16.UseVisualStyleBackColor = true;
             // 
             // groupSensor19
@@ -672,12 +672,12 @@
             this.groupSensor19.Controls.Add(this.normal19);
             this.groupSensor19.Controls.Add(this.environ19);
             this.groupSensor19.Controls.Add(this.lock19);
-            this.groupSensor19.Location = new System.Drawing.Point(731, 168);
+            this.groupSensor19.Location = new System.Drawing.Point(895, 168);
             this.groupSensor19.Name = "groupSensor19";
-            this.groupSensor19.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor19.Size = new System.Drawing.Size(263, 46);
             this.groupSensor19.TabIndex = 12;
             this.groupSensor19.TabStop = false;
-            this.groupSensor19.Text = "センサー19";
+            this.groupSensor19.Text = "センサー区間19";
             // 
             // normal19
             // 
@@ -687,29 +687,29 @@
             this.normal19.Size = new System.Drawing.Size(47, 16);
             this.normal19.TabIndex = 1;
             this.normal19.TabStop = true;
-            this.normal19.Text = "通常";
+            this.normal19.Text = "使用";
             this.normal19.UseVisualStyleBackColor = true;
             // 
             // environ19
             // 
             this.environ19.AutoSize = true;
-            this.environ19.Location = new System.Drawing.Point(147, 18);
+            this.environ19.Location = new System.Drawing.Point(83, 18);
             this.environ19.Name = "environ19";
-            this.environ19.Size = new System.Drawing.Size(47, 16);
+            this.environ19.Size = new System.Drawing.Size(71, 16);
             this.environ19.TabIndex = 3;
             this.environ19.TabStop = true;
-            this.environ19.Text = "環境";
+            this.environ19.Text = "環境ロック";
             this.environ19.UseVisualStyleBackColor = true;
             // 
             // lock19
             // 
             this.lock19.AutoSize = true;
-            this.lock19.Location = new System.Drawing.Point(83, 18);
+            this.lock19.Location = new System.Drawing.Point(173, 18);
             this.lock19.Name = "lock19";
-            this.lock19.Size = new System.Drawing.Size(47, 16);
+            this.lock19.Size = new System.Drawing.Size(71, 16);
             this.lock19.TabIndex = 2;
             this.lock19.TabStop = true;
-            this.lock19.Text = "ロック";
+            this.lock19.Text = "監視ロック";
             this.lock19.UseVisualStyleBackColor = true;
             // 
             // groupSensor14
@@ -717,12 +717,12 @@
             this.groupSensor14.Controls.Add(this.normal14);
             this.groupSensor14.Controls.Add(this.environ14);
             this.groupSensor14.Controls.Add(this.lock14);
-            this.groupSensor14.Location = new System.Drawing.Point(492, 168);
+            this.groupSensor14.Location = new System.Drawing.Point(603, 168);
             this.groupSensor14.Name = "groupSensor14";
-            this.groupSensor14.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor14.Size = new System.Drawing.Size(263, 46);
             this.groupSensor14.TabIndex = 9;
             this.groupSensor14.TabStop = false;
-            this.groupSensor14.Text = "センサー14";
+            this.groupSensor14.Text = "センサー区間14";
             // 
             // normal14
             // 
@@ -732,29 +732,29 @@
             this.normal14.Size = new System.Drawing.Size(47, 16);
             this.normal14.TabIndex = 1;
             this.normal14.TabStop = true;
-            this.normal14.Text = "通常";
+            this.normal14.Text = "使用";
             this.normal14.UseVisualStyleBackColor = true;
             // 
             // environ14
             // 
             this.environ14.AutoSize = true;
-            this.environ14.Location = new System.Drawing.Point(147, 18);
+            this.environ14.Location = new System.Drawing.Point(83, 18);
             this.environ14.Name = "environ14";
-            this.environ14.Size = new System.Drawing.Size(47, 16);
+            this.environ14.Size = new System.Drawing.Size(71, 16);
             this.environ14.TabIndex = 3;
             this.environ14.TabStop = true;
-            this.environ14.Text = "環境";
+            this.environ14.Text = "環境ロック";
             this.environ14.UseVisualStyleBackColor = true;
             // 
             // lock14
             // 
             this.lock14.AutoSize = true;
-            this.lock14.Location = new System.Drawing.Point(83, 18);
+            this.lock14.Location = new System.Drawing.Point(173, 18);
             this.lock14.Name = "lock14";
-            this.lock14.Size = new System.Drawing.Size(47, 16);
+            this.lock14.Size = new System.Drawing.Size(71, 16);
             this.lock14.TabIndex = 2;
             this.lock14.TabStop = true;
-            this.lock14.Text = "ロック";
+            this.lock14.Text = "監視ロック";
             this.lock14.UseVisualStyleBackColor = true;
             // 
             // groupSensor9
@@ -762,12 +762,12 @@
             this.groupSensor9.Controls.Add(this.normal9);
             this.groupSensor9.Controls.Add(this.environ9);
             this.groupSensor9.Controls.Add(this.lock9);
-            this.groupSensor9.Location = new System.Drawing.Point(252, 168);
+            this.groupSensor9.Location = new System.Drawing.Point(306, 168);
             this.groupSensor9.Name = "groupSensor9";
-            this.groupSensor9.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor9.Size = new System.Drawing.Size(263, 46);
             this.groupSensor9.TabIndex = 10;
             this.groupSensor9.TabStop = false;
-            this.groupSensor9.Text = "センサー9";
+            this.groupSensor9.Text = "センサー区間9";
             // 
             // normal9
             // 
@@ -777,29 +777,29 @@
             this.normal9.Size = new System.Drawing.Size(47, 16);
             this.normal9.TabIndex = 1;
             this.normal9.TabStop = true;
-            this.normal9.Text = "通常";
+            this.normal9.Text = "使用";
             this.normal9.UseVisualStyleBackColor = true;
             // 
             // environ9
             // 
             this.environ9.AutoSize = true;
-            this.environ9.Location = new System.Drawing.Point(147, 18);
+            this.environ9.Location = new System.Drawing.Point(83, 18);
             this.environ9.Name = "environ9";
-            this.environ9.Size = new System.Drawing.Size(47, 16);
+            this.environ9.Size = new System.Drawing.Size(71, 16);
             this.environ9.TabIndex = 3;
             this.environ9.TabStop = true;
-            this.environ9.Text = "環境";
+            this.environ9.Text = "環境ロック";
             this.environ9.UseVisualStyleBackColor = true;
             // 
             // lock9
             // 
             this.lock9.AutoSize = true;
-            this.lock9.Location = new System.Drawing.Point(83, 18);
+            this.lock9.Location = new System.Drawing.Point(173, 18);
             this.lock9.Name = "lock9";
-            this.lock9.Size = new System.Drawing.Size(47, 16);
+            this.lock9.Size = new System.Drawing.Size(71, 16);
             this.lock9.TabIndex = 2;
             this.lock9.TabStop = true;
-            this.lock9.Text = "ロック";
+            this.lock9.Text = "監視ロック";
             this.lock9.UseVisualStyleBackColor = true;
             // 
             // groupSensor4
@@ -809,10 +809,10 @@
             this.groupSensor4.Controls.Add(this.lock4);
             this.groupSensor4.Location = new System.Drawing.Point(12, 168);
             this.groupSensor4.Name = "groupSensor4";
-            this.groupSensor4.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor4.Size = new System.Drawing.Size(263, 46);
             this.groupSensor4.TabIndex = 11;
             this.groupSensor4.TabStop = false;
-            this.groupSensor4.Text = "センサー4";
+            this.groupSensor4.Text = "センサー区間4";
             // 
             // normal4
             // 
@@ -822,29 +822,29 @@
             this.normal4.Size = new System.Drawing.Size(47, 16);
             this.normal4.TabIndex = 1;
             this.normal4.TabStop = true;
-            this.normal4.Text = "通常";
+            this.normal4.Text = "使用";
             this.normal4.UseVisualStyleBackColor = true;
             // 
             // environ4
             // 
             this.environ4.AutoSize = true;
-            this.environ4.Location = new System.Drawing.Point(147, 18);
+            this.environ4.Location = new System.Drawing.Point(83, 18);
             this.environ4.Name = "environ4";
-            this.environ4.Size = new System.Drawing.Size(47, 16);
+            this.environ4.Size = new System.Drawing.Size(71, 16);
             this.environ4.TabIndex = 3;
             this.environ4.TabStop = true;
-            this.environ4.Text = "環境";
+            this.environ4.Text = "環境ロック";
             this.environ4.UseVisualStyleBackColor = true;
             // 
             // lock4
             // 
             this.lock4.AutoSize = true;
-            this.lock4.Location = new System.Drawing.Point(83, 18);
+            this.lock4.Location = new System.Drawing.Point(173, 18);
             this.lock4.Name = "lock4";
-            this.lock4.Size = new System.Drawing.Size(47, 16);
+            this.lock4.Size = new System.Drawing.Size(71, 16);
             this.lock4.TabIndex = 2;
             this.lock4.TabStop = true;
-            this.lock4.Text = "ロック";
+            this.lock4.Text = "監視ロック";
             this.lock4.UseVisualStyleBackColor = true;
             // 
             // groupBox18
@@ -852,12 +852,12 @@
             this.groupBox18.Controls.Add(this.normal15);
             this.groupBox18.Controls.Add(this.environ15);
             this.groupBox18.Controls.Add(this.lock15);
-            this.groupBox18.Location = new System.Drawing.Point(492, 220);
+            this.groupBox18.Location = new System.Drawing.Point(603, 220);
             this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(221, 46);
+            this.groupBox18.Size = new System.Drawing.Size(263, 46);
             this.groupBox18.TabIndex = 9;
             this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "センサー15";
+            this.groupBox18.Text = "センサー区間15";
             // 
             // normal15
             // 
@@ -867,29 +867,29 @@
             this.normal15.Size = new System.Drawing.Size(47, 16);
             this.normal15.TabIndex = 1;
             this.normal15.TabStop = true;
-            this.normal15.Text = "通常";
+            this.normal15.Text = "使用";
             this.normal15.UseVisualStyleBackColor = true;
             // 
             // environ15
             // 
             this.environ15.AutoSize = true;
-            this.environ15.Location = new System.Drawing.Point(147, 18);
+            this.environ15.Location = new System.Drawing.Point(83, 18);
             this.environ15.Name = "environ15";
-            this.environ15.Size = new System.Drawing.Size(47, 16);
+            this.environ15.Size = new System.Drawing.Size(71, 16);
             this.environ15.TabIndex = 3;
             this.environ15.TabStop = true;
-            this.environ15.Text = "環境";
+            this.environ15.Text = "環境ロック";
             this.environ15.UseVisualStyleBackColor = true;
             // 
             // lock15
             // 
             this.lock15.AutoSize = true;
-            this.lock15.Location = new System.Drawing.Point(83, 18);
+            this.lock15.Location = new System.Drawing.Point(173, 18);
             this.lock15.Name = "lock15";
-            this.lock15.Size = new System.Drawing.Size(47, 16);
+            this.lock15.Size = new System.Drawing.Size(71, 16);
             this.lock15.TabIndex = 2;
             this.lock15.TabStop = true;
-            this.lock15.Text = "ロック";
+            this.lock15.Text = "監視ロック";
             this.lock15.UseVisualStyleBackColor = true;
             // 
             // groupSensor10
@@ -897,12 +897,12 @@
             this.groupSensor10.Controls.Add(this.normal10);
             this.groupSensor10.Controls.Add(this.environ10);
             this.groupSensor10.Controls.Add(this.lock10);
-            this.groupSensor10.Location = new System.Drawing.Point(252, 220);
+            this.groupSensor10.Location = new System.Drawing.Point(306, 220);
             this.groupSensor10.Name = "groupSensor10";
-            this.groupSensor10.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor10.Size = new System.Drawing.Size(263, 46);
             this.groupSensor10.TabIndex = 10;
             this.groupSensor10.TabStop = false;
-            this.groupSensor10.Text = "センサー10";
+            this.groupSensor10.Text = "センサー区間10";
             // 
             // normal10
             // 
@@ -912,29 +912,29 @@
             this.normal10.Size = new System.Drawing.Size(47, 16);
             this.normal10.TabIndex = 1;
             this.normal10.TabStop = true;
-            this.normal10.Text = "通常";
+            this.normal10.Text = "使用";
             this.normal10.UseVisualStyleBackColor = true;
             // 
             // environ10
             // 
             this.environ10.AutoSize = true;
-            this.environ10.Location = new System.Drawing.Point(147, 18);
+            this.environ10.Location = new System.Drawing.Point(83, 18);
             this.environ10.Name = "environ10";
-            this.environ10.Size = new System.Drawing.Size(47, 16);
+            this.environ10.Size = new System.Drawing.Size(71, 16);
             this.environ10.TabIndex = 3;
             this.environ10.TabStop = true;
-            this.environ10.Text = "環境";
+            this.environ10.Text = "環境ロック";
             this.environ10.UseVisualStyleBackColor = true;
             // 
             // lock10
             // 
             this.lock10.AutoSize = true;
-            this.lock10.Location = new System.Drawing.Point(83, 18);
+            this.lock10.Location = new System.Drawing.Point(173, 18);
             this.lock10.Name = "lock10";
-            this.lock10.Size = new System.Drawing.Size(47, 16);
+            this.lock10.Size = new System.Drawing.Size(71, 16);
             this.lock10.TabIndex = 2;
             this.lock10.TabStop = true;
-            this.lock10.Text = "ロック";
+            this.lock10.Text = "監視ロック";
             this.lock10.UseVisualStyleBackColor = true;
             // 
             // groupSensor5
@@ -944,10 +944,10 @@
             this.groupSensor5.Controls.Add(this.lock5);
             this.groupSensor5.Location = new System.Drawing.Point(12, 220);
             this.groupSensor5.Name = "groupSensor5";
-            this.groupSensor5.Size = new System.Drawing.Size(221, 46);
+            this.groupSensor5.Size = new System.Drawing.Size(263, 46);
             this.groupSensor5.TabIndex = 11;
             this.groupSensor5.TabStop = false;
-            this.groupSensor5.Text = "センサー5";
+            this.groupSensor5.Text = "センサー区間5";
             // 
             // normal5
             // 
@@ -957,66 +957,66 @@
             this.normal5.Size = new System.Drawing.Size(47, 16);
             this.normal5.TabIndex = 1;
             this.normal5.TabStop = true;
-            this.normal5.Text = "通常";
+            this.normal5.Text = "使用";
             this.normal5.UseVisualStyleBackColor = true;
             // 
             // environ5
             // 
             this.environ5.AutoSize = true;
-            this.environ5.Location = new System.Drawing.Point(147, 18);
+            this.environ5.Location = new System.Drawing.Point(83, 18);
             this.environ5.Name = "environ5";
-            this.environ5.Size = new System.Drawing.Size(47, 16);
+            this.environ5.Size = new System.Drawing.Size(71, 16);
             this.environ5.TabIndex = 3;
             this.environ5.TabStop = true;
-            this.environ5.Text = "環境";
+            this.environ5.Text = "環境ロック";
             this.environ5.UseVisualStyleBackColor = true;
             // 
             // lock5
             // 
             this.lock5.AutoSize = true;
-            this.lock5.Location = new System.Drawing.Point(83, 18);
+            this.lock5.Location = new System.Drawing.Point(173, 18);
             this.lock5.Name = "lock5";
-            this.lock5.Size = new System.Drawing.Size(47, 16);
+            this.lock5.Size = new System.Drawing.Size(71, 16);
             this.lock5.TabIndex = 2;
             this.lock5.TabStop = true;
-            this.lock5.Text = "ロック";
+            this.lock5.Text = "監視ロック";
             this.lock5.UseVisualStyleBackColor = true;
             // 
             // buttonAllNormal
             // 
-            this.buttonAllNormal.Location = new System.Drawing.Point(12, 288);
+            this.buttonAllNormal.Location = new System.Drawing.Point(10, 289);
             this.buttonAllNormal.Name = "buttonAllNormal";
-            this.buttonAllNormal.Size = new System.Drawing.Size(99, 30);
+            this.buttonAllNormal.Size = new System.Drawing.Size(143, 30);
             this.buttonAllNormal.TabIndex = 13;
-            this.buttonAllNormal.Text = "全区間　通常";
+            this.buttonAllNormal.Text = "全区間　使用";
             this.buttonAllNormal.UseVisualStyleBackColor = true;
             this.buttonAllNormal.Click += new System.EventHandler(this.buttonAllNormal_Click);
             // 
             // buttonAllLock
             // 
-            this.buttonAllLock.Location = new System.Drawing.Point(117, 288);
+            this.buttonAllLock.Location = new System.Drawing.Point(342, 289);
             this.buttonAllLock.Name = "buttonAllLock";
-            this.buttonAllLock.Size = new System.Drawing.Size(99, 30);
+            this.buttonAllLock.Size = new System.Drawing.Size(143, 30);
             this.buttonAllLock.TabIndex = 14;
-            this.buttonAllLock.Text = "全区間　ロック";
+            this.buttonAllLock.Text = "全区間　監視ロック";
             this.buttonAllLock.UseVisualStyleBackColor = true;
             this.buttonAllLock.Click += new System.EventHandler(this.buttonAllLock_Click);
             // 
             // buttonAllEnviron
             // 
-            this.buttonAllEnviron.Location = new System.Drawing.Point(222, 288);
+            this.buttonAllEnviron.Location = new System.Drawing.Point(175, 289);
             this.buttonAllEnviron.Name = "buttonAllEnviron";
-            this.buttonAllEnviron.Size = new System.Drawing.Size(99, 30);
+            this.buttonAllEnviron.Size = new System.Drawing.Size(143, 30);
             this.buttonAllEnviron.TabIndex = 15;
-            this.buttonAllEnviron.Text = "全区間　環境";
+            this.buttonAllEnviron.Text = "全区間　環境ロック";
             this.buttonAllEnviron.UseVisualStyleBackColor = true;
             this.buttonAllEnviron.Click += new System.EventHandler(this.buttonAllEnviron_Click);
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(748, 288);
+            this.buttonOK.Location = new System.Drawing.Point(869, 289);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(99, 30);
+            this.buttonOK.Size = new System.Drawing.Size(132, 30);
             this.buttonOK.TabIndex = 17;
             this.buttonOK.Text = "決定";
             this.buttonOK.UseVisualStyleBackColor = true;
@@ -1024,9 +1024,9 @@
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(853, 288);
+            this.buttonCancel.Location = new System.Drawing.Point(1026, 289);
             this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(99, 30);
+            this.buttonCancel.Size = new System.Drawing.Size(132, 30);
             this.buttonCancel.TabIndex = 18;
             this.buttonCancel.Text = "キャンセル";
             this.buttonCancel.UseVisualStyleBackColor = true;
@@ -1036,7 +1036,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(967, 340);
+            this.ClientSize = new System.Drawing.Size(1173, 336);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.buttonAllEnviron);
@@ -1062,7 +1062,7 @@
             this.Controls.Add(this.groupSensor2);
             this.Controls.Add(this.groupSensor1);
             this.Name = "SensorSettings_Form";
-            this.Text = "SensorSettings";
+            this.Text = "センサー区間設定";
             this.Load += new System.EventHandler(this.SensorSettings_Form_Load);
             this.groupSensor1.ResumeLayout(false);
             this.groupSensor1.PerformLayout();

@@ -563,6 +563,26 @@ namespace Map_Form.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap in_operation_normal {
+            get {
+                object obj = ResourceManager.GetObject("in_operation_normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap in_operation_push {
+            get {
+                object obj = ResourceManager.GetObject("in_operation_push", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap logs_button_normal {
             get {
                 object obj = ResourceManager.GetObject("logs_button_normal", resourceCulture);
@@ -596,6 +616,26 @@ namespace Map_Form.Properties {
         internal static System.Drawing.Bitmap mute_button_push {
             get {
                 object obj = ResourceManager.GetObject("mute_button_push", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap operation_button_normal {
+            get {
+                object obj = ResourceManager.GetObject("operation_button_normal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap operation_button_push {
+            get {
+                object obj = ResourceManager.GetObject("operation_button_push", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

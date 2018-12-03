@@ -21,18 +21,17 @@ namespace Map_Form {
 
         //カメラプリセット情報を読み込み、マップ上のどのカメラアイコンを
         //変更させるかを判断する処理
-        public void Action(int snNum) {
+        public void CameraJudgment(int snNum) {
             //ここにカメラアイコンの色を変化させる処理を追加
             using (FileStream fs = new FileStream(ConfigurationManager.AppSettings["CameraPresetPath"],
                 FileMode.Open, FileAccess.Read, FileShare.ReadWrite)) {
                 using (StreamReader stream = new StreamReader(fs)) {
                     while (!stream.EndOfStream) {
-                        string line = stream.ReadLine();
-                        string[] values = line.Split(',');
+                        string[] values = stream.ReadLine().Split(',');
                         if (values[0] == snNum.ToString()) {
-                            CameraChange(values[1]);
-                            CameraChange(values[2]);
-                            CameraChange(values[3]);
+                            CameraColorChange(values[1]);
+                            CameraColorChange(values[2]);
+                            CameraColorChange(values[3]);
                         }
                     }
                 }
@@ -40,7 +39,7 @@ namespace Map_Form {
         }
         
         //実際にカメラアイコンの色を変更させる処理
-        public void CameraChange(string str) {
+        public void CameraColorChange(string str) {
             mfObj.Invoke((MethodInvoker)delegate {
                 switch (str) {
                     case "1":
@@ -94,5 +93,6 @@ namespace Map_Form {
                 }
             });
         }
+
     }
 }

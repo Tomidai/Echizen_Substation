@@ -22,20 +22,9 @@ namespace Map_Form {
             snacObj = new SensorAction(mfObj);
         }
 
-        private  FileSystemWatcher Watcher;
         private FileSystemWatcher SensorWatcher;
 
         public void StartWatching() {
-            //PLCから送られてくるファイルを監視するWatcherの定義
-            Watcher = new FileSystemWatcher {
-                Path = ConfigurationManager.AppSettings["WatchDir"],
-                NotifyFilter = NotifyFilters.LastAccess,
-                Filter = "*.txt",
-                IncludeSubdirectories = false
-            };
-            Watcher.Changed += Changed;
-            Watcher.EnableRaisingEvents = true;
-
             //SensorSettingsファイルを監視するSensorWatcherの定義
             SensorWatcher = new FileSystemWatcher {
                 Path = ConfigurationManager.AppSettings["SensorPath"],
@@ -47,28 +36,10 @@ namespace Map_Form {
             SensorWatcher.EnableRaisingEvents = true;
         }
 
-        //Reciveファイルを読込反映させるメソッド
-        public void Receive(string[] receiveInfo ,string snPath) {
-            if (receiveInfo[3] == "1") {
-                //故障の判断
-                snObj.SensorSettingChange(snPath, 3, "3");
-                snacObj.Action(int.Parse(receiveInfo[0]));
-            } else if (receiveInfo[1] == "1") {
-                //侵入の判断
-                snObj.SensorSettingChange(snPath, 3, "1");
-                snacObj.Action(int.Parse(receiveInfo[0]));
-            } else if (receiveInfo[2] == "1") {
-                //環境の判断
-                snObj.SensorSettingChange(snPath, 3, "2");
-                snacObj.Action(int.Parse(receiveInfo[0]));
-            } else if (receiveInfo[1] == "0" && receiveInfo[2] == "0" && receiveInfo[3] == "0") {
-                //復旧
-                snObj.SensorSettingChange(snPath, 3, "0");
-            }
-        }
-
         //SensorSettingsファイルが変更されたら発生するイベント
         public void SensorChanged(object source, FileSystemEventArgs e) {
+            //反応が早すぎるので少し止める
+            Thread.Sleep(50);
             switch (e.Name) {
                 case "sensor1.csv":
                     snObj.ChangeSensor(snObj.ReturnSetting(e.Name), mfObj.Sensor_01, Properties.Resources.Sensor_Normal_01, Properties.Resources.Sensor_Lock_01,
@@ -165,80 +136,16 @@ namespace Map_Form {
                       Properties.Resources.Sensor_Action_19, Properties.Resources.Sensor_Environ_19, Properties.Resources.Sensor_Failed_19,
                       Properties.Resources.Sensor_EnvironLock_19);
                     break;
+                //権限ファイル
+                case "right.csv":
+                    snObj.RightBool(snObj.ReturnSetting(e.Name));
+                    break;
+                //設備故障ファイル
+                case "fault.csv":
+                    snObj.FaultBool(snObj.ReturnSetting(e.Name));
+                    break;
             }
         }
-
-        //Receiveファイルが変更されたら発生するイベント
-        public void Changed(object source, FileSystemEventArgs e) {
-            //センサーからの情報受信
-            using (FileStream fs = new FileStream(ConfigurationManager.AppSettings["ReceivePath"], FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
-            using (StreamReader sr = new StreamReader(fs)) {
-                while (!sr.EndOfStream) {
-                    //読み込んだ1行をcsvで分けて配列に入れる
-                    string[] receiveInfo = sr.ReadLine().Split(',');
-                    //センサーを判断する条件分岐1~19
-                    switch (int.Parse(receiveInfo[0])) {
-                        case 1:
-                            //Receiveファイルを読込反映させるメソッドを呼び出す
-                            Receive(receiveInfo, "sensor1.csv");
-                            break;
-                        case 2:
-                            Receive(receiveInfo, "sensor2.csv");
-                            break;
-                        case 3:
-                            Receive(receiveInfo, "sensor3.csv");
-                            break;
-                        case 4:
-                            Receive(receiveInfo, "sensor4.csv");
-                            break;
-                        case 5:
-                            Receive(receiveInfo, "sensor5.csv");
-                            break;
-                        case 6:
-                            Receive(receiveInfo, "sensor6.csv");
-                            break;
-                        case 7:
-                            Receive(receiveInfo, "sensor7.csv");
-                            break;
-                        case 8:
-                            Receive(receiveInfo, "sensor8.csv");
-                            break;
-                        case 9:
-                            Receive(receiveInfo, "sensor9.csv");
-                            break;
-                        case 10:
-                            Receive(receiveInfo, "sensor10.csv");
-                            break;
-                        case 11:
-                            Receive(receiveInfo, "sensor11.csv");
-                            break;
-                        case 12:
-                            Receive(receiveInfo, "sensor12.csv");
-                            break;
-                        case 13:
-                            Receive(receiveInfo, "sensor13.csv");
-                            break;
-                        case 14:
-                            Receive(receiveInfo, "sensor14.csv");
-                            break;
-                        case 15:
-                            Receive(receiveInfo, "sensor15.csv");
-                            break;
-                        case 16:
-                            Receive(receiveInfo, "sensor16.csv");
-                            break;
-                        case 17:
-                            Receive(receiveInfo, "sensor17.csv");
-                            break;
-                        case 18:
-                            Receive(receiveInfo, "sensor18.csv");
-                            break;
-                        case 19:
-                            Receive(receiveInfo, "sensor19.csv");
-                            break;
-                    }
-                }
-            }
-        }
+        
     }
 }
