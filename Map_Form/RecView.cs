@@ -17,9 +17,7 @@ namespace Map_Form {
             RecIP = IP;
 
             String URI = "http://" + RecIP + "/cgi-bin/general-cgi/portalServer.cgi?command=get_page&p_name=AVPortalSetting&p_version=1&page_name=po_mainview.html";
-
-
-            //URI = "http://" + RecIP;
+            
             webBrowser2.Navigate(new Uri(URI));
 
 
@@ -41,6 +39,11 @@ namespace Map_Form {
         }
 
         private void Form2_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void webBrowser2_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
 
         }

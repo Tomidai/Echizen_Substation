@@ -25,6 +25,8 @@
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
             this.treeView1 = new System.Windows.Forms.TreeView();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -225,6 +227,26 @@
             this.treeView1.Size = new System.Drawing.Size(200, 379);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            // 
+            // label32
+            // 
+            this.label32.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.label32.Location = new System.Drawing.Point(9, 271);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(141, 19);
+            this.label32.TabIndex = 50;
+            this.label32.Text = "プリセット名称を変更します";
+            this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label33
+            // 
+            this.label33.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.label33.Location = new System.Drawing.Point(53, 271);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(141, 19);
+            this.label33.TabIndex = 51;
+            this.label33.Text = "プリセットの登録を行います";
+            this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // webBrowser1
             // 
@@ -616,6 +638,8 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Black;
+            this.groupBox2.Controls.Add(this.label32);
+            this.groupBox2.Controls.Add(this.label33);
             this.groupBox2.Controls.Add(this.textBox8);
             this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.textBox6);
@@ -715,6 +739,8 @@
             this.btn_preReg.Size = new System.Drawing.Size(30, 30);
             this.btn_preReg.TabIndex = 41;
             this.btn_preReg.Click += new System.EventHandler(this.btn_preReg_Click);
+            this.btn_preReg.MouseEnter += new System.EventHandler(this.btn_preReg_MouseEnter);
+            this.btn_preReg.MouseLeave += new System.EventHandler(this.btn_preReg_MouseLeave);
             // 
             // btn_preNameChange
             // 
@@ -726,6 +752,8 @@
             this.btn_preNameChange.Size = new System.Drawing.Size(30, 30);
             this.btn_preNameChange.TabIndex = 40;
             this.btn_preNameChange.Click += new System.EventHandler(this.btn_preNameChange_Click);
+            this.btn_preNameChange.MouseEnter += new System.EventHandler(this.btn_preNameChange_MouseEnter);
+            this.btn_preNameChange.MouseLeave += new System.EventHandler(this.btn_preNameChange_MouseLeave);
             // 
             // btn_pre008
             // 
@@ -2603,5 +2631,7 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label btn_camNameReg;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label32;
     }
 }
