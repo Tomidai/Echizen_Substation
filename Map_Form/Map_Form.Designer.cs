@@ -51,7 +51,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.RightButton = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.ReleaseButton = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.GotoCamera_Button8 = new System.Windows.Forms.Label();
             this.GotoCamera_Button7 = new System.Windows.Forms.Label();
@@ -116,6 +116,7 @@
             this.Sensor_03 = new System.Windows.Forms.PictureBox();
             this.Sensor_02 = new System.Windows.Forms.PictureBox();
             this.Sensor_01 = new System.Windows.Forms.PictureBox();
+            this.RightLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -305,7 +306,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.RightButton);
-            this.groupBox3.Controls.Add(this.label12);
+            this.groupBox3.Controls.Add(this.ReleaseButton);
             this.groupBox3.Controls.Add(this.label13);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
@@ -318,13 +319,13 @@
             this.RightButton.Name = "RightButton";
             this.RightButton.Click += new System.EventHandler(this.RightButton_Click);
             // 
-            // label12
+            // ReleaseButton
             // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.Image = global::Map_Form.Properties.Resources.in_operation_normal;
-            this.label12.Name = "label12";
-            this.label12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label12_MouseDown);
-            this.label12.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label12_MouseUp);
+            resources.ApplyResources(this.ReleaseButton, "ReleaseButton");
+            this.ReleaseButton.Image = global::Map_Form.Properties.Resources.in_operation_normal;
+            this.ReleaseButton.Name = "ReleaseButton";
+            this.ReleaseButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label12_MouseDown);
+            this.ReleaseButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label12_MouseUp);
             // 
             // label13
             // 
@@ -400,6 +401,7 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::Map_Form.Properties.Resources.背景画像;
+            this.panel1.Controls.Add(this.RightLabel);
             this.panel1.Controls.Add(this.Camera_08);
             this.panel1.Controls.Add(this.Camera_07);
             this.panel1.Controls.Add(this.Camera_06);
@@ -897,6 +899,13 @@
             this.Sensor_01.Tag = "Normal";
             this.Sensor_01.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_01_MouseDown);
             // 
+            // RightLabel
+            // 
+            resources.ApplyResources(this.RightLabel, "RightLabel");
+            this.RightLabel.BackColor = System.Drawing.Color.Transparent;
+            this.RightLabel.ForeColor = System.Drawing.Color.Black;
+            this.RightLabel.Name = "RightLabel";
+            // 
             // Map_Form
             // 
             resources.ApplyResources(this, "$this");
@@ -1048,7 +1057,8 @@
         public System.Windows.Forms.Label RestrationButton;
         public System.Windows.Forms.Label SettingButton;
         public System.Windows.Forms.Label RightButton;
-        public System.Windows.Forms.Label label12;
+        public System.Windows.Forms.Label ReleaseButton;
+        public System.Windows.Forms.Label RightLabel;
     }
 }
 

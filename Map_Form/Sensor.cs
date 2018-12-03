@@ -154,9 +154,18 @@ namespace Map_Form {
                 if (right[0] == "0" && right[1] == "0" && right[2] == "0") {
                     mfObj.RightButton.Image = Properties.Resources.operation_button_normal;
                     mfObj.RightButton.Text = "　操作";
+                    mfObj.RightLabel.Text = "操作権取得可能";
                 } else {
                     mfObj.RightButton.Image = Properties.Resources.operation_button_push;
                     mfObj.RightButton.Text = "　操作中";
+                    //どこで操作しているか？
+                    if(right[0] == "1") {
+                        mfObj.RightLabel.Text = "越前変電所操作中";
+                    }else if(right[1] == "1") {
+                        mfObj.RightLabel.Text = "福井総合制御所操作中";
+                    }else if(right[2] == "1") {
+                        mfObj.RightLabel.Text = "福井電力部操作中";
+                    }
                 }
             });
 

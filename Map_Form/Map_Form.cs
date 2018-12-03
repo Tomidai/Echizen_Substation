@@ -627,6 +627,9 @@ namespace Map_Form {
                     right[num] = "1";
                 } else if (right[num] == "1") {
                     right[num] = "0";
+                    RightLabel.Text = "操作権取得可能";
+                } else {
+                    return;
                 }
                 string str = string.Join(",", right);
                 using (FileStream fs = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.Read))
@@ -638,7 +641,7 @@ namespace Map_Form {
 
         //権限の強制解除
         private void label12_MouseDown(object sender, MouseEventArgs e) {
-            label12.Image = Properties.Resources.in_operation_push;
+            ReleaseButton.Image = Properties.Resources.in_operation_push;
         }
         private void label12_MouseUp(object sender, MouseEventArgs e) {
             DialogResult result = MessageBox.Show("操作権を強制的に解除しますか？", "注意メッセージ", 
@@ -659,7 +662,7 @@ namespace Map_Form {
                     }
                 }
             }
-            label12.Image = Properties.Resources.in_operation_normal;
+            ReleaseButton.Image = Properties.Resources.in_operation_normal;
         }
         //
     }
