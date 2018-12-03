@@ -16,10 +16,8 @@ namespace Map_Form {
             InitializeComponent();
             RecIP = IP;
 
-            //     String URI = "http://" + RecIP + "/cgi-bin/general-cgi/portalServer.cgi?command=get_page&p_name=AVPortalSetting&p_version=1&page_name=po_mainview.html";
-
-            String URI = "http://192.168.1.213";
-            //URI = "http://" + RecIP;
+            String URI = "http://" + RecIP + "/cgi-bin/general-cgi/portalServer.cgi?command=get_page&p_name=AVPortalSetting&p_version=1&page_name=po_mainview.html";
+            
             webBrowser2.Navigate(new Uri(URI));
 
 
