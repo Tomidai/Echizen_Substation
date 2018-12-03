@@ -35,6 +35,7 @@
             this.webBrowser2.ScrollBarsEnabled = false;
             this.webBrowser2.Size = new System.Drawing.Size(1076, 753);
             this.webBrowser2.TabIndex = 0;
+            this.webBrowser2.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser2_DocumentCompleted);
             // 
             // RecView
             // 

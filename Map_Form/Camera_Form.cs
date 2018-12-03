@@ -25,7 +25,7 @@ namespace Map_Form {
         public int[] camPosiX = new int[8];
         public int[] camPosiY = new int[8];
         public int[] camLabLong = new int[8];
-        public static string[] camIP = new string[8];
+        public  string[] camIP = new string[8];
         public int[] camEnc = new int[8];
         public int[] blackLevel = new int[8];
         public int[] camType = new int[8];
@@ -58,20 +58,20 @@ namespace Map_Form {
         public int basho = 0;
         public String[,] kyoten = new String[10, 5];
         public char[] separator = { ' ', ',' };
-        public static char[] separator2 = { ' ', ':' };
+        public  char[] separator2 = { ' ', ':' };
         public int Speed = 2;
-        static System.Timers.Timer myTimer = new System.Timers.Timer(9000);
+         System.Timers.Timer myTimer = new System.Timers.Timer(9000);
         public int preTourokuState = 0;
-        public static int CamNo = 100;
-        public static string IP = "";
-        public static string URL = "";
-        public static string CUID = "";
+        public  int CamNo = 100;
+        public  string IP = "";
+        public  string URL = "";
+        public  string CUID = "";
         public string Str01 = "cam_user_id=";
         public string Str02 = "";
         public string Str03 = "&camera_id=1&port_id=1&";
         public string Str04 = "";
-        public static int FlagEncLogIn = 0;
-        public static int FlagCamCont = 0;
+        public  int FlagEncLogIn = 0;
+        public  int FlagCamCont = 0;
         public int Hosei = 1;
         public static int RecOn = 0;
         public String RecIP = "192.168.1.111";
@@ -115,6 +115,10 @@ namespace Map_Form {
 
         public Camera_Form() {
             InitializeComponent();
+
+            label32.Visible = false;
+            label33.Visible = false;
+
             preNameLab[0] = btn_pre001;
             preNameLab[1] = btn_pre002;
             preNameLab[2] = btn_pre003;
@@ -535,6 +539,8 @@ namespace Map_Form {
 
         public void btn_preNameChange_Click(object sender, EventArgs e)
         {
+            label32.Visible = false;
+
             if (NameChange == 0)
             {
                 NameChange = 1;
@@ -551,6 +557,9 @@ namespace Map_Form {
 
         public void btn_preReg_Click(object sender, EventArgs e)
         {
+
+            label33.Visible = false;
+
             if (PreReg == 0)
             {
                 PreReg = 1;
@@ -1156,7 +1165,7 @@ namespace Map_Form {
             }
         }
 
-        public static void encLogIn() {
+        public  void encLogIn() {
             FlagEncLogIn = 1;
             string result = "";
             if (CamNo != 100) {
@@ -1243,7 +1252,7 @@ namespace Map_Form {
             }
         }
 
-        public static void convCUID(string res) {
+        public  void convCUID(string res) {
             string[] words = res.Split(separator2);
 
             CUID = words[1];
@@ -1251,7 +1260,7 @@ namespace Map_Form {
 
         }
 
-        public static void comTimeOutExt() {
+        public  void comTimeOutExt() {
             string result = "";
             if (CamNo != 100) {
 
@@ -2316,8 +2325,7 @@ namespace Map_Form {
                 {
                     this.webBrowser1.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 0] + 1) + ".html", UriKind.Absolute);
                     this.webBrowser2.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 1] + 1) + ".html", UriKind.Absolute);
-                    this.webBrowser3.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 2] + 1) + ".html", UriKind.Absolute);
-                    this.webBrowser4.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 3] + 1) + ".html", UriKind.Absolute);
+
 
                     this.label1.Text = camName[patternNo[b, 0]];
                     this.label2.Text = camName[patternNo[b, 1]];
@@ -2328,6 +2336,10 @@ namespace Map_Form {
                     camNo_02 = patternNo[b, 1];
                     camNo_03 = patternNo[b, 2];
                     camNo_04 = patternNo[b, 3];
+
+
+                    this.webBrowser3.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 2] + 1) + ".html", UriKind.Absolute);
+//                    this.webBrowser4.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 3] + 1) + ".html", UriKind.Absolute);
 
 
                     CamNo = 100;
@@ -2656,6 +2668,27 @@ namespace Map_Form {
                 this.btn_camNameReg.Image = global::Map_Form.Properties.Resources.cont_b018;
                 camNameChangeMode = 0;
             }
+        }
+
+        private void btn_preNameChange_MouseEnter(object sender, EventArgs e)
+        {
+            label32.Visible = true;
+
+        }
+
+        private void btn_preNameChange_MouseLeave(object sender, EventArgs e)
+        {
+            label32.Visible = false;
+        }
+
+        private void btn_preReg_MouseEnter(object sender, EventArgs e)
+        {
+            label33.Visible = true;
+        }
+
+        private void btn_preReg_MouseLeave(object sender, EventArgs e)
+        {
+            label33.Visible = false;
         }
     }
 
