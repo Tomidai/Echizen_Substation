@@ -36,23 +36,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.SensorLock77_off = new System.Windows.Forms.Label();
-            this.SensorLock77_on = new System.Windows.Forms.Label();
-            this.SensorLock500_off = new System.Windows.Forms.Label();
-            this.SensorLock500_on = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.SettingButton = new System.Windows.Forms.Label();
-            this.FaultButton = new System.Windows.Forms.Label();
-            this.ExitButton = new System.Windows.Forms.Label();
-            this.LogsButton = new System.Windows.Forms.Label();
-            this.MuteButton = new System.Windows.Forms.Label();
-            this.RestrationButton = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.RightButton = new System.Windows.Forms.Label();
-            this.ReleaseButton = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.GotoCamera_Button8 = new System.Windows.Forms.Label();
             this.GotoCamera_Button7 = new System.Windows.Forms.Label();
             this.GotoCamera_Button6 = new System.Windows.Forms.Label();
@@ -61,7 +45,20 @@
             this.GotoCamera_Button3 = new System.Windows.Forms.Label();
             this.GotoCamera_Button2 = new System.Windows.Forms.Label();
             this.GotoCamera_Button1 = new System.Windows.Forms.Label();
+            this.ReleaseButton = new System.Windows.Forms.Label();
+            this.RightButton = new System.Windows.Forms.Label();
+            this.SettingButton = new System.Windows.Forms.Label();
+            this.FaultButton = new System.Windows.Forms.Label();
+            this.LogsButton = new System.Windows.Forms.Label();
+            this.RestrationButton = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.SensorLock77_off = new System.Windows.Forms.Label();
+            this.SensorLock77_on = new System.Windows.Forms.Label();
+            this.SensorLock500_off = new System.Windows.Forms.Label();
+            this.SensorLock500_on = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.RightLabel = new System.Windows.Forms.Label();
             this.Camera_08 = new System.Windows.Forms.PictureBox();
             this.Camera_07 = new System.Windows.Forms.PictureBox();
             this.Camera_06 = new System.Windows.Forms.PictureBox();
@@ -116,10 +113,8 @@
             this.Sensor_03 = new System.Windows.Forms.PictureBox();
             this.Sensor_02 = new System.Windows.Forms.PictureBox();
             this.Sensor_01 = new System.Windows.Forms.PictureBox();
-            this.RightLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Camera_08)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Camera_07)).BeginInit();
@@ -197,142 +192,18 @@
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
-            // SensorLock77_off
-            // 
-            resources.ApplyResources(this.SensorLock77_off, "SensorLock77_off");
-            this.SensorLock77_off.Image = global::Map_Form.Properties.Resources.electrical_button_normal;
-            this.SensorLock77_off.Name = "SensorLock77_off";
-            this.SensorLock77_off.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SensorLock77_off_MouseDown);
-            this.SensorLock77_off.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SensorLock77_off_MouseUp);
-            // 
-            // SensorLock77_on
-            // 
-            resources.ApplyResources(this.SensorLock77_on, "SensorLock77_on");
-            this.SensorLock77_on.Image = global::Map_Form.Properties.Resources.electrical_button_normal;
-            this.SensorLock77_on.Name = "SensorLock77_on";
-            this.SensorLock77_on.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SensorLock77_on_MouseDown);
-            this.SensorLock77_on.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SensorLock77_on_MouseUp);
-            // 
-            // SensorLock500_off
-            // 
-            resources.ApplyResources(this.SensorLock500_off, "SensorLock500_off");
-            this.SensorLock500_off.Image = global::Map_Form.Properties.Resources.electrical_button_normal;
-            this.SensorLock500_off.Name = "SensorLock500_off";
-            this.SensorLock500_off.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SensorLock500_off_MouseDown);
-            this.SensorLock500_off.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SensorLock500_off_MouseUp);
-            // 
-            // SensorLock500_on
-            // 
-            resources.ApplyResources(this.SensorLock500_on, "SensorLock500_on");
-            this.SensorLock500_on.Image = global::Map_Form.Properties.Resources.electrical_button_normal;
-            this.SensorLock500_on.Name = "SensorLock500_on";
-            this.SensorLock500_on.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SensorLock500_on_MouseDown);
-            this.SensorLock500_on.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SensorLock500_on_MouseUp);
-            // 
-            // label7
-            // 
-            this.label7.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Image = global::Map_Form.Properties.Resources.control_menu_bar;
-            this.label7.Name = "label7";
-            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.ReleaseButton);
+            this.groupBox2.Controls.Add(this.RightButton);
             this.groupBox2.Controls.Add(this.SettingButton);
             this.groupBox2.Controls.Add(this.FaultButton);
-            this.groupBox2.Controls.Add(this.ExitButton);
             this.groupBox2.Controls.Add(this.LogsButton);
-            this.groupBox2.Controls.Add(this.MuteButton);
             this.groupBox2.Controls.Add(this.RestrationButton);
             this.groupBox2.Controls.Add(this.label8);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
-            // 
-            // SettingButton
-            // 
-            resources.ApplyResources(this.SettingButton, "SettingButton");
-            this.SettingButton.Image = global::Map_Form.Properties.Resources.setting_button_normal;
-            this.SettingButton.Name = "SettingButton";
-            this.SettingButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SettingButton_MouseDown);
-            this.SettingButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SettingButton_MouseUp);
-            // 
-            // FaultButton
-            // 
-            resources.ApplyResources(this.FaultButton, "FaultButton");
-            this.FaultButton.Image = global::Map_Form.Properties.Resources.fault_button_normal;
-            this.FaultButton.Name = "FaultButton";
-            // 
-            // ExitButton
-            // 
-            resources.ApplyResources(this.ExitButton, "ExitButton");
-            this.ExitButton.Image = global::Map_Form.Properties.Resources.exit_button_normal;
-            this.ExitButton.Name = "ExitButton";
-            this.ExitButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ExitButton_MouseDown);
-            this.ExitButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ExitButton_MouseUp);
-            // 
-            // LogsButton
-            // 
-            resources.ApplyResources(this.LogsButton, "LogsButton");
-            this.LogsButton.Image = global::Map_Form.Properties.Resources.logs_button_normal;
-            this.LogsButton.Name = "LogsButton";
-            this.LogsButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LogsButton_MouseDown);
-            this.LogsButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.LogsButton_MouseUp);
-            // 
-            // MuteButton
-            // 
-            resources.ApplyResources(this.MuteButton, "MuteButton");
-            this.MuteButton.Image = global::Map_Form.Properties.Resources.mute_button_normal;
-            this.MuteButton.Name = "MuteButton";
-            this.MuteButton.Tag = "off";
-            this.MuteButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MuteButton_MouseDown);
-            this.MuteButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.MuteButton_MouseUp);
-            // 
-            // RestrationButton
-            // 
-            resources.ApplyResources(this.RestrationButton, "RestrationButton");
-            this.RestrationButton.Image = global::Map_Form.Properties.Resources.restoration_button_normal;
-            this.RestrationButton.Name = "RestrationButton";
-            this.RestrationButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RestrationButton_MouseDown);
-            this.RestrationButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.RestrationButton_MouseUp);
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.Image = global::Map_Form.Properties.Resources.control_menu_bar;
-            this.label8.Name = "label8";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.RightButton);
-            this.groupBox3.Controls.Add(this.ReleaseButton);
-            this.groupBox3.Controls.Add(this.label13);
-            resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.TabStop = false;
-            // 
-            // RightButton
-            // 
-            resources.ApplyResources(this.RightButton, "RightButton");
-            this.RightButton.Image = global::Map_Form.Properties.Resources.operation_button_normal;
-            this.RightButton.Name = "RightButton";
-            this.RightButton.Click += new System.EventHandler(this.RightButton_Click);
-            // 
-            // ReleaseButton
-            // 
-            resources.ApplyResources(this.ReleaseButton, "ReleaseButton");
-            this.ReleaseButton.Image = global::Map_Form.Properties.Resources.in_operation_normal;
-            this.ReleaseButton.Name = "ReleaseButton";
-            this.ReleaseButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label12_MouseDown);
-            this.ReleaseButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label12_MouseUp);
-            // 
-            // label13
-            // 
-            this.label13.BackColor = System.Drawing.SystemColors.Control;
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.Image = global::Map_Form.Properties.Resources.control_menu_bar;
-            this.label13.Name = "label13";
             // 
             // GotoCamera_Button8
             // 
@@ -398,6 +269,97 @@
             this.GotoCamera_Button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.GotoCamera_Button1_MouseDown);
             this.GotoCamera_Button1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.GotoCamera_Button1_MouseUp);
             // 
+            // ReleaseButton
+            // 
+            resources.ApplyResources(this.ReleaseButton, "ReleaseButton");
+            this.ReleaseButton.Image = global::Map_Form.Properties.Resources.in_operation_normal;
+            this.ReleaseButton.Name = "ReleaseButton";
+            this.ReleaseButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label12_MouseDown);
+            this.ReleaseButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.label12_MouseUp);
+            // 
+            // RightButton
+            // 
+            resources.ApplyResources(this.RightButton, "RightButton");
+            this.RightButton.Image = global::Map_Form.Properties.Resources.operation_button_normal;
+            this.RightButton.Name = "RightButton";
+            this.RightButton.Click += new System.EventHandler(this.RightButton_Click);
+            // 
+            // SettingButton
+            // 
+            resources.ApplyResources(this.SettingButton, "SettingButton");
+            this.SettingButton.Image = global::Map_Form.Properties.Resources.setting_button_normal;
+            this.SettingButton.Name = "SettingButton";
+            this.SettingButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SettingButton_MouseDown);
+            this.SettingButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SettingButton_MouseUp);
+            // 
+            // FaultButton
+            // 
+            resources.ApplyResources(this.FaultButton, "FaultButton");
+            this.FaultButton.Image = global::Map_Form.Properties.Resources.fault_button_normal;
+            this.FaultButton.Name = "FaultButton";
+            // 
+            // LogsButton
+            // 
+            resources.ApplyResources(this.LogsButton, "LogsButton");
+            this.LogsButton.Image = global::Map_Form.Properties.Resources.logs_button_normal;
+            this.LogsButton.Name = "LogsButton";
+            this.LogsButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LogsButton_MouseDown);
+            this.LogsButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.LogsButton_MouseUp);
+            // 
+            // RestrationButton
+            // 
+            resources.ApplyResources(this.RestrationButton, "RestrationButton");
+            this.RestrationButton.Image = global::Map_Form.Properties.Resources.restoration_button_normal;
+            this.RestrationButton.Name = "RestrationButton";
+            this.RestrationButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RestrationButton_MouseDown);
+            this.RestrationButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.RestrationButton_MouseUp);
+            // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.label8, "label8");
+            this.label8.Image = global::Map_Form.Properties.Resources.control_menu_bar;
+            this.label8.Name = "label8";
+            // 
+            // SensorLock77_off
+            // 
+            resources.ApplyResources(this.SensorLock77_off, "SensorLock77_off");
+            this.SensorLock77_off.Image = global::Map_Form.Properties.Resources.electrical_button_normal;
+            this.SensorLock77_off.Name = "SensorLock77_off";
+            this.SensorLock77_off.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SensorLock77_off_MouseDown);
+            this.SensorLock77_off.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SensorLock77_off_MouseUp);
+            // 
+            // SensorLock77_on
+            // 
+            resources.ApplyResources(this.SensorLock77_on, "SensorLock77_on");
+            this.SensorLock77_on.Image = global::Map_Form.Properties.Resources.electrical_button_normal;
+            this.SensorLock77_on.Name = "SensorLock77_on";
+            this.SensorLock77_on.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SensorLock77_on_MouseDown);
+            this.SensorLock77_on.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SensorLock77_on_MouseUp);
+            // 
+            // SensorLock500_off
+            // 
+            resources.ApplyResources(this.SensorLock500_off, "SensorLock500_off");
+            this.SensorLock500_off.Image = global::Map_Form.Properties.Resources.electrical_button_normal;
+            this.SensorLock500_off.Name = "SensorLock500_off";
+            this.SensorLock500_off.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SensorLock500_off_MouseDown);
+            this.SensorLock500_off.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SensorLock500_off_MouseUp);
+            // 
+            // SensorLock500_on
+            // 
+            resources.ApplyResources(this.SensorLock500_on, "SensorLock500_on");
+            this.SensorLock500_on.Image = global::Map_Form.Properties.Resources.electrical_button_normal;
+            this.SensorLock500_on.Name = "SensorLock500_on";
+            this.SensorLock500_on.MouseDown += new System.Windows.Forms.MouseEventHandler(this.SensorLock500_on_MouseDown);
+            this.SensorLock500_on.MouseUp += new System.Windows.Forms.MouseEventHandler(this.SensorLock500_on_MouseUp);
+            // 
+            // label7
+            // 
+            this.label7.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.label7, "label7");
+            this.label7.Image = global::Map_Form.Properties.Resources.control_menu_bar;
+            this.label7.Name = "label7";
+            // 
             // panel1
             // 
             this.panel1.BackgroundImage = global::Map_Form.Properties.Resources.背景画像;
@@ -458,6 +420,13 @@
             this.panel1.Controls.Add(this.Sensor_01);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // RightLabel
+            // 
+            resources.ApplyResources(this.RightLabel, "RightLabel");
+            this.RightLabel.BackColor = System.Drawing.Color.Transparent;
+            this.RightLabel.ForeColor = System.Drawing.Color.Black;
+            this.RightLabel.Name = "RightLabel";
             // 
             // Camera_08
             // 
@@ -899,19 +868,11 @@
             this.Sensor_01.Tag = "Normal";
             this.Sensor_01.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Sensor_01_MouseDown);
             // 
-            // RightLabel
-            // 
-            resources.ApplyResources(this.RightLabel, "RightLabel");
-            this.RightLabel.BackColor = System.Drawing.Color.Transparent;
-            this.RightLabel.ForeColor = System.Drawing.Color.Black;
-            this.RightLabel.Name = "RightLabel";
-            // 
             // Map_Form
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.GotoCamera_Button8);
             this.Controls.Add(this.GotoCamera_Button7);
             this.Controls.Add(this.GotoCamera_Button6);
@@ -935,7 +896,6 @@
             this.Load += new System.EventHandler(this.Map_Form_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Camera_08)).EndInit();
@@ -1036,7 +996,6 @@
         private System.Windows.Forms.Label GotoCamera_Button6;
         private System.Windows.Forms.Label GotoCamera_Button7;
         private System.Windows.Forms.Label GotoCamera_Button8;
-        private System.Windows.Forms.Label ExitButton;
         private System.Windows.Forms.Label LogsButton;
         public System.Windows.Forms.PictureBox Camera_08;
         public System.Windows.Forms.PictureBox Camera_07;
@@ -1046,10 +1005,7 @@
         public System.Windows.Forms.PictureBox Camera_02;
         public System.Windows.Forms.PictureBox Camera_01;
         public System.Windows.Forms.PictureBox Camera_06;
-        public System.Windows.Forms.Label MuteButton;
         public System.Windows.Forms.Label FaultButton;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label13;
         public System.Windows.Forms.Label SensorLock77_off;
         public System.Windows.Forms.Label SensorLock77_on;
         public System.Windows.Forms.Label SensorLock500_off;

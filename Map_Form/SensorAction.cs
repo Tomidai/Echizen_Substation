@@ -83,16 +83,5 @@ namespace Map_Form {
                 mfObj.Camera_08.Image = Properties.Resources.Camera_Normal;
             });
         }
-
-        //ブザー音を再生する処理
-        public async void AlarmSound() {
-            await Task.Run(() => {
-                while ((string)mfObj.MuteButton.Tag == "on") {
-                    Console.Beep(10000, 800);
-                    Thread.Sleep(1000);
-                }
-            });
-        }
-
     }
 }
