@@ -1061,6 +1061,8 @@
             this.Controls.Add(this.groupSensor3);
             this.Controls.Add(this.groupSensor2);
             this.Controls.Add(this.groupSensor1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SensorSettings_Form";
             this.Text = "センサー区間設定";
             this.Load += new System.EventHandler(this.SensorSettings_Form_Load);

@@ -46,6 +46,8 @@
             this.ClientSize = new System.Drawing.Size(804, 676);
             this.Controls.Add(this.listBox1);
             this.Font = new System.Drawing.Font("MS UI Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Log_Form";
             this.Text = "センサーログ一覧";
             this.Load += new System.EventHandler(this.Log_Form_Load);
