@@ -523,26 +523,6 @@ namespace Map_Form.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap exit_button_normal {
-            get {
-                object obj = ResourceManager.GetObject("exit_button_normal", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap exit_button_push {
-            get {
-                object obj = ResourceManager.GetObject("exit_button_push", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
         internal static System.Drawing.Bitmap fault_button_normal {
             get {
                 object obj = ResourceManager.GetObject("fault_button_normal", resourceCulture);
@@ -596,26 +576,6 @@ namespace Map_Form.Properties {
         internal static System.Drawing.Bitmap logs_button_push {
             get {
                 object obj = ResourceManager.GetObject("logs_button_push", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap mute_button_normal {
-            get {
-                object obj = ResourceManager.GetObject("mute_button_normal", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap mute_button_push {
-            get {
-                object obj = ResourceManager.GetObject("mute_button_push", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

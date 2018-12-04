@@ -526,15 +526,6 @@ namespace Map_Form {
             snObj.SetSendText(send);
         }
 
-        //システム終了ボタン
-        private void ExitButton_MouseDown(object sender, MouseEventArgs e) {
-            ExitButton.Image = Properties.Resources.exit_button_push;
-        }
-        private void ExitButton_MouseUp(object sender, MouseEventArgs e) {
-            ExitButton.Image = Properties.Resources.exit_button_normal;
-            Application.Exit();
-        }
-
         //センサー設定ボタン
         private void SettingButton_MouseDown(object sender, MouseEventArgs e) {
             SettingButton.Image = Properties.Resources.setting_button_push;
@@ -542,6 +533,7 @@ namespace Map_Form {
         private void SettingButton_MouseUp(object sender, MouseEventArgs e) {
             SettingButton.Image = Properties.Resources.setting_button_normal;
             SensorSettings_Form ssf = new SensorSettings_Form(this);
+            ssf.StartPosition = FormStartPosition.CenterScreen;
             ssf.ShowDialog();
         }
 
@@ -595,16 +587,6 @@ namespace Map_Form {
             snObj.SetSendText(send);
         }
 
-        //ブザー停止ボタン
-        private void MuteButton_MouseDown(object sender, MouseEventArgs e) {
-            MuteButton.Image = Properties.Resources.mute_button_push;
-        }
-        private void MuteButton_MouseUp(object sender, MouseEventArgs e) {
-            MuteButton.Image = Properties.Resources.mute_button_normal;
-            //ブザー停止処理
-            MuteButton.Tag = "off";
-        }
-
         //センサーログ
         private void LogsButton_MouseDown(object sender, MouseEventArgs e) {
             LogsButton.Image = Properties.Resources.logs_button_push;
@@ -612,6 +594,7 @@ namespace Map_Form {
         private void LogsButton_MouseUp(object sender, MouseEventArgs e) {
             LogsButton.Image = Properties.Resources.logs_button_normal;
             Log_Form log_Form = new Log_Form();
+            log_Form.StartPosition = FormStartPosition.CenterScreen;
             log_Form.ShowDialog();
         }
 

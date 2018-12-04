@@ -14,11 +14,13 @@ namespace Map_Form {
         //Map_Formのインスタンス
         public Map_Form mfObj;
         public SensorAction snacObj;
+        public Control_Form cfObj;
 
         //コンストラクタ
         public Sensor(Map_Form mf_obj) {
             mfObj = mf_obj;
             snacObj = new SensorAction(mfObj);
+            cfObj = new Control_Form();
         }
 
         //sensor.csvファイルを指定された値に変更するメソッド
@@ -111,13 +113,10 @@ namespace Map_Form {
                             //侵入
                             pic.Image = a;
                             pic.Tag = "Alarm";
-                            //アラーム音再生
-                            if ((string)mfObj.MuteButton.Tag == "off") {
-                                mfObj.MuteButton.Tag = "on";
-                                snacObj.AlarmSound();
-                            }
                             //カメラ判断
                             snacObj.CameraJudgment(int.Parse(str[0]));
+                            //マップにフォーカスする
+                            cfObj.Map_Show();
                             break;
                         case 2:
                             //環境判断へ
@@ -133,13 +132,10 @@ namespace Map_Form {
                             //故障
                             pic.Image = f;
                             pic.Tag = "Failed";
-                            //アラーム再生
-                            if ((string)mfObj.MuteButton.Tag == "off") {
-                                mfObj.MuteButton.Tag = "on";
-                                snacObj.AlarmSound();
-                            }
                             //カメラ判断
                             snacObj.CameraJudgment(int.Parse(str[0]));
+                            //マップにフォーカスする
+                            cfObj.Map_Show();
                             break;
                     }
                 }
