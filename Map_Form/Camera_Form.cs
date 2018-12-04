@@ -115,6 +115,7 @@ namespace Map_Form {
 
         public Camera_Form() {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
 
             label32.Visible = false;
             label33.Visible = false;
@@ -2339,7 +2340,7 @@ namespace Map_Form {
 
 
                     this.webBrowser3.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 2] + 1) + ".html", UriKind.Absolute);
-//                    this.webBrowser4.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 3] + 1) + ".html", UriKind.Absolute);
+                    this.webBrowser4.Url = new Uri(path + @"camViewer\cam00" + (patternNo[b, 3] + 1) + ".html", UriKind.Absolute);
 
 
                     CamNo = 100;

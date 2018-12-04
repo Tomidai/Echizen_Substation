@@ -124,7 +124,7 @@
             // 
             this.comboBox5.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(155, 173);
+            this.comboBox5.Location = new System.Drawing.Point(28, 173);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(121, 20);
             this.comboBox5.TabIndex = 8;
@@ -133,7 +133,7 @@
             // 
             this.comboBox6.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(28, 173);
+            this.comboBox6.Location = new System.Drawing.Point(155, 173);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(121, 20);
             this.comboBox6.TabIndex = 7;
@@ -142,7 +142,7 @@
             // 
             this.comboBox7.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(155, 199);
+            this.comboBox7.Location = new System.Drawing.Point(28, 199);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(121, 20);
             this.comboBox7.TabIndex = 6;
@@ -151,7 +151,7 @@
             // 
             this.comboBox8.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(28, 199);
+            this.comboBox8.Location = new System.Drawing.Point(155, 199);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(121, 20);
             this.comboBox8.TabIndex = 5;
@@ -168,7 +168,7 @@
             // 
             this.comboBox9.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(155, 289);
+            this.comboBox9.Location = new System.Drawing.Point(28, 289);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(121, 20);
             this.comboBox9.TabIndex = 13;
@@ -177,7 +177,7 @@
             // 
             this.comboBox10.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(28, 289);
+            this.comboBox10.Location = new System.Drawing.Point(155, 289);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(121, 20);
             this.comboBox10.TabIndex = 12;
@@ -186,7 +186,7 @@
             // 
             this.comboBox11.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Location = new System.Drawing.Point(155, 315);
+            this.comboBox11.Location = new System.Drawing.Point(28, 315);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(121, 20);
             this.comboBox11.TabIndex = 11;
@@ -195,7 +195,7 @@
             // 
             this.comboBox12.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Location = new System.Drawing.Point(28, 315);
+            this.comboBox12.Location = new System.Drawing.Point(155, 315);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(121, 20);
             this.comboBox12.TabIndex = 10;
@@ -204,7 +204,7 @@
             // 
             this.comboBox13.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Location = new System.Drawing.Point(460, 64);
+            this.comboBox13.Location = new System.Drawing.Point(333, 65);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(121, 20);
             this.comboBox13.TabIndex = 18;
@@ -213,7 +213,7 @@
             // 
             this.comboBox14.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Location = new System.Drawing.Point(333, 64);
+            this.comboBox14.Location = new System.Drawing.Point(460, 65);
             this.comboBox14.Name = "comboBox14";
             this.comboBox14.Size = new System.Drawing.Size(121, 20);
             this.comboBox14.TabIndex = 17;
@@ -222,7 +222,7 @@
             // 
             this.comboBox15.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Location = new System.Drawing.Point(460, 90);
+            this.comboBox15.Location = new System.Drawing.Point(333, 90);
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.Size = new System.Drawing.Size(121, 20);
             this.comboBox15.TabIndex = 16;
@@ -231,7 +231,7 @@
             // 
             this.comboBox16.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Location = new System.Drawing.Point(333, 90);
+            this.comboBox16.Location = new System.Drawing.Point(460, 91);
             this.comboBox16.Name = "comboBox16";
             this.comboBox16.Size = new System.Drawing.Size(121, 20);
             this.comboBox16.TabIndex = 15;
@@ -248,7 +248,7 @@
             // 
             this.comboBox17.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox17.FormattingEnabled = true;
-            this.comboBox17.Location = new System.Drawing.Point(460, 173);
+            this.comboBox17.Location = new System.Drawing.Point(333, 173);
             this.comboBox17.Name = "comboBox17";
             this.comboBox17.Size = new System.Drawing.Size(121, 20);
             this.comboBox17.TabIndex = 23;
@@ -257,7 +257,7 @@
             // 
             this.comboBox18.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox18.FormattingEnabled = true;
-            this.comboBox18.Location = new System.Drawing.Point(333, 173);
+            this.comboBox18.Location = new System.Drawing.Point(460, 173);
             this.comboBox18.Name = "comboBox18";
             this.comboBox18.Size = new System.Drawing.Size(121, 20);
             this.comboBox18.TabIndex = 22;
@@ -266,7 +266,7 @@
             // 
             this.comboBox19.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(460, 199);
+            this.comboBox19.Location = new System.Drawing.Point(333, 199);
             this.comboBox19.Name = "comboBox19";
             this.comboBox19.Size = new System.Drawing.Size(121, 20);
             this.comboBox19.TabIndex = 21;
@@ -275,7 +275,7 @@
             // 
             this.comboBox20.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(333, 199);
+            this.comboBox20.Location = new System.Drawing.Point(460, 199);
             this.comboBox20.Name = "comboBox20";
             this.comboBox20.Size = new System.Drawing.Size(121, 20);
             this.comboBox20.TabIndex = 20;
@@ -292,7 +292,7 @@
             // 
             this.comboBox21.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Location = new System.Drawing.Point(460, 289);
+            this.comboBox21.Location = new System.Drawing.Point(333, 289);
             this.comboBox21.Name = "comboBox21";
             this.comboBox21.Size = new System.Drawing.Size(121, 20);
             this.comboBox21.TabIndex = 28;
@@ -301,7 +301,7 @@
             // 
             this.comboBox22.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Location = new System.Drawing.Point(333, 289);
+            this.comboBox22.Location = new System.Drawing.Point(460, 289);
             this.comboBox22.Name = "comboBox22";
             this.comboBox22.Size = new System.Drawing.Size(121, 20);
             this.comboBox22.TabIndex = 27;
@@ -310,7 +310,7 @@
             // 
             this.comboBox23.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox23.FormattingEnabled = true;
-            this.comboBox23.Location = new System.Drawing.Point(460, 315);
+            this.comboBox23.Location = new System.Drawing.Point(333, 315);
             this.comboBox23.Name = "comboBox23";
             this.comboBox23.Size = new System.Drawing.Size(121, 20);
             this.comboBox23.TabIndex = 26;
@@ -319,7 +319,7 @@
             // 
             this.comboBox24.Font = new System.Drawing.Font("AR P丸ゴシック体E", 9F);
             this.comboBox24.FormattingEnabled = true;
-            this.comboBox24.Location = new System.Drawing.Point(333, 315);
+            this.comboBox24.Location = new System.Drawing.Point(460, 315);
             this.comboBox24.Name = "comboBox24";
             this.comboBox24.Size = new System.Drawing.Size(121, 20);
             this.comboBox24.TabIndex = 25;

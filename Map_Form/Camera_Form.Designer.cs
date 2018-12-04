@@ -210,6 +210,10 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btn_camNameReg = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -425,7 +429,7 @@
             // 
             this.trackBar1.AutoSize = false;
             this.trackBar1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.trackBar1.Location = new System.Drawing.Point(4, 140);
+            this.trackBar1.Location = new System.Drawing.Point(4, 141);
             this.trackBar1.Maximum = 2;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Size = new System.Drawing.Size(190, 25);
@@ -436,6 +440,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label37);
+            this.groupBox1.Controls.Add(this.label36);
+            this.groupBox1.Controls.Add(this.label35);
+            this.groupBox1.Controls.Add(this.label34);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.btn_cnt_LU);
             this.groupBox1.Controls.Add(this.btn_cnt_UP);
@@ -2393,12 +2401,55 @@
             this.btn_camNameReg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_camNameReg.Click += new System.EventHandler(this.btn_camNameReg_Click);
             // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.ForeColor = System.Drawing.Color.White;
+            this.label34.Location = new System.Drawing.Point(69, 117);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(67, 12);
+            this.label34.TabIndex = 40;
+            this.label34.Text = "カメラスピード";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("MS UI Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(9, 132);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(16, 11);
+            this.label35.TabIndex = 41;
+            this.label35.Text = "遅";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("MS UI Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(93, 132);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(16, 11);
+            this.label36.TabIndex = 42;
+            this.label36.Text = "中";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("MS UI Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(177, 132);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(16, 11);
+            this.label37.TabIndex = 43;
+            this.label37.Text = "早";
+            // 
             // Camera_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1911, 1041);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.btn_camNameReg);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -2432,10 +2483,11 @@
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.treeView1);
             this.Name = "Camera_Form";
-            this.Text = "Form1";
+            this.Text = "CameraCont";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -2633,5 +2685,9 @@
         private System.Windows.Forms.Label btn_camNameReg;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
     }
 }
