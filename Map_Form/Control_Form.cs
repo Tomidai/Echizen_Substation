@@ -23,6 +23,7 @@ namespace Map_Form {
         private void Form1_Load(object sender, EventArgs e) {
             //マップフォーム起動
             map_form.Show();
+            map_form.Hide();
             //カメラフォーム起動
             camera_form.Show();
             //ファイル監視実行

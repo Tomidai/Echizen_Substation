@@ -151,7 +151,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -184,7 +184,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -217,7 +217,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -250,7 +250,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -283,7 +283,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -316,7 +316,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="SensorLock77_off.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt, style=Bold</value>
@@ -505,7 +505,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="ReleaseButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt, style=Bold</value>
@@ -622,7 +622,7 @@
     <value>44</value>
   </data>
   <data name="FaultButton.Text" xml:space="preserve">
-    <value>　　　センサー異常</value>
+    <value>　　　設備異常</value>
   </data>
   <data name="FaultButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -760,7 +760,43 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
+  </data>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="DateTimeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DateTimeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Ricty Diminished, 20.2499981pt</value>
+  </data>
+  <data name="DateTimeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DateTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1635, 19</value>
+  </data>
+  <data name="DateTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>259, 29</value>
+  </data>
+  <data name="DateTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="DateTimeLabel.Text" xml:space="preserve">
+    <value>11月11日(金) 11:11</value>
+  </data>
+  <data name="&gt;&gt;DateTimeLabel.Name" xml:space="preserve">
+    <value>DateTimeLabel</value>
+  </data>
+  <data name="&gt;&gt;DateTimeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DateTimeLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DateTimeLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="GotoCamera_Button8.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt, style=Bold</value>
@@ -793,7 +829,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GotoCamera_Button8.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="GotoCamera_Button7.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt, style=Bold</value>
@@ -826,7 +862,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GotoCamera_Button7.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="GotoCamera_Button6.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt, style=Bold</value>
@@ -859,7 +895,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GotoCamera_Button6.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="GotoCamera_Button5.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt, style=Bold</value>
@@ -892,7 +928,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GotoCamera_Button5.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="GotoCamera_Button4.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt, style=Bold</value>
@@ -925,7 +961,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GotoCamera_Button4.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="GotoCamera_Button3.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt, style=Bold</value>
@@ -958,7 +994,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GotoCamera_Button3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="GotoCamera_Button2.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt, style=Bold</value>
@@ -991,7 +1027,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GotoCamera_Button2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="GotoCamera_Button1.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt, style=Bold</value>
@@ -1024,7 +1060,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GotoCamera_Button1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="RightLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1144,7 +1180,7 @@
     <value>NoControl</value>
   </data>
   <data name="Camera_05.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1270, 166</value>
+    <value>32, 565</value>
   </data>
   <data name="Camera_05.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 49</value>
@@ -1198,7 +1234,7 @@
     <value>NoControl</value>
   </data>
   <data name="Camera_03.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 565</value>
+    <value>617, 613</value>
   </data>
   <data name="Camera_03.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 49</value>
@@ -1225,7 +1261,7 @@
     <value>NoControl</value>
   </data>
   <data name="Camera_02.Location" type="System.Drawing.Point, System.Drawing">
-    <value>617, 613</value>
+    <value>1270, 166</value>
   </data>
   <data name="Camera_02.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 49</value>
@@ -1267,7 +1303,7 @@
     <value>48</value>
   </data>
   <data name="Camera_Label_02.Text" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;Camera_Label_02.Name" xml:space="preserve">
     <value>Camera_Label_02</value>
@@ -1426,7 +1462,7 @@
     <value>51</value>
   </data>
   <data name="label24.Text" xml:space="preserve">
-    <value>5</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;label24.Name" xml:space="preserve">
     <value>label24</value>
@@ -1492,7 +1528,7 @@
     <value>49</value>
   </data>
   <data name="Camera_Label_03.Text" xml:space="preserve">
-    <value>3</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;Camera_Label_03.Name" xml:space="preserve">
     <value>Camera_Label_03</value>
@@ -1549,7 +1585,7 @@
     <value>NoControl</value>
   </data>
   <data name="Sensor_Label_19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1406, 429</value>
+    <value>1403, 429</value>
   </data>
   <data name="Sensor_Label_19.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 31</value>
@@ -1558,7 +1594,7 @@
     <value>46</value>
   </data>
   <data name="Sensor_Label_19.Text" xml:space="preserve">
-    <value>19</value>
+    <value>17</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_19.Name" xml:space="preserve">
     <value>Sensor_Label_19</value>
@@ -1582,7 +1618,7 @@
     <value>NoControl</value>
   </data>
   <data name="Sensor_Label_18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1475, 547</value>
+    <value>1478, 549</value>
   </data>
   <data name="Sensor_Label_18.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 31</value>
@@ -1591,7 +1627,7 @@
     <value>45</value>
   </data>
   <data name="Sensor_Label_18.Text" xml:space="preserve">
-    <value>18</value>
+    <value>22</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_18.Name" xml:space="preserve">
     <value>Sensor_Label_18</value>
@@ -1615,7 +1651,7 @@
     <value>NoControl</value>
   </data>
   <data name="Sensor_Label_17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1688, 581</value>
+    <value>1680, 581</value>
   </data>
   <data name="Sensor_Label_17.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 31</value>
@@ -1624,7 +1660,7 @@
     <value>44</value>
   </data>
   <data name="Sensor_Label_17.Text" xml:space="preserve">
-    <value>17</value>
+    <value>21</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_17.Name" xml:space="preserve">
     <value>Sensor_Label_17</value>
@@ -1648,16 +1684,16 @@
     <value>NoControl</value>
   </data>
   <data name="Sensor_Label_16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1767, 479</value>
+    <value>1767, 469</value>
   </data>
   <data name="Sensor_Label_16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 31</value>
+    <value>48, 33</value>
   </data>
   <data name="Sensor_Label_16.TabIndex" type="System.Int32, mscorlib">
     <value>43</value>
   </data>
   <data name="Sensor_Label_16.Text" xml:space="preserve">
-    <value>16</value>
+    <value>20</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_16.Name" xml:space="preserve">
     <value>Sensor_Label_16</value>
@@ -1690,7 +1726,7 @@
     <value>42</value>
   </data>
   <data name="Sensor_Label_15.Text" xml:space="preserve">
-    <value>15</value>
+    <value>19</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_15.Name" xml:space="preserve">
     <value>Sensor_Label_15</value>
@@ -1714,7 +1750,7 @@
     <value>NoControl</value>
   </data>
   <data name="Sensor_Label_14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1581, 290</value>
+    <value>1574, 290</value>
   </data>
   <data name="Sensor_Label_14.Size" type="System.Drawing.Size, System.Drawing">
     <value>46, 31</value>
@@ -1723,7 +1759,7 @@
     <value>41</value>
   </data>
   <data name="Sensor_Label_14.Text" xml:space="preserve">
-    <value>14</value>
+    <value>18</value>
   </data>
   <data name="&gt;&gt;Sensor_Label_14.Name" xml:space="preserve">
     <value>Sensor_Label_14</value>
@@ -2110,7 +2146,7 @@
     <value>NoControl</value>
   </data>
   <data name="Sensor_Label_02.Location" type="System.Drawing.Point, System.Drawing">
-    <value>782, 621</value>
+    <value>766, 600</value>
   </data>
   <data name="Sensor_Label_02.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 31</value>
@@ -2143,7 +2179,7 @@
     <value>NoControl</value>
   </data>
   <data name="Sensor_Label_01.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1143, 636</value>
+    <value>1105, 618</value>
   </data>
   <data name="Sensor_Label_01.Size" type="System.Drawing.Size, System.Drawing">
     <value>30, 31</value>
@@ -2629,10 +2665,10 @@
     <value>NoControl</value>
   </data>
   <data name="Sensor_02.Location" type="System.Drawing.Point, System.Drawing">
-    <value>646, 585</value>
+    <value>649, 582</value>
   </data>
   <data name="Sensor_02.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 50</value>
+    <value>248, 15</value>
   </data>
   <data name="Sensor_02.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
@@ -2656,10 +2692,10 @@
     <value>NoControl</value>
   </data>
   <data name="Sensor_01.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1006, 613</value>
+    <value>934, 583</value>
   </data>
   <data name="Sensor_01.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 21</value>
+    <value>367, 41</value>
   </data>
   <data name="Sensor_01.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>AutoSize</value>
@@ -2698,7 +2734,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2711,6 +2747,12 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>越前変電所警戒マップ</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Map_Form</value>

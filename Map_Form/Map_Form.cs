@@ -647,6 +647,17 @@ namespace Map_Form {
             }
             ReleaseButton.Image = Properties.Resources.in_operation_normal;
         }
+
+        //時刻表示
+        private void timer1_Tick(object sender, EventArgs e) {
+            DateTime d = DateTime.Now;
+            DateTimeLabel.Text =
+                d.ToString("MM") + "月" +
+                d.ToString("dd") + "日" + "(" +
+                d.ToString("ddd") + ")" + " " +
+                d.ToString("HH") + ":" +
+                d.ToString("mm");
+        }
         //
     }
 }

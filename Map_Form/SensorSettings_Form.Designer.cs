@@ -542,7 +542,7 @@
             this.groupSensor18.Size = new System.Drawing.Size(263, 46);
             this.groupSensor18.TabIndex = 8;
             this.groupSensor18.TabStop = false;
-            this.groupSensor18.Text = "センサー区間18";
+            this.groupSensor18.Text = "センサー区間21";
             // 
             // normal18
             // 
@@ -587,7 +587,7 @@
             this.groupSensor17.Size = new System.Drawing.Size(263, 46);
             this.groupSensor17.TabIndex = 9;
             this.groupSensor17.TabStop = false;
-            this.groupSensor17.Text = "センサー区間17";
+            this.groupSensor17.Text = "センサー区間20";
             // 
             // normal17
             // 
@@ -632,7 +632,7 @@
             this.groupSensor16.Size = new System.Drawing.Size(263, 46);
             this.groupSensor16.TabIndex = 10;
             this.groupSensor16.TabStop = false;
-            this.groupSensor16.Text = "センサー区間16";
+            this.groupSensor16.Text = "センサー区間19";
             // 
             // normal16
             // 
@@ -677,7 +677,7 @@
             this.groupSensor19.Size = new System.Drawing.Size(263, 46);
             this.groupSensor19.TabIndex = 12;
             this.groupSensor19.TabStop = false;
-            this.groupSensor19.Text = "センサー区間19";
+            this.groupSensor19.Text = "センサー区間22";
             // 
             // normal19
             // 
@@ -722,7 +722,7 @@
             this.groupSensor14.Size = new System.Drawing.Size(263, 46);
             this.groupSensor14.TabIndex = 9;
             this.groupSensor14.TabStop = false;
-            this.groupSensor14.Text = "センサー区間14";
+            this.groupSensor14.Text = "センサー区間17";
             // 
             // normal14
             // 
@@ -857,7 +857,7 @@
             this.groupBox18.Size = new System.Drawing.Size(263, 46);
             this.groupBox18.TabIndex = 9;
             this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "センサー区間15";
+            this.groupBox18.Text = "センサー区間18";
             // 
             // normal15
             // 

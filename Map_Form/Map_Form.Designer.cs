@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Map_Form));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -49,6 +50,8 @@
             this.LogsButton = new System.Windows.Forms.Label();
             this.RestrationButton = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.DateTimeLabel = new System.Windows.Forms.Label();
             this.GotoCamera_Button8 = new System.Windows.Forms.Label();
             this.GotoCamera_Button7 = new System.Windows.Forms.Label();
             this.GotoCamera_Button6 = new System.Windows.Forms.Label();
@@ -296,6 +299,18 @@
             this.label8.Image = global::Map_Form.Properties.Resources.control_menu_bar;
             this.label8.Name = "label8";
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // DateTimeLabel
+            // 
+            resources.ApplyResources(this.DateTimeLabel, "DateTimeLabel");
+            this.DateTimeLabel.ForeColor = System.Drawing.Color.White;
+            this.DateTimeLabel.Name = "DateTimeLabel";
+            // 
             // GotoCamera_Button8
             // 
             resources.ApplyResources(this.GotoCamera_Button8, "GotoCamera_Button8");
@@ -362,7 +377,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::Map_Form.Properties.Resources.背景画像;
+            this.panel1.BackgroundImage = global::Map_Form.Properties.Resources.map_image;
             this.panel1.Controls.Add(this.RightLabel);
             this.panel1.Controls.Add(this.Camera_08);
             this.panel1.Controls.Add(this.Camera_07);
@@ -586,6 +601,7 @@
             // 
             resources.ApplyResources(this.Sensor_Label_16, "Sensor_Label_16");
             this.Sensor_Label_16.BackColor = System.Drawing.Color.Transparent;
+            this.Sensor_Label_16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Sensor_Label_16.Name = "Sensor_Label_16";
             // 
             // Sensor_Label_15
@@ -873,6 +889,7 @@
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.Controls.Add(this.DateTimeLabel);
             this.Controls.Add(this.GotoCamera_Button8);
             this.Controls.Add(this.GotoCamera_Button7);
             this.Controls.Add(this.GotoCamera_Button6);
@@ -890,7 +907,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
-            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Map_Form";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -1017,6 +1033,8 @@
         public System.Windows.Forms.Label RightButton;
         public System.Windows.Forms.Label ReleaseButton;
         public System.Windows.Forms.Label RightLabel;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label DateTimeLabel;
     }
 }
 
