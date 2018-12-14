@@ -583,6 +583,16 @@ namespace Map_Form.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap map_image {
+            get {
+                object obj = ResourceManager.GetObject("map_image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap operation_button_normal {
             get {
                 object obj = ResourceManager.GetObject("operation_button_normal", resourceCulture);

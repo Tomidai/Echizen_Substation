@@ -161,12 +161,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sensor_Normal_01.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sensor_Normal_02.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Sensor_Normal_03.png" />
   </ItemGroup>
   <ItemGroup>
@@ -233,12 +227,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sensor_Lock_01.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sensor_Lock_02.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Sensor_Lock_03.png" />
   </ItemGroup>
   <ItemGroup>
@@ -288,12 +276,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sensor_Lock_19.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sensor_Action_01.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sensor_Action_02.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sensor_Action_03.png" />
@@ -347,12 +329,6 @@
     <None Include="Resources\Sensor_Action_19.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sensor_Environ_01.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sensor_Environ_02.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Sensor_Environ_03.png" />
   </ItemGroup>
   <ItemGroup>
@@ -404,12 +380,6 @@
     <None Include="Resources\Sensor_Environ_19.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Sensor_Failed_01.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sensor_Failed_02.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Sensor_Failed_03.png" />
   </ItemGroup>
   <ItemGroup>
@@ -459,12 +429,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\センサー19Y-min.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sensor_EnvironLock_01.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Sensor_EnvironLock_02.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Sensor_EnvironLock_03.png" />
@@ -699,6 +663,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\operation_button_push.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\map_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sensor_Lock_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sensor_Lock_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sensor_Environ_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sensor_Environ_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sensor_Failed_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sensor_Failed_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sensor_EnvironLock_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sensor_EnvironLock_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sensor_Normal_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sensor_Normal_02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sensor_Action_01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sensor_Action_02.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
