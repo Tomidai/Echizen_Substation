@@ -40,7 +40,8 @@ namespace Map_Form {
                     sw.WriteLine(string.Join(",", snInfo));
                 }
             } catch {
-                MessageBox.Show("他の拠点と操作が競合しました。もう一度実行します。");
+                //少し待ってリトライ
+                System.Threading.Thread.Sleep(50);
                 SensorSettingChange(path, to, value);
             }
         }
@@ -56,7 +57,8 @@ namespace Map_Form {
                     return cols;
                 }
             } catch {
-                MessageBox.Show("設定読込みエラー");
+                //少し待ってリトライ
+                System.Threading.Thread.Sleep(50);
                 string[] clos = ReturnSetting(path);
                 return clos;
             }
@@ -83,7 +85,9 @@ namespace Map_Form {
                     sw.WriteLine(text[i]);
                 }
             } catch {
-                MessageBox.Show("エラー。実際の書き込みメソッド");
+                sw.Close();
+                System.Threading.Thread.Sleep(50);
+                SetSendText(text);
             } finally {
                 sw.Close();
             }
