@@ -103,7 +103,7 @@ namespace Map_Form {
         public int s44W;
         public int s44H;
         public string[] patternName = new string[6];
-        public int[,] patternNo = new int[6, 4];
+        public static int[,] patternNo = new int[6, 4];
         public static Label recButton;
         public static Label camNameChangeBtn;
         public TreeNode tn001;
@@ -214,6 +214,7 @@ namespace Map_Form {
                     else
                     {
                         CamNo = b;
+                        camNo_01 = b;
                     }
                 }
                 else if (a == 2)
@@ -225,6 +226,7 @@ namespace Map_Form {
                     else
                     {
                         CamNo = b;
+                        camNo_01 = b;
                     }
                 }
                 else
@@ -2690,6 +2692,17 @@ namespace Map_Form {
         private void btn_preReg_MouseLeave(object sender, EventArgs e)
         {
             label33.Visible = false;
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            DateTime d = DateTime.Now;
+            DateTimeLabel.Text =
+                d.ToString("MM") + "月" +
+                d.ToString("dd") + "日" + "(" +
+                d.ToString("ddd") + ")" + " " +
+                d.ToString("HH") + ":" +
+                d.ToString("mm");
         }
     }
 

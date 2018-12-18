@@ -214,6 +214,8 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btn_camNameReg = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.DateTimeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -2444,6 +2446,22 @@
             this.btn_camNameReg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_camNameReg.Click += new System.EventHandler(this.btn_camNameReg_Click);
             // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 500;
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // DateTimeLabel
+            // 
+            this.DateTimeLabel.Font = new System.Drawing.Font("MS UI Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.DateTimeLabel.ForeColor = System.Drawing.Color.White;
+            this.DateTimeLabel.Location = new System.Drawing.Point(1631, 13);
+            this.DateTimeLabel.Name = "DateTimeLabel";
+            this.DateTimeLabel.Size = new System.Drawing.Size(256, 28);
+            this.DateTimeLabel.TabIndex = 51;
+            this.DateTimeLabel.Text = "11月11日(金) 11:11";
+            // 
             // Camera_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -2451,6 +2469,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.ControlBox = false;
+            this.Controls.Add(this.DateTimeLabel);
             this.Controls.Add(this.btn_camNameReg);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -2692,5 +2711,7 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Label DateTimeLabel;
     }
 }
