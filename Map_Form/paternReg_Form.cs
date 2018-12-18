@@ -70,7 +70,7 @@ namespace Map_Form
 
             camName = form.camName;
             patternName = form.patternName;
-            patternNo = form.patternNo;
+            patternNo = Camera_Form.patternNo;
             path = form.path;
             treeView = form.treeView;
             imageList = form.imageList01;
@@ -92,7 +92,7 @@ namespace Map_Form
                         comboBox[i, j].Items.Add(form.camName[k]);
 
                     }
-                    comboBox[i, j].SelectedIndex = form.patternNo[i, j];
+                    comboBox[i, j].SelectedIndex = Camera_Form.patternNo[i, j];
                 }
             }
 
@@ -111,6 +111,7 @@ namespace Map_Form
 
             Camera_Form.camNameChangeMode = 0;
             Camera_Form.camNameChangeBtn.Image = Properties.Resources.cont_b018;
+            
         }
 
 
@@ -139,6 +140,8 @@ namespace Map_Form
             {
                 tn002.Nodes.Add("", patternName[j], 5, 6);
             }
+
+
         }
 
 
@@ -156,7 +159,7 @@ namespace Map_Form
                 for (int j = 0; j < 4; ++j)
                 {
 
-                    patternNo[i, j] = comboBox[i, j].SelectedIndex + 1;
+                   Camera_Form.patternNo[i, j] = comboBox[i, j].SelectedIndex;
 
                     if (j != 3)
                     {
@@ -189,6 +192,12 @@ namespace Map_Form
 
 
 
+            
+
+
+
+
+
         }
 
 
@@ -209,6 +218,7 @@ namespace Map_Form
         {
 
             this.btn_reg.Image = Properties.Resources.cont_pre001;
+            
             
 
         }

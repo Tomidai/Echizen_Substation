@@ -47,6 +47,7 @@ namespace Map_Form {
             camera_form.setLocation_1();
             camera_form.camSelect(0);
             camera_form.setBrowser(1, i-1);
+            camera_form.camNo_01=i - 1;
         }
 
         //カメラからマップへ画面遷移する
