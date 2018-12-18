@@ -150,7 +150,7 @@ namespace Map_Form {
                 if (right[0] == "0" && right[1] == "0" && right[2] == "0") {
                     mfObj.RightButton.Image = Properties.Resources.operation_button_normal;
                     mfObj.RightButton.Text = "　操作";
-                    mfObj.RightLabel.Text = "操作権取得可能";
+                    mfObj.RightLabel.Text = "操作権限取得可能";
                 } else {
                     mfObj.RightButton.Image = Properties.Resources.operation_button_push;
                     mfObj.RightButton.Text = "　操作中";

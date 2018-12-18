@@ -610,7 +610,7 @@ namespace Map_Form {
                     right[num] = "1";
                 } else if (right[num] == "1") {
                     right[num] = "0";
-                    RightLabel.Text = "操作権取得可能";
+                    RightLabel.Text = "操作権限取得可能";
                 } else {
                     return;
                 }

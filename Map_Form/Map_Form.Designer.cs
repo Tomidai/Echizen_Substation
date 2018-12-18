@@ -601,7 +601,6 @@
             // 
             resources.ApplyResources(this.Sensor_Label_16, "Sensor_Label_16");
             this.Sensor_Label_16.BackColor = System.Drawing.Color.Transparent;
-            this.Sensor_Label_16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Sensor_Label_16.Name = "Sensor_Label_16";
             // 
             // Sensor_Label_15
