@@ -39,7 +39,7 @@ namespace Map_Form {
         //SensorSettingsファイルが変更されたら発生するイベント
         public void SensorChanged(object source, FileSystemEventArgs e) {
             //反応が早すぎるので少し止める
-            Thread.Sleep(50);
+            Thread.Sleep(100);
             switch (e.Name) {
                 case "sensor1.csv":
                     snObj.ChangeSensor(snObj.ReturnSetting(e.Name), mfObj.Sensor_01, Properties.Resources.Sensor_Normal_01, Properties.Resources.Sensor_Lock_01,
