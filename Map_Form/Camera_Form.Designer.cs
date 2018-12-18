@@ -50,6 +50,10 @@
             this.cam004_left = new System.Windows.Forms.Label();
             this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btn_cnt_LU = new System.Windows.Forms.Label();
             this.btn_cnt_UP = new System.Windows.Forms.Label();
@@ -210,10 +214,6 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.btn_camNameReg = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -466,6 +466,49 @@
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("MS UI Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(177, 132);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(16, 11);
+            this.label37.TabIndex = 43;
+            this.label37.Text = "早";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("MS UI Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(93, 132);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(16, 11);
+            this.label36.TabIndex = 42;
+            this.label36.Text = "中";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("MS UI Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(9, 132);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(16, 11);
+            this.label35.TabIndex = 41;
+            this.label35.Text = "遅";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.ForeColor = System.Drawing.Color.White;
+            this.label34.Location = new System.Drawing.Point(69, 117);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(67, 12);
+            this.label34.TabIndex = 40;
+            this.label34.Text = "カメラスピード";
             // 
             // label9
             // 
@@ -2401,55 +2444,13 @@
             this.btn_camNameReg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btn_camNameReg.Click += new System.EventHandler(this.btn_camNameReg_Click);
             // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.ForeColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(69, 117);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(67, 12);
-            this.label34.TabIndex = 40;
-            this.label34.Text = "カメラスピード";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("MS UI Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(9, 132);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(16, 11);
-            this.label35.TabIndex = 41;
-            this.label35.Text = "遅";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("MS UI Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label36.ForeColor = System.Drawing.Color.White;
-            this.label36.Location = new System.Drawing.Point(93, 132);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(16, 11);
-            this.label36.TabIndex = 42;
-            this.label36.Text = "中";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("MS UI Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label37.ForeColor = System.Drawing.Color.White;
-            this.label37.Location = new System.Drawing.Point(177, 132);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(16, 11);
-            this.label37.TabIndex = 43;
-            this.label37.Text = "早";
-            // 
             // Camera_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_camNameReg);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -2482,6 +2483,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.treeView1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Camera_Form";
             this.Text = "CameraCont";
             this.Load += new System.EventHandler(this.Form1_Load);
