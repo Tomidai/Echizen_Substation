@@ -2422,7 +2422,7 @@ namespace Map_Form {
         {
             try
             {
-                FileStream fs = new FileStream(path + @"\" + sensorCamFileName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
+                FileStream fs = new FileStream(path  + sensorCamFileName, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
                 StreamReader sr = new StreamReader(fs, Encoding.GetEncoding("SHIFT_JIS"));
                 while(sr.Peek() > -1)
                 {
@@ -2581,7 +2581,7 @@ namespace Map_Form {
             try
             {
 
-                StreamWriter sw = new StreamWriter(path + @"\" + sensorCamFileName, false, Encoding.GetEncoding("shift_jis"));
+                StreamWriter sw = new StreamWriter(path + sensorCamFileName, false, Encoding.GetEncoding("shift_jis"));
 
                 sw.Write(Str);
                 sw.Close();
@@ -2703,6 +2703,11 @@ namespace Map_Form {
                 d.ToString("ddd") + ")" + " " +
                 d.ToString("HH") + ":" +
                 d.ToString("mm");
+        }
+
+        private void comboBox34_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
