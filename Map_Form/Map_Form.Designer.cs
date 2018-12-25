@@ -61,6 +61,8 @@
             this.GotoCamera_Button2 = new System.Windows.Forms.Label();
             this.GotoCamera_Button1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.gateState77 = new System.Windows.Forms.Label();
+            this.gateState500 = new System.Windows.Forms.Label();
             this.RightLabel = new System.Windows.Forms.Label();
             this.Camera_08 = new System.Windows.Forms.PictureBox();
             this.Camera_07 = new System.Windows.Forms.PictureBox();
@@ -378,6 +380,8 @@
             // panel1
             // 
             this.panel1.BackgroundImage = global::Map_Form.Properties.Resources.map_image;
+            this.panel1.Controls.Add(this.gateState77);
+            this.panel1.Controls.Add(this.gateState500);
             this.panel1.Controls.Add(this.RightLabel);
             this.panel1.Controls.Add(this.Camera_08);
             this.panel1.Controls.Add(this.Camera_07);
@@ -435,6 +439,20 @@
             this.panel1.Controls.Add(this.Sensor_01);
             resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
+            // 
+            // gateState77
+            // 
+            resources.ApplyResources(this.gateState77, "gateState77");
+            this.gateState77.BackColor = System.Drawing.Color.Transparent;
+            this.gateState77.ForeColor = System.Drawing.Color.Black;
+            this.gateState77.Name = "gateState77";
+            // 
+            // gateState500
+            // 
+            resources.ApplyResources(this.gateState500, "gateState500");
+            this.gateState500.BackColor = System.Drawing.Color.Transparent;
+            this.gateState500.ForeColor = System.Drawing.Color.Black;
+            this.gateState500.Name = "gateState500";
             // 
             // RightLabel
             // 
@@ -1034,6 +1052,8 @@
         public System.Windows.Forms.Label RightLabel;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label DateTimeLabel;
+        public System.Windows.Forms.Label gateState77;
+        public System.Windows.Forms.Label gateState500;
     }
 }
 
