@@ -87,7 +87,7 @@
             this.normal4 = new System.Windows.Forms.RadioButton();
             this.environ4 = new System.Windows.Forms.RadioButton();
             this.lock4 = new System.Windows.Forms.RadioButton();
-            this.groupBox18 = new System.Windows.Forms.GroupBox();
+            this.groupSensor15 = new System.Windows.Forms.GroupBox();
             this.normal15 = new System.Windows.Forms.RadioButton();
             this.environ15 = new System.Windows.Forms.RadioButton();
             this.lock15 = new System.Windows.Forms.RadioButton();
@@ -120,7 +120,7 @@
             this.groupSensor14.SuspendLayout();
             this.groupSensor9.SuspendLayout();
             this.groupSensor4.SuspendLayout();
-            this.groupBox18.SuspendLayout();
+            this.groupSensor15.SuspendLayout();
             this.groupSensor10.SuspendLayout();
             this.groupSensor5.SuspendLayout();
             this.SuspendLayout();
@@ -847,17 +847,17 @@
             this.lock4.Text = "監視ロック";
             this.lock4.UseVisualStyleBackColor = true;
             // 
-            // groupBox18
+            // groupSensor15
             // 
-            this.groupBox18.Controls.Add(this.normal15);
-            this.groupBox18.Controls.Add(this.environ15);
-            this.groupBox18.Controls.Add(this.lock15);
-            this.groupBox18.Location = new System.Drawing.Point(603, 220);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(263, 46);
-            this.groupBox18.TabIndex = 9;
-            this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "センサー区間18";
+            this.groupSensor15.Controls.Add(this.normal15);
+            this.groupSensor15.Controls.Add(this.environ15);
+            this.groupSensor15.Controls.Add(this.lock15);
+            this.groupSensor15.Location = new System.Drawing.Point(603, 220);
+            this.groupSensor15.Name = "groupSensor15";
+            this.groupSensor15.Size = new System.Drawing.Size(263, 46);
+            this.groupSensor15.TabIndex = 9;
+            this.groupSensor15.TabStop = false;
+            this.groupSensor15.Text = "センサー区間18";
             // 
             // normal15
             // 
@@ -1043,7 +1043,7 @@
             this.Controls.Add(this.buttonAllLock);
             this.Controls.Add(this.buttonAllNormal);
             this.Controls.Add(this.groupSensor19);
-            this.Controls.Add(this.groupBox18);
+            this.Controls.Add(this.groupSensor15);
             this.Controls.Add(this.groupSensor10);
             this.Controls.Add(this.groupSensor18);
             this.Controls.Add(this.groupSensor5);
@@ -1098,8 +1098,8 @@
             this.groupSensor9.PerformLayout();
             this.groupSensor4.ResumeLayout(false);
             this.groupSensor4.PerformLayout();
-            this.groupBox18.ResumeLayout(false);
-            this.groupBox18.PerformLayout();
+            this.groupSensor15.ResumeLayout(false);
+            this.groupSensor15.PerformLayout();
             this.groupSensor10.ResumeLayout(false);
             this.groupSensor10.PerformLayout();
             this.groupSensor5.ResumeLayout(false);
@@ -1173,7 +1173,7 @@
         private System.Windows.Forms.RadioButton normal4;
         private System.Windows.Forms.RadioButton environ4;
         private System.Windows.Forms.RadioButton lock4;
-        private System.Windows.Forms.GroupBox groupBox18;
+        private System.Windows.Forms.GroupBox groupSensor15;
         private System.Windows.Forms.RadioButton normal15;
         private System.Windows.Forms.RadioButton environ15;
         private System.Windows.Forms.RadioButton lock15;

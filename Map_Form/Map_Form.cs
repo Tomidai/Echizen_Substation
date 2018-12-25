@@ -543,27 +543,35 @@ namespace Map_Form {
         }
         private void RestrationButton_MouseUp(object sender, MouseEventArgs e) {
             RestrationButton.Image = Properties.Resources.restoration_button_normal;
-            snObj.SensorSettingChange("sensor1.csv", 3, "0");
-            snObj.SensorSettingChange("sensor2.csv", 3, "0");
-            snObj.SensorSettingChange("sensor3.csv", 3, "0");
-            snObj.SensorSettingChange("sensor4.csv", 3, "0");
-            snObj.SensorSettingChange("sensor5.csv", 3, "0");
-            snObj.SensorSettingChange("sensor6.csv", 3, "0");
-            snObj.SensorSettingChange("sensor7.csv", 3, "0");
-            snObj.SensorSettingChange("sensor8.csv", 3, "0");
-            snObj.SensorSettingChange("sensor9.csv", 3, "0");
-            snObj.SensorSettingChange("sensor10.csv", 3, "0");
-            snObj.SensorSettingChange("sensor11.csv", 3, "0");
-            snObj.SensorSettingChange("sensor12.csv", 3, "0");
-            snObj.SensorSettingChange("sensor13.csv", 3, "0");
-            snObj.SensorSettingChange("sensor14.csv", 3, "0");
-            snObj.SensorSettingChange("sensor15.csv", 3, "0");
-            snObj.SensorSettingChange("sensor16.csv", 3, "0");
-            snObj.SensorSettingChange("sensor17.csv", 3, "0");
-            snObj.SensorSettingChange("sensor18.csv", 3, "0");
-            snObj.SensorSettingChange("sensor19.csv", 3, "0");
-            //テキスト送信
-            string[] send = {
+
+            string[] gateState500 = snObj.ReturnSetting("GateOpen500.csv");
+            string[] gateState77 = snObj.ReturnSetting("GateOpen77.csv");
+            if(gateState500[1] == "1" && gateState77[1] == "1") {
+                //門が両方開いているので何もしない
+
+            }else if(gateState500[1] == "0" && gateState77[1] == "0") {
+                //門が両方閉じているので全復旧する
+                snObj.SensorSettingChange("sensor1.csv", 3, "0");
+                snObj.SensorSettingChange("sensor2.csv", 3, "0");
+                snObj.SensorSettingChange("sensor3.csv", 3, "0");
+                snObj.SensorSettingChange("sensor4.csv", 3, "0");
+                snObj.SensorSettingChange("sensor5.csv", 3, "0");
+                snObj.SensorSettingChange("sensor6.csv", 3, "0");
+                snObj.SensorSettingChange("sensor7.csv", 3, "0");
+                snObj.SensorSettingChange("sensor8.csv", 3, "0");
+                snObj.SensorSettingChange("sensor9.csv", 3, "0");
+                snObj.SensorSettingChange("sensor10.csv", 3, "0");
+                snObj.SensorSettingChange("sensor11.csv", 3, "0");
+                snObj.SensorSettingChange("sensor12.csv", 3, "0");
+                snObj.SensorSettingChange("sensor13.csv", 3, "0");
+                snObj.SensorSettingChange("sensor14.csv", 3, "0");
+                snObj.SensorSettingChange("sensor15.csv", 3, "0");
+                snObj.SensorSettingChange("sensor16.csv", 3, "0");
+                snObj.SensorSettingChange("sensor17.csv", 3, "0");
+                snObj.SensorSettingChange("sensor18.csv", 3, "0");
+                snObj.SensorSettingChange("sensor19.csv", 3, "0");
+                //テキスト送信
+                string[] send = {
                 snObj.GetSendText("sensor1.csv", 3, "0"),
                 snObj.GetSendText("sensor2.csv", 3, "0"),
                 snObj.GetSendText("sensor3.csv", 3, "0"),
@@ -584,7 +592,60 @@ namespace Map_Form {
                 snObj.GetSendText("sensor18.csv", 3, "0"),
                 snObj.GetSendText("sensor19.csv", 3, "0")
             };
-            snObj.SetSendText(send);
+                snObj.SetSendText(send);
+            } else if(gateState500[1] == "1" && gateState77[1] == "0") {
+                //500が開いているので復旧は77区間のみ
+                
+                snObj.SensorSettingChange("sensor14.csv", 3, "0");
+                snObj.SensorSettingChange("sensor15.csv", 3, "0");
+                snObj.SensorSettingChange("sensor16.csv", 3, "0");
+                snObj.SensorSettingChange("sensor17.csv", 3, "0");
+                snObj.SensorSettingChange("sensor18.csv", 3, "0");
+                snObj.SensorSettingChange("sensor19.csv", 3, "0");
+                //テキスト送信
+                string[] send = {
+                
+                snObj.GetSendText("sensor14.csv", 3, "0"),
+                snObj.GetSendText("sensor15.csv", 3, "0"),
+                snObj.GetSendText("sensor16.csv", 3, "0"),
+                snObj.GetSendText("sensor17.csv", 3, "0"),
+                snObj.GetSendText("sensor18.csv", 3, "0"),
+                snObj.GetSendText("sensor19.csv", 3, "0")
+            };
+                snObj.SetSendText(send);
+            } else if(gateState500[1] == "0" && gateState77[1] == "1") {
+                //77が開いているので復旧は5000区間のみ
+                snObj.SensorSettingChange("sensor1.csv", 3, "0");
+                snObj.SensorSettingChange("sensor2.csv", 3, "0");
+                snObj.SensorSettingChange("sensor3.csv", 3, "0");
+                snObj.SensorSettingChange("sensor4.csv", 3, "0");
+                snObj.SensorSettingChange("sensor5.csv", 3, "0");
+                snObj.SensorSettingChange("sensor6.csv", 3, "0");
+                snObj.SensorSettingChange("sensor7.csv", 3, "0");
+                snObj.SensorSettingChange("sensor8.csv", 3, "0");
+                snObj.SensorSettingChange("sensor9.csv", 3, "0");
+                snObj.SensorSettingChange("sensor10.csv", 3, "0");
+                snObj.SensorSettingChange("sensor11.csv", 3, "0");
+                snObj.SensorSettingChange("sensor12.csv", 3, "0");
+                snObj.SensorSettingChange("sensor13.csv", 3, "0");
+                //テキスト送信
+                string[] send = {
+                snObj.GetSendText("sensor1.csv", 3, "0"),
+                snObj.GetSendText("sensor2.csv", 3, "0"),
+                snObj.GetSendText("sensor3.csv", 3, "0"),
+                snObj.GetSendText("sensor4.csv", 3, "0"),
+                snObj.GetSendText("sensor5.csv", 3, "0"),
+                snObj.GetSendText("sensor6.csv", 3, "0"),
+                snObj.GetSendText("sensor7.csv", 3, "0"),
+                snObj.GetSendText("sensor8.csv", 3, "0"),
+                snObj.GetSendText("sensor9.csv", 3, "0"),
+                snObj.GetSendText("sensor10.csv", 3, "0"),
+                snObj.GetSendText("sensor11.csv", 3, "0"),
+                snObj.GetSendText("sensor12.csv", 3, "0"),
+                snObj.GetSendText("sensor13.csv", 3, "0")
+            };
+                snObj.SetSendText(send);
+            }
         }
 
         //センサーログ
