@@ -44,6 +44,8 @@ namespace Map_Form {
             SensorAction snac = new SensorAction(map_form);
             snac.CameraReturn();
 
+            camera_form.treeView1.SelectedNode = null;
+
             camera_form.setLocation_1();
             camera_form.camSelect(0);
             camera_form.setBrowser(1, i-1);
