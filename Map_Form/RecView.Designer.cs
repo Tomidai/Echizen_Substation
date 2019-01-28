@@ -33,7 +33,7 @@
             this.webBrowser2.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser2.Name = "webBrowser2";
             this.webBrowser2.ScrollBarsEnabled = false;
-            this.webBrowser2.Size = new System.Drawing.Size(1076, 753);
+            this.webBrowser2.Size = new System.Drawing.Size(1076, 749);
             this.webBrowser2.TabIndex = 0;
             this.webBrowser2.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser2_DocumentCompleted);
             // 
@@ -41,7 +41,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1076, 753);
+            this.ClientSize = new System.Drawing.Size(1076, 749);
             this.Controls.Add(this.webBrowser2);
             this.Name = "RecView";
             this.Text = "レコーダー";

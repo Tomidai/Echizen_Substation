@@ -2158,6 +2158,8 @@ namespace Map_Form {
         public void camSelect(int a) {
 
 
+            
+
             this.label1.BackColor = Color.DeepSkyBlue;
             this.cam001_left.BackColor = Color.Black;
             this.cam001_right.BackColor = Color.Black;

@@ -36,6 +36,7 @@ namespace Map_Form {
 
             Camera_Form.RecOn = 0;
             Camera_Form.recButton.Image= global::Map_Form.Properties.Resources.cont_b0171;
+            webBrowser2.Dispose();
 
         }
 
